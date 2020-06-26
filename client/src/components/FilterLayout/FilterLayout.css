@@ -1,0 +1,9 @@
+.Filter-Layout{
+padding-left: 20%;
+padding-top: 3%;
+background: aliceblue;    
+}
+.top-filters{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,22 @@
+.Left-Filter-Options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 20%;
+    background: aliceblue;
+    padding-top: 150px;
+    
+}
+.LFOS-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.LFOS-title span{
+    color: #2f2f2f;
+    font-size: 30px;
+    
+}
+
