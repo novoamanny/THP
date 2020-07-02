@@ -14,7 +14,7 @@ export const getRates = (ZipCode) => async dispatch =>{
     const body = JSON.stringify({ ZipCode: ZipCode});
 
     try {
-        const res = await axios.post('http://localhost:5000/api/rates/get/rates/', body, config);
+        const res = await axios.post('/api/rates/get/rates/', body, config);
           
         dispatch({
           type: GET_RATES_SUCCESS,
