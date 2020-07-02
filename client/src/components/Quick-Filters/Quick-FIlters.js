@@ -7,15 +7,15 @@ import './Quick-Filters.css'
 const qfData = [
     {
         label: 'Apartment',
-        kwh: '500'
+        kwh: 500
     },
     {
         label: 'Small Home',
-        kwh: '1000'
+        kwh: 1000
     },
     {
         label: 'Large Home',
-        kwh: '2000'
+        kwh: 2000
     },
     {
         label: 'Your Home',
@@ -23,7 +23,7 @@ const qfData = [
     },
 ]
 
-const QuickFilters = () =>{
+const QuickFilters = ({setQuickFilters, quickFilters}) =>{
     return(
         <div className='Quick-Filter'>
             <div className='qf-title'>
@@ -31,7 +31,7 @@ const QuickFilters = () =>{
             </div>
             <div className='qf-options'>
                 {qfData.map(data =>{
-                    return <QuickFiltersButton data={data}/>
+                    return <QuickFiltersButton data={data} setQuickFilters={setQuickFilters} quickFilters={quickFilters}/>
                 })}
             </div>
         </div>

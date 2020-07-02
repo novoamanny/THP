@@ -12,21 +12,21 @@ const ofData = [
     {
         label: '100% Green Energy'
     },
-    {
-        label: 'No Contract'
-    },
-    {
-        label: 'Poor Credit'
-    },
+    // {
+    //     label: 'No Contract'
+    // },
+    // {
+    //     label: 'Poor Credit'
+    // },
 ]
 
 
 
-const OtherFilters = () =>{
+const OtherFilters = ({ZipCode, resultCount}) =>{
 
     const info = {
-        count: 0,
-        ZipCode: '75217'
+        count: resultCount,
+        ZipCode: ZipCode
     }
 
 

@@ -3,9 +3,9 @@ import React from 'react';
 
 import './Quick-Filters-Button.css';
 
-const QuickFilterButton = ({data}) =>{
+const QuickFilterButton = ({data, setQuickFilters, quickFilters}) =>{
     return(
-        <div className='QF-Button'>
+        <div className={`QF-Button ${data.kwh === quickFilters && 'active'}`} onClick={() => setQuickFilters(data.kwh)}>
             <div className='QF-Button-label'>
                 <span>{data.label}</span>
             </div>

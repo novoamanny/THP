@@ -1,12 +1,13 @@
 .Left-Filter-Options{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
     height: 100%;
-    width: 20%;
-    background: aliceblue;
+    width: 25%;
     padding-top: 150px;
+    background-color: #fff;
+    border-right: solid 2px rgba(0,0,0,0.2);;
     
 }
 .LFOS-title{

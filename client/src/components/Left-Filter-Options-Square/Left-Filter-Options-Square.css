@@ -6,6 +6,12 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.LFOS-0{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.LFOS-1{
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
 .LFOS-Label{
     width: 100%;
     display: flex;

@@ -5,14 +5,14 @@ import './Left-Filter-Options.css';
 
 
 const LFOSData = [
-    {
-        label: 'ContractType',
-        options: [
-            'Show All',
-            'No Deposit / Poor Credit',
-            'No Contract'
-        ]
-    },
+    // {
+    //     label: 'ContractType',
+    //     options: [
+    //         'Show All',
+    //         'No Deposit / Poor Credit',
+    //         'No Contract'
+    //     ]
+    // },
     {
         label: 'ContractLength',
         options: [
@@ -22,17 +22,33 @@ const LFOSData = [
             '18 Months',
             '24 Months',
             '36 Months',
+        ],
+        value: [
+            'none',
+            'none',
+            12,
+            18,
+            24,
+            36
         ]
     },
     {
-        label: 'Prov',
+        label: 'Provider',
         options: [
             'Show All',
-            'Provider 1',
-            'Provider 2',
-            'Provider 3',
-            'Provider 4',
-            'Provider 5',
+            'Pulse',
+            'Energy To Go',
+            'Lonestar',
+            'New Power',
+            'Power Next',
+        ],
+        value: [
+            'none',
+            'pulse',
+            'etg',
+            'lonestar',
+            'newpower',
+            'powernext'
         ]
     },
 ]
@@ -45,8 +61,8 @@ const LeftFilterOptions = ({filterHandle}) =>{
                 <span>Search FIlters</span>
             </div>
             <div className='LFOS-sq'>
-                {LFOSData.map(data =>{
-                    return <LeftFilterOptionsSquare data={data} filterHandle={filterHandle}/>
+                {LFOSData.map((data, index) =>{
+                    return <LeftFilterOptionsSquare data={data} index={index} filterHandle={filterHandle}/>
                 })} 
             </div>
                       

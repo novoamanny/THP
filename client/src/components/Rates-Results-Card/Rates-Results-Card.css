@@ -1,0 +1,73 @@
+.RSC{
+    width: 100%;
+    background-color: #fff;
+    margin: 10px 0;
+    border: solid 1px rgba(0,0,0, 0.2);
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.RSC-Top{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.RSC-Top-Left{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.RSC-Top-Right{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.RSC-Bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.RSC-Bot-Left{
+    width: 79%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.RSC-Bot-Right{
+    width: 19%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.RSC-Bot-Right-T{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.RSC-Bot-Right-B{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.RSC-Link{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 60px;
+    border-radius: 30px;
+    background-color: #1333A6;
+   
+}
+.RSC-Top-Left-One img{
+    height: 70p;
+    width: 150px;
+}

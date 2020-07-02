@@ -50,15 +50,18 @@ router.post('/get/rates/',
         const loneStarRates = await axios.post('https://api.pulsepowerpreview.com/api/lonestar/GetRates',body, config);
         const newPowerRates = await axios.post('https://api.pulsepowerpreview.com/api/newpowertexas/GetRates',body, config);
         const powerNextRates = await axios.post('https://api.pulsepowerpreview.com/api/powernext/GetRates',body, config);
-        const response = pulseRates.data.concat(energyToGoRates.data, loneStarRates.data, newPowerRates.data, powerNextRates.data);
-        const response2 = {
-            pulse: pulseRates.data,
-            energytogo: energyToGoRates.data,
-            lonestar: loneStarRates.data,
-            newpower: newPowerRates.data,
-            powernext: powerNextRates.data
-        }
-        const response3 = [
+
+
+
+        // const response = pulseRates.data.concat(energyToGoRates.data, loneStarRates.data, newPowerRates.data, powerNextRates.data);
+        // const response2 = {
+        //     pulse: pulseRates.data,
+        //     energytogo: energyToGoRates.data,
+        //     lonestar: loneStarRates.data,
+        //     newpower: newPowerRates.data,
+        //     powernext: powerNextRates.data
+        // }
+        const response = [
             {
                 name: 'pulse',
                 data: pulseRates.data
@@ -80,7 +83,8 @@ router.post('/get/rates/',
                 data: powerNextRates.data
             },
         ]
-        res.json(response3);
+        
+        res.json(response);
         
     }catch(err){
         

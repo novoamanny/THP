@@ -1,0 +1,11 @@
+.FRS{
+    background-color: #1333A6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin-left: 3%;
+    width: 95%;
+    padding: 20px 0;
+    border-radius: 10px;
+}

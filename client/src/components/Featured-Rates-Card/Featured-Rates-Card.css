@@ -1,0 +1,57 @@
+.FRC{
+    width: 20%;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.FRC-row-one, .FRC-row-two, .FRC-row-three, .FRC-row-four, .FRC-row-five, .FRC-row-six, .FRC-row-seven {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.FRC-row-three, .FRC-row-four, .FRC-row-five, .FRC-row-six{
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.FRC-id{
+    width: 100%;
+}
+.FRC-name{
+    width: 100%;
+}
+.FRC-two-T{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.FRC-two-B{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.FRC-image{
+    width: 50%;
+}
+.FRC-price{
+    width: 50%;
+}
+.FRC-details-btn{
+    width: 50%;
+}
+.FRC-other-info{
+    width: 50%;
+}
+.FRC-bill-desc{
+    width: 50%;
+}
+.FRC-bill-price{
+    width: 50%;
+}
+.FRC-length-label{
+    width: 50%;
+}
+.FRC-length{
+    width: 50%;
+}

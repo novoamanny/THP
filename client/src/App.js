@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import Landing from './components/Landing/Landing'
-import Layout from './components/Layout/Layout';
+
 import Navbar from './components/Navbar/Navbar';
 
 

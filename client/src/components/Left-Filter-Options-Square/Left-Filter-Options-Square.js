@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Left-Filter-Options-Square.css';
 
-const LeftFilterOptionsSquare = ({data, filterHandle}) =>{
+const LeftFilterOptionsSquare = ({data, index, filterHandle}) =>{
     return(
-        <div className='LFOS'>
+        <div className={`LFOS LFOS-${index}`}>
             <div className='LFOS-Label'>
                 <span>{data.label}</span>
             </div>
@@ -12,7 +12,7 @@ const LeftFilterOptionsSquare = ({data, filterHandle}) =>{
                 {data.options.map((option, index) =>{
                     return (
                     <div className='LFOS-option'>
-                        <input className='checkbox' type='checkbox' checked={index === 0 && true} onChange={(e) => filterHandle(option, data.label)}/>
+                        <input className='checkbox' type='checkbox' checked={index === 0 && true} onChange={(e) => filterHandle(data.label, data.value[index])}/>
                         <span>{option}</span>
                     </div>
                     );

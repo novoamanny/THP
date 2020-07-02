@@ -5,7 +5,9 @@ import './Navbar.css'
 const Navbar = () =>{
     return(
         <div className='Navbar'>
-            <h1>Image</h1>
+            <div className='nav-logo'>
+                <a href='https://www.texashomepower.com/home/'><img src={require('../../images/THP-Logo-Main.png')}/></a>
+            </div>
         </div>
     )
 }

@@ -3,4 +3,15 @@
     margin: 0 20px;
     border: 2px solid #2f2f2f;
     border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    
+}
+
+
+
+.active{
+    background-color: #EA2335;
+    color: #fff;
+    border: none;
 }
