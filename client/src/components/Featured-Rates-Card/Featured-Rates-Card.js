@@ -8,20 +8,20 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
         <div className='FRC'>
             <div className='FRC-row-one'>
                 <div className='FRC-id'>
-                    <span>{`${rate.provider} | ${rate.rateData.RateID}`}</span>
+                    <h3>{`${rate.provider} | ${rate.rateData.RateID}`}</h3>
                 </div>
                 <div className='FRC-name'>
-                    <span>{rate.rateData.Plan.PlanName}</span>
+                    <h3>{rate.rateData.Plan.PlanName}</h3>
                 </div>
 
             </div>
             <div className='FRC-row-two'>
                 <div className='FRC-two-T'>
                     <div className='FRC-image'>
-
+                        <img src={rate.image}/>
                     </div>
                     <div className='FRC-price'>
-                        <span>{rate.rateData.Rate}</span>
+                        <h2>{rate.rateData.Rate}</h2>
                     </div>
                 </div>
                 <div className='FRC-two-B'>

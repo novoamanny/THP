@@ -52,15 +52,6 @@ router.post('/get/rates/',
         const powerNextRates = await axios.post('https://api.pulsepowerpreview.com/api/powernext/GetRates',body, config);
 
 
-
-        // const response = pulseRates.data.concat(energyToGoRates.data, loneStarRates.data, newPowerRates.data, powerNextRates.data);
-        // const response2 = {
-        //     pulse: pulseRates.data,
-        //     energytogo: energyToGoRates.data,
-        //     lonestar: loneStarRates.data,
-        //     newpower: newPowerRates.data,
-        //     powernext: powerNextRates.data
-        // }
         const response = [
             {
                 name: 'pulse',
@@ -95,6 +86,77 @@ router.post('/get/rates/',
     
 
 });
+
+router.post('/get/rate/:id',
+[
+    check('RateID', 'Need Rate ID...').not().isEmpty(),
+    check('ZipCode', 'Need Zipcode...').not().isEmpty(),
+    check('Provider', 'Need Provider...').not().isEmpty()
+],
+    async (req, res) =>{
+        const errors = validationResult(req);
+
+        if(!errors.isEmpty()){
+            return res.status(400).json({errors: errors.array()});
+        }         
+
+        const {RateID, ZipCode, Provider} = req.body;
+
+        const routes = [
+            {
+                prov: 'pulse',
+                route: 'https://api.pulsepowerpreview.com/api/pulse/GetRates'
+            },
+            {
+                prov: 'etg',
+                route: 'https://api.pulsepowerpreview.com/api/energytogo/GetRates'
+            },
+            {
+                prov: 'lonestar',
+                route: 'https://api.pulsepowerpreview.com/api/lonestar/GetRates'
+            },
+            {
+                prov: 'newpower',
+                route: 'https://api.pulsepowerpreview.com/api/newpowertexas/GetRates'
+            },
+            {
+                prov: 'powernext',
+                route: 'https://api.pulsepowerpreview.com/api/powernext/GetRates'
+            },
+
+            
+        ]
+
+        try{
+            const body = JSON.stringify({ ZipCode: ZipCode, PromoCode: 'TXHP'});
+        
+            let temp;
+
+            routes.forEach(provider =>{
+                if(provider.prov === Provider){
+                    temp = provider.route;
+                }
+            })
+            const rates = await axios.post(temp,body, config);
+            const rate = rates && rates.data.filter(item => {
+                
+
+                if(item.RateID == RateID){
+                    
+                    return item;
+                }
+                    
+            })
+              
+             
+            res.json(rate);
+            
+        }catch(err){
+            console.error(err.message);
+            res.status(500).send('Server error');
+        }
+    }
+)
 
 
 module.exports = router;

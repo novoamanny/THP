@@ -1,0 +1,37 @@
+.RF{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.form-title{
+    padding: 10px 0;
+    background-color: #1333A6;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.form-title h2{
+    margin-left: 20px;
+}
+
+.form-first-name, .form-btn, .form-last-name, .form-email, .form-phone, .form-address, .form-city, .form-state, .form-zipcode,.form-SSN, .form-form-submit, .form-form-title{
+    width: 100%;
+}
+.form-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-btn input{
+    padding: 25px 40px;
+    background-color: #fff; 
+    border-radius: 15px;
+}

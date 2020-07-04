@@ -4,10 +4,12 @@
     left: 0;
     z-index: 10;
     height: 100%;
-    width: 25%;
+    width: 15%;
     padding-top: 150px;
     background-color: #fff;
     border-right: solid 2px rgba(0,0,0,0.2);;
+    margin-left: 10%;
+
     
 }
 .LFOS-title{

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import {GET_RATES_SUCCESS, GET_RATES_FAIL} from './types';
+import {GET_RATES_SUCCESS, GET_RATES_FAIL, GET_RATE_FAIL, GET_RATE_SUCCESS} from './types';
 
 const config = {
     headers: {
@@ -11,10 +11,10 @@ const config = {
 
 export const getRates = (ZipCode) => async dispatch =>{
 
-    const body = JSON.stringify({ ZipCode: ZipCode});
+    const body = JSON.stringify({ ZipCode});
 
     try {
-        const res = await axios.post('/api/rates/get/rates/', body, config);
+        const res = await axios.post(`/api/rates/get/rates/`, body, config);
           
         dispatch({
           type: GET_RATES_SUCCESS,
@@ -26,7 +26,7 @@ export const getRates = (ZipCode) => async dispatch =>{
   
         const errors = err.response.data.errors;
         
-        if (errors) {
+        if (err) {
           // errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
         }
         dispatch({
@@ -35,6 +35,34 @@ export const getRates = (ZipCode) => async dispatch =>{
           });
 
       }
+}
+
+export const getRate = (RateID, Provider, ZipCode) => async dispatch =>{
+
+  const body = JSON.stringify({ ZipCode, Provider, RateID});
+
+  try {
+      const res = await axios.post(`/api/rates/get/rate/${RateID}`, body, config);
+       
+      dispatch({
+        type: GET_RATE_SUCCESS,
+        payload: res.data
+      });
+  
+   
+    } catch (err) {
+
+      const errors = err.response.data.errors;
+      
+      if (errors) {
+        // errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+      }
+      dispatch({
+          type: GET_RATE_FAIL,
+          
+        });
+
+    }
 }
 
 

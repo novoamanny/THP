@@ -6,7 +6,7 @@ import FilterLayout from '../FilterLayout/FilterLayout';
 
 import {getRates} from '../../actions/rates';
 
-const Landing = ({match, getRates, rates}) =>{
+const Landing = ({match, getRates, rates:{rates}}) =>{
     
     const [ZipCode, SetZipCode] = useState(match.params.id);
 

@@ -40,7 +40,7 @@ const RatesResultsSection = ({resultData, quickFilters, ZipCode}) =>{
     let list = []
     let temp;
     let image;
-    console.log(resultData)
+    
     resultData && resultData.forEach(prov =>{
         
             images.forEach(item =>{

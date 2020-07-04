@@ -15,9 +15,17 @@
 }
 .FRC-id{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 .FRC-name{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
 }
 .FRC-two-T{
     width: 100%;
@@ -31,17 +39,40 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .FRC-image{
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.FRC-image img{
+    width: 100px;
+    height: 70px;
 }
 .FRC-price{
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
+
+
 .FRC-details-btn{
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
 }
 .FRC-other-info{
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
 }
 .FRC-bill-desc{
     width: 50%;
@@ -54,4 +85,16 @@
 }
 .FRC-length{
     width: 50%;
+}
+
+
+
+
+
+.FRC-row-seven{
+    background-color: #EA2335;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 0;
 }

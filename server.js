@@ -9,6 +9,7 @@ app.use(bodyParser.json({urlencoded: false}));
 app.use(cors())
 
 app.use('/api/rates', require('./routes/api/rates'));
+app.use('/api/register', require('./routes/api/register'));
 
 const PORT = process.env.PORT || 5000;
 

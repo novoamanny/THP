@@ -13,7 +13,7 @@ import './FilterLayout.css';
 
 const FilterLayout = ({ZipCode, rates}) =>{
 
-    
+    console.log(rates)
     const [filterOptions, setFilterOptions] = useState({
         ContractType: [],
         ContractLength: [],
@@ -54,7 +54,7 @@ const FilterLayout = ({ZipCode, rates}) =>{
         
     }
    
-    const RATES = rates[0];
+    const RATES = rates;
 
 
     let firstFilterData = [];
