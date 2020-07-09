@@ -1,0 +1,94 @@
+.OD{
+   
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.OD-label{
+    background-color: #ccc;
+    width: 100%;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.OD-Details-Top, .OD-Details-Bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+   /* border: 1px solid rgba(0, 0, 0, 0.2); */
+}
+.OD-Details-Top{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.OD-Details-Top-T{
+    width: 100%;
+}
+.OD-Details-Top-B{
+    display: flex;
+
+    width: 100%;
+}
+.OD-Details-Top-B-L{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.OD-Details-Top-B-R{
+    width: 50%;
+    
+}
+.OD-Details-Image{
+   
+}
+.OD-Details-Image, .OD-Details-Button{
+    width: 100%;
+   
+}
+.OD-Details-Bottom{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.OD-Details-One, .OD-Details-Two, .OD-Details-Three, .OD-Details-Four{
+    width: 100%;
+    background-color: #f9f9f9;
+
+    display: flex;
+    
+}
+.OD-Details-One, .OD-Details-Two, .OD-Details-Three{
+ 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.OD-Details-One-1{
+    width: 50%;
+}
+.OD-Details-One-2{
+    width: 50%;
+}
+
+.OD-Details-Two-1{
+    width: 50%;
+}
+.OD-Details-Two-2{
+    width: 50%;
+}
+
+.OD-Details-Three-1{
+    width: 50%;
+}
+.OD-Details-Three-2{
+    width: 50%;
+}
+
+.OD-Details-Four-1{
+    width: 50%;
+}
+.OD-Details-Four-2{
+    width: 50%;
+    
+}

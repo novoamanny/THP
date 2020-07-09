@@ -148,7 +148,7 @@ router.post('/get/rate/:id',
                     
             })
               
-             
+           
             res.json(rate);
             
         }catch(err){

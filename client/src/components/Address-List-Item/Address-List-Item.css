@@ -1,0 +1,9 @@
+.ALI{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ALI-col-one, .ALI-col-two, .ALI-col-three{
+    width: 30%;
+}

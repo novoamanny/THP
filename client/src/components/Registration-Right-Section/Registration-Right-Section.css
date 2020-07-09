@@ -1,16 +1,10 @@
 .Rrs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 30%;
+    
+   
+    width: 20%;
   
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    height: 100%;
-    margin-right: 10%;
-    background-color: #2f2f2f;
+    
+    
 }
 
 .Rrs-top{

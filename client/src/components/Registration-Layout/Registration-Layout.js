@@ -1,8 +1,9 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
 import RegistrationLeftSection from '../Registration-Left-Section/Registration-Left-Section';
+import RegistrationMidSection from '../Registration-Mid-Section/Registration-Mid-Section';
 import RegistrationRightSection from '../Registration-Right-Section/Registration-Right-Section';
 
 import {getRate} from '../../actions/rates';
@@ -14,14 +15,16 @@ import './Registration-Layout.css';
 
 
 const RegistrationLayout = ({match, rates:{rate}, register:{meters}, getRate, getMeters, postRegister}) =>{
+    
     useEffect(() => {
         
         getRate( match.params.id, match.params.provider, match.params.zipcode);
         
       },[getRate])
       
+      
 
-      console.log(meters);
+      
 
       const data = {
           RateID: rate && rate[0].RateID,
@@ -33,10 +36,9 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters}, getRate, ge
     return(
         <div className='Registration'>
             
-                <RegistrationLeftSection data={data} getMeters={getMeters} meters={meters} postRegister={postRegister}/>
-          
-           
-                <RegistrationRightSection/>
+            <RegistrationLeftSection />
+            <RegistrationMidSection data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider}/>
+            <RegistrationRightSection rate={rate} provider={match.params.provider}/>
           
         </div>
     )

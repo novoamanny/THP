@@ -24,30 +24,7 @@ const config = {
     
 }
 
-const routes = [
-    {
-        prov: 'pulse',
-        route: 'https://api.pulsepowerpreview.com/api/pulse/GetMeters'
-    },
-    {
-        prov: 'etg',
-        route: 'https://api.pulsepowerpreview.com/api/energytogo/GetMeters'
-    },
-    {
-        prov: 'lonestar',
-        route: 'https://api.pulsepowerpreview.com/api/lonestar/GetMeters'
-    },
-    {
-        prov: 'newpower',
-        route: 'https://api.pulsepowerpreview.com/api/newpowertexas/GetMeters'
-    },
-    {
-        prov: 'powernext',
-        route: 'https://api.pulsepowerpreview.com/api/powernext/GetMeters'
-    },
 
-    
-]
 
 router.post('/get/meters',
 [
@@ -63,28 +40,52 @@ router.post('/get/meters',
         }         
 
         const {ZipCode, Provider, Address1} = req.body;
-
+    
+        const routes = [
+            {
+                prov: 'pulse',
+                route: 'https://api.pulsepowerpreview.com/api/pulse/GetMeters'
+            },
+            {
+                prov: 'etg',
+                route: 'https://api.pulsepowerpreview.com/api/energytogo/GetMeters'
+            },
+            {
+                prov: 'lonestar',
+                route: 'https://api.pulsepowerpreview.com/api/lonestar/GetMeters'
+            },
+            {
+                prov: 'newpower',
+                route: 'https://api.pulsepowerpreview.com/api/newpowertexas/GetMeters'
+            },
+            {
+                prov: 'powernext',
+                route: 'https://api.pulsepowerpreview.com/api/powernext/GetMeters'
+            },
         
+            
+        ]
 
 
         try{
             const body = JSON.stringify({
-                ZipCode,
-                Address1
+               
+                Address1,
+                ZipCode
             });
            
             let temp;
 
-            routes.forEach(provider =>{
+            routes.forEach((provider, index) =>{
                 if(provider.prov === Provider){
-                    temp = provider.route;
+                    temp = index;
                 }
             })
+            const ROUTE = routes[temp].route;
+            console.log(body, ROUTE, Provider)
+            const meter = await axios.post(ROUTE,body, config);
             
-
-            const response = await axios.post(temp,body, config);
-            
-            res.json(response.data[0]);
+            res.json(meter.data);
 
         }catch(err){
             console.error(err.message);

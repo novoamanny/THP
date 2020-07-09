@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import './Registration-Form.css'
-import { cookie } from 'request';
+
 
 const RegistrationForm = ({data, getMeters, meters, postRegister}) =>{
 

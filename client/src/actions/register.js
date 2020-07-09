@@ -47,7 +47,7 @@ export const postRegister = (form) => async dispatch =>{
         
     try{
         
-        const res = await axios.post(`/api/register/`, body, config);
+        const res = await axios.post(`http://localhost:5000/api/register/`, body, config);
         
         console.log(res)
         let data = {
@@ -76,13 +76,13 @@ export const postRegister = (form) => async dispatch =>{
 }
 
 
-export const getMeters = (Address1,ZipCode, Provider) => async dispatch =>{
-    const body = JSON.stringify({Address1, ZipCode, Provider});
+export const getMeters = (form) => async dispatch =>{
+    const body = JSON.stringify({Address1: form.Address1, ZipCode: form.ZipCode, Provider: form.Provider});
 
     try{
 
-        const res = await axios.post(`/api/register/get/meters`, body, config);
-        
+        const res = await axios.post(`http://localhost:5000/api/register/get/meters`, body, config);
+        console.log(res)
         dispatch({
 
             type: GET_METERS_SUCCESS,

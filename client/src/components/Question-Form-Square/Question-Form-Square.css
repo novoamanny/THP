@@ -1,0 +1,98 @@
+.QFS{
+    
+    width: 100%;
+}
+.qfs-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.qfs-question, .qfs-label, .qfs-layout, .qfs-one, .qfs-two, .qfs-three{
+    width: 100%
+}
+.qfs-label{
+    background-color: #1333A6;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.qfs-label h2{
+    margin-left: 30px;
+}
+.qfs-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.qfs-two{
+    margin-left: 20px;
+    border-left: solid 2px rgba(0, 0, 0, 0.2);
+}
+.qfs-text{
+    margin-left: 20px;
+}
+.qfs-option-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 10px;
+}
+.qfs-option-box{
+    width: 20px;
+    height: 20px;
+    border: solid 1px #2f2f2f;
+}
+.qfs-option{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 10px 0;
+}
+.qfs-option-text{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.qfs-address{
+    display: flex;
+    margin-left: 20px;
+}
+.qfs-address-input{
+    width: 30%;
+}
+.qfs-address-input input{
+    width: 80%;
+    height: 35px;
+}
+.qfs-zip-input {
+    width: 15%;
+}
+.qfs-zip-input  input{
+    height: 35px;
+}
+.qfs-search{
+    width: 10%;
+}
+.qfs-search{
+   
+  
+}
+.qfs-search-button{
+    margin-top: 55px;
+    
+    background-color: #1333A6;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.qfs-search-button li{
+    text-align: center;
+    list-style: none;
+    padding: 8px 0;
+}

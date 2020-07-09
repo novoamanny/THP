@@ -1,0 +1,13 @@
+.ALL{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.ALL-list-layout{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}

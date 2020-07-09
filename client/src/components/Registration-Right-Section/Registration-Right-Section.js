@@ -1,18 +1,16 @@
 import React from 'react';
 
 import OrderDetails from '../Order-Details/Order-Details';
+import OrderDetailsTwo from '../Order-Details-Two/Order-Details-Two';
 
 import './Registration-Right-Section.css';
 
-const RegistrationRightSection = () =>{
+const RegistrationRightSection = ({rate, provider}) =>{
     return(
         <div className='Rrs'>
-            <div className='Rrs-top'>
-                <OrderDetails/>
-            </div>
-            <div className='Rrs-bottom'>
-
-            </div>
+            <OrderDetailsTwo/>
+            <OrderDetails rate={rate} provider={provider}/>
+            
         </div>
     )
 }
