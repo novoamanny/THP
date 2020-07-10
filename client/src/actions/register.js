@@ -52,7 +52,7 @@ export const postRegister = (form) => async dispatch =>{
         
     try{
         
-        const res = await axios.post(`api/register/`, body, config);
+        const res = await axios.post(`/api/register/`, body, config);
         
         console.log(res.data)
         let data = {
