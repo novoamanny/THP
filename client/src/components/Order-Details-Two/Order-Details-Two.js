@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Order-Details-Two.css'
 
-const OrderDetailsTwo = () =>{
+const OrderDetailsTwo = ({formData}) =>{
     return(
         <div className='ODT'>
             <div className='ODT-Label'>
@@ -41,7 +41,7 @@ const OrderDetailsTwo = () =>{
                                 <h2>Service Address:</h2>
                             </div>
                             <div>
-
+    <                           li>{formData.Address1}</li>
                             </div>
                         </div>
                         <div>
@@ -49,7 +49,7 @@ const OrderDetailsTwo = () =>{
                                 <h2>ESIID:</h2>
                             </div>
                             <div>
-                                
+                                <li>{formData.Esiid}</li>
                             </div>
                         </div>
                         

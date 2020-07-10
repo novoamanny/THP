@@ -11,7 +11,7 @@ const config = {
 }
 
 export const postRegister = (form) => async dispatch =>{
-
+    console.log(form)
     const {
         EmailAddress,
         FirstName,
@@ -20,13 +20,15 @@ export const postRegister = (form) => async dispatch =>{
         Address1,
         City,
         State,
-        ServiceType,
+        SwitchType,
         SSN,
         RateID,
         Rate,
         ZipCode,
         Provider,
         Esiid,
+        ROUTE,
+        Date
     } = form;
     const body = JSON.stringify({
         EmailAddress,
@@ -36,20 +38,23 @@ export const postRegister = (form) => async dispatch =>{
         Address1,
         City,
         State,
-        ServiceType,
+        SwitchType,
         SSN,
         RateID,
         Rate,
         ZipCode,
         Provider,
         Esiid,
+        ROUTE,
+        RequestedDate: Date
     });
+    console.log(body)
         
     try{
         
-        const res = await axios.post(`/api/register/`, body, config);
+        const res = await axios.post(`api/register/`, body, config);
         
-        console.log(res)
+        console.log(res.data)
         let data = {
             form: form,
             confirmation: res.data

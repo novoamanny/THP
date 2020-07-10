@@ -82,7 +82,7 @@ router.post('/get/meters',
                 }
             })
             const ROUTE = routes[temp].route;
-            console.log(body, ROUTE, Provider)
+           
             const meter = await axios.post(ROUTE,body, config);
             
             res.json(meter.data);
@@ -104,7 +104,7 @@ router.post('/',
     check('Phone', 'Need Phone...').not().isEmpty(),
     check('ZipCode', 'Need Zipcode...').not().isEmpty(),
     check('Esiid', 'Need Esiid...').not().isEmpty(),
-    check('ServiceType', 'Service Type...').not().isEmpty(),
+    check('SwitchType', 'Service Type...').not().isEmpty(),
     check('SSN', 'Need SSN...').not().isEmpty(),
     check('RateID', 'RateID...').not().isEmpty(),
     check('Rate', 'Rate...').not().isEmpty(),
@@ -117,36 +117,49 @@ router.post('/',
             return res.status(400).json({errors: errors.array()});
         }         
 
-        const {FirstName, LastName, EmailAddress, Phone, ZipCode, Esiid, ServiceType, SSN, RateID, Rate, Provider} = req.body;
-
+        const {FirstName, LastName, EmailAddress, Phone, ZipCode, Esiid, SwitchType, SSN, RateID, Rate, Provider, Date, ROUTE} = req.body;
+        
+       
 
         try{
-            const body = JSON.stringify({
-                ZipCode,
-                PromoCode: 'TXHP',
-                FirstName,
-                LastName,
-                EmailAddress,
-                MobilePhone: Phone,
-                Esiid,
-                ServiceType,
-                SSN,
-                RateID,
-                Rate
-            });
+            let body;
+            if(Provider === 'pulse'){
+                body = JSON.stringify({
+                    ZipCode,
+                    PromoCode: 'TXHP',
+                    FirstName,
+                    LastName,
+                    EmailAddress,
+                    MobilePhone: Phone,
+                    Esiid,
+                    ServiceType: SwitchType,
+                    SSN,
+                    RateID,
+                    Rate,
+                    Date
+                });
+            }else{
+                body = JSON.stringify({
+                    ZipCode,
+                    // PromoCode: Provider === 'pulse' && 'TXHP',
+                    FirstName,
+                    LastName,
+                    EmailAddress,
+                    MobilePhone: Phone,
+                    Esiid,
+                    ServiceType: SwitchType,
+                    SSN,
+                    RateID,
+                    Rate,
+                    Date
+                });
+            }
             
-            let temp;
-
-            routes.forEach(provider =>{
-                if(provider.prov === Provider){
-                    temp = provider.route;
-                }
-            })
-            console.log(temp)
-
-            const response = await axios.post(temp,body, config);
+            
+            
+            const response = await axios.post(ROUTE,body, config);
             console.log(response)
-            res.json(response.data[0]);
+            res.json(response.data);
             
         }catch(err){
             console.error(err.message);

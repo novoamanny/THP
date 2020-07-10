@@ -4,6 +4,32 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.ALI-col{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .ALI-col-one, .ALI-col-two, .ALI-col-three{
     width: 30%;
+}
+.ALI-row{
+    width: 100%;
+   display: flex;
+}
+.ALI-confirm-button{
+    margin: 10px 0;
+    margin-left: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.ALI-confirm-button li{
+   
+    color: #fff;
+    padding: 10px 20px;
+   
+    list-style: none;
+}
+.ALI-confirm-button{
+    background-color: #1333A6;
 }

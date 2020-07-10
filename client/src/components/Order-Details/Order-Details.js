@@ -3,7 +3,7 @@ import React from 'react';
 import './Order-Details.css';
 
 const OrderDetails = ({rate, provider}) =>{
-    console.log(rate)
+   
     return(
         <div className='OD'>
             <div className='OD-label'>

@@ -23,7 +23,22 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters}, getRate, ge
       },[getRate])
       
       
-
+      const [formData, setFormData] = useState({
+        EmailAddress: '',
+        FirstName: '',
+        LastName: '',
+        Phone: '',
+        Esiid: '',
+        Address1: '',
+        City: '',
+        Rate: '',
+        RateID: '',
+        SSN: '',
+        Provider: '',
+        Date: '',
+        SwitchType: '',
+        route: ''
+    })
       
 
       const data = {
@@ -37,8 +52,8 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters}, getRate, ge
         <div className='Registration'>
             
             <RegistrationLeftSection />
-            <RegistrationMidSection data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider}/>
-            <RegistrationRightSection rate={rate} provider={match.params.provider}/>
+            <RegistrationMidSection data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData}/>
+            <RegistrationRightSection rate={rate} provider={match.params.provider} formData={formData}/>
           
         </div>
     )
