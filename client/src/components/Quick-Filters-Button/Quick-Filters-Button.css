@@ -1,11 +1,17 @@
 .QF-Button{
-    padding: 5px 30px;
+    padding: 10px 30px;
     margin: 0 20px;
     border: 2px solid #2f2f2f;
     border-radius: 10px;
     background-color: #fff;
     cursor: pointer;
     
+}
+.QF-Button-label span{
+    font-size: 10px;
+}
+.QF-Button-details span{
+    font-size: 28px;
 }
 
 

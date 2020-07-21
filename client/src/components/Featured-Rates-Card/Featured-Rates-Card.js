@@ -8,10 +8,13 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
         <div className='FRC'>
             <div className='FRC-row-one'>
                 <div className='FRC-id'>
-                    <h3>{`${rate.provider} | ${rate.rateData.RateID}`}</h3>
+                    <span>{`${rate.provider} | ${rate.rateData.RateID}`}</span>
                 </div>
                 <div className='FRC-name'>
-                    <h3>{rate.rateData.Plan.PlanName}</h3>
+                    <div>
+                    <span>{rate.rateData.Plan.PlanName}</span>
+                    </div>
+                    
                 </div>
 
             </div>
@@ -21,7 +24,7 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
                         <img src={rate.image}/>
                     </div>
                     <div className='FRC-price'>
-                        <h2>{rate.rateData.Rate}</h2>
+                        <span>{rate.rateData.Rate * 100}</span>
                     </div>
                 </div>
                 <div className='FRC-two-B'>
@@ -34,17 +37,17 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
                 </div>
             </div>
             <div className='FRC-row-three'>
-                <div>
+                
                     <span>{rate.rateData.Plan.PlanSubHeader}</span>
-                </div>
+                
                
             </div>
             <div className='FRC-row-four'>
                 <div className='FRC-bill-desc'>
-                    <span>Estimated on 2000 KWH</span>
+                    <span>Estimated Montly Bill Based on 2000 KWH</span>
                 </div>
                 <div className='FRC-bill-price'>
-                    <span>{rate.rateData.Rate}</span>
+                    <span>{rate.rateData.Rate * 500}</span>
                 </div>
             </div>
             <div className='FRC-row-five'>
@@ -57,7 +60,7 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
             </div>
             <div className='FRC-row-six'>
                 <div className='FRC-link'>
-                    <Link to={`/${ZipCode}/${rate.provider}/register/00${rate.rateData.RateID}`} className='FRC-Link'>Check Availability</Link>
+                    <Link  to={`/${ZipCode}/${rate.provider}/register/00${rate.rateData.RateID}`} className='FRC-Link'>Check Availability</Link>
                 </div>
                 <div className='FRC-link-details'>
                     <div className='FRC-link-details-one'>
@@ -70,7 +73,7 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
             </div>
             <div className='FRC-row-seven'>
                 <div className='FRC-seven-label'>
-                    <span>Featured Plan</span>
+                    <span>Popular Bill Credit Plan</span>
                 </div>
             </div>
         </div>

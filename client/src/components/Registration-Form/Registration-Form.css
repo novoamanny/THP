@@ -3,20 +3,26 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-  
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .form{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    
+    
 }
 .form-title{
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: #1333A6;
     color: #fff;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
 }
 .form-title h2{
     margin-left: 20px;
@@ -24,6 +30,7 @@
 
 .form-first-name, .form-btn, .form-last-name, .form-email, .form-phone, .form-address, .form-city, .form-state, .form-zipcode,.form-SSN, .form-form-submit, .form-form-title{
     width: 100%;
+    margin: 10px 0;
 }
 .form-btn{
     display: flex;
@@ -34,4 +41,100 @@
     padding: 25px 40px;
     background-color: #fff; 
     border-radius: 15px;
+}
+
+.form-sec-one{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-sec-one-one{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.form-sec-one-two{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.form-label{
+    margin: 10px 0;
+    margin-left: 63px;
+}
+.form-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-input input{ 
+    width: 80%;
+    height: 40px;
+    
+    padding: 2px 20px;
+    border-radius: 7px;
+}
+.form-DOB{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.DOB-input{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.DOB-input input{
+    width: 160px;
+    height: 40px;
+    
+    padding: 2px 20px;
+    border-radius: 7px;
+    margin: 0 25px;
+}
+.form-sec-two{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-sec-two-one{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.form-sec-two li{
+    list-style: none;
+}
+.form-sec-two-two li{
+    color: #1333A6;
+    font-weight: bold;
+}
+.form-sec-two-square{
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.forn-sec-two-two{
+    width: 100%;
+}
+.form-sec-three{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.form-sec-three-one{
+    width: 100%;
+}
+.form-sec-three-two{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

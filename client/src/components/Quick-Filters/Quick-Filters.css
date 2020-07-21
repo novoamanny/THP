@@ -6,6 +6,10 @@
 }
 .qf-title{
     width: 100%;
+    margin: 0 70px;
+}
+.qf-title h2{
+    font-size: 23px;
 }
 .qf-options{
     display: flex;

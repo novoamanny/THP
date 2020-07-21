@@ -5,6 +5,8 @@ import {connect} from 'react-redux';
 import RegistrationLeftSection from '../Registration-Left-Section/Registration-Left-Section';
 import RegistrationMidSection from '../Registration-Mid-Section/Registration-Mid-Section';
 import RegistrationRightSection from '../Registration-Right-Section/Registration-Right-Section';
+import ConfirmationModal from '../Confirmation-Modal/Confirmation-Modal';
+
 
 import {getRate} from '../../actions/rates';
 import {getMeters, postRegister} from '../../actions/register';
@@ -14,8 +16,8 @@ import {getMeters, postRegister} from '../../actions/register';
 import './Registration-Layout.css';
 
 
-const RegistrationLayout = ({match, rates:{rate}, register:{meters}, getRate, getMeters, postRegister}) =>{
-    
+const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation}, getRate, getMeters, postRegister}) =>{
+    console.log(confirmation);
     useEffect(() => {
         
         getRate( match.params.id, match.params.provider, match.params.zipcode);
@@ -36,7 +38,10 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters}, getRate, ge
         SSN: '',
         Provider: '',
         Date: '',
-        SwitchType: '',
+        SwitchType: 'Switching',
+        DOBMonth: '',
+        DOBDay: '',
+        DOBYear: '',
         route: ''
     })
       
@@ -54,7 +59,9 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters}, getRate, ge
             <RegistrationLeftSection />
             <RegistrationMidSection data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData}/>
             <RegistrationRightSection rate={rate} provider={match.params.provider} formData={formData}/>
-          
+            {
+                confirmation && <ConfirmationModal confirmation={confirmation && confirmation}/>
+            }
         </div>
     )
 }
@@ -66,6 +73,8 @@ RegistrationLayout.propTypes = {
     postRegister: PropTypes.func.isRequired,
     register: PropTypes.object.isRequired,
     rates: PropTypes.object.isRequired,
+    meter: PropTypes.object.isRequired,
+    confirmation: PropTypes.object.isRequired
    
 }
 

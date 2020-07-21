@@ -64,6 +64,10 @@ const FeaturedRatesSection = ({resultData, ZipCode}) =>{
 
     return(
         <div className='FRS'>
+            <div className='FRS-title'>
+                <h2>Featured Plans</h2>
+            </div>
+            <div className='FRS-card-section'>
             {DATA && DATA.map((prov, index) =>{
 
 
@@ -71,6 +75,8 @@ const FeaturedRatesSection = ({resultData, ZipCode}) =>{
                     return <FeaturedRatesCard rate={prov} ZipCode={ZipCode}/>
                 }
             })}
+            </div>
+            
         </div>
     )
         

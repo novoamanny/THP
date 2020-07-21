@@ -18,10 +18,19 @@ const RatesResultsCard = ({rate, quickFilters, ZipCode}) =>{
                         <img src={rate.image}/>
                     </div>
                     <div className='RSC-Top-Left-Two'>
-                        <span>{rate && rate.rateData.Plan.DisplayName}</span>
+                        <div className='tlto'>
+                            <span>{`${rate.provider} | ${rate.rateData.RateID}`}</span>
+                        </div>
+                        <div className='tltt'>
+                            <span>{rate && rate.rateData.Plan.PlanName}</span>
+                        </div>
+                        
                     </div>
                     <div className='RSC-Top-Left-Three'>
+                        <div>
                         <span>Plan Details</span>
+                        </div>
+                        
                     </div>
                </div>
                <div className='RSC-Top-Right'>

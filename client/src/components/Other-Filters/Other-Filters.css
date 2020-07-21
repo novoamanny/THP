@@ -1,9 +1,17 @@
 .Other-Filters{
     width: 50%;
+    margin-top: 70px;
 }
-
+.of-info span{
+    font-size: 25px;
+    font-weight: bold;
+}
 .of-options{
     display: flex;
+    margin-top: 10px;
+}
+.of-options span{
+    font-size: 20px;
 }
 .of-option{
     margin: 0 10px;

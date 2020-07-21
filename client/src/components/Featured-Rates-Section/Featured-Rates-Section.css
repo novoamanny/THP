@@ -2,10 +2,30 @@
     background-color: #1333A6;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     
-    margin-left: 3%;
-    width: 95%;
-    padding: 20px 0;
-    border-radius: 10px;
+    
+    margin-left: 1%;
+    width: 96%;
+   
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    
+   
+}
+.FRS-title{
+    width: 100%;
+    
+}
+.FRS-title h2{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 40px;
+}
+.FRS-card-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;
 }

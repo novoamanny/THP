@@ -27,7 +27,7 @@ const QuickFilters = ({setQuickFilters, quickFilters}) =>{
     return(
         <div className='Quick-Filter'>
             <div className='qf-title'>
-                <span>Quick Filter</span>
+                <h2>Quick Filter</h2>
             </div>
             <div className='qf-options'>
                 {qfData.map(data =>{

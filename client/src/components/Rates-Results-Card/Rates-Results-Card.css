@@ -3,10 +3,11 @@
     background-color: #fff;
     margin: 10px 0;
     border: solid 1px rgba(0,0,0, 0.2);
-    border-radius: 7px;
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .RSC-Top{
@@ -15,11 +16,38 @@
     flex-wrap: wrap;
     justify-content: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 30px;
 }
 .RSC-Top-Left{
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.RSC-Top-Left-Two{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tlto{
+    width: 100%;
+}
+.tlto span{
+    color: rgba(0,0,0, 0.4);
+}
+.tltt{
+    width: 100%;
+}
+.tltt span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.RSC-Top-Left-Three {
+   padding-top: 50px;
+}
+.RSC-Top-Left-Three span{
+    color: #EA2335;
+    text-decoration: underline;
+    font-size: 20px;
 }
 .RSC-Top-Right{
     width: 50%;
@@ -34,11 +62,16 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .RSC-Bot-Left{
-    width: 79%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
+}
+.RSC-Bot-Left span{
+    
+    font-size: 25px;
 }
 .RSC-Bot-Right{
     width: 19%;
