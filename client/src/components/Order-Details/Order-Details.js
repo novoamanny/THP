@@ -2,7 +2,52 @@ import React from 'react';
 
 import './Order-Details.css';
 
+const images = [
+    {
+        img: require('../../images/pulse.png'),
+        provider: 'pulse'
+    },
+    {
+        img: require('../../images/energy-to-go-rgb-logo.png'),
+        provider: 'etg'
+    },
+    {
+        img: require('../../images/lone-star-energy-rgb-logo.png'),
+        provider: 'lonestar'
+    },
+    {
+        img: require('../../images/new-power-texas-rgb-logo.png'),
+        provider: 'newpower'
+    },
+    {
+        img: require('../../images/power-next-rgb-logo.png'),
+        provider: 'powernext'
+    },
+    
+    
+    
+   
+    
+]
+
 const OrderDetails = ({rate, provider}) =>{
+
+    
+  
+    let temp;
+    
+
+
+    
+    images.forEach(item =>{
+        
+        if(item.provider === provider){
+            temp = item.img;
+        }
+        
+    })
+
+    const image = temp;
    
     return(
         <div className='OD'>
@@ -12,30 +57,30 @@ const OrderDetails = ({rate, provider}) =>{
             <div className='OD-Details'>
                 <div className='OD-Details-Top'>
                     <div className='OD-Details-Top-T'>
-                        <div>
-                            <p>{`${provider} | ${rate && rate[0].RateID}`}</p>
+                        <div className='OD-Details-p'>
+                            <span>{`${provider} | ${rate && rate[0].RateID}`}</span>
                         </div>
-                        <div>
-                            <p>{rate && rate[0].Plan.PlanName}</p>
+                        <div className='OD-Details-p-two'>
+                            <span>{rate && rate[0].Plan.PlanName}</span>
                         </div>
                     </div>
                     <div className='OD-Details-Top-B'>
                         <div className='OD-Details-Top-B-L'> 
                             <div className='OD-Details-Image'>
-
+                                <img src={image}/>
                             </div>
                             <div className='OD-Details-Button'>
-                                <li>Plan Details</li>
+                                <span>Plan Details</span>
                             </div>
                         </div>
                         <div className='OD-Details-Top-B-R'>
-                            <div>
+                            <div className='DTBR-one'>
                                 <p>Rate Per KWh</p>
                             </div>
-                            <div>
-                                <h2>{rate && rate[0].Rate}</h2>
+                            <div className='DTBR-two'>
+                                <h2>{rate && rate[0].Rate * 100}</h2>
                             </div>
-                            <div>
+                            <div className='DTBR-three'>
                                 <p>[$230.51 / 2000KWh]</p>
                             </div>
                         </div>

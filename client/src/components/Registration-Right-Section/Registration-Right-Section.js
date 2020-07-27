@@ -5,10 +5,13 @@ import OrderDetailsTwo from '../Order-Details-Two/Order-Details-Two';
 
 import './Registration-Right-Section.css';
 
-const RegistrationRightSection = ({rate, provider, formData}) =>{
+const RegistrationRightSection = ({rate, provider, formData, mainFormIndex}) =>{
     return(
         <div className='Rrs'>
-            <OrderDetailsTwo formData={formData}/>
+            {
+                mainFormIndex >= 1 && <OrderDetailsTwo formData={formData} mainFormIndex={mainFormIndex}/>
+            }
+            
             <OrderDetails rate={rate} provider={provider}/>
             
         </div>

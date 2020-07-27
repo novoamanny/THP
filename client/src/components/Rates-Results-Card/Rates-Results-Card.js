@@ -9,7 +9,7 @@ import './Rates-Results-Card.css';
 
 
 const RatesResultsCard = ({rate, quickFilters, ZipCode}) =>{
-    console.log(rate)
+   console.log(rate)
     return(
         <div className='RSC'>
            <div className='RSC-Top'>

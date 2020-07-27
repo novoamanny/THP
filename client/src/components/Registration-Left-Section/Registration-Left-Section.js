@@ -5,7 +5,7 @@ import './Registration-Left-Section.css';
 
 import './Registration-Left-Section.css';
 
-const RegistrationLeftSection = () =>{
+const RegistrationLeftSection = ({mainFormIndex}) =>{
     return(
         <div className='RLS'>
             <div className='RLS-Top'>
@@ -13,7 +13,7 @@ const RegistrationLeftSection = () =>{
             </div>
             <div className='RLS-Bottom'>
                 <div className='progress'>
-                    <div className='progress-circle'>
+                    <div className={mainFormIndex === 0 ? 'progress-circle-on' : 'progress-circle'}>
 
                     </div>
                     <div className='progress-label'>
@@ -24,7 +24,7 @@ const RegistrationLeftSection = () =>{
                     </div>
                 </div>
                 <div className='progress'>
-                    <div className='progress-circle'>
+                    <div className={mainFormIndex === 1 ? 'progress-circle-on' : 'progress-circle'}>
 
                     </div>
                     <div className='progress-label'>
@@ -35,7 +35,7 @@ const RegistrationLeftSection = () =>{
                     </div>
                 </div>
                 <div className='progress'>
-                    <div className='progress-circle'>
+                    <div className={mainFormIndex === 2 ? 'progress-circle-on' : 'progress-circle'}>
 
                     </div>
                     <div className='progress-label'>

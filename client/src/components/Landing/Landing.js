@@ -20,7 +20,7 @@ const Landing = ({match, getRates, rates:{rates}}) =>{
 
     return(
         <div>
-           <FilterLayout ZipCode={ZipCode} rates={rates}/>
+           <FilterLayout getRates={getRates} ZipCode={ZipCode} rates={rates}/>
         </div>
     )
 }

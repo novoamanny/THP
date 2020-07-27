@@ -4,7 +4,7 @@
     justify-content: center;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+   
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -107,9 +107,16 @@
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
+    margin-top: 40px;
+    margin-left: 65px;
 }
+
 .form-sec-two li{
     list-style: none;
+}
+.form-sec-two-two{
+    margin-top: 20px;
+    margin-left: 65px;
 }
 .form-sec-two-two li{
     color: #1333A6;
@@ -127,14 +134,57 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
+    margin-top: 60px;
 }
 .form-sec-three-one{
-    width: 100%;
+    width: 80%;
+    margin-left: 30px;
 }
 .form-sec-three-two{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
+    
+}
+.side-a, .side-b{
+    width: 50%;
+}
+.state-zip{
+    display: flex;
+}
+.form-label-state{
+    margin-bottom: 5px;
+    margin-left: 63px;
+}
+.form-input-state, .form-input-zipcode{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+.form-input-state input, .form-input-zipcode input{
+    width: 60%;
+    height: 40px;
+    
+    padding: 2px 20px;
+    border-radius: 7px;
+}
+
+.form-SSN{
+    margin-top: 60px;
+}
+
+.UCC-label{
+    background-color: #1333A6;
+    padding: 20px 50px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.UCC-label h2{
+    color: #fff;
+   
+
+}
+.UCC-UI{
+    padding: 20px 10px;
 }

@@ -33,7 +33,7 @@ const LFOSData = [
         ]
     },
     {
-        label: 'Provider',
+        label: 'Prov',
         options: [
             'Show All',
             'Pulse',

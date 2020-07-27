@@ -1,14 +1,18 @@
 import React, {useState} from 'react';
 
+import AddressListLayout from '../Address-List-Layout/Address-List-Layout';
+
 import './Question-Form-Square.css';
 
-const QuestionFormSquare = ({getMeters, ZipCode, Provider}) =>{
+const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, meters, setMainFormData, mainFormData, setChangeZipCodeModal}) =>{
 
     const [formData, setFormData] = useState({
         Address1: '',
         ZipCode: ZipCode,
         Provider: Provider
     })
+
+    const [formSlideIndex, setFormSlideIndex] = useState(0);
     
 
     const onChange = e => setFormData({...formData, [e.target.name]: e.target.value});
@@ -16,10 +20,13 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider}) =>{
     const onSubmit = e =>{
 
         e.preventDefault();
-
+        
         getMeters(formData);
         
+        
     }
+
+    
 
     return(
         <div className='QFS'>
@@ -38,7 +45,7 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider}) =>{
                         <h2>What Type of Home is This?</h2>
                     </div>
                     <div className='qfs-options'>
-                        <div className='qfs-option'>
+                        <div className='qfs-option' onClick={() => setFormSlideIndex(2)}>
                             <div className='qfs-option-box-container'>
                                 <div className='qfs-option-box'>
 
@@ -48,7 +55,7 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider}) =>{
                                 <p>Apartment</p>
                             </div>
                         </div>
-                        <div className='qfs-option'>
+                        <div className='qfs-option' onClick={() => setFormSlideIndex(1)}>
                             <div className='qfs-option-box-container'>
                                 <div className='qfs-option-box'>
 
@@ -60,12 +67,12 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider}) =>{
                         </div>
                     </div>
                 </div>
-                <div className='qfs-two'>
-                    <div className='qfs-text'> 
+                <div className={ formSlideIndex === 1 ? 'qfs-two' : (formSlideIndex === 3 ? 'qfs-two' : 'not-active')}>
+                    <div className={ formSlideIndex === 1 ? 'qfs-text' : (formSlideIndex === 3 ? 'qfs-text' : 'no-display')}> 
                         <h2>What Type of Home is This?</h2>
                     </div>
-                    <div className='qfs-options'>
-                        <div className='qfs-option'>
+                    <div className={ formSlideIndex === 1 ? 'qfs-options' : (formSlideIndex === 3 ? 'qfs-options' : 'no-display')}>
+                        <div className='qfs-option' onClick={() => setFormSlideIndex(3)}>
                             <div className='qfs-option-box-container'>
                                 <div className='qfs-option-box'>
 
@@ -82,20 +89,20 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider}) =>{
 
                                 </div>
                             </div>
-                            <div className='qfs-option-text'>
+                            <div className='qfs-option-text' onClick={() => setFormSlideIndex(3)}>
                                 <p>Rent</p>
                             </div>  
                         </div>
                     </div>
                 </div>
-                <div className='qfs-three'>
-                    <div className='qfs-text'>
+                <div className={ formSlideIndex === 2 ? 'qfs-three' : (formSlideIndex === 3 ? 'qfs-three' : 'not-active')}>
+                    <div className={ formSlideIndex === 2 ? 'qfs-text' : (formSlideIndex === 3 ? 'qfs-text' : 'no-display')}>
                         <h2>Type in either your service address or Esiid</h2>
                         <div className='ofs-text-red'>
                             <span>*ESIID can be found on your current electric bill*</span>
                         </div>
                     </div>
-                    <div className='qfs-address'>
+                    <div className={ formSlideIndex === 2 ? 'qfs-address' : (formSlideIndex === 3 ? 'qfs-address' : 'no-display')}>
                         
                         <div className='qfs-address-input'>
                             <div>
@@ -113,7 +120,7 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider}) =>{
                             <div>
                                 <input disabled value={ZipCode} type='text'/>
                             </div>
-                            <div>
+                            <div onClick={() => setChangeZipCodeModal(true)}>
                                 <p>Change Zip</p>
                             </div>
                         </div>
@@ -129,6 +136,9 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider}) =>{
                     </div>
                 
             </div>
+                {
+                    meters && <AddressListLayout meters={meters} setFormData={setMainFormData} formData={mainFormData} setMainFormIndex={setMainFormIndex}/>
+                }
         </div>
     )
 }

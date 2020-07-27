@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Address-List-Item.css';
 
-const AddressListItem = ({meter, setFormData, formData}) =>{
+const AddressListItem = ({meter, setFormData, formData, setMainFormIndex}) =>{
 
     const confirmHandle = (e) =>{
         e.preventDefault();
@@ -12,6 +12,7 @@ const AddressListItem = ({meter, setFormData, formData}) =>{
             City: meter.City,
             State: meter.State
         })
+        setMainFormIndex(1);
     }
    
     return(

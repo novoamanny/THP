@@ -1,11 +1,13 @@
 .QFS{
-    
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 .qfs-top{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+   flex-wrap: wrap;
+    
+    width: 100%;
 }
 .qfs-question, .qfs-label, .qfs-layout, .qfs-one, .qfs-two, .qfs-three{
     width: 100%
@@ -17,20 +19,35 @@
     border-top-right-radius: 10px;
     
 }
+.qfs-one{
+    
+    width: 100%;
+}
 .qfs-label h2{
     margin-left: 30px;
 }
 .qfs-layout{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
+ 
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .qfs-two{
+    /* height: 0; */
     margin-left: 20px;
     border-left: solid 2px rgba(0, 0, 0, 0.2);
+    transition: ease 0.3s;
+    
+}
+.qfs-three{
+    transition: 0.3s ease;
+}
+.not-active{
+    height: 0em;
+}
+.no-display{
+    display: none;
 }
 .qfs-text{
     margin-left: 20px;
@@ -38,8 +55,9 @@
 .qfs-option-box-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     margin: 15px 10px;
+    
 }
 .qfs-option-box{
     width: 20px;
@@ -49,9 +67,14 @@
 .qfs-option{
     display: flex;
     flex-wrap: wrap;
-
+    cursor: pointer;
     margin: 10px 0;
+   
 }
+.qfs-option-off{
+    height: 0;
+}
+
 .qfs-option-text{
     
     display: flex;

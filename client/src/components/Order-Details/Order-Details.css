@@ -10,11 +10,16 @@
     display: flex;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 10px 0;
+    
+}
+.OD-label h2{
+    margin-left: 50px;
+    font-size: 25px;
 }
 .OD-Details-Top, .OD-Details-Bottom{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
     
    /* border: 1px solid rgba(0, 0, 0, 0.2); */
@@ -24,6 +29,29 @@
 }
 .OD-Details-Top-T{
     width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.OD-Details-p{
+    
+    width: 100%;
+    
+    margin-top: 20px;
+    
+}
+.OD-Details-p span{
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: 20px;
+}
+.OD-Details-p-two{
+   width: 100%;
+   margin-top: 20px;
+    
+}
+.OD-Details-p-two{
+    margin-left: 20px;
+    font-size: 30px;
 }
 .OD-Details-Top-B{
     display: flex;
@@ -41,12 +69,37 @@
     width: 50%;
     
 }
-.OD-Details-Image{
+.DTBR-one, .DTBR-two, .DTBR-three{
    
+    width: 100%;
+    text-align: right;
+}
+.DTBR-one p, .DTBR-two h2, .DTBR-three p{
+   
+    margin-right: 20px;
+}
+.DTBR-one p,.DTBR-three p{
+    color: rgba(0, 0, 0, 0.4);
+}
+.DTBR-two h2{
+    font-size: 40px;
+    color: #1333A6;
+}
+.OD-Details-Image{
+   margin-left: 20px;
+}
+.OD-Details-Image img{
+    width: 150px;
+    height: 80px;
 }
 .OD-Details-Image, .OD-Details-Button{
     width: 100%;
    
+}
+.OD-Details-Button span{
+    margin-left: 30px;
+    color: red;
+    text-decoration: underline;
 }
 .OD-Details-Bottom{
     border-bottom-left-radius: 10px;
@@ -66,29 +119,62 @@
 }
 .OD-Details-One-1{
     width: 50%;
+    
+}
+.OD-Details-One-1 p{
+    margin-right: 100px;
+    margin-left: 40px;
 }
 .OD-Details-One-2{
     width: 50%;
+    text-align: right;
+}
+.OD-Details-One-2 h2{
+    margin-right: 40px;
+    color: #1333A6;
 }
 
 .OD-Details-Two-1{
     width: 50%;
 }
+.OD-Details-Two-1 p{
+    margin-left: 40px
+}
 .OD-Details-Two-2{
     width: 50%;
+    text-align: right;
+}
+.OD-Details-Two-2 h2{
+    margin-right: 40px;
+    color: #1333A6;
 }
 
 .OD-Details-Three-1{
     width: 50%;
 }
+.OD-Details-Three-1 p{
+    margin-left: 40px
+}
 .OD-Details-Three-2{
     width: 50%;
+    text-align: right;
 }
-
+.OD-Details-Three-2 h2{
+    margin-right: 40px;
+    color: #1333A6;
+}
 .OD-Details-Four-1{
     width: 50%;
 }
+.OD-Details-Four-1 p{
+    margin-left: 40px
+}
 .OD-Details-Four-2{
     width: 50%;
+    text-align: right;
     
+}
+.OD-Details-Four-2 h2{
+    margin-right: 40px;
+    color: #1333A6;
 }

@@ -11,9 +11,10 @@ import RatesResultsSection from '../Rates-Results-Section/Rates-Results-Section'
 
 import './FilterLayout.css';
 
-const FilterLayout = ({ZipCode, rates}) =>{
 
-    console.log(rates)
+const FilterLayout = ({ZipCode, rates, getRates}) =>{
+
+    
     const [filterOptions, setFilterOptions] = useState({
         ContractType: [],
         ContractLength: [],
@@ -31,7 +32,7 @@ const FilterLayout = ({ZipCode, rates}) =>{
 
 
       // FIlter Handle
-    const filterHandle = (label, value) =>{
+    const filterHandle = async (label, value) =>{
         
 
         let oldFilters = {...filterOptions};
@@ -40,17 +41,26 @@ const FilterLayout = ({ZipCode, rates}) =>{
 
         const check = tempFilterList.filter(filt => filt === value && filt)
         
-        
-        if(check.length > 0){
-            let newFilters = tempFilterList.filter(filt => filt !== value && filt);
+        if(value === 'none'){
+            let newFilters = [];
             oldFilters[label] = newFilters;
-            setFilterOptions({...oldFilters})
-        }else{
-           
-            let newFilters = tempFilterList.concat(value);
-            oldFilters[label] = newFilters;
-            setFilterOptions({...oldFilters})
+            setFilterOptions({...oldFilters});
         }
+        else{
+            if(check.length > 0){
+                let newFilters = tempFilterList.filter(filt => filt !== value && filt);
+                oldFilters[label] = newFilters;
+                setFilterOptions({...oldFilters})
+            }else{
+               
+                let newFilters = tempFilterList.concat(value);
+                oldFilters[label] = newFilters;
+                setFilterOptions({...oldFilters})
+            }
+        }
+
+        
+        await getRates(ZipCode, oldFilters)
         
     }
    
@@ -62,108 +72,13 @@ const FilterLayout = ({ZipCode, rates}) =>{
     let noFilterData = [];
     let finalResultCheckData;
     let temp;
+    let count;
+   
 
-    let count = 0;
-
-     RATES && RATES.forEach(prov => {
-        count = count + prov.data.length;
-        
-    });
-
+   
     
 
-// Check Providers
-    if(filterOptions.Prov.length > 0){
-        console.log(filterOptions)
-
-        filterOptions.Prov.forEach(element => {
-            
-            RATES && RATES.forEach(prov =>{
-                
-                if(element === prov.name){
-                    temp = prov.data.map(rate =>{
-                        return{
-                            provider: prov.name,
-                            rateData: rate
-                        }
-                    })
-                    
-
-                    firstFilterData = temp;
-                    
-                 }
-            })
-
-
-           
-            
-        });
-    }
-
-
-// Check Contract Length
-    if(filterOptions.ContractLength.length > 0){
-       
-
-
-        if(firstFilterData.length > 0){
-            filterOptions.ContractLength.forEach(element => {
-
-
-                 firstFilterData.forEach(rate =>{
-                     
-
-                        if(element === rate.Term){
-
-                            temp = {
-                                provider: rate.provider,
-                                rateData: rate
-                            };
-
-                            secondFilterData = secondFilterData.concat(temp)
-                             
-                        }
-                    
-                })
-                
-            });
-        }
-
-
-        if(firstFilterData.length == 0){
-            filterOptions.ContractLength.forEach(element => {
-
-
-                RATES && RATES.forEach(prov =>{
-                
-                    prov.data.forEach(rate =>{
-                        if(element === rate.Term){
-
-                            temp = {
-                                provider: prov.name,
-                                rateData: rate
-                            };
-                            secondFilterData = secondFilterData.concat(temp)
-                           
-                        }
-                    })
-                    
-                })
-                
-            });
-        }
-
-
-        
-    }
-
-
-    // if(filterOptions.ContractType.length > 0){
-    //     console.log('Contract Type');
-    // }
-    
-// No Filter Data
-    if(firstFilterData.length == 0 && secondFilterData.length == 0){
+    if(filterOptions.ContractLength.length == 0 && filterOptions.Prov.length == 0 || filterOptions.Prov.length > 0 && filterOptions.ContractLength == 0){
         let list = [];
        
 
@@ -177,7 +92,7 @@ const FilterLayout = ({ZipCode, rates}) =>{
                     provider: prov.name,
                     rateData: rate
                 };
-
+                console.log(temp)
                  noFilterData = noFilterData.concat(temp);
                 
             })
@@ -186,19 +101,23 @@ const FilterLayout = ({ZipCode, rates}) =>{
 
        
     }
+    if(filterOptions.ContractLength.length > 0){
+        const filteredRates = RATES && RATES;
+        filteredRates.forEach(rate => {
+            temp = {
+                provider: rate.name,
+                rateData: rate.data
+            };
 
+            noFilterData = noFilterData.concat(temp);            
+        })
 
-    finalResultCheckData = noFilterData;
+     
 
-   
-
-    if(noFilterData.length == 0){
-        finalResultCheckData = firstFilterData;
     }
 
-
-
-   
+    finalResultCheckData = noFilterData;
+  
 
     
 

@@ -3,7 +3,9 @@
     background-color: #fff;
     margin: 0 10px;
     border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.3)
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
 }
 .FRC-row-one, .FRC-row-two, .FRC-row-three, .FRC-row-four, .FRC-row-five, .FRC-row-six, .FRC-row-seven {
     width: 100%;
@@ -84,7 +86,7 @@
     margin-top: 20px;
     
     font-size: 100px;
-    color: #1333A6;;
+    color: #1333A6;
   
 }
 

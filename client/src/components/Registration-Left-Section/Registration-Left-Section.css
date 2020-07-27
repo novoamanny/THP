@@ -34,9 +34,17 @@
 .progress-circle{
     width: 22px;
     height: 22px;
+   border: 1px solid #EA2335;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.progress-circle-on{
+    width: 22px;
+    height: 22px;
     background-color: #EA2335;
     border-radius: 50%;
     margin-right: 20px;
+    border: 1px solid #EA2335;
 }
 .progress-empty{
     height: 100px;

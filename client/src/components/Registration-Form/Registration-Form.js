@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 
 import './Registration-Form.css'
 
+import RegisterFormButtons from '../Register-Form-Buttons/Register-Form-Buttons';
 
-const RegistrationForm = ({data, postRegister, formData, setFormData}) =>{
+
+const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFormIndex, mainFormIndex}) =>{
 
     
         
@@ -176,24 +178,50 @@ const RegistrationForm = ({data, postRegister, formData, setFormData}) =>{
                             <h2>Current Address</h2>
                         </div>
                         <div className='form-sec-three-two'>
-                            <div>
+                            <div className='side-a'>
                                 <div className='form-address'>
-                                    <input name='Address1' placeholder='# Street Address' type='text' value={Address1} onChange={(e) => onChange(e)}/>
+                                    <div className='form-label'>
+                                        <span>Address 1</span>
+                                    </div>
+                                    <div className='form-input'>
+                                        <input name='Address1' placeholder='# Street Address' type='text' value={Address1} onChange={(e) => onChange(e)}/>
+                                    </div>
                                 </div>
                                 <div className='form-city'>
-                                    <input name='City' placeholder='City' type='text' value={City} onChange={(e) => onChange(e)}/>
+                                    <div className='form-label'>
+                                        <span>City</span>
+                                    </div>
+                                    <div className='form-input'>
+                                        <input name='City' placeholder='City' type='text' value={City} onChange={(e) => onChange(e)}/>
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div>
+                            <div className='side-b'>
                                 <div className='form-address'>
-                                    <input name='Address1' placeholder='# Street Address' type='text' value={Address1} onChange={(e) => onChange(e)}/>
+                                    <div className='form-label'>
+                                        <span>Address 2</span>
+                                    </div>
+                                    <div className='form-input'>
+                                        <input name='Address1' placeholder='# Street Address' type='text' value={Address1} onChange={(e) => onChange(e)}/>
+                                    </div>
                                 </div>
-                                <div>
+                                <div className='state-zip'>
                                     <div className='form-state'>
-                                        <input name='State' placeholder='State' type='text' value={State} onChange={(e) => onChange(e)}/>
+                                        <div className='form-label-state'>
+                                            <span>State</span>
+                                        </div>
+                                        <div className='form-input-state'>
+                                            <input name='State' placeholder='State' type='text' value={State} onChange={(e) => onChange(e)}/>
+                                        </div>
                                     </div>
                                     <div className='form-zipcode'>
-                                        <input name='ZipCode' placeholder='ZipCode' type='text' value={ZipCode} onChange={(e) => onChange(e)}/>
+                                        <div className='form-label-state'>
+                                            <span>ZipCode</span>
+                                        </div>
+                                        <div className='form-input-zipcode'>
+                                            <input name='ZipCode' placeholder='ZipCode' type='text' value={ZipCode} onChange={(e) => onChange(e)}/>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -209,14 +237,28 @@ const RegistrationForm = ({data, postRegister, formData, setFormData}) =>{
                     
                     
                     <div className='form-SSN'>
-                        <input name='SSN' placeholder='SSN #' type='text' value={SSN} onChange={(e) => onChange(e)}/>
+                        <div className='UCC-label'>
+                            <h2>Utility Credit Check</h2>
+                        </div>
+                        <div className='UCC-UI'>
+                            <div className='form-label'>
+                                <pan>SSN</pan>
+                            </div>
+                            <div className='form-input'>
+                                <input name='SSN' placeholder='___-__-____' type='text' value={SSN} onChange={(e) => onChange(e)}/>
+                            </div>
+                            
+                        </div>
+                        
                         
                     </div>
                     <div className='form-submit'>
                         <input className='form-submit-btn' type='submit' value={'Submit'}/>
                     </div>
                 </div>
+                
             </form>
+            <RegisterFormButtons setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
         </div>
     )
 }

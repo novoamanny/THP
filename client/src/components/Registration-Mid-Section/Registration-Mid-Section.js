@@ -8,18 +8,27 @@ import AddressListLayout from '../Address-List-Layout/Address-List-Layout';
 import './Registration-Mid-Section.css';
 
 
-const RegistrationMidSection = ({data, getMeters, meters, postRegister, ZipCode, Provider, formData, setFormData}) =>{
+const RegistrationMidSection = ({data, getMeters, meters, postRegister, ZipCode, Provider, formData, setFormData, setMainFormIndex, mainFormIndex, setChangeZipModal}) =>{
+
 
         return(
             <div className='RMS'>
-                <RegistrationForm data={data} postRegister={postRegister} formData={formData} setFormData={setFormData}/>
-                <QuestionFormSquareTwo formData={formData} setFormData={setFormData}/>
-                <QuestionFormSquare getMeters={getMeters} ZipCode={ZipCode} Provider={Provider} />
-                
                 {
-                    meters && <ImportantNoteBox/>
+                    mainFormIndex === 0 && <QuestionFormSquare setChangeZipCodeModal={setChangeZipModal} setMainFormData={setFormData} mainFormData={formData} meters={meters} getMeters={getMeters} ZipCode={ZipCode} Provider={Provider} setMainFormIndex={setMainFormIndex}/>
                 }
-                <AddressListLayout meters={meters} setFormData={setFormData} formData={formData}/>
+               
+                {
+                    mainFormIndex === 1 && <QuestionFormSquareTwo formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+                }
+                {
+                    mainFormIndex === 2 && <RegistrationForm data={data} postRegister={postRegister} formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+                }
+                
+                
+                
+                
+                
+                
             </div>
         )
 

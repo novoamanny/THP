@@ -6,6 +6,7 @@ import RegistrationLeftSection from '../Registration-Left-Section/Registration-L
 import RegistrationMidSection from '../Registration-Mid-Section/Registration-Mid-Section';
 import RegistrationRightSection from '../Registration-Right-Section/Registration-Right-Section';
 import ConfirmationModal from '../Confirmation-Modal/Confirmation-Modal';
+import ChangeZipCodeModal from '../Change-ZipCode-Modal/Change-ZipCode-Modal';
 
 
 import {getRate} from '../../actions/rates';
@@ -44,6 +45,9 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation
         DOBYear: '',
         route: ''
     })
+
+    const [mainFormIndex, setMainFormIndex] = useState(0);
+    const [changeZipModal, setChangeZipModal] = useState(false)
       
 
       const data = {
@@ -56,9 +60,12 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation
     return(
         <div className='Registration'>
             
-            <RegistrationLeftSection />
-            <RegistrationMidSection data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData}/>
-            <RegistrationRightSection rate={rate} provider={match.params.provider} formData={formData}/>
+            <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
+            <RegistrationMidSection mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
+            <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} provider={match.params.provider} formData={formData}/>
+            {
+                changeZipModal && <ChangeZipCodeModal ZipCode={match.params.zipcode}/>
+            }
             {
                 confirmation && <ConfirmationModal confirmation={confirmation && confirmation}/>
             }

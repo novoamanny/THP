@@ -4,7 +4,8 @@
     padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding-left: 50px;
+    
 }
 .LFOS-0{
     border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -16,11 +17,36 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    color: #2f2f2f;
+    font-size: 25px;
+    color: #1333A6;
 }
+.LFOS-options{
+    margin-top: 10px;
+}
+
 .LFOS-option{
-    margin: 20px 0;
+    
     color: #2f2f2f;
-   
+   cursor: pointer;
+   padding: 10px 20px;
+   border-radius: 20px;
+   transition: ease 0.3s;
+   padding: 20px 10px;
+}
+.LFOS-option:hover{
+    background-color: #f9f9f9;
+    /* border: 1px solid rgba(0,0,0,0.05); */
+}
+.checkbox{
+    display: flex;
+}
+.checkbox-square{
+    height: 23px;
+    width: 23px;
+    background-color: royalblue;
+    border: solid 1px black;
+}
+.checkbox span{
+    margin-left: 20px;
+    font-size: 20px;
 }
