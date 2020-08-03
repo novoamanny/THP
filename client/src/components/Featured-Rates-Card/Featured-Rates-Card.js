@@ -24,7 +24,9 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
                         <img src={rate.image}/>
                     </div>
                     <div className='FRC-price'>
+                        
                         <span>{rate.rateData.Rate * 100}</span>
+                        <span>&#162;</span>
                     </div>
                 </div>
                 <div className='FRC-two-B'>
@@ -47,7 +49,9 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
                     <span>Estimated Montly Bill Based on 2000 KWH</span>
                 </div>
                 <div className='FRC-bill-price'>
+                
                     <span>{rate.rateData.Rate * 500}</span>
+                    <span>&#36;</span>
                 </div>
             </div>
             <div className='FRC-row-five'>
@@ -55,7 +59,7 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
                     <span>Contract Length</span>
                 </div>
                 <div className='FRC-length'>
-                    <span>{rate.rateData.Term}</span>
+                    <span>{`${rate.rateData.Term} Months`}</span>
                 </div>
             </div>
             <div className='FRC-row-six'>
@@ -64,7 +68,7 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
                 </div>
                 <div className='FRC-link-details'>
                     <div className='FRC-link-details-one'>
-                        <span>- or call -</span>
+                        <span>- OR CALL -</span>
                     </div>
                     <div className='FRC-link-details-two'>
                         <span>800-123-1234</span>

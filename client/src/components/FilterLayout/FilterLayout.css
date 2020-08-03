@@ -1,10 +1,10 @@
 .Filter-Layout{
-margin-left: 25%;
-margin-right: 10%;
-margin-top: 8%;
-overflow-y: scroll;
-height: 85vh;
-border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 8%;
+    overflow-y: scroll;
+    height: 85vh;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .top-filters{
     display: flex;
@@ -16,3 +16,52 @@ border-top: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
     
 }
+@media(max-width: 3290px){
+    .Filter-Layout{
+        margin-right: 9%;
+        
+    }
+}@media(max-width: 3110px){
+    .Filter-Layout{
+        margin-right: 7%;
+        margin-left: 22%;
+    }
+}
+
+@media(max-width: 2870px){
+    .Filter-Layout{
+        margin-right: 5%;
+        margin-left: 20%;
+        margin-top: 9%;
+    }
+    .top-filters{
+       
+        position: fixed;
+        z-index: 10;
+        top: 4%;
+        
+        
+    }
+}
+@media(max-width: 2740px){
+    .Filter-Layout{
+        margin-right: 3%;
+        margin-left: 18%;
+    }
+}
+@media(max-width: 2590px){
+    .Filter-Layout{
+        margin-right: 1%;
+        margin-left: 17%;
+    }
+}
+@media(max-width: 2485px){
+    .Filter-Layout{
+        margin-right: 0;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+    
+}
+
+

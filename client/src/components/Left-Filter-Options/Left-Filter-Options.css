@@ -26,3 +26,32 @@
     
 }
 
+@media(max-width: 3290px){
+    .Left-Filter-Options{
+        margin-left: 9%;
+    }
+}@media(max-width: 3110px){
+    .Left-Filter-Options{
+        margin-left: 7%;
+    }
+}
+@media(max-width: 2870px){
+    .Left-Filter-Options{
+        margin-left: 5%;
+    }
+}
+@media(max-width: 2740px){
+    .Left-Filter-Options{
+        margin-left: 3%;
+    }
+}
+@media(max-width: 2590px){
+    .Left-Filter-Options{
+        margin-left: 1%;
+    }
+}
+@media(max-width: 2485px){
+    .Left-Filter-Options{
+        margin-left: 0;
+    }
+}

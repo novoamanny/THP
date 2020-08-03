@@ -36,7 +36,8 @@ const RatesResultsCard = ({rate, quickFilters, ZipCode}) =>{
                <div className='RSC-Top-Right'>
                     <div className='RSC-Top-Right-One'>
                         <div className='RSC-Top-Right-One-T'>
-                            <span>{ rate && rate.rateData.Rate * quickFilters}</span>
+                            <span>&#36;</span>
+                            <span>{ `${rate && rate.rateData.Rate * quickFilters}`}</span>
                         </div>
                         <div className='RSC-Top-Right-One-B'>
                             <span>{`Estimated Montly Bill on ${quickFilters}KWh`}</span>
@@ -74,10 +75,10 @@ const RatesResultsCard = ({rate, quickFilters, ZipCode}) =>{
                                 
                     </div>
                     <div className='RSC-Bot-Right-B'>
-                        <div>
+                        <div className='RSC-bot-call'>
                             <span>- or call -</span>
                         </div>
-                        <div>
+                        <div className='RSC-bot-num'>
                             <span>888-123-1234</span>
                         </div>
                     </div>

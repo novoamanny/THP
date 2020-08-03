@@ -6,7 +6,7 @@
 }
 .qf-title{
     width: 100%;
-    margin: 0 70px;
+    margin-left: 70px;
 }
 .qf-title h2{
     font-size: 23px;
@@ -15,4 +15,8 @@
     display: flex;
     width: 100%;
     margin-left: 50px;
+}
+
+@media(max-width: 2870px){
+   
 }

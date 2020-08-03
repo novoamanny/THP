@@ -1,5 +1,5 @@
 .LFOS{
-    width: 100%;
+    width: 90%;
     
     padding: 20px 0;
     display: flex;
@@ -28,7 +28,7 @@
     
     color: #2f2f2f;
    cursor: pointer;
-   padding: 10px 20px;
+   
    border-radius: 20px;
    transition: ease 0.3s;
    padding: 20px 10px;
@@ -49,4 +49,17 @@
 .checkbox span{
     margin-left: 20px;
     font-size: 20px;
+}
+
+@media(max-width: 2485px){
+    .LFOS{
+        
+      padding-left: 40px;
+        
+    }
+    .LFOS-option{
+    
+    
+       padding: 20px 0px;
+    }
 }

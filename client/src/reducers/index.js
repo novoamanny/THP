@@ -4,9 +4,11 @@ import rates from './rates';
 import register from './register';
 
 
+
 export default combineReducers({
     alert,
     rates,
-    register
+    register,
+    
     
 });
