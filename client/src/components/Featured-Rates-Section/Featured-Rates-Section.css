@@ -40,3 +40,15 @@
    } 
    
 }
+
+@media(max-width: 1900px){
+    .FRS-card-section{
+       
+        padding: 0 10px;
+    }
+    .FRS-title h2{
+        
+        font-size: 25px;
+        
+    }
+}

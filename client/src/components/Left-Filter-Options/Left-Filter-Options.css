@@ -53,5 +53,6 @@
 @media(max-width: 2485px){
     .Left-Filter-Options{
         margin-left: 0;
+        padding-top: 50px;
     }
-}
+} 
