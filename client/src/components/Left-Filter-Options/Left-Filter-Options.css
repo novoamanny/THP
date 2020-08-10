@@ -56,3 +56,24 @@
         padding-top: 50px;
     }
 } 
+@media(max-width: 1500px){
+    .Left-Filter-Options{
+       
+        padding-top: 0;
+        width: 12%;
+    }
+    .LFOS-title{
+        
+        padding: 20px 0;
+        margin-top: 80px;
+    }
+    .LFOS-title span{
+      font-size: 20px;
+    }
+} 
+
+@media(max-width: 1400px){
+    .Left-Filter-Options{
+        display: none;
+    }
+} 

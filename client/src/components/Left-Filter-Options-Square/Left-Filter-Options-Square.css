@@ -132,3 +132,33 @@
         margin-left: 10px;
     }
 }
+
+
+@media(max-width: 1500px){
+    .LFOS{
+        
+      padding-left: 10px;
+        
+    }
+    .LFOS-option{
+    
+    
+       padding: 12px 0px;
+    }
+    .LFOS-Label{
+     
+        font-size: 17px;
+        
+    }
+    .checkbox-square{
+        height: 13px;
+        width: 13px;
+        
+        border: solid 1px black;
+    }
+    .checkbox span{
+        font-size: 12px;
+        margin-left: 8px;
+        
+    }
+}

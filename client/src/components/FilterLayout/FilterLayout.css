@@ -38,7 +38,7 @@
        
         position: fixed;
         z-index: 10;
-        top: 4%;
+        top: 5%;
         
         
     }
@@ -63,4 +63,13 @@
     }
     
 }
-
+@media(max-width: 1500px){
+    .Filter-Layout{
+        margin-left: 12%;
+    }
+}
+@media(max-width: 1400px){
+    .Filter-Layout{
+        margin-left: 0%;
+    }
+}

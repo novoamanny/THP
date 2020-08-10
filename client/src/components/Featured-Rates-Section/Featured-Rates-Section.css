@@ -52,3 +52,15 @@
         
     }
 }
+
+@media(max-width: 1500px){
+    .FRS-card-section{
+       
+        padding: 0px;
+    }
+    .FRS-title h2{
+        
+        font-size: 25px;
+        
+    }
+}

@@ -459,3 +459,66 @@
         margin-left: 30px;
     }
 }
+
+@media(max-width: 1500px){
+    .FRC{
+        margin: 0 5px;
+    }
+  
+    .FRC-name span{
+        font-size: 18px;
+        
+    }
+    .FRC-row-three span{
+        font-size: 17px;
+     
+    
+    }
+    .FRC-bill-desc span{
+        font-size: 11px;
+    }
+    .FRC-length-label span{
+        
+        font-size: 11px;
+    }
+
+    .FRC-price span{
+        margin-top: 20px;
+        
+        font-size: 40px;
+        
+      
+    }
+
+    .FRC-length span{
+       
+        font-size: 17px;
+        
+    }
+    .FRC-bill-price span{
+        font-size: 17px;
+       
+        
+    }
+     .FRC-Link{
+        
+        padding: 15px 30px;
+        font-size: 15px;
+        
+    }
+    .FRC-link-details-two{
+       
+        
+        font-size: 20px;
+    }
+    .FRC-seven-label{
+        
+        font-size: 20px;
+    }
+    .FRC-image img{
+        width: 80px;
+        height: 50px;
+        
+        margin-left: 20px;
+    }
+}
