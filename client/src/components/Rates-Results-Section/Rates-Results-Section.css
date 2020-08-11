@@ -4,9 +4,34 @@
     justify-content: center;
     margin: 30px 0;
     margin-left: 25px;
+    margin-right: 25px;
     padding: 0 100px;
     padding-top: 120px;
     background-color: #F9F9F9;
     
     
+}
+@media(max-width: 2250px){
+    .RRS{
+    
+        padding: 0 70px;
+        padding-top: 50px;
+        
+    }
+}
+@media(max-width: 2000px){
+    .RRS{
+
+        padding: 0 50px;
+        padding-top: 30px;
+        
+    }
+}
+@media(max-width: 1800px){
+    .RRS{
+
+        padding: 0 20px;
+        padding-top: 10px;
+        
+    }
 }
