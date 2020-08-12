@@ -13,14 +13,14 @@ const ConfirmationModal = ({ZipCode}) =>{
         <div className='Confirmation-Modal'>
             <div className='backdrop'></div>
             <div className='confirm-modal-UI'>
-                <div>
+                <div className='Modal-label'>
                     <h2>Change Sevice ZipCode</h2>
                 </div>
-                <div>
+                <div className='change-zip'>
                     <input type='text' name='newZip' placeholder={ZipCode} onChange={(e) => onChange(e)}/>
                 </div>
-                <div>
-                    <Link to={`/${newZip}`}>Enter</Link>
+                <div className='change-zip-link'>
+                    <Link className='change-zip-link-l' to={`/${newZip}`}>Enter</Link>
                 </div>
             </div>
         </div>

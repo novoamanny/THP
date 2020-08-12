@@ -62,7 +62,7 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation
             
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
             <RegistrationMidSection mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
-            <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} provider={match.params.provider} formData={formData}/>
+            <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex}/>
             {
                 changeZipModal && <ChangeZipCodeModal ZipCode={match.params.zipcode}/>
             }

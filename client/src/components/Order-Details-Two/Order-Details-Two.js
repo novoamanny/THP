@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Order-Details-Two.css'
 
-const OrderDetailsTwo = ({formData, mainFormIndex}) =>{
+const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
     return(
         <div className='ODT'>
             <div className='ODT-Label'>
@@ -32,7 +32,7 @@ const OrderDetailsTwo = ({formData, mainFormIndex}) =>{
                             </div>
                             <div className='ODT-Details-R'>
                             <div className='ODT-Details-R-BTN'> 
-                                <button>Edit</button>
+                                <button onClick={() => setMainFormIndex(1)}>Edit</button>
                             </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const OrderDetailsTwo = ({formData, mainFormIndex}) =>{
                     </div>
                     <div className='ODT-Details-R'>
                         <div className='ODT-Details-R-BTN'>
-                           <button>Edit</button>
+                           <button onClick={() => setMainFormIndex(0)}>Edit</button>
                        </div>
                     </div>
                 </div>
