@@ -30,3 +30,14 @@
         font-size: 22px;
     }
 }
+@media(max-width: 1800px){
+    .QF-Button{
+        padding: 5px 20px;
+    } 
+    .QF-Button-label span{
+        font-size: 7px;
+    }
+    .QF-Button-details span{
+        font-size: 18px;
+    }
+}
