@@ -113,10 +113,10 @@ const OrderDetails = ({rate, provider}) =>{
                     </div>
                     <div className='OD-Details-Four'>
                         <div className='OD-Details-Four-1'>
-                            <p>Contract Fee</p>
+                            <p>Early Termination Fee</p>
                         </div>
                         <div className='OD-Details-Four-2'>
-                            <h2>{`${rate && rate[0].CancellationFeeAmount}/months remaining in contract`}</h2>
+                            <h2>{`$${rate && rate[0].CancellationFeeAmount}/month remaining in contract`}</h2>
                         </div>
                     </div>
 
