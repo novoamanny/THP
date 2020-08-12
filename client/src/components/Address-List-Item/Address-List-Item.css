@@ -33,3 +33,27 @@
 .ALI-confirm-button{
     background-color: #1333A6;
 }
+@media(max-width: 2100px){
+    .ALI-col-one h2, .ALI-col-two h2, .ALI-col-three h2{
+        font-size: 20px;
+    }
+    .ALI-confirm-button li{
+   
+        
+        padding: 10px 20px;
+       
+        font-size: 15px;
+    }
+}
+@media(max-width: 1800px){
+    .ALI-col-one h2, .ALI-col-two h2, .ALI-col-three h2{
+        font-size: 17px;
+    }
+    .ALI-confirm-button li{
+   
+        
+        padding: 10px 20px;
+       
+        font-size: 13px;
+    }
+}

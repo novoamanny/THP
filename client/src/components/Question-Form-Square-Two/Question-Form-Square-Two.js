@@ -35,7 +35,7 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
             <div className='qfs-layout'>
                 <div className='qfs-one'>
                     <div className='qfs-text'>
-                        <p>You can select a future start date and still lock in today's rate. Texas Public Utility Commission rules allow you to select a switch date up to 14 days prior to your contract expiration date without an early termination penalty from your curretn provider.</p>
+                        <h2>You can select a future start date and still lock in today's rate. Texas Public Utility Commission rules allow you to select a switch date up to 14 days prior to your contract expiration date without an early termination penalty from your curretn provider.</h2>
                     </div>
                     <div className='qfs-options'>
                         <div className='qfs-option' onClick={() => setFormSlideIndex(1)}>
