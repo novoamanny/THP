@@ -14,15 +14,15 @@ const OrderDetailsTwo = ({formData, mainFormIndex}) =>{
                         <div className='ODT-Details-Date'>
                             <div className='ODT-Details-L'>
                                 <div>
-                                    <div>
+                                    <div className='Details-ST-label'>
                                         <h2>Switch Type:</h2>
                                     </div>
-                                    <div>
+                                    <div className='ODT-Details-ST'>
 
                                     </div>
                                 </div>
                                 <div>
-                                    <div>
+                                    <div className='Details-SD-label'>
                                         <h2>Start Date:</h2>
                                     </div>
                                     <div>

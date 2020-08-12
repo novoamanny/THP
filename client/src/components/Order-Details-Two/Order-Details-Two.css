@@ -34,6 +34,15 @@
     margin-left: 20px;
     font-size: 22px;
 }
+.Details-ST-label{
+    margin-left: 20px;
+    font-size: 22px;
+}
+.Details-SD-label{
+    margin-left: 20px;
+    font-size: 22px;
+}
+
 .Details-Esiid-label{
     margin-left: 20px;
     font-size: 22px;
@@ -61,4 +70,197 @@
     width: 200px;
     height: 40px;
     border-radius: 10px;
+}
+@media(max-width: 3400px){
+    .Details-SA-label{
+        margin-left: 20px;
+        font-size: 19px;
+    }
+    .Details-ST-label{
+        margin-left: 20px;
+        font-size: 19px;
+    }
+    .Details-SD-label{
+        margin-left: 20px;
+        font-size: 19px;
+    }
+    .ODT-Details-Address1{
+        margin: 5px 0;
+        margin-left: 24px;
+        
+        font-size: 24px;
+    }
+    .ODT-Details-City{
+        margin: 5px 0;
+        margin-left: 24px;
+        font-size: 24px;
+    }
+    .Details-Esiid-label{
+        margin-left: 20px;
+        font-size: 19px;
+    }
+    .Details-Esiid{
+        font-size: 24px;
+        margin: 8px 0;
+        margin-left: 24px;
+        
+    }
+}
+@media(max-width: 2800px){
+    .Details-SA-label{
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    .Details-ST-label{
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    .Details-SD-label{
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    .ODT-Details-Address1{
+        margin: 5px 0;
+        margin-left: 21px;
+        
+        font-size: 21px;
+    }
+    .ODT-Details-City{
+        margin: 5px 0;
+        margin-left: 21px;
+        font-size: 21px;
+    }
+    .Details-Esiid-label{
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    .Details-Esiid{
+        font-size: 21px;
+        margin: 8px 0;
+        margin-left: 21px;
+        
+    }
+}
+@media(max-width: 2500px){
+    .Details-SA-label{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .Details-ST-label{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .Details-SD-label{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .ODT-Details-Address1{
+        margin: 5px 0;
+        margin-left: 17px;
+        
+        font-size: 17px;
+    }
+    .ODT-Details-City{
+        margin: 5px 0;
+        margin-left: 17px;
+        font-size: 17px;
+    }
+    .Details-Esiid-label{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .Details-Esiid{
+        font-size: 17px;
+        margin: 8px 0;
+        margin-left: 17px;
+        
+    }
+    .ODT-Details-R-BTN button{
+       
+        width: 150px;
+        height: 30px;
+        
+    }
+}
+@media(max-width: 2100px){
+    .Details-SA-label{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .Details-ST-label{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .Details-SD-label{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .ODT-Details-Address1{
+        margin: 5px 0;
+        margin-left: 14px;
+        
+        font-size: 14px;
+    }
+    .ODT-Details-City{
+        margin: 5px 0;
+        margin-left: 14px;
+        font-size: 14px;
+    }
+    .Details-Esiid-label{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .Details-Esiid{
+        font-size: 14px;
+        margin: 8px 0;
+        margin-left: 14px;
+        
+    }
+    .ODT-Details-R-BTN button{
+       
+        width: 130px;
+        height: 30px;
+        
+    }
+}
+@media(max-width: 1900px){
+    .Details-SA-label{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .Details-ST-label{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .Details-SD-label{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .ODT-Details-Address1{
+        margin: 5px 0;
+        margin-left: 12px;
+        
+        font-size: 10px;
+    }
+    .ODT-Details-City{
+        margin: 5px 0;
+        margin-left: 12px;
+        font-size: 10px;
+    }
+    .Details-Esiid-label{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .Details-Esiid{
+        font-size: 10px;
+        margin: 8px 0;
+        margin-left: 12px;
+        
+    }
+    .ODT-Details-R-BTN button{
+       
+        width: 100px;
+        height: 30px;
+        
+    }
 }
