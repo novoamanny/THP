@@ -15,7 +15,7 @@
 }
 .OD-label h2{
     margin-left: 50px;
-    font-size: 25px;
+    font-size: 30px;
 }
 .OD-Details-Top, .OD-Details-Bottom{
     display: flex;
@@ -50,7 +50,7 @@
     
 }
 .OD-Details-p-two{
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 30px;
 }
 .OD-Details-Top-B{
@@ -82,15 +82,16 @@
     color: rgba(0, 0, 0, 0.4);
 }
 .DTBR-two h2{
-    font-size: 40px;
+    font-size: 70px;
     color: #1333A6;
 }
 .OD-Details-Image{
    margin-left: 20px;
 }
 .OD-Details-Image img{
-    width: 150px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
+    margin-top: 50px;
 }
 .OD-Details-Image, .OD-Details-Button{
     width: 100%;
@@ -119,11 +120,13 @@
 }
 .OD-Details-One-1{
     width: 50%;
+   
     
 }
 .OD-Details-One-1 p{
-    margin-right: 100px;
+    margin-right: 70px;
     margin-left: 40px;
+    font-size: 23px;
 }
 .OD-Details-One-2{
     width: 50%;
@@ -132,13 +135,15 @@
 .OD-Details-One-2 h2{
     margin-right: 40px;
     color: #1333A6;
+    font-size: 35px;
 }
 
 .OD-Details-Two-1{
     width: 50%;
 }
 .OD-Details-Two-1 p{
-    margin-left: 40px
+    margin-left: 40px;
+    font-size: 23px;
 }
 .OD-Details-Two-2{
     width: 50%;
@@ -147,13 +152,15 @@
 .OD-Details-Two-2 h2{
     margin-right: 40px;
     color: #1333A6;
+    font-size: 35px;
 }
 
 .OD-Details-Three-1{
     width: 50%;
 }
 .OD-Details-Three-1 p{
-    margin-left: 40px
+    margin-left: 40px;
+    font-size: 23px;
 }
 .OD-Details-Three-2{
     width: 50%;
@@ -162,19 +169,204 @@
 .OD-Details-Three-2 h2{
     margin-right: 40px;
     color: #1333A6;
+    font-size: 35px;
 }
 .OD-Details-Four-1{
-    width: 50%;
+    width: 30%;
 }
 .OD-Details-Four-1 p{
-    margin-left: 40px
+    margin-left: 40px;
+    font-size: 23px;
 }
 .OD-Details-Four-2{
-    width: 50%;
+    width: 70%;
     text-align: right;
     
 }
 .OD-Details-Four-2 h2{
     margin-right: 40px;
     color: #1333A6;
+    font-size: 25px;
+}
+
+@media(max-width: 3600px){
+    .OD-Details-One-1 p{
+        margin-right: 50px;
+       
+    }
+}
+
+@media(max-width: 3400px){
+    .OD-Details-One-1 p{
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    .OD-Details-One-2 h2{
+       
+        font-size: 30px;
+    }
+    .OD-Details-Two-1 p{
+        
+        font-size: 20px;
+    }
+    .OD-Details-Two-2 h2{
+       
+        font-size: 30px;
+    }
+    .OD-Details-Three-1 p{
+        
+        font-size: 20px;
+    }
+    .OD-Details-Three-2 h2{
+       
+        font-size: 30px;
+    }
+    .OD-Details-Four-1 p{
+      
+        font-size: 20px;
+    }
+   
+    .OD-Details-Four-2 h2{
+       
+        font-size: 18px;
+    }
+    .OD-label h2{
+        
+        font-size: 28px;
+    }
+    .OD-label{
+       
+        padding: 5px 0;
+        
+    }
+    .OD-Details-p-two{
+       
+        font-size: 34px;
+    }
+    .OD-Details-Image img{
+        width: 150px;
+        height: 80px;
+        margin-top: 50px;
+    }
+    .DTBR-two h2{
+        font-size: 60px;
+        color: #1333A6;
+    }
+    
+}
+@media(max-width: 2800px){
+    .OD-Details-One-1 p{
+        margin-right: 30px;
+        font-size: 17px;
+    }
+    .OD-Details-One-2 h2{
+       
+        font-size: 27px;
+    }
+    .OD-Details-Two-1 p{
+        
+        font-size: 17px;
+    }
+    .OD-Details-Two-2 h2{
+       
+        font-size: 27px;
+    }
+    .OD-Details-Three-1 p{
+        
+        font-size: 17px;
+    }
+    .OD-Details-Three-2 h2{
+       
+        font-size: 27px;
+    }
+    .OD-Details-Four-1 p{
+      
+        font-size: 17px;
+    }
+   
+    .OD-Details-Four-2 h2{
+       
+        font-size: 16px;
+    }
+    .OD-label h2{
+        
+        font-size: 25px;
+    }
+    .OD-label{
+       
+        padding: 5px 0;
+        
+    }
+    .OD-Details-p-two{
+       
+        font-size: 30px;
+    }
+    .OD-Details-Image img{
+        width: 150px;
+        height: 80px;
+        margin-top: 50px;
+    }
+    .DTBR-two h2{
+        font-size: 50px;
+        color: #1333A6;
+    }
+    
+}
+@media(max-width: 2500px){
+    .OD-Details-One-1 p{
+        margin-right: 30px;
+        font-size: 14px;
+    }
+    .OD-Details-One-2 h2{
+       
+        font-size: 24px;
+    }
+    .OD-Details-Two-1 p{
+        
+        font-size: 14px;
+    }
+    .OD-Details-Two-2 h2{
+       
+        font-size: 24px;
+    }
+    .OD-Details-Three-1 p{
+        
+        font-size: 14px;
+    }
+    .OD-Details-Three-2 h2{
+       
+        font-size: 24px;
+    }
+    .OD-Details-Four-1 p{
+      
+        font-size: 14px;
+    }
+   
+    .OD-Details-Four-2 h2{
+       
+        font-size: 14px;
+    }
+    .OD-label h2{
+        
+        font-size: 23px;
+    }
+    .OD-label{
+       
+        padding: 5px 0;
+        
+    }
+    .OD-Details-p-two{
+       
+        font-size: 25px;
+    }
+    .OD-Details-Image img{
+        width: 130px;
+        height: 70px;
+        margin-top: 30px;
+    }
+    .DTBR-two h2{
+        font-size: 40px;
+        color: #1333A6;
+    }
+    
 }

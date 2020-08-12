@@ -31,8 +31,8 @@ const OrderDetailsTwo = ({formData, mainFormIndex}) =>{
                                 </div>
                             </div>
                             <div className='ODT-Details-R'>
-                            <div>
-                                <li>Edit</li>
+                            <div className='ODT-Details-R-BTN'> 
+                                <button>Edit</button>
                             </div>
                             </div>
                         </div>
@@ -41,26 +41,29 @@ const OrderDetailsTwo = ({formData, mainFormIndex}) =>{
                 <div className='ODT-Details-Address'>
                     <div className='ODT-Details-L'>
                         <div>
-                            <div>
+                            <div className='Details-SA-label'>
                                 <h2>Service Address:</h2>
                             </div>
-                            <div>
-    <                           li>{formData.Address1}</li>
+                            <div className='ODT-Details-Address1'>
+                                <span>{formData.Address1}</span>
+                            </div>
+                            <div className='ODT-Details-City'>
+                                <span>{`${formData.City}, ${formData.State} ${formData.ZipCode}`}</span>
                             </div>
                         </div>
                         <div>
-                            <div>
+                            <div className='Details-Esiid-label'>
                                 <h2>ESIID:</h2>
                             </div>
-                            <div>
-                                <li>{formData.Esiid}</li>
+                            <div className='Details-Esiid'>
+                                <span>{formData.Esiid}</span>
                             </div>
                         </div>
                         
                     </div>
                     <div className='ODT-Details-R'>
-                        <div>
-                           <li>Edit</li>
+                        <div className='ODT-Details-R-BTN'>
+                           <button>Edit</button>
                        </div>
                     </div>
                 </div>

@@ -18,7 +18,7 @@ import './Registration-Layout.css';
 
 
 const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation}, getRate, getMeters, postRegister}) =>{
-    console.log(confirmation);
+    
     useEffect(() => {
         
         getRate( match.params.id, match.params.provider, match.params.zipcode);

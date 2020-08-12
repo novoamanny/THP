@@ -4,3 +4,8 @@
     margin: 0 10px;
     
 }
+@media(max-width: 3400px){
+    .RMS{
+        width: 58%;
+    }
+}

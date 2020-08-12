@@ -4,7 +4,8 @@ const initialState = {
   rates: [],
   currentRates: [],
   rate: null,
-  error: []
+  error: [],
+  loading: true
 };
 
 export default function(state = initialState, action) {
@@ -12,7 +13,7 @@ export default function(state = initialState, action) {
 
   switch (type) {
     case GET_RATES_SUCCESS:
-      return {...state, rates: payload};
+      return {...state, rates: payload, loading: false};
     case GET_RATES_FAIL:
       return {...state, error: payload};
     case GET_RATE_SUCCESS:

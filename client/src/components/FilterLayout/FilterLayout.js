@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+
 import LeftFilterOptions from '../Left-Filter-Options/Left-Filter-Options';
 import QuickFilters from '../Quick-Filters/Quick-FIlters';
 import OtherFilters from '../Other-Filters/Other-Filters';
@@ -12,7 +13,7 @@ import RatesResultsSection from '../Rates-Results-Section/Rates-Results-Section'
 import './FilterLayout.css';
 
 
-const FilterLayout = ({ZipCode, rates, getRates}) =>{
+const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
 
     
     const [filterOptions, setFilterOptions] = useState({
@@ -29,10 +30,17 @@ const FilterLayout = ({ZipCode, rates, getRates}) =>{
 
 
 
-
+    const Filter = (oldFilters, label) =>{
+        if(label === 'ContractLength'){
+            console.log('oof')
+        }
+        if(label === 'Prov'){
+            filterByProvider(oldFilters, ZipCode)
+        }
+    }
 
       // FIlter Handle
-    const filterHandle = async (label, value) =>{
+    const filterHandle = (label, value) =>{
         
 
         let oldFilters = {...filterOptions};
@@ -60,71 +68,47 @@ const FilterLayout = ({ZipCode, rates, getRates}) =>{
         }
 
         
-        await getRates(ZipCode, oldFilters)
+        getRates(ZipCode, oldFilters, label,)
         
     }
    
-    const RATES = rates;
-
-
-    let firstFilterData = [];
-    let secondFilterData = [];
-    let noFilterData = [];
-    let finalResultCheckData;
+  
+  
     let temp;
     let count;
+    let Data = [];
    
-
-   
-    
-
-    if(filterOptions.ContractLength.length == 0 && filterOptions.Prov.length == 0 || filterOptions.Prov.length > 0 && filterOptions.ContractLength == 0){
-        let list = [];
-       
-
-        RATES && RATES.forEach(prov => {
-            
+    if(!loading && rates){
+        rates.forEach(prov => {
+                
         
-
-            prov.data.forEach(rate => {
+            console.log(prov)
+            prov.data && prov.data.forEach(rate => {
                 
                 temp = {
                     provider: prov.name,
                     rateData: rate
                 };
-                console.log(temp)
-                 noFilterData = noFilterData.concat(temp);
+                
+                Data = Data.concat(temp);
                 
             })
             
         })
+}
+    
 
-       
-    }
-    if(filterOptions.ContractLength.length > 0){
-        const filteredRates = RATES && RATES;
-        filteredRates.forEach(rate => {
-            temp = {
-                provider: rate.name,
-                rateData: rate.data
-            };
-
-            noFilterData = noFilterData.concat(temp);            
-        })
-
-     
-
-    }
-
-    finalResultCheckData = noFilterData;
   
+
+    
 
     
 
 // Result Data
 
+   const result = Data;
    
-    const resultData =  finalResultCheckData;
+
     const resultCount = count && count;
 
     
@@ -139,11 +123,11 @@ const FilterLayout = ({ZipCode, rates, getRates}) =>{
                 <OtherFilters rates={rates} ZipCode={currentZipCode} resultCount={resultCount}/>
            </div>
             <div>
-            <FeaturedRatesSection ZipCode={currentZipCode} resultData={resultData}/>
+            <FeaturedRatesSection ZipCode={currentZipCode} resultData={result}/>
             </div>
            <div>
             
-             <RatesResultsSection resultData={resultData} quickFilters={quickFilters} ZipCode={currentZipCode}/>
+             <RatesResultsSection resultData={result} quickFilters={quickFilters} ZipCode={currentZipCode}/>
            </div>
            
         </div>

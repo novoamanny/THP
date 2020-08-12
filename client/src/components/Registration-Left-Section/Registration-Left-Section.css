@@ -53,3 +53,40 @@
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
+@media(max-width: 2800px){
+    
+}
+@media(max-width: 2500px){
+    .RLS-Top{
+        
+        padding: 20px 0;
+    }
+    .RLS-Top h2{
+        font-size: 25px;
+    }
+    .progress{
+       
+        
+        font-size: 20px;
+        
+    }
+    .progress-circle{
+        width: 18px;
+        height: 18px;
+        margin-right: 15px;
+    }
+    .progress-circle-on{
+        width: 18px;
+        height: 18px;
+        
+        margin-right: 20px;
+        
+    }
+    .progress-empty{
+        height: 80px;
+        
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}

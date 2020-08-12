@@ -11,10 +11,54 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.ODT-Label h2{
+  margin-left: 50px;
+}
 .ODT-Details-Date, .ODT-Details-Address{
     width: 100%;
     display: flex;
 }
+.ODT-Details-Address1{
+    margin: 10px 0;
+    margin-left: 30px;
+    
+    font-size: 28px;
+}
+.ODT-Details-City{
+    margin: 10px 0;
+    margin-left: 30px;
+    font-size: 28px;
+    
+}
+.Details-SA-label{
+    margin-left: 20px;
+    font-size: 22px;
+}
+.Details-Esiid-label{
+    margin-left: 20px;
+    font-size: 22px;
+}
+.Details-Esiid{
+    font-size: 28px;
+    margin: 20px 0;
+    margin-left: 30px;
+    
+}
 .ODT-Details-L, .ODT-Details-R{
     width: 50%;
+}
+.ODT-Details-R{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ODT-Details-R-BTN{
+    margin-top: 30px;
+}
+.ODT-Details-R-BTN button{
+    background-color: #1333A6;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
 }

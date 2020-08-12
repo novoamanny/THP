@@ -8,11 +8,14 @@ const config = {
     },
 }
 
+export const setCurrentRates = () => {
+
+}
 
 export const getRates = (ZipCode, filterOptions) => async dispatch =>{
 
     const body = JSON.stringify({ ZipCode});
-    console.log(filterOptions)
+    
 
     try {
         const res = await axios.post(`/api/rates/get/rates/`, body, config);
@@ -41,7 +44,7 @@ export const getRates = (ZipCode, filterOptions) => async dispatch =>{
 
             if(filterOptions.Prov.length > 0){
               filterOptions.ContractLength.forEach(op => {
-
+                
                 result.forEach(prov => {
                   prov.data.forEach(rate => {
                     if( op === rate.Term){

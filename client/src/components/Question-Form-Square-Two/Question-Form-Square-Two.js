@@ -14,6 +14,7 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
 
 
     const onCalendarClickHandle = (e) =>{
+        console.log(e)
         setFormData({...formData, Date: e});
         if(disabledOn){
             setDisabledOn(!disabledOn);

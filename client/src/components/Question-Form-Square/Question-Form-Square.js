@@ -32,17 +32,17 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
         <div className='QFS'>
             <div className='qfs-top'>
                 <div className='qfs-question'>
-                    <h2>Where Do You Need Service?</h2> 
+                    <h2>Where Do You Need Electricity Service?</h2> 
                 </div>
                 <div className='qfs-label'>
-                    <h2>Featured Plan</h2>
+                    <h2>Featured Plans</h2>
                 </div>
             </div>
            
             <div className='qfs-layout'>
                 <div className='qfs-one'>
                     <div className='qfs-text'>
-                        <h2>What Type of Home is This?</h2>
+                        <h2>What Type of Home is This Service For?</h2>
                     </div>
                     <div className='qfs-options'>
                         <div className='qfs-option' onClick={() => setFormSlideIndex(2)}>
@@ -109,7 +109,7 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
                                 <p>Address</p>
                             </div>
                             <div>
-                                <input name='Address1' type='text' onChange={(e) => onChange(e)}/>
+                                <input name='Address1' type='text' placeholder='123 Main Street' onChange={(e) => onChange(e)}/>
                             </div>
                         </div>
 
@@ -120,7 +120,7 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
                             <div>
                                 <input disabled value={ZipCode} type='text'/>
                             </div>
-                            <div onClick={() => setChangeZipCodeModal(true)}>
+                            <div className='zip-text' onClick={() => setChangeZipCodeModal(true)}>
                                 <p>Change Zip</p>
                             </div>
                         </div>
