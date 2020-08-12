@@ -317,3 +317,157 @@
         width: 25%;
     }
 }
+@media(max-width: 2100px){
+    .qfs-question{
+        font-size: 17px;
+        
+    }
+    .qfs-label{
+        
+        font-size: 14px;
+    }
+    .qfs-text{
+        
+        font-size: 12px;
+    }
+    .qfs-option-box{
+        width: 15px;
+        height: 15px;
+        
+        margin-top: 5px;
+    }
+    .qfs-option-text{
+    
+        
+        font-size: 17px;
+        
+    }
+    .ofs-text-red{
+        
+        font-size: 12px;
+    }
+    
+    .qfs-address-input p{
+        font-size: 16px;
+    }
+    .qfs-zip-input p{
+        font-size: 16px;
+    }
+    .qfs-search-button{
+        margin-top: 50px;
+        padding: 3px 5px;
+        font-size: 15px;
+       
+        
+    }
+    .qfs-address-input input{
+        width: 70%;
+        height: 35px;
+        
+        font-size: 17px;
+    }
+    .qfs-zip-input  input{
+        height: 35px;
+        width: 100px;
+        
+        font-size: 17px;
+    }
+    .qfs-address-input{
+        width: 20%;
+    }
+    .qfs-one{
+    
+        
+        padding: 5px 20px;
+    }
+    .qfs-two{
+        /* height: 0; */
+        margin: 5px 40px;
+        
+        padding: 5px 10px;
+        
+    }
+    .qfs-three{
+        
+        margin: 5px 30px;
+        padding: 5px 0px;
+    }
+}
+
+@media(max-width: 1800px){
+    .qfs-question{
+        font-size: 14px;
+        
+    }
+    .qfs-label{
+        
+        font-size: 11px;
+    }
+    .qfs-text{
+        
+        font-size: 10px;
+    }
+    .qfs-option-box{
+        width: 12px;
+        height: 12px;
+        
+        margin-top: 5px;
+    }
+    .qfs-option-text{
+    
+        
+        font-size: 14px;
+        
+    }
+    .ofs-text-red{
+        
+        font-size: 10px;
+    }
+    
+    .qfs-address-input p{
+        font-size: 14px;
+    }
+    .qfs-zip-input p{
+        font-size: 14px;
+    }
+    .qfs-search-button{
+        margin-top: 45px;
+        padding: 0px 0px;
+        font-size: 13px;
+        margin-left: 10px;
+       
+        
+    }
+    .qfs-address-input input{
+        width: 65%;
+        height: 30px;
+        
+        font-size: 14px;
+    }
+    .qfs-zip-input  input{
+        height: 30px;
+        width: 70px;
+        
+        font-size: 14px;
+    }
+    .qfs-address-input{
+        width: 20%;
+    }
+    .qfs-one{
+    
+        
+        padding: 5px 20px;
+    }
+    .qfs-two{
+        /* height: 0; */
+        margin: 5px 40px;
+        
+        padding: 5px 10px;
+        
+    }
+    .qfs-three{
+        
+        margin: 5px 30px;
+        padding: 5px 0px;
+    }
+}
