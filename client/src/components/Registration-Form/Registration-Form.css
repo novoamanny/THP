@@ -188,3 +188,125 @@
 .UCC-UI{
     padding: 20px 10px;
 }
+
+@media(max-width: 2800px){
+    .form-title{
+        padding: 10px 0;
+       
+    }
+    .form-input input{ 
+        width: 70%;
+        height: 30px;
+        
+       
+    }
+    .DOB-input input{
+        width: 120px;
+        height: 30px;
+        
+        
+        margin: 0 15px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 30px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 40%;
+        height: 30px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 10px 50px;
+       
+    }
+}
+@media(max-width: 2200px){
+    .form-title{
+        padding: 5px 0;
+       
+    }
+    .form-input input{ 
+        width: 60%;
+        height: 30px;
+        
+       
+    }
+    .DOB-input input{
+        width: 90px;
+        height: 30px;
+        
+        
+        margin: 0 10px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 30px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 30%;
+        height: 30px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 5px 50px;
+       
+    }
+}
+@media(max-width: 1800px){
+    .form-title{
+        padding: 0px 0;
+       
+    }
+    .form-input input{ 
+        width: 60%;
+        height: 25px;
+        
+       
+    }
+    .DOB-input input{
+        width: 70px;
+        height: 25px;
+        
+        
+        margin: 0 10px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 25%;
+        height: 25px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 3px 50px;
+       
+    }
+    .form-sec-three{
+    
+        margin-top: 40px;
+    }
+}
