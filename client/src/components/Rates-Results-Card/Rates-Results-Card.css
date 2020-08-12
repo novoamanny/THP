@@ -311,6 +311,10 @@
         padding: 15px 0;
         
     }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 16px;
+    }
 }
 
 
@@ -408,6 +412,7 @@
     .RSC-Link{
       
         padding: 8px 30px;
+        font-size: 12px;
 
     }
     
@@ -420,4 +425,71 @@
         padding: 15px 0;
         
     }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 13px;
+    }
+
+}
+@media(max-width: 1500px){
+    .RSC-Top{
+       
+        padding: 15px 20px;
+    }
+    .tltt span{
+        font-size: 15px;
+        
+    }
+
+    .RSC-Top-Left-Two{
+        margin-left: 40px;
+     
+    }
+    .RSC-Top-Left-One img{
+        margin-top: 10px;
+        height: 50px;
+        width: 90px;
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 22px;
+        
+    }
+     
+    
+    .RSC-Top-Right-Two-T span{
+        font-size: 22px;
+        
+    }
+    .RSC-Top-Right-Three-T span{
+        font-size: 22px;
+        
+    }
+    /* .RSC-Bot-Left{
+       
+        padding: 40px 0;
+    } */
+    .RSC-bot-num span{
+       font-size: 15px;
+    }
+    .RSC-Link{
+      
+        padding: 8px 20px;
+        font-size: 11px;
+
+    }
+    
+    .RSC-Bot-Left span{
+    
+        font-size: 14px;
+    }
+    .RSC-Bot-Right{
+       
+        padding: 10px 0;
+        
+    }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 12px;
+    }
+
 }
