@@ -4,17 +4,18 @@ import './Register-Form-Buttons.css';
 
 const RegisterFormButtons = ({disabledOn, setMainFormIndex, mainFormIndex}) =>{
 
-    const formIndexHandle = async (index) =>{
-        setMainFormIndex(index);
-    }
+   const add = mainFormIndex + 1;
+   const sub = mainFormIndex - 1;
+
+    
 
     return(
         <div className='Form-BTN'>
             <div className='back-btn'>
-                <input type='button' value='Back' onClick={() => formIndexHandle(mainFormIndex--)}/>
+                <button  onClick={() => setMainFormIndex(sub)}> Back</button>
             </div>
             <div className='next-btn'>
-                <input type='button' value='Next' disabled={disabledOn} onClick={() => formIndexHandle(mainFormIndex++)}/>
+                <button onClick={() => setMainFormIndex(add)}>Next</button>
             </div>
         </div>
     )

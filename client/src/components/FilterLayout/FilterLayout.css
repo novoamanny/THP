@@ -16,6 +16,7 @@
     width: 100%;
     
 }
+
 @media(max-width: 3290px){
     .Filter-Layout{
         margin-right: 9%;
@@ -38,7 +39,7 @@
        
         position: fixed;
         z-index: 10;
-        top: 6%;
+        top: 5%;
         
         
     }
@@ -63,9 +64,24 @@
     }
     
 }
+@media(max-width: 2200px){
+    .top-filters{
+        position: fixed;
+        z-index: 10;
+        top: 4%;
+    }
+}
+@media(max-width: 1800px){
+    
+}
 @media(max-width: 1500px){
     .Filter-Layout{
         margin-left: 12%;
+    }
+    .top-filters{
+        position: fixed;
+        z-index: 10;
+        top: 5%;
     }
 }
 @media(max-width: 1400px){
@@ -73,3 +89,20 @@
         margin-left: 0%;
     }
 }
+/* @media screen and (max-height: 1200px){
+    .top-filters{
+       
+        position: fixed;
+        z-index: 10;
+        top: 8%;
+    }
+       
+}@media screen and (max-height: 700px){
+    .top-filters{
+       
+        position: fixed;
+        z-index: 10;
+        top: 10%;
+    }
+       
+} */

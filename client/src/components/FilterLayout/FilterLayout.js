@@ -75,7 +75,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
   
   
     let temp;
-    let count;
+    
     let Data = [];
    
     if(!loading && rates){
@@ -109,7 +109,8 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
    const result = Data;
    
 
-    const resultCount = count && count;
+    const resultCount = result.length
+    
 
     
     

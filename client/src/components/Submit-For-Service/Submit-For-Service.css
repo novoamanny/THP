@@ -1,0 +1,176 @@
+.SFS{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+}
+
+.SFS-title{
+    width: 100%;
+    text-align: left;
+    font-size: 28px;
+}
+.SFS-label{
+    width: 100%;
+    background-color: #1333A6;
+    text-align: left;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 25px;
+}
+.SFS-label h2{
+    margin-left: 50px;
+}
+.SFS-questions{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.SFS-question{
+    width: 100%;
+    display: flex;
+    margin: 40px 0;
+    
+    
+}
+.SFS-checkbox{
+    border: 2px solid #2f2f2f;
+    width: 20px;
+    height: 20px;
+    
+}
+.SFS-text{
+    width: 90%;
+    margin-left:20px;
+    font-size: 25px;
+}
+@media(max-width: 2800px){
+    .SFS-title{
+        font-size: 25px;
+    }
+    .SFS-label{
+        font-size: 20px;
+    }
+    .SFS-question{
+        
+        margin: 30px 0;
+        
+        
+    }
+    .SFS-checkbox{
+        
+        width: 16px;
+        height: 16px;
+        
+    }
+    .SFS-text{
+        
+        
+        font-size: 21px;
+    }
+}
+@media(max-width: 2200px){
+    .SFS-title{
+        font-size: 22px;
+    }
+    .SFS-label{
+        font-size: 18px;
+    }
+    .SFS-question{
+        
+        margin: 20px 0;
+        
+        
+    }
+    .SFS-checkbox{
+        
+        width: 13px;
+        height: 13px;
+        
+    }
+    .SFS-text{
+        
+        
+        font-size: 19px;
+    }
+}
+@media(max-width: 1900px){
+    .SFS-title{
+        font-size: 18px;
+    }
+    .SFS-label{
+        font-size: 16px;
+    }
+    .SFS-question{
+        
+        margin: 20px 0;
+        
+        
+    }
+    .SFS-checkbox{
+        
+        width: 11px;
+        height: 11px;
+        
+    }
+    .SFS-text{
+        
+        
+        font-size: 17px;
+    }
+}
+@media(max-width: 1600px){
+    .SFS-title{
+        font-size: 16px;
+    }
+    .SFS-label{
+        font-size: 13px;
+    }
+    .SFS-question{
+        
+        margin: 15px 0;
+        
+        
+    }
+    .SFS-checkbox{
+        
+        width: 9px;
+        height: 9px;
+        
+    }
+    .SFS-text{
+        
+        margin-left:15px;
+        font-size: 14px;
+    }
+}
+@media(max-width: 1400px){
+    .SFS-title{
+        font-size: 13px;
+    }
+    .SFS-label{
+        font-size: 11px;
+    }
+    .SFS-question{
+        
+        margin: 12px 0;
+        
+        
+    }
+    .SFS-checkbox{
+        
+        width: 7px;
+        height: 7px;
+        
+    }
+    .SFS-text{
+        
+        margin-left:12px;
+        font-size: 12px;
+    }
+}

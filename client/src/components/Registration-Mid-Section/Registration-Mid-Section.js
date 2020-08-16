@@ -4,6 +4,7 @@ import QuestionFormSquareTwo from '../Question-Form-Square-Two/Question-Form-Squ
 import ImportantNoteBox from '../Important-Note-Box/Important-Note-Box';
 import RegistrationForm from '../Registration-Form/Registration-Form';
 import AddressListLayout from '../Address-List-Layout/Address-List-Layout';
+import SubmitForService from '../Submit-For-Service/Submit-For-Service';
 
 import './Registration-Mid-Section.css';
 
@@ -22,6 +23,9 @@ const RegistrationMidSection = ({data, getMeters, meters, postRegister, ZipCode,
                 }
                 {
                     mainFormIndex === 2 && <RegistrationForm data={data} postRegister={postRegister} formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+                }
+                {
+                    mainFormIndex === 3 && <SubmitForService data={data} postRegister={postRegister} formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
                 }
                 
                 

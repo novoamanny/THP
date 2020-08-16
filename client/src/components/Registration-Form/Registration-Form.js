@@ -241,13 +241,31 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                             <h2>Utility Credit Check</h2>
                         </div>
                         <div className='UCC-UI'>
-                            <div className='form-label'>
-                                <pan>SSN</pan>
+                            <div className='UCC-desc'>
+                                <div className='UCC-desc-one'>
+                                    <span>All energy companies in Texas run a credit check to determine if a deposit will be required. This is a "soft" credit check that will not impact your credit score.</span>
+                                </div >
+                                <div className='UCC-desc-two'>
+                                    <span>Your information is securely transmitted over an encrypted connection.</span>
+                                </div>
+                                <div className='UCC-desc-three'>
+                                    <span>Using your Social Security number is the most accurate way to verify your identity and may help avoid a deposit</span>
+                                </div>
                             </div>
-                            <div className='form-input'>
+                            <div className='UCC-form-label'>
+                                <span>SSN</span>
+                            </div>
+                            <div className='UCC-form-input'>
                                 <input name='SSN' placeholder='___-__-____' type='text' value={SSN} onChange={(e) => onChange(e)}/>
                             </div>
-                            
+                            <div className='UCC-form-checkbox'>
+                                <div className='UCC-form-checkbox-square'>
+
+                                </div>
+                                <div className='UCC-form-checkbox-text'>
+                                    <span>I hereby authorize Texas Home Power to run a credit check and perform all necessary tasks to establish electricuty service. I accept the terns abd conditions of the Tecas Home Power privacy plan and terms of service.</span>
+                                </div>
+                            </div>
                         </div>
                         
                         

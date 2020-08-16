@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import ImportantNoteBox from '../Important-Note-Box/Important-Note-Box';
+import ImportantNoteBoxTwo from '../Important-Note-Box-Two/Important-Note-Box-Two';
 import RegisterFormButtons from '../Register-Form-Buttons/Register-Form-Buttons';
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
@@ -72,7 +72,7 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
                 </div>
                 <div className={ formSlideIndex === 1 ? 'qfs-two' : 'not-active'}>
                     <div className={formSlideIndex !== 1 && 'no-display'}> 
-                        <ImportantNoteBox/>
+                        <ImportantNoteBoxTwo/>
                     </div>
                     
                     <div className={ formSlideIndex === 1 ? 'qfs-text' : (formSlideIndex === 3 ? 'qfs-text' : 'no-display')}> 

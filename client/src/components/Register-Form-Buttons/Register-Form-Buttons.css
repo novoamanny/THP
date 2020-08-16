@@ -4,25 +4,25 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.Form-BTN input {
+.Form-BTN button {
     margin: 20px 40px;
     border-radius: 10px;
     font-size: 30px;
     cursor: pointer;
 }
-.back-btn input{
+.back-btn button{
     background-color: #1333A6;
     padding: 10px 20px;
     color: #fff;
 }
-.next-btn input{
+.next-btn button{
     background-color: red;
     padding: 10px 20px;
     color: #fff;
 }
 
 @media(max-width: 2500px){
-    .Form-BTN input {
+    .Form-BTN button{
         
         
         font-size: 22px;
@@ -32,7 +32,7 @@
 }
 
 @media(max-width: 2100px){
-    .Form-BTN input {
+    .Form-BTN button {
         
         
         font-size: 18px;
@@ -41,7 +41,7 @@
     
 }
 @media(max-width: 1900px){
-    .Form-BTN input {
+    .Form-BTN button {
         
         
         font-size: 16px;

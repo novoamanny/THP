@@ -18,5 +18,19 @@
 }
 
 @media(max-width: 2870px){
-   
+    .qf-title h2{
+        font-size: 20px;
+    }
+}
+@media(max-width: 2200px){
+    .qf-title h2{
+        font-size: 17px;
+    }
+}
+
+
+@media(max-width: 1500px){
+    .qf-title h2{
+        font-size: 14px;
+    }
 }

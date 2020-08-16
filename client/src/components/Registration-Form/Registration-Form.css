@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+   
    
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -47,6 +47,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .form-sec-one-one{
     width: 50%;
@@ -101,6 +103,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .form-sec-two-one{
     width: 100%;
@@ -134,7 +138,10 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
+    padding-top: 60px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .form-sec-three-one{
     width: 80%;
@@ -179,6 +186,7 @@
     padding: 20px 50px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+   
 }
 .UCC-label h2{
     color: #fff;
@@ -187,6 +195,40 @@
 }
 .UCC-UI{
     padding: 20px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+    margin: 30px 30px;
+}
+.UCC-desc-three{
+    font-weight: bold;
+}
+.UCC-form-label{
+    width: 100%;
+    margin: 30px;
+}
+.UCC-form-input{
+    width: 100%;
+    margin: 30px;
+}
+.UCC-form-input input{
+    width: 40%;
+    height: 40px;
+    
+    padding: 2px 20px;
+    border-radius: 7px;
+}
+.UCC-form-checkbox{
+    width: 100%;
+    display: flex;
+}
+.UCC-form-checkbox-square{
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.UCC-form-checkbox-text{
+    width: 90%;
 }
 
 @media(max-width: 2800px){
@@ -307,6 +349,6 @@
     }
     .form-sec-three{
     
-        margin-top: 40px;
+        padding-top: 40px;
     }
 }
