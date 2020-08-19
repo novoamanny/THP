@@ -155,19 +155,25 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>12 Months</li>
                                 </div>
                                 <div className='mobile-option'>
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>18 Months</li>
                                 </div>
                                 <div className='mobile-option'>
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>24 Months</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>36 Months</li>
                                 </div>
                                 
                             </div>
@@ -179,13 +185,13 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>Pulse</li>
                                 </div>
                                 <div className='mobile-option'>
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>Reliant</li>
                                 </div>
                                 <div className='mobile-option'>
                                     <div className='mobile-option-checkbox'>

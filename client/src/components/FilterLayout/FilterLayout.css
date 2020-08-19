@@ -65,7 +65,7 @@
 }
 .filter-mobile-ui-not-active{
     display: none;
-transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 .mobile-ui-options{
     width: 100%;
@@ -221,6 +221,7 @@ transition: 0.3s ease;
         width: 15px;
         height: 15px;
         margin-right: 10px;
+        margin-left: 40px;
     }
     .mobile-option{
         
@@ -246,6 +247,7 @@ transition: 0.3s ease;
         width: 12px;
         height: 12px;
         margin-right: 10px;
+        margin-left: 20px;
     }
     .mobile-option{
         
