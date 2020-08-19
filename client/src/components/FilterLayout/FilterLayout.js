@@ -27,6 +27,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
     const [currentZipCode, setCurrentZipCode] = useState(ZipCode)
     const [quickFilters, setQuickFilters] = useState(500);
     const [currentRates, setCurrentRates] = useState([]);
+    const [mobileSlide, setMobileSlide] = useState(false);
 
 
 
@@ -113,7 +114,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
     
 
     
-    
+    console.log(mobileSlide)
      
 
     return(
@@ -123,6 +124,101 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
                 <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/>
                 <OtherFilters rates={rates} ZipCode={currentZipCode} resultCount={resultCount}/>
            </div>
+           <div className='filters-mobile' >
+           {/* <div className={mobileSlide && 'mobile-backdrop'}></div> */}
+                <div className='filter-mobile-button' onClick={() => setMobileSlide(!mobileSlide)}>
+                    <span>Search Filters</span>
+                </div>
+                <div className={!mobileSlide ? 'filter-mobile-not-active' : 'filter-mobile-active'}>
+                
+                    <div className={!mobileSlide ? 'filter-mobile-ui-not-active' : 'filter-mobile-ui-active'}>
+                        <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/>
+                        <div className='mobile-ui-options'>
+                            
+                            <div className='left-mobile-options'>
+                            <div className='mobile-ui-labels'>
+                                <span>Contract Length</span>
+                            </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>Show All</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>Monthly / No Contract</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                                
+                            </div>
+                            <div className='right-mobile-options'>
+                            <div className='mobile-ui-labels'>
+                                <span>Provider</span>
+                            </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                                
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                                <div className='mobile-option'>
+                                    <div className='mobile-option-checkbox'>
+
+                                    </div>
+                                    <li>hello</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+           </div>
+           
             <div>
             <FeaturedRatesSection ZipCode={currentZipCode} resultData={result}/>
             </div>

@@ -24,7 +24,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
         postRegister(formData)
     }
 
-    const onSubmit = async e =>{
+    const onSubmitHandle = async e =>{
 
           
         
@@ -82,7 +82,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
             <div className='form-title'>
                 <h2>Account Details</h2>
             </div>
-            <form onSubmit={(e) => onSubmit(e)}>
+            <form onSubmit={(e) => onSubmitHandle(e)}>
                 
                 <div className='form'>
                 {/* <div className='form-btn' > 
@@ -276,7 +276,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                 </div>
                 
             </form>
-            <RegisterFormButtons setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+            <RegisterFormButtons formData={formData} onSubmitHandle={onSubmitHandle} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
         </div>
     )
 }

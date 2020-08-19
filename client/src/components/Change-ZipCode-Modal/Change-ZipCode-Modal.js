@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import './Change-ZipCode-Modal.css';
 
-const ConfirmationModal = ({ZipCode}) =>{
+const ConfirmationModal = ({ZipCode, setChangeZipModal}) =>{
 
     const [newZip, setNewZip] = useState('');
 
@@ -11,7 +11,7 @@ const ConfirmationModal = ({ZipCode}) =>{
 
     return(
         <div className='Confirmation-Modal'>
-            <div className='backdrop'></div>
+            <div className='backdrop' onClick={() => setChangeZipModal(false)}></div>
             <div className='zip-modal-UI'>
                 <div className='Modal-label'>
                     <h2>Change Sevice ZipCode</h2>

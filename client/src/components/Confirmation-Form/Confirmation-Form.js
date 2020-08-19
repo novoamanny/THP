@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
 const ConfirmationForm  = ({register:{confirmation}}) =>{
-    
+    console.log(confirmation)
     return(
         <div className='CF'>
             <div className='CF-title'>

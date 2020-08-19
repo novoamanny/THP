@@ -6,6 +6,9 @@
     font-size: 25px;
     font-weight: bold;
 }
+.of-info span:nth-child(1), .of-info span:nth-child(3){
+    text-decoration: underline;
+}
 .of-options{
     display: flex;
     margin-top: 10px;

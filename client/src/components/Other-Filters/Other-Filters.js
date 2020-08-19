@@ -33,7 +33,9 @@ const OtherFilters = ({ZipCode, resultCount}) =>{
     return(
         <div className='Other-Filters'>
             <div className='of-info'>
-                <span>{`${info.count} electric rates for zipcode ${info.ZipCode}`}</span>
+                <span>{info.count}</span>
+                <span>{` electric rates for zipcode `}</span>
+                <span>{info.ZipCode}</span>
             </div>
             {/* <div className='of-options'>
                 {ofData.map(data =>{
