@@ -64,3 +64,16 @@
         
     }
 }
+
+@media(max-width: 1400px){
+    .FRS{
+        padding-top: 10px;
+        padding-bottom: 30px;
+        
+    }
+    .FRS-title h2{
+        
+        font-size: 22px;
+        
+    }
+}
