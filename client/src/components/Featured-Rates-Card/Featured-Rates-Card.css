@@ -805,7 +805,69 @@
         width: 80%;
         margin: 10px 0;
     }
+    
+    .FRC-name span{
+        font-size: 20px;
+        
+    }
+    .FRC-row-three span{
+        font-size: 18px;
+        padding: 10px 50px;
+     
+    
+    }
+    .FRC-bill-desc span{
+        font-size: 12px;
+        
+        
+    }
+    .FRC-length-label span{
+        
+        font-size: 12px;
+        
+    }
 
+    .FRC-price span{
+        margin-top: 10px;
+        
+        font-size: 50px;
+        
+      
+    }
+
+    .FRC-length span{
+       
+        font-size: 18px;
+        
+    }
+    .FRC-bill-price span{
+        font-size: 18px;
+       
+        
+    }
+     .FRC-Link{
+        
+        padding: 12px 90px;
+        font-size: 15px;
+        
+    }
+    .FRC-link-details-two{
+       
+        
+        font-size: 20px;
+    }
+    .FRC-seven-label{
+        
+        font-size: 22px;
+    }
+    .FRC-image img{
+        width: 100px;
+        height: 70px;
+        
+        margin-left: 40px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 
 }
 @media(max-width: 600px){
@@ -814,5 +876,213 @@
         margin: 10px 0;
     }
 
+    .FRC-name span{
+        font-size: 17px;
+        
+    }
+    .FRC-row-three span{
+        font-size: 16px;
+        padding: 5px 30px;
+     
+    
+    }
+    .FRC-bill-desc span{
+        font-size: 10px;
+        
+        
+    }
+    .FRC-length-label span{
+        
+        font-size: 10px;
+        
+    }
 
+    .FRC-price span{
+        margin-top: 10px;
+        
+        font-size: 50px;
+        
+      
+    }
+
+    .FRC-length span{
+       
+        font-size: 15px;
+        
+    }
+    .FRC-bill-price span{
+        font-size: 15px;
+       
+        
+    }
+     .FRC-Link{
+        
+        padding: 12px 70px;
+        font-size: 12px;
+        
+    }
+    .FRC-link-details-two{
+       
+        
+        font-size: 17px;
+    }
+    .FRC-seven-label{
+        
+        font-size: 19px;
+    }
+    .FRC-image img{
+        width: 90px;
+        height: 65px;
+        
+        margin-left: 30px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 500px){
+    .FRC{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .FRC-name span{
+        font-size: 14px;
+        
+    }
+    .FRC-row-three span{
+        font-size: 13px;
+        padding: 5px 30px;
+     
+    
+    }
+    .FRC-bill-desc span{
+        font-size: 8px;
+        
+        
+    }
+    .FRC-length-label span{
+        
+        font-size: 8px;
+        
+    }
+
+    .FRC-price span{
+        margin-top: 10px;
+        
+        font-size: 40px;
+        
+      
+    }
+
+    .FRC-length span{
+       
+        font-size: 12px;
+        
+    }
+    .FRC-bill-price span{
+        font-size: 12px;
+       
+        
+    }
+     .FRC-Link{
+        
+        padding: 10px 60px;
+        font-size: 10px;
+        
+    }
+    .FRC-link-details-two{
+       
+        
+        font-size: 15px;
+    }
+    .FRC-seven-label{
+        
+        font-size: 16px;
+    }
+    .FRC-image img{
+        width: 80px;
+        height: 60px;
+        
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 400px){
+    .FRC{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .FRC-name span{
+        font-size: 12px;
+        
+    }
+    .FRC-row-three span{
+        font-size: 12px;
+        padding: 0px 30px;
+     
+    
+    }
+    .FRC-row-four{
+        padding: 10px 0;
+    }
+    .FRC-row-five{
+        padding: 10px 0;
+    }
+    .FRC-row-six{
+        padding: 10px 0;
+    }
+    .FRC-bill-desc span{
+        font-size: 6px;
+        
+        
+    }
+    .FRC-length-label span{
+        
+        font-size: 6px;
+        
+    }
+
+    .FRC-price span{
+        margin-top: 10px;
+        
+        font-size: 30px;
+        
+      
+    }
+
+    .FRC-length span{
+       
+        font-size: 10px;
+        
+    }
+    .FRC-bill-price span{
+        font-size: 10px;
+       
+        
+    }
+     .FRC-Link{
+        
+        padding: 10px 60px;
+        font-size: 8px;
+        
+    }
+    .FRC-link-details-two{
+       
+        
+        font-size: 12px;
+    }
+    .FRC-seven-label{
+        
+        font-size: 16px;
+    }
+    .FRC-image img{
+        width: 70px;
+        height: 50px;
+        
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 }

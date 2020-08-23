@@ -281,14 +281,24 @@
         font-size: 30px;
         
     }
+    .RSC-Top-Right-One-B span{
+        font-size: 10px;
+    }
     .RSC-Top-Right-Two-T span{
         font-size: 30px;
         
+    }
+    .RSC-Top-Right-Two-B span{
+        font-size: 10px;
     }
     .RSC-Top-Right-Three-T span{
         font-size: 30px;
         
     }
+    .RSC-Top-Right-Three-B span{
+        font-size: 10px;
+    }
+   
     /* .RSC-Bot-Left{
        
         padding: 40px 0;
@@ -355,8 +365,9 @@
     }
     .RSC-Link{
       
-        padding: 8px 30px;
-
+        padding: 8px 10px;
+        
+        font-size: 10px;
     }
     
     .RSC-Bot-Left span{
@@ -392,15 +403,23 @@
         font-size: 26px;
         
     }
-     
+    .RSC-Top-Right-One-B span{
+        font-size: 9px;
+    }
     
     .RSC-Top-Right-Two-T span{
         font-size: 26px;
         
     }
+    .RSC-Top-Right-Two-B span{
+        font-size: 9px;
+    }
     .RSC-Top-Right-Three-T span{
         font-size: 26px;
         
+    }
+    .RSC-Top-Right-Three-B span{
+        font-size: 9px;
     }
     /* .RSC-Bot-Left{
        
@@ -411,8 +430,8 @@
     }
     .RSC-Link{
       
-        padding: 8px 30px;
-        font-size: 12px;
+        padding: 10px 20px;
+        font-size: 9px;
 
     }
     
@@ -474,7 +493,7 @@
     .RSC-Link{
       
         padding: 8px 20px;
-        font-size: 11px;
+        
 
     }
     
@@ -490,6 +509,305 @@
     .RSC-Top-Left-Three span{
         
         font-size: 12px;
+    }
+
+}
+@media(max-width: 1400px){
+    .RSC-Top{
+       
+        padding: 20px 30px;
+    }
+    .tltt span{
+        font-size: 20px;
+        
+    }
+
+    .RSC-Top-Left-Two{
+        margin-left: 50px;
+     
+    }
+    .RSC-Top-Left-One img{
+        height: 60px;
+        width: 110px;
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 30px;
+        
+    }
+    .RSC-Top-Right-One-B span{
+        font-size: 12px;
+    }
+    
+    .RSC-Top-Right-Two-T span{
+        font-size: 30px;
+        
+    }
+    .RSC-Top-Right-Two-B span{
+        font-size: 12px;
+    }
+    .RSC-Top-Right-Three-T span{
+        font-size: 30px;
+        
+    }
+    .RSC-Top-Right-Three-B span{
+        font-size: 12px;
+    }
+    /* .RSC-Bot-Left{
+       
+        padding: 40px 0;
+    } */
+    .RSC-bot-num span{
+       font-size: 22px;
+    }
+    .RSC-bot-call{
+        margin-top: 10px;
+        /* margin-right: 20px; */
+        font-size: 12px;
+    }
+    .RSC-Link{
+      
+        padding: 10px 20px;
+        font-size: 12px;
+
+    }
+    
+    .RSC-Bot-Left span{
+    
+        font-size: 20px;
+    }
+    .RSC-Bot-Right{
+       
+        padding: 15px 0;
+        
+    }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 14px;
+    }
+
+}
+@media(max-width: 1300px){
+    .RSC-Top{
+       
+        padding: 20px 30px;
+    }
+    .tltt span{
+        font-size: 18px;
+        
+    }
+
+    .RSC-Top-Left-Two{
+        margin-left: 50px;
+     
+    }
+    .RSC-Top-Left-One img{
+        height: 60px;
+        width: 110px;
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 26px;
+        
+    }
+    .RSC-Top-Right-One-B span{
+        font-size: 10px;
+    }
+    
+    .RSC-Top-Right-Two-T span{
+        font-size: 26px;
+        
+    }
+    .RSC-Top-Right-Two-B span{
+        font-size: 10px;
+    }
+    .RSC-Top-Right-Three-T span{
+        font-size: 26px;
+        
+    }
+    .RSC-Top-Right-Three-B span{
+        font-size: 10px;
+    }
+    .RSC-Bot-Left{
+       
+        padding: 30px 0;
+    }
+    .RSC-bot-num span{
+       font-size: 16px;
+    }
+    
+    .RSC-Link{
+      
+        padding: 8px 20px;
+        font-size: 10px;
+
+    }
+    
+    .RSC-Bot-Left span{
+    
+        font-size: 18px;
+    }
+    .RSC-Bot-Right{
+       
+        padding: 15px 0;
+        
+    }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 12px;
+    }
+
+}
+
+
+@media(max-width: 1200px){
+    .RSC-Top{
+       
+        padding: 10px 20px;
+    }
+    .tltt span{
+        font-size: 15px;
+        
+    }
+
+    .RSC-Top-Left-Two{
+        margin-left: 50px;
+     
+    }
+    .RSC-Top-Left-One img{
+        height: 50px;
+        width: 90px;
+        margin-top: 15px;
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 22px;
+        
+    }
+    .RSC-Top-Right-One-B span{
+        font-size: 8px;
+    }
+    
+    .RSC-Top-Right-Two-T span{
+        font-size: 22px;
+        
+    }
+    .RSC-Top-Right-Two-B span{
+        font-size: 8px;
+    }
+    .RSC-Top-Right-Three-T span{
+        font-size: 22px;
+        
+    }
+    .RSC-Top-Right-Three-B span{
+        font-size: 8px;
+    }
+    .RSC-Bot-Left{
+       
+        padding: 30px 0;
+    }
+    .RSC-bot-num span{
+       font-size: 13px;
+    }
+    .RSC-bot-call{
+        margin-top: 15px;
+        /* margin-right: 20px; */
+        font-size: 10px;
+    }
+    .RSC-Link{
+      
+        padding: 8px 20px;
+        font-size: 8px;
+
+    }
+
+    
+    .RSC-Bot-Left span{
+    
+        font-size: 14px;
+    }
+    .RSC-Bot-Right{
+       
+        padding: 15px 0;
+        
+    }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width: 1000px){
+    .RSC-Top{
+       
+        padding: 10px 20px;
+    }
+    .tltt span{
+        font-size: 12px;
+        
+    }
+
+    .RSC-Top-Left-Two{
+        margin-left: 40px;
+     
+    }
+    .RSC-Top-Left-One img{
+        height: 40px;
+        width: 70px;
+        margin-top: 15px;
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 18px;
+        
+    }
+    .RSC-Top-Right-One-B span{
+        font-size: 7px;
+    }
+    
+    .RSC-Top-Right-Two-T span{
+        font-size: 18px;
+        
+    }
+    .RSC-Top-Right-Two-B span{
+        font-size: 7px;
+    }
+    .RSC-Top-Right-Three-T span{
+        font-size: 18px;
+        
+    }
+    .RSC-Top-Right-Three-B span{
+        font-size: 7px;
+    }
+    .RSC-Bot-Left{
+       
+        padding: 25px 0;
+    }
+    .RSC-bot-num span{
+       font-size: 11px;
+    }
+    .RSC-bot-call{
+        margin-top: 15px;
+        /* margin-right: 20px; */
+        font-size: 8px;
+    }
+    .RSC-Link{
+      
+        padding: 8px 20px;
+        font-size: 7px;
+
+    }
+
+    
+    .RSC-Bot-Left span{
+    
+        font-size: 12px;
+    }
+    .RSC-Bot-Right{
+       
+        padding: 15px 0;
+        
+    }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 8px;
     }
 
 }

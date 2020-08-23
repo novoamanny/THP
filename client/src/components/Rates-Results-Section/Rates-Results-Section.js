@@ -1,8 +1,10 @@
 import React from 'react';
 
 import RatesResultsCard from '../Rates-Results-Card/Rates-Results-Card';
+import MobileRatesCard from '../Mobile-Rates-Card/Mobile-Rates-Card';
 
 import './Rates-Results-Section.css';
+
 
 
 const images = [
@@ -66,7 +68,12 @@ const RatesResultsSection = ({resultData, quickFilters, ZipCode}) =>{
    
     return(
         <div className='RRS'>
-           {DATA && DATA.map(rate => <RatesResultsCard rate={rate} quickFilters={quickFilters} ZipCode={ZipCode}/>)}
+            <div className='desktop-rates'>
+                {DATA && DATA.map(rate => <RatesResultsCard rate={rate} quickFilters={quickFilters} ZipCode={ZipCode}/>)}
+            </div>
+            <div className='mobile-rates'>
+                {DATA && DATA.map(rate => <MobileRatesCard rate={rate} quickFilters={quickFilters} ZipCode={ZipCode}/>)}
+            </div>
         </div>
     )
 }

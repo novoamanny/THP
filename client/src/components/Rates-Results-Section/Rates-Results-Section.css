@@ -11,6 +11,9 @@
     
     
 }
+.mobile-rates{
+    display: none;
+}
 @media(max-width: 2250px){
     .RRS{
     
@@ -31,6 +34,24 @@
     .RRS{
 
         padding: 0 20px;
+        padding-top: 10px;
+        
+    }
+}
+
+@media(max-width: 800px){
+    .desktop-rates{
+        display: none;
+    }
+    .mobile-rates{
+        display: contents;
+    }
+}
+
+@media(max-width: 700px){
+    .RRS{
+
+        padding: 0 10px;
         padding-top: 10px;
         
     }
