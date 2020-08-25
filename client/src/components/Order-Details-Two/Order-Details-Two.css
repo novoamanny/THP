@@ -265,3 +265,139 @@
         
     }
 }
+
+@media(max-width: 1500px){
+    .Details-SA-label{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .Details-ST-label{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .Details-SD-label{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .ODT-Details-Address1{
+        margin: 5px 0;
+        margin-left: 12px;
+        
+        font-size: 8px;
+    }
+    .ODT-Details-City{
+        margin: 5px 0;
+        margin-left: 12px;
+        font-size: 8px;
+    }
+    .Details-Esiid-label{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .Details-Esiid{
+        font-size: 10px;
+        margin: 8px 0;
+        margin-left: 10px;
+        
+    }
+    .ODT-Details-R-BTN{
+        margin-top: 20px;
+     }
+    .ODT-Details-R-BTN button{
+      
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 1300px){
+    .Details-SA-label{
+        margin-left: 10px;
+        font-size: 6px;
+    }
+    .Details-ST-label{
+        margin-left: 10px;
+        font-size: 6px;
+    }
+    .Details-SD-label{
+        margin-left: 10px;
+        font-size: 6px;
+    }
+    .ODT-Details-Address1{
+        margin: 5px 0;
+        margin-left: 12px;
+        
+        font-size: 6px;
+    }
+    .ODT-Details-City{
+        margin: 5px 0;
+        margin-left: 12px;
+        font-size: 6px;
+    }
+    .Details-Esiid-label{
+        margin-left: 10px;
+        font-size: 6px;
+    }
+    .Details-Esiid{
+        font-size: 8px;
+        margin: 8px 0;
+        margin-left: 10px;
+        
+    }
+    .ODT-Details-R-BTN{
+        margin-top: 20px;
+     }
+    .ODT-Details-R-BTN button{
+      
+        width: 60px;
+        height: 20px;
+        font-size: 8px;
+    }
+}
+
+
+@media(max-width: 1200px){
+    .Details-SA-label{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .Details-ST-label{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .Details-SD-label{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .ODT-Details-Address1{
+        margin: 5px 0;
+        margin-left: 12px;
+        
+        font-size: 8px;
+    }
+    .ODT-Details-City{
+        margin: 5px 0;
+        margin-left: 12px;
+        font-size: 8px;
+    }
+    .Details-Esiid-label{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .Details-Esiid{
+        font-size: 10px;
+        margin: 8px 0;
+        margin-left: 10px;
+        
+    }
+    .ODT-Details-R-BTN{
+        margin-top: 20px;
+     }
+    .ODT-Details-R-BTN button{
+      
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+    }
+}

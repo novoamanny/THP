@@ -174,3 +174,64 @@
         font-size: 12px;
     }
 }
+@media(max-width: 900px){
+    .SFS-title{
+        font-size: 10px;
+    }
+    .SFS-label{
+        font-size: 11px;
+    }
+    .SFS-question{
+        
+        margin: 12px 0;
+        
+        
+    }
+    .SFS-checkbox{
+        
+        width: 5px;
+        height: 5px;
+        
+    }
+    .SFS-text{
+        
+        margin-left:12px;
+        font-size: 10px;
+    }
+    .SFS-questions{
+       
+        padding: 20px;
+        
+    }
+}
+
+@media(max-width: 500px){
+    .SFS-title{
+        font-size: 8px;
+    }
+    .SFS-label{
+        font-size: 9px;
+    }
+    .SFS-question{
+        
+        margin: 12px 0;
+        
+        
+    }
+    .SFS-checkbox{
+        
+        width: 5px;
+        height: 5px;
+        
+    }
+    .SFS-text{
+        
+        margin-left:12px;
+        font-size: 8px;
+    }
+    .SFS-questions{
+       
+        padding: 10px;
+        
+    }
+}

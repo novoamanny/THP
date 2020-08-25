@@ -57,3 +57,56 @@
         font-size: 13px;
     }
 }
+@media(max-width: 1600px){
+    .ALI-col-one h2, .ALI-col-two h2, .ALI-col-three h2{
+        font-size: 14px;
+    }
+    .ALI-confirm-button li{
+   
+        
+        padding: 8px 15px;
+       
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 1400px){
+    .ALI-col-one h2, .ALI-col-two h2, .ALI-col-three h2{
+        font-size: 12px;
+    }
+    .ALI-confirm-button li{
+   
+        
+        padding: 8px 15px;
+       
+        font-size: 8px;
+    }
+}
+
+
+@media(max-width: 700px){
+    .ALI-col-one h2, .ALI-col-two h2, .ALI-col-three h2{
+        font-size: 10px;
+    }
+    .ALI-confirm-button li{
+   
+        
+        padding: 8px 15px;
+       
+        font-size: 7px;
+    }
+}
+
+
+@media(max-width: 400px){
+    .ALI-col-one h2, .ALI-col-two h2, .ALI-col-three h2{
+        font-size: 8px;
+    }
+    .ALI-confirm-button li{
+   
+        
+        padding: 8px 15px;
+       
+        font-size: 6px;
+    }
+}

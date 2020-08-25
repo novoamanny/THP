@@ -47,12 +47,11 @@
 .OD-Details-p-two{
    width: 100%;
    margin-top: 20px;
+   margin-left: 40px;
+    font-size: 30px;
     
 }
-.OD-Details-p-two{
-    margin-left: 40px;
-    font-size: 30px;
-}
+
 .OD-Details-Top-B{
     display: flex;
 
@@ -556,4 +555,298 @@
     .DTBR-one p, .DTBR-three p{
         font-size: 14px;
     }   
+}
+
+@media(max-width: 1800px){
+    .OD-Details-One-1 p{
+        margin-right: 10px;
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    .OD-Details-One-2 h2{
+       
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .OD-Details-Two-1 p{
+        
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    .OD-Details-Two-2 h2{
+       
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .OD-Details-Three-1 p{
+        
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    .OD-Details-Three-2 h2{
+       
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .OD-Details-Four-1 p{
+      
+        font-size: 8px;
+        margin-left: 20px;
+    }
+   
+    .OD-Details-Four-2 h2{
+       
+        font-size: 8px;
+        margin-right: 20px;
+    }
+    .OD-label h2{
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .OD-label{
+       
+        padding: 5px 0;
+        
+    }
+    .OD-Details-p-two{
+       margin-left: 20px;
+        font-size: 17px;
+    }
+    .OD-Details-Image img{
+        width: 80px;
+        height: 45px;
+        margin-top: 20px;
+    }
+    .DTBR-two h2{
+        font-size: 25px;
+        color: #1333A6;
+    }
+    .DTBR-one p, .DTBR-three p{
+        font-size: 9px;
+    }   
+}
+
+
+@media(max-width: 1500px){
+    .OD-Details-p{
+        font-size: 8px;
+    }
+    .OD-Details-One-1 p{
+        margin-right: 10px;
+        font-size: 6px;
+        margin-left: 20px;
+    }
+    .OD-Details-One-2 h2{
+       
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .OD-Details-Two-1 p{
+        
+        font-size: 6px;
+        margin-left: 20px;
+    }
+    .OD-Details-Two-2 h2{
+       
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .OD-Details-Three-1 p{
+        
+        font-size: 6px;
+        margin-left: 20px;
+    }
+    .OD-Details-Three-2 h2{
+       
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .OD-Details-Four-1 p{
+      
+        font-size: 6px;
+        margin-left: 20px;
+    }
+   
+    .OD-Details-Four-2 h2{
+       
+        font-size: 6px;
+        margin-right: 20px;
+    }
+    .OD-label h2{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .OD-label{
+       
+        padding: 4px 0;
+        
+    }
+    .OD-Details-p-two{
+       
+        font-size: 13px;
+    }
+    .OD-Details-Image img{
+        width: 70px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .OD-Details-Button{
+        font-size: 8px;
+    }
+    .DTBR-two h2{
+        font-size: 21px;
+        color: #1333A6;
+    }
+    .DTBR-one p, .DTBR-three p{
+        font-size: 7px;
+    }   
+}
+@media(max-width: 1200px){
+    .OD-Details-One-1 p{
+        margin-right: 10px;
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    .OD-Details-One-2 h2{
+       
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .OD-Details-Two-1 p{
+        
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    .OD-Details-Two-2 h2{
+       
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .OD-Details-Three-1 p{
+        
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    .OD-Details-Three-2 h2{
+       
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .OD-Details-Four-1 p{
+      
+        font-size: 8px;
+        margin-left: 20px;
+    }
+   
+    .OD-Details-Four-2 h2{
+       
+        font-size: 8px;
+        margin-right: 20px;
+    }
+    .OD-label h2{
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .OD-label{
+       
+        padding: 4px 0;
+        
+    }
+    .OD-Details-p-two{
+       
+        font-size: 17px;
+    }
+    .OD-Details-Image img{
+        width: 90px;
+        height: 50px;
+        margin-top: 20px;
+    }
+    .DTBR-two h2{
+        font-size: 24px;
+        color: #1333A6;
+    }
+    .DTBR-one p, .DTBR-three p{
+        font-size: 9px;
+    }   
+}
+
+/* @media(max-width: 1000px){
+    .OD-Details-p{
+        font-size: 8px;
+    }
+    .OD-Details-One-1 p{
+        margin-right: 10px;
+        font-size: 6px;
+        margin-left: 20px;
+    }
+    .OD-Details-One-2 h2{
+       
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .OD-Details-Two-1 p{
+        
+        font-size: 6px;
+        margin-left: 20px;
+    }
+    .OD-Details-Two-2 h2{
+       
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .OD-Details-Three-1 p{
+        
+        font-size: 6px;
+        margin-left: 20px;
+    }
+    .OD-Details-Three-2 h2{
+       
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .OD-Details-Four-1 p{
+      
+        font-size: 6px;
+        margin-left: 20px;
+    }
+   
+    .OD-Details-Four-2 h2{
+       
+        font-size: 6px;
+        margin-right: 20px;
+    }
+    .OD-label h2{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .OD-label{
+       
+        padding: 4px 0;
+        
+    }
+    .OD-Details-p-two{
+       
+        font-size: 13px;
+    }
+    .OD-Details-Image img{
+        width: 70px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .OD-Details-Button{
+        font-size: 8px;
+    }
+    .DTBR-two h2{
+        font-size: 21px;
+        color: #1333A6;
+    }
+    .DTBR-one p, .DTBR-three p{
+        font-size: 7px;
+    }  
+} */
+
+@media(max-width: 1100px){
+   .OD{
+       display: none;
+   } 
 }

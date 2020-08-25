@@ -7,8 +7,8 @@ import './Address-List-Layout.css'
 
 const AddressListLayout = ({meters, setFormData, formData, setMainFormIndex, form}) =>{
    
-    const address = form.Address1.split(' ')
-    const upperAddress = address[1].toUpperCase();
+    const address = form.Address1 && form.Address1.split(' ')
+    const upperAddress = address && address[1].toUpperCase();
     console.log(upperAddress)
     
 

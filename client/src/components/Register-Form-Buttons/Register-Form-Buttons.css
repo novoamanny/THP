@@ -49,3 +49,43 @@
     }
     
 }
+
+@media(max-width: 900px){
+    .Form-BTN button {
+        
+        
+        font-size: 12px;
+        
+    }
+    .back-btn button{
+        
+        padding: 7px 20px;
+        
+    }
+    .next-btn button{
+        
+        padding: 7px 20px;
+        
+    }
+    
+}
+
+@media(max-width: 500px){
+    .Form-BTN button {
+        
+        
+        font-size: 10px;
+        
+    }
+    .back-btn button{
+        
+        padding: 7px 20px;
+        
+    }
+    .next-btn button{
+        
+        padding: 7px 20px;
+        
+    }
+    
+}

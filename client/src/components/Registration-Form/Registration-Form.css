@@ -70,6 +70,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 .form-input input{ 
     width: 80%;
@@ -125,6 +126,7 @@
 .form-sec-two-two li{
     color: #1333A6;
     font-weight: bold;
+    
 }
 .form-sec-two-square{
     width: 15px;
@@ -226,9 +228,11 @@
     width: 25px;
     height: 25px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 40px;
 }
 .UCC-form-checkbox-text{
     width: 90%;
+    margin-left: 20px;
 }
 
 @media(max-width: 2800px){
@@ -269,6 +273,22 @@
         padding: 10px 50px;
        
     }
+   
+    
+  
+    
+   
+ 
+    .UCC-form-input input{
+        width: 40%;
+        height: 30px;
+        
+      
+    }
+   
+  
+   
+    
 }
 @media(max-width: 2200px){
     .form-title{
@@ -307,6 +327,23 @@
         
         padding: 5px 50px;
        
+    }
+
+    .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+        margin: 30px 30px;
+        font-size: 12px;
+    }
+    .UCC-form-checkbox-text{
+        font-size: 12px;
+    }
+    .UCC-form-label{
+        font-size: 13px;
+    }
+
+    .UCC-form-checkbox-square{
+        width: 20px;
+        height: 20px;
+      
     }
 }
 @media(max-width: 1800px){
@@ -350,5 +387,426 @@
     .form-sec-three{
     
         padding-top: 40px;
+    }
+    .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+        margin: 20px 30px;
+        font-size: 10px;
+    }
+    .UCC-form-checkbox-text{
+        font-size: 10px;
+    }
+    .UCC-form-label{
+        font-size: 11px;
+    }
+
+    .UCC-form-checkbox-square{
+        width: 17px;
+        height: 17px;
+      
+    }
+  
+    .UCC-form-input input{
+        width: 40%;
+        height: 25px;
+        
+      
+    }
+}
+
+
+
+
+@media(max-width: 1600px){
+    .form-title{
+        padding: 0px 0;
+       
+    }
+    .form-input input{ 
+        width: 55%;
+        height: 25px;
+        
+       
+    }
+    .DOB-input input{
+        width: 60px;
+        height: 25px;
+        
+        
+        margin: 0 10px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 25%;
+        height: 25px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 3px 50px;
+       
+    }
+    .form-sec-three{
+    
+        padding-top: 40px;
+    }
+
+
+    .form-sec-two li{
+        
+        font-size: 10px;
+    }
+    
+    .form-sec-two-square{
+        width: 12px;
+        height: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+@media(max-width: 1400px){
+    .form-title{
+        padding: 0px 0;
+       
+    }
+    .form-input input{ 
+        width: 55%;
+        height: 25px;
+        
+       
+    }
+    .DOB-input input{
+        width: 40px;
+        height: 25px;
+        
+        font-size: 10px;
+        margin: 0 10px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 25%;
+        height: 25px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 3px 50px;
+       
+    }
+    .form-sec-three{
+    
+        padding-top: 40px;
+    }
+
+
+    .form-sec-two li{
+        
+        font-size: 10px;
+    }
+    
+    .form-sec-two-square{
+        width: 12px;
+        height: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+        margin: 20px 30px;
+        font-size: 9px;
+    }
+    .UCC-form-checkbox-text{
+        font-size: 8px;
+    }
+    .UCC-form-label{
+        font-size: 9px;
+    }
+
+    .UCC-form-checkbox-square{
+        width: 14px;
+        height: 14px;
+      
+    }
+  
+    .UCC-form-input input{
+        width: 40%;
+        height: 25px;
+        
+      
+    }
+}
+
+@media(max-width: 1100px){
+    .form-title{
+        padding: 0px 0;
+       
+    }
+    .form-input input{ 
+        width: 65%;
+        height: 25px;
+        
+       
+    }
+    .DOB-input input{
+        width: 70px;
+        height: 25px;
+        
+        
+        margin: 0 10px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 25%;
+        height: 25px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 3px 50px;
+       
+    }
+    .form-sec-three{
+    
+        padding-top: 40px;
+    }
+    .UCC-form-checkbox-text{
+        font-size: 9px;
+    }
+}
+
+@media(max-width: 900px){
+    .form-title{
+        padding: 0px 0;
+       
+    }
+    .form-input input{ 
+        width: 55%;
+        height: 20px;
+        
+       
+    }
+    .DOB-input input{
+        width: 40px;
+        height: 20px;
+        
+        font-size: 10px;
+        margin: 0 10px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 25%;
+        height: 20px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 3px 50px;
+       
+    }
+    .form-sec-three{
+    
+        padding-top: 40px;
+    }
+
+
+    .form-sec-two li{
+        
+        font-size: 10px;
+    }
+    
+    .form-sec-two-square{
+        width: 12px;
+        height: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 25%;
+        height: 20px;
+        
+       
+    }
+    .UCC-form-checkbox-text{
+        font-size: 8px;
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 700px){
+    .form-title{
+        padding: 0px 0;
+       
+    }
+    
+    .form-input input{ 
+        width: 80%;
+        height: 25px;
+        font-size: 12px;
+       
+    }
+    .DOB-input input{
+        width: 60px;
+        height: 25px;
+        
+        font-size: 10px;
+        margin: 0 10px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 35%;
+        height: 25px;
+        font-size: 10px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 3px 50px;
+       
+    }
+    .form-sec-three{
+    
+        padding-top: 40px;
+    }
+
+
+    .form-sec-two li{
+        
+        font-size: 10px;
+    }
+    
+    .form-sec-two-square{
+        width: 12px;
+        height: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+
+    .form-sec-one-one{
+        width: 100%;
+        
+        
+    }
+    .form-sec-one-two{
+        width: 100%;
+       
+       
+    }
+    .side-a, .side-b{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .form-title{
+        padding: 0px 0;
+       
+    }
+    
+    .form-input input{ 
+        width: 80%;
+        height: 25px;
+        font-size: 12px;
+       
+    }
+    .DOB-input input{
+        width: 60px;
+        height: 25px;
+        
+        font-size: 10px;
+        margin: 0 10px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 35%;
+        height: 25px;
+        font-size: 10px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 3px 50px;
+       
+    }
+    .form-sec-three{
+    
+        padding-top: 40px;
+    }
+
+
+    .form-sec-two li{
+        
+        font-size: 10px;
+    }
+    
+    .form-sec-two-square{
+        width: 12px;
+        height: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+
+    .form-sec-one-one{
+        width: 100%;
+        
+        
+    }
+    .form-sec-one-two{
+        width: 100%;
+       
+       
+    }
+    .side-a, .side-b{
+        width: 100%;
     }
 }

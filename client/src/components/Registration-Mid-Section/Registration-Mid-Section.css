@@ -1,5 +1,5 @@
 .RMS{
-    width:50%;
+    width: 60%;
     
     margin: 0 10px;
     
@@ -7,5 +7,19 @@
 @media(max-width: 3400px){
     .RMS{
         width: 58%;
+    }
+}
+
+@media(max-width: 1200px){
+    .RMS{
+        width: 65%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1100px){
+    .RMS{
+        width: 100%;
+        margin-left: 10px;
     }
 }

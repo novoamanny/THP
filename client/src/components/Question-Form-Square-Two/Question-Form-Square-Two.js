@@ -78,7 +78,7 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
                     <div className={ formSlideIndex === 1 ? 'qfs-text' : (formSlideIndex === 3 ? 'qfs-text' : 'no-display')}> 
                         <p>Select Date:</p>
                     </div>
-                    <div className={ formSlideIndex === 1 ? 'qfs-options' : (formSlideIndex === 3 ? 'qfs-options' : 'no-display')}>
+                    <div className={ formSlideIndex === 1 ? 'qfs-options-cal' : (formSlideIndex === 3 ? 'qfs-options' : 'no-display')}>
                         <Calendar onClickDay={(e) => onCalendarClickHandle(e)}/>
                     </div>
                 </div>

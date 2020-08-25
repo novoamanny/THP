@@ -156,3 +156,43 @@
         margin-bottom: 8px;
     }
 }
+
+@media(max-width: 1500px){
+    .RLS-Top{
+        
+        padding: 5px 0;
+    }
+    .RLS-Top h2{
+        font-size: 15px;
+    }
+    .progress{
+       
+        
+        font-size: 12px;
+        
+    }
+    .progress-circle{
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+    .progress-circle-on{
+        width: 10px;
+        height: 10px;
+        
+        margin-right: 10px;
+        
+    }
+    .progress-empty{
+        height: 50px;
+        
+        margin-left: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width: 1200px){
+    .RLS{
+        display: none;
+    }
+}
