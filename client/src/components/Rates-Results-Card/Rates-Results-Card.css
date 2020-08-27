@@ -811,3 +811,98 @@
     }
 
 }
+
+@media(max-width: 800px){
+    .RSC{
+        border-radius: 10px;
+    }
+    .RSC-Top{
+       
+        padding: 10px 20px;
+    }
+    .tltt span{
+        font-size: 10px;
+        
+    }
+    .tlto{
+        font-size: 9px;
+    }
+
+    .RSC-Top-Left-Two{
+        margin-left: 20px;
+     
+    }
+    .RSC-Top-Left-One img{
+        height: 35px;
+        width: 60px;
+        margin-top: 15px;
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 16px;
+        
+    }
+    .RSC-Top-Right-One-B span{
+        font-size: 6px;
+    }
+    
+    .RSC-Top-Right-Two-T span{
+        font-size: 16px;
+        
+    }
+    .RSC-Top-Right-Two-B span{
+        font-size: 6px;
+    }
+    .RSC-Top-Right-Three-T span{
+        font-size: 16px;
+        
+    }
+    .RSC-Top-Right-Three-B span{
+        font-size: 6px;
+    }
+    .RSC-Bot-Left{
+       
+        padding: 15px 0;
+    }
+    .RSC-bot-num span{
+       font-size: 11px;
+    }
+    .RSC-bot-num{
+        margin-top: 0;
+    }
+    .RSC-bot-call{
+        margin-top: 5px;
+        
+        font-size: 8px;
+    }
+    .RSC-Link{
+        width: 50px;
+        font-size: 7px;
+        text-align: center;
+        border-radius: 15px;
+
+    }
+
+    
+    .RSC-Bot-Left span{
+    
+        font-size: 12px;
+    }
+    .RSC-Bot-Right{
+       
+        padding: 10px 0;
+        
+    }
+    .RSC-Top-Left-Three {
+        padding-top: 30px;
+     }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 7px;
+    }
+
+    .RSC-Bot-Right-T{
+      
+        padding-left: 20px;
+    }
+
+}
