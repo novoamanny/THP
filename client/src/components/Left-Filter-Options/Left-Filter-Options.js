@@ -37,10 +37,11 @@ const LFOSData = [
         options: [
             'Show All',
             'Pulse',
-            'Energy To Go',
-            'Lonestar',
-            'New Power',
-            'Power Next',
+            'Reliant',
+            'Green Mountain',
+            'Cirro',
+            'Pennywise',
+            'Everything Energy',
         ],
         value: [
             'none',

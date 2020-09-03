@@ -19,7 +19,7 @@ const qfData = [
     },
     {
         label: 'Your Home',
-        kwh: '?'
+        kwh: '_____'
     },
 ]
 
@@ -27,11 +27,11 @@ const QuickFilters = ({setQuickFilters, quickFilters}) =>{
     return(
         <div className='Quick-Filter'>
             <div className='qf-title'>
-                <h2>Quick Filter</h2> 
+                <h2>Quick Filters</h2> 
             </div>
             <div className='qf-options'>
-                {qfData.map(data =>{
-                    return <QuickFiltersButton data={data} setQuickFilters={setQuickFilters} quickFilters={quickFilters}/>
+                {qfData.map((data, index) =>{
+                    return <div key={index} className='qf-option'><QuickFiltersButton data={data} setQuickFilters={setQuickFilters} quickFilters={quickFilters}/></div>
                 })}
             </div>
         </div>

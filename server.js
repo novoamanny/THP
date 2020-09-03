@@ -8,8 +8,8 @@ const app = express();
 app.use(bodyParser.json({urlencoded: false}));
 app.use(cors())
 
-app.use('/api/rates', require('./routes/api/rates'));
-app.use('/api/register', require('./routes/api/register'));
+app.use('/api/pulse/rates', require('./routes/api//pulse/rates'));
+app.use('/api/pulse/register', require('./routes/api/pulse/register'));
 
 const PORT = process.env.PORT || 5000;
 

@@ -197,27 +197,32 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>Green Mountain</li>
                                 </div>
                                 
                                 <div className='mobile-option'>
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>Cirro</li>
                                 </div>
                                 <div className='mobile-option'>
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>Pennywise</li>
                                 </div>
                                 <div className='mobile-option'>
                                     <div className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>hello</li>
+                                    <li>Everything Energy</li>
                                 </div>
+                            </div>
+                        </div>
+                        <div className='hide-filters'>
+                            <div className='hide-filters-button' onClick={() => setMobileSlide(!mobileSlide)}>
+                                <span>Hide Filters</span>
                             </div>
                         </div>
                     </div>

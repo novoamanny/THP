@@ -8,10 +8,10 @@
     transition: ease 0.3s;
 }
 .QF-Button-label span{
-    font-size: 10px;
+    font-size: 20px;
 }
 .QF-Button-details span{
-    font-size: 28px;
+    font-size: 37px;
 }
 
 
@@ -21,9 +21,18 @@
     color: #fff;
     border: none;
 }
+@media(max-width: 2900px){
+    .QF-Button-label span{
+        font-size: 18px;
+    }
+    .QF-Button-details span{
+        font-size: 30px;
+    }
+}
+
 @media(max-width: 2200px){
     .QF-Button-label span{
-        font-size: 9px;
+        font-size: 13px;
     }
     .QF-Button-details span{
         font-size: 22px;
@@ -31,27 +40,38 @@
 }
 
 @media(max-width: 2000px){
-   
+    .QF-Button-label span{
+        font-size: 11px;
+    }
+    .QF-Button-details span{
+        font-size: 19px;
+    }
 }
 @media(max-width: 1800px){
     .QF-Button{
         padding: 5px 20px;
     } 
+    
+}@media(max-width: 1600px){
+    /* .QF-Button{
+        padding: 2px 20px;
+    }  */
     .QF-Button-label span{
         font-size: 9px;
     }
     .QF-Button-details span{
-        font-size: 15px;
+        font-size: 17px;
     }
-}@media(max-width: 1500px){
-    .QF-Button{
+}
+@media(max-width: 1500px){
+    /* .QF-Button{
         padding: 2px 20px;
-    } 
+    }  */
     .QF-Button-label span{
         font-size: 7px;
     }
     .QF-Button-details span{
-        font-size: 11px;
+        font-size: 15px;
     }
 }
 @media(max-width: 1400px){
@@ -60,55 +80,48 @@
         
     } 
     .QF-Button-label span{
-        font-size: 10px;
+        font-size: 13px;
     }
     .QF-Button-details span{
-        font-size:20px;
+        font-size:22px;
     }
 }
-@media(max-width: 1300px){
-    .QF-Button{
+@media(max-width: 1200px){
+    /* .QF-Button{
         padding: 10px;
         width: 30%;
         text-align: center;
         margin: 10px;
-    } 
+    }  */
     .QF-Button-label span{
-        font-size: 20px;
+        font-size: 11px;
     }
     .QF-Button-details span{
-        font-size:28px;
+        font-size:18px;
     }
 }
 @media(max-width: 1000px){
-    .QF-Button{
-        padding: 10px 5px;
-        width: 30%;
-        text-align: center;
-        margin: 10px;
-    } 
+    
     .QF-Button-label span{
-        font-size: 16px;
+        font-size: 9px;
     }
     .QF-Button-details span{
-        font-size: 23px;
+        font-size: 14px;
     }
 }
-@media(max-width: 900px){
+@media(max-width: 800px){
     .QF-Button{
-        padding: 5px 0px;
-        width: 30%;
-        text-align: center;
-        margin: 10px;
+        padding: 7px 15px;
+       
     } 
     .QF-Button-label span{
+        font-size: 8px;
+    }
+    .QF-Button-details span{
         font-size: 12px;
     }
-    .QF-Button-details span{
-        font-size: 18px;
-    }
 }
-@media(max-width: 700px){
+/* @media(max-width: 700px){
     .QF-Button{
         padding: 3px 0px;
         width: 30%;
@@ -122,20 +135,35 @@
     .QF-Button-details span{
         font-size: 15px;
     }
-}
-@media(max-width: 500px){
+} */
+@media(max-width: 700px){
     .QF-Button{
-        padding: 0px 0px;
-        width: 30%;
+        padding: 7px 0px;
+        width: 50%;
         text-align: center;
-        margin: 10px;
+        
         border-radius: 7px;
     } 
     .QF-Button-label span{
-        font-size: 7px;
+        font-size: 10px;
     }
     .QF-Button-details span{
-        font-size: 12px;
+        font-size: 16px;
+    }
+}
+@media(max-width: 600px){
+    .QF-Button{
+        padding: 5px 0px;
+        width: 45%;
+        text-align: center;
+        
+        border-radius: 7px;
+    } 
+    .QF-Button-label span{
+        font-size: 8px;
+    }
+    .QF-Button-details span{
+        font-size: 14px;
     }
 }
 @media(max-width: 400px){
@@ -145,6 +173,7 @@
         text-align: center;
         margin: 5px 10px;
         border-radius: 7px;
+        
     } 
     .QF-Button-label span{
         font-size: 6px;

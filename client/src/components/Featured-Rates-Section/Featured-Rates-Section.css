@@ -31,6 +31,12 @@
     padding: 0 40px;
 }
 
+@media(max-width: 3100px){
+    .FRS{
+        margin-top: 40px;
+    }
+}
+
 @media(max-width: 2870px){
    
 }
@@ -39,6 +45,11 @@
        width: 98%;
    } 
    
+}
+@media(max-width: 2200px){
+    .FRS{
+        margin-top: 20px;
+    }
 }
 
 @media(max-width: 1900px){
@@ -75,5 +86,11 @@
         
         font-size: 22px;
         
+    }
+}
+
+@media(max-width: 1000px){
+    .FRS{
+        margin-top: 40px;
     }
 }

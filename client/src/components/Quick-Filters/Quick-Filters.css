@@ -9,7 +9,7 @@
     margin-left: 70px;
 }
 .qf-title h2{
-    font-size: 23px;
+    font-size: 28px;
 }
 .qf-options{
     display: flex;
@@ -17,9 +17,9 @@
     margin-left: 50px;
 }
 
-@media(max-width: 2870px){
+@media(max-width: 2900px){
     .qf-title h2{
-        font-size: 20px;
+        font-size: 23px;
     }
 }
 @media(max-width: 2200px){
@@ -29,9 +29,14 @@
 }
 
 
-@media(max-width: 1500px){
+@media(max-width: 1600px){
     .qf-title h2{
         font-size: 14px;
+    }
+}
+@media(max-width: 1500px){
+    .qf-title h2{
+        font-size: 12px;
     }
 }
 @media(max-width: 1400px){
@@ -42,7 +47,7 @@
         margin-left: 50px;
     }
     .qf-title h2{
-        font-size: 12px;
+        font-size: 16px;
     }
     .qf-options{
         flex-wrap: wrap;
@@ -50,28 +55,38 @@
         margin-left: 0;
     }
 }
-@media(max-width: 1300px){
-    .qf-title{
-        margin-left: 50px;
-    }
+@media(max-width: 1200px){
+  
     .qf-title h2{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
-@media(max-width: 900px){
-    .qf-title{
-        margin-left: 50px;
-    }
+@media(max-width: 1000px){
     .qf-title h2{
         font-size: 12px;
     }
 }
-@media(max-width: 700px){
+@media(max-width: 800px){
     .qf-title{
+        margin-left: 30px;
+    }
+    .qf-title h2{
+        font-size: 10px;
+    }
+}
+@media(max-width: 700px){
+    /* .qf-title{
         margin-left: 50px;
     }
     .qf-title h2{
         font-size: 10px;
+    } */
+    .qf-option{
+        
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
     }
 }
 @media(max-width: 500px){
