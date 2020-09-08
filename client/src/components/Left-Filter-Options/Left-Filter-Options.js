@@ -14,7 +14,7 @@ const LFOSData = [
     //     ]
     // },
     {
-        label: 'ContractLength',
+        label: 'Contract Length',
         options: [
             'Show All',
             'Monthly / No Contract',
@@ -33,7 +33,7 @@ const LFOSData = [
         ]
     },
     {
-        label: 'Prov',
+        label: 'Provider',
         options: [
             'Show All',
             'Pulse',
@@ -59,7 +59,7 @@ const LeftFilterOptions = ({filterHandle}) =>{
     return (
         <div className='Left-Filter-Options'>
             <div className='LFOS-title'>
-                <span>Search FIlters</span>
+                <span>Search Filters</span>
             </div>
             <div className='LFOS-sq'>
                 {LFOSData.map((data, index) =>{

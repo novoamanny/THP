@@ -32,7 +32,7 @@ const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
                             </div>
                             <div className='ODT-Details-R'>
                             <div className='ODT-Details-R-BTN'> 
-                                <button onClick={() => setMainFormIndex(1)}>Edit</button>
+                                <button onClick={() => setMainFormIndex(1)}>EDIT</button>
                             </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
                     </div>
                     <div className='ODT-Details-R'>
                         <div className='ODT-Details-R-BTN'>
-                           <button onClick={() => setMainFormIndex(0)}>Edit</button>
+                           <button onClick={() => setMainFormIndex(0)}>EDIT</button>
                        </div>
                     </div>
                 </div>

@@ -15,6 +15,9 @@
 .qfs-question{
     font-size: 32px;
     margin-left: 40px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .qfs-label{
     background-color: #1333A6;
@@ -22,6 +25,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 28px;
+
 }
 .qfs-one{
     
@@ -30,6 +34,9 @@
 }
 .qfs-label h2{
     margin-left: 30px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .qfs-layout{
     
@@ -57,9 +64,13 @@
 .no-display{
     display: none;
 }
-.qfs-text{
+.qfs-text h2{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 28px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    
 }
 .qfs-option-box-container{
     display: flex;
@@ -91,6 +102,9 @@
     flex-wrap: wrap;
     justify-content: center;
     font-size: 28px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     
 }
 .qfs-address{
@@ -102,28 +116,42 @@
 }
 .qfs-address-input p{
     font-size: 28px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .qfs-address-input input{
     width: 80%;
     height: 45px;
     padding: 0 20px;
     font-size: 23px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .qfs-zip-input {
     width: 15%;
 }
 .qfs-zip-input p{
     font-size: 28px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .qfs-zip-input  input{
     height: 45px;
     width: 150px;
     padding: 0 20px;
     font-size: 23px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .zip-text p{
     color: red;
     text-decoration: underline;
+    margin-right: 150px;
+    
 }
 .qfs-search{
     width: 10%;
@@ -140,6 +168,9 @@
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     
 }
 .qfs-search-button li{
@@ -150,6 +181,10 @@
 .ofs-text-red{
     color: red;
     font-size: 25px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 20px;
 }
 
 @media(max-width: 3400px){

@@ -78,7 +78,7 @@ const OrderDetails = ({rate, provider}) =>{
                                 <p>Rate Per KWh</p>
                             </div>
                             <div className='DTBR-two'>
-                                <h2>{rate && rate[0].Rate * 100}</h2>
+                                <span>{rate && rate[0].Rate * 100}</span>
                             </div>
                             <div className='DTBR-three'>
                                 <p>[$230.51 / 2000KWh]</p>

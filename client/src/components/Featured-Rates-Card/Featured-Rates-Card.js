@@ -12,7 +12,7 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
                 </div>
                 <div className='FRC-name'>
                     <div>
-                    <span>{rate.rateData.Plan.PlanName}</span>
+                    <span className=''>{rate.rateData.Plan.PlanName}</span>
                     </div>
                     
                 </div>
@@ -77,7 +77,7 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
             </div>
             <div className='FRC-row-seven'>
                 <div className='FRC-seven-label'>
-                    <span>Popular Bill Credit Plan</span>
+                    <span>POPULAR BILL CREDIT PLAN</span>
                 </div>
             </div>
         </div>

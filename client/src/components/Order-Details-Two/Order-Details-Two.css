@@ -10,9 +10,14 @@
     display: flex;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 5px 0;
 }
 .ODT-Label h2{
   margin-left: 50px;
+  font-size: 40px;
+  font-family: "industry", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .ODT-Details-Date, .ODT-Details-Address{
     width: 100%;
@@ -23,34 +28,56 @@
     margin-left: 30px;
     
     font-size: 28px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .ODT-Details-City{
     margin: 10px 0;
     margin-left: 30px;
     font-size: 28px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
     
 }
 .Details-SA-label{
     margin-left: 20px;
     font-size: 22px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .Details-ST-label{
     margin-left: 20px;
     font-size: 22px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .Details-SD-label{
     margin-left: 20px;
     font-size: 22px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .Details-Esiid-label{
     margin-left: 20px;
     font-size: 22px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .Details-Esiid{
     font-size: 28px;
     margin: 20px 0;
     margin-left: 30px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     
 }
 .ODT-Details-L, .ODT-Details-R{
@@ -68,11 +95,20 @@
     background-color: #1333A6;
     color: #fff;
     width: 200px;
-    height: 40px;
+    padding: 8px 0;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 25px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 @media(max-width: 3400px){
+    .ODT-Label h2{
+        
+        font-size: 32px;
+       
+      }
     .Details-SA-label{
         margin-left: 20px;
         font-size: 19px;

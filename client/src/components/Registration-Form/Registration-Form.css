@@ -7,6 +7,7 @@
    
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    margin-top: 150px;
 }
 .form{
     display: flex;
@@ -17,12 +18,17 @@
     
 }
 .form-title{
-    padding: 20px 0;
+    padding: 8px 0;
     background-color: #1333A6;
     color: #fff;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     width: 100%;
+    font-size: 23px;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
 }
 .form-title h2{
     margin-left: 20px;
@@ -65,6 +71,10 @@
 .form-label{
     margin: 10px 0;
     margin-left: 63px;
+    font-size: 26px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .form-input{
     display: flex;
@@ -75,7 +85,10 @@
 .form-input input{ 
     width: 80%;
     height: 40px;
-    
+    font-size: 25px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding: 2px 20px;
     border-radius: 7px;
 }
@@ -95,7 +108,10 @@
 .DOB-input input{
     width: 160px;
     height: 40px;
-    
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
     padding: 2px 20px;
     border-radius: 7px;
     margin: 0 25px;
@@ -118,6 +134,10 @@
 
 .form-sec-two li{
     list-style: none;
+    font-size: 24px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .form-sec-two-two{
     margin-top: 20px;
@@ -129,9 +149,11 @@
     
 }
 .form-sec-two-square{
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+    margin-right: 20px;
 }
 .forn-sec-two-two{
     width: 100%;
@@ -165,6 +187,10 @@
 .form-label-state{
     margin-bottom: 5px;
     margin-left: 63px;
+    font-size: 28px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .form-input-state, .form-input-zipcode{
     display: flex;
@@ -174,9 +200,12 @@
 .form-input-state input, .form-input-zipcode input{
     width: 60%;
     height: 40px;
-    
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding: 2px 20px;
     border-radius: 7px;
+    font-size: 24px;
 }
 
 .form-SSN{
@@ -185,14 +214,18 @@
 
 .UCC-label{
     background-color: #1333A6;
-    padding: 20px 50px;
+    padding: 8px 0;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
    
 }
 .UCC-label h2{
     color: #fff;
-   
+   margin-left: 30px;
 
 }
 .UCC-UI{
@@ -201,13 +234,21 @@
 }
 .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
     margin: 30px 30px;
+    font-size: 24px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .UCC-desc-three{
-    font-weight: bold;
+    font-weight: 600;
 }
 .UCC-form-label{
     width: 100%;
     margin: 30px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
 }
 .UCC-form-input{
     width: 100%;
@@ -216,7 +257,10 @@
 .UCC-form-input input{
     width: 40%;
     height: 40px;
-    
+    font-size: 24px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding: 2px 20px;
     border-radius: 7px;
 }
@@ -233,6 +277,10 @@
 .UCC-form-checkbox-text{
     width: 90%;
     margin-left: 20px;
+    font-size: 22px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media(max-width: 2800px){

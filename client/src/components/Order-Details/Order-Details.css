@@ -10,12 +10,15 @@
     display: flex;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px 0;
+    padding: 5px 0;
     
 }
 .OD-label h2{
     margin-left: 50px;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .OD-Details-Top, .OD-Details-Bottom{
     display: flex;
@@ -43,12 +46,19 @@
 .OD-Details-p span{
     color: rgba(0, 0, 0, 0.4);
     margin-left: 20px;
+    font-size: 24px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .OD-Details-p-two{
    width: 100%;
    margin-top: 20px;
-   margin-left: 40px;
-    font-size: 30px;
+   margin-left: 30px;
+    font-size: 40px;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     
 }
 
@@ -72,20 +82,29 @@
    
     width: 100%;
     text-align: right;
+    
 }
 .DTBR-one p, .DTBR-two h2, .DTBR-three p{
    
     margin-right: 20px;
 }
 .DTBR-one p, .DTBR-three p{
-
+    font-size: 22px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
 }
 .DTBR-one p,.DTBR-three p{
     color: rgba(0, 0, 0, 0.4);
 }
-.DTBR-two h2{
-    font-size: 70px;
+.DTBR-two span{
+    font-size: 80px;
     color: #1333A6;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-right: 30px;
 }
 .OD-Details-Image{
    margin-left: 20px;
@@ -100,9 +119,13 @@
    
 }
 .OD-Details-Button span{
-    margin-left: 30px;
+    margin-left: 50px;
     color: red;
+    font-size: 24px;
     text-decoration: underline;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .OD-Details-Bottom{
     border-bottom-left-radius: 10px;
@@ -129,6 +152,9 @@
     margin-right: 70px;
     margin-left: 40px;
     font-size: 23px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .OD-Details-One-2{
     width: 50%;
@@ -138,6 +164,9 @@
     margin-right: 40px;
     color: #1333A6;
     font-size: 35px;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .OD-Details-Two-1{
@@ -146,7 +175,11 @@
 .OD-Details-Two-1 p{
     margin-left: 40px;
     font-size: 23px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
+
 .OD-Details-Two-2{
     width: 50%;
     text-align: right;
@@ -155,6 +188,9 @@
     margin-right: 40px;
     color: #1333A6;
     font-size: 35px;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .OD-Details-Three-1{
@@ -163,6 +199,9 @@
 .OD-Details-Three-1 p{
     margin-left: 40px;
     font-size: 23px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .OD-Details-Three-2{
     width: 50%;
@@ -172,6 +211,9 @@
     margin-right: 40px;
     color: #1333A6;
     font-size: 35px;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .OD-Details-Four-1{
     width: 30%;
@@ -179,6 +221,9 @@
 .OD-Details-Four-1 p{
     margin-left: 40px;
     font-size: 23px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .OD-Details-Four-2{
     width: 70%;
@@ -189,6 +234,9 @@
     margin-right: 40px;
     color: #1333A6;
     font-size: 25px;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 @media(max-width: 3600px){
@@ -234,7 +282,7 @@
     }
     .OD-label h2{
         
-        font-size: 28px;
+        font-size: 32px;
     }
     .OD-label{
        
@@ -250,8 +298,8 @@
         height: 80px;
         margin-top: 50px;
     }
-    .DTBR-two h2{
-        font-size: 60px;
+    .DTBR-two span{
+        font-size: 70px;
         color: #1333A6;
     }
     
@@ -292,7 +340,7 @@
     }
     .OD-label h2{
         
-        font-size: 25px;
+        font-size: 32px;
     }
     .OD-label{
        
@@ -308,8 +356,8 @@
         height: 80px;
         margin-top: 50px;
     }
-    .DTBR-two h2{
-        font-size: 50px;
+    .DTBR-two span{
+        font-size: 60px;
         color: #1333A6;
     }
     
@@ -366,70 +414,13 @@
         height: 70px;
         margin-top: 30px;
     }
-    .DTBR-two h2{
-        font-size: 40px;
+    .DTBR-two span{
+        font-size: 60px;
         color: #1333A6;
     }
     
 }
-@media(max-width: 2500px){
-    .OD-Details-One-1 p{
-        margin-right: 30px;
-        font-size: 14px;
-    }
-    .OD-Details-One-2 h2{
-       
-        font-size: 24px;
-    }
-    .OD-Details-Two-1 p{
-        
-        font-size: 14px;
-    }
-    .OD-Details-Two-2 h2{
-       
-        font-size: 24px;
-    }
-    .OD-Details-Three-1 p{
-        
-        font-size: 14px;
-    }
-    .OD-Details-Three-2 h2{
-       
-        font-size: 24px;
-    }
-    .OD-Details-Four-1 p{
-      
-        font-size: 14px;
-    }
-   
-    .OD-Details-Four-2 h2{
-       
-        font-size: 14px;
-    }
-    .OD-label h2{
-        
-        font-size: 23px;
-    }
-    .OD-label{
-       
-        padding: 5px 0;
-        
-    }
-    .OD-Details-p-two{
-       
-        font-size: 25px;
-    }
-    .OD-Details-Image img{
-        width: 130px;
-        height: 70px;
-        margin-top: 30px;
-    }
-    .DTBR-two h2{
-        font-size: 40px;
-        color: #1333A6;
-    }
-    
-}
+
 @media(max-width: 2200px){
     .OD-Details-One-1 p{
         margin-right: 30px;
@@ -482,8 +473,8 @@
         height: 60px;
         margin-top: 20px;
     }
-    .DTBR-two h2{
-        font-size: 33px;
+    .DTBR-two span{
+        font-size: 50px;
         color: #1333A6;
     }
     

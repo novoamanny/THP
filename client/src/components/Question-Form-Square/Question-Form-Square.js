@@ -128,7 +128,7 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
 
                         <div className='qfs-search'>
                            <div className='qfs-search-button' onClick={(e) => onSubmit(e)}>
-                               <li>Search</li>
+                               <li>SEARCH</li>
                            </div>
                             
                         </div>

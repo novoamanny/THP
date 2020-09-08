@@ -10,6 +10,9 @@
 }
 .qf-title h2{
     font-size: 28px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .qf-options{
     display: flex;

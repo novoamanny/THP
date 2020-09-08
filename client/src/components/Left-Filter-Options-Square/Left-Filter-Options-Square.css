@@ -19,6 +19,9 @@
     flex-wrap: wrap;
     font-size: 25px;
     color: #1333A6;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .LFOS-options{
     margin-top: 10px;
@@ -32,6 +35,9 @@
    border-radius: 20px;
    transition: ease 0.3s;
    padding: 20px 10px;
+   font-family: "industry", sans-serif;
+   font-weight: 500;
+   font-style: normal;
 }
 .LFOS-option:hover{
     background-color: #f9f9f9;

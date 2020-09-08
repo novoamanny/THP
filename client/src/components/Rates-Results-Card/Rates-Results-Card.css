@@ -34,6 +34,9 @@
 }
 .tlto span{
     color: rgba(0,0,0, 0.4);
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .tltt{
     width: 100%;
@@ -41,6 +44,9 @@
 .tltt span{
     font-size: 30px;
     font-weight: bold;
+    font-family: "industry", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 .RSC-Top-Left-Three {
    padding-top: 50px;
@@ -49,6 +55,9 @@
     color: #EA2335;
     text-decoration: underline;
     font-size: 20px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .RSC-Top-Right{
     width: 50%;
@@ -68,6 +77,9 @@
 .RSC-Top-Right-One-T span{
     font-size: 3em;
     color: #1333A6;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .RSC-Top-Right-One-B{
    width: 100%;
@@ -75,6 +87,9 @@
 }
 .RSC-Top-Right-One-B span{
     font-size: 1em;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .RSC-Top-Right-Two{
     display: flex;
@@ -88,6 +103,9 @@
 .RSC-Top-Right-Two-T span{
     font-size: 3em;
     color: #1333A6;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .RSC-Top-Right-Two-B{
    width: 100%;
@@ -95,6 +113,9 @@
 }
 .RSC-Top-Right-Two-B span{
     font-size: 1em;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .RSC-Top-Right-Three{
     display: flex;
@@ -108,6 +129,9 @@
 .RSC-Top-Right-Three-T span{
     font-size: 3em;
     color: #1333A6;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .RSC-Top-Right-Three-B{
    width: 100%;
@@ -115,6 +139,9 @@
 }
 .RSC-Top-Right-Three-B span{
     font-size: 1em;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .RSC-Bottom{
@@ -135,6 +162,9 @@
 .RSC-Bot-Left span{
     
     font-size: 25px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .RSC-Bot-Right{
     width: 19%;
@@ -165,6 +195,9 @@
     padding: 8px 100px;
     border-radius: 30px;
     background-color: #1333A6;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     
    
 }
@@ -175,6 +208,9 @@
 .RSC-bot-call{
     margin-top: 15px;
     margin-right: 20px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .RSC-bot-num{
     margin-top: 10px;
@@ -183,6 +219,9 @@
     color: #EA2335;
     font-size: 2em;
     text-decoration: underline;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 

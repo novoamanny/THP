@@ -203,7 +203,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                         <span>Address 2</span>
                                     </div>
                                     <div className='form-input'>
-                                        <input name='Address1' placeholder='# Street Address' type='text' value={Address1} onChange={(e) => onChange(e)}/>
+                                        <input name='Address1' placeholder='# Street Address' type='text' value={''} onChange={(e) => onChange(e)}/>
                                     </div>
                                 </div>
                                 <div className='state-zip'>
@@ -270,9 +270,9 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                         
                         
                     </div>
-                    <div className='form-submit'>
+                    {/* <div className='form-submit'>
                         <input className='form-submit-btn' type='submit' value={'Submit'}/>
-                    </div>
+                    </div> */}
                 </div>
                 
             </form>
