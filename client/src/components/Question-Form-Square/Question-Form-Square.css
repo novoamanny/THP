@@ -66,10 +66,11 @@
 }
 .qfs-text h2{
     margin-left: 20px;
-    font-size: 28px;
+    font-size: 35px;
     font-family: "industry", sans-serif;
     font-weight: 600;
     font-style: normal;
+    width: 90%;
     
 }
 .qfs-option-box-container{
@@ -196,9 +197,9 @@
         
         font-size: 22px;
     }
-    .qfs-text{
+    .qfs-text h2{
         
-        font-size: 19px;
+        font-size: 30px;
     }
     .qfs-option-box{
         width: 25px;
@@ -257,9 +258,9 @@
         
         font-size: 19px;
     }
-    .qfs-text{
+    .qfs-text h2{
         
-        font-size: 17px;
+        font-size: 28px;
     }
     .qfs-option-box{
         width: 20px;
@@ -303,9 +304,9 @@
         
         font-size: 17px;
     }
-    .qfs-text{
+    .qfs-text h2{
         
-        font-size: 15px;
+        font-size: 25px;
     }
     .qfs-option-box{
         width: 18px;
@@ -362,9 +363,9 @@
         
         font-size: 14px;
     }
-    .qfs-text{
+    .qfs-text h2{
         
-        font-size: 12px;
+        font-size: 22px;
     }
     .qfs-option-box{
         width: 15px;

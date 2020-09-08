@@ -11,7 +11,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .RLS-Top h2{
     font-size: 40px;
@@ -60,9 +61,15 @@
     margin-left: 10px;
     margin-bottom: 10px;
 }
-
+@media(max-width: 3400px){
+    .RLS-Top{
+        padding-top: 20px;
+    }
+}
 @media(max-width: 2800px){
-    
+    .RLS-Top{
+        padding-top: 10px;
+    }
 }
 @media(max-width: 2500px){
     .RLS-Top{

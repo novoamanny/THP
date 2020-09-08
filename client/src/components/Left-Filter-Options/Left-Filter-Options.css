@@ -17,8 +17,8 @@
     flex-wrap: wrap;
     justify-content: center;
     border-bottom: 2px solid rgba(0,0,0,0.1);
-    padding: 30px 0;
-    margin-top: 60px;
+    
+    
 }
 .LFOS-title span{
     color: #2f2f2f;
@@ -27,8 +27,13 @@
     font-weight: 600;
     font-style: normal;
     
+    
 }
-
+@media(max-width: 3400px){
+    .LFOS-title{
+        margin-top: 400px;
+    }
+}
 @media(max-width: 3290px){
     .Left-Filter-Options{
         margin-left: 9%;

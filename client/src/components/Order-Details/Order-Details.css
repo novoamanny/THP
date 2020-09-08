@@ -296,7 +296,8 @@
     .OD-Details-Image img{
         width: 150px;
         height: 80px;
-        margin-top: 50px;
+        margin-top: 30px;
+        margin-left: 20px;
     }
     .DTBR-two span{
         font-size: 70px;
@@ -354,11 +355,26 @@
     .OD-Details-Image img{
         width: 150px;
         height: 80px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .DTBR-two span{
         font-size: 60px;
         color: #1333A6;
+    }
+    .DTBR-one p, .DTBR-three p{
+        font-size: 18px;
+       
+        
+    }
+    .OD-Details-p span{
+       
+        font-size: 18px;
+     
+    }
+    .OD-Details-Button span{
+     
+        font-size: 20px;
+       
     }
     
 }
@@ -412,13 +428,27 @@
     .OD-Details-Image img{
         width: 130px;
         height: 70px;
-        margin-top: 30px;
+        
     }
     .DTBR-two span{
         font-size: 60px;
         color: #1333A6;
     }
-    
+    .DTBR-one p, .DTBR-three p{
+        font-size: 15px;
+       
+        
+    }
+    .OD-Details-p span{
+       
+        font-size: 15px;
+     
+    }
+    .OD-Details-Button span{
+     
+        font-size: 17px;
+       
+    }
 }
 
 @media(max-width: 2200px){
@@ -476,6 +506,21 @@
     .DTBR-two span{
         font-size: 50px;
         color: #1333A6;
+    }
+    .DTBR-one p, .DTBR-three p{
+        font-size: 13px;
+       
+        
+    }
+    .OD-Details-p span{
+       
+        font-size: 13px;
+     
+    }
+    .OD-Details-Button span{
+     
+        font-size: 15px;
+       
     }
     
 }
@@ -538,14 +583,21 @@
         width: 90px;
         height: 50px;
         margin-top: 20px;
+        margin-left: 10px;
     }
-    .DTBR-two h2{
-        font-size: 28px;
+    .DTBR-two span{
+        font-size: 40px;
         color: #1333A6;
     }
     .DTBR-one p, .DTBR-three p{
-        font-size: 14px;
-    }   
+        font-size: 13px;
+    }  
+    .OD-Details-Button span{
+     
+        font-size: 13px;
+        margin-left: 30px;
+       
+    } 
 }
 
 @media(max-width: 1800px){

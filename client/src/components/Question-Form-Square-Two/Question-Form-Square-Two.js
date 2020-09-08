@@ -5,6 +5,7 @@ import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 
 import '../Question-Form-Square/Question-Form-Square.css';
+import './Question-Form-Square-Two.css';
 
 
 const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFormIndex}) =>{
@@ -78,7 +79,7 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
                     <div className={ formSlideIndex === 1 ? 'qfs-text' : (formSlideIndex === 3 ? 'qfs-text' : 'no-display')}> 
                         <p>Select Date:</p>
                     </div>
-                    <div className={ formSlideIndex === 1 ? 'qfs-options-cal' : (formSlideIndex === 3 ? 'qfs-options' : 'no-display')}>
+                    <div className={ formSlideIndex === 1 ? 'qfs-options-cal' : (formSlideIndex === 3 ? 'qfs-optionsl' : 'no-display')}>
                         <Calendar onClickDay={(e) => onCalendarClickHandle(e)}/>
                     </div>
                 </div>

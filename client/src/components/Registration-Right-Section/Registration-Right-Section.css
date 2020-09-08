@@ -19,6 +19,32 @@
     justify-content: center;
     width: 100%;
 }
+@media(max-width: 3400px){
+    .Rrs{
+        padding-top: 120px;
+    }
+}
+
+@media(max-width: 2800px){
+    .Rrs{
+        padding-top: 100px;
+    }
+}
+@media(max-width: 2500px){
+    .Rrs{
+        padding-top: 90px;
+    }
+}
+@media(max-width: 2100px){
+    .Rrs{
+        padding-top: 70px;
+    }
+}
+@media(max-width: 2100px){
+    .Rrs{
+        padding-top: 70px;
+    }
+}
 @media(max-width: 1200px){
     .Rrs{
         width: 30%;
