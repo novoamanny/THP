@@ -10,10 +10,11 @@
     padding-top: 20px;
     padding-bottom: 60px;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 280px;
     
    
 }
+
 .FRS-title{
     width: 100%;
     
@@ -34,9 +35,9 @@
     padding: 0 40px;
 }
 @media(max-width: 3200px){
-    .FRS{
+    /* .FRS{
         margin-top: 40px;
-    }
+    } */
 }
 
 /* @media(max-width: 3100px){

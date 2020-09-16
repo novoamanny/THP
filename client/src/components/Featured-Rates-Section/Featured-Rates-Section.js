@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import FeaturedRatesCard from '../Featured-Rates-Card/Featured-Rates-Card';
 
@@ -36,6 +36,9 @@ const images = [
 
 const FeaturedRatesSection = ({resultData, ZipCode}) =>{
 
+
+    const [changePDP, setChangePDP] = useState(false)
+
     let list = []
     let temp;
     let image;
@@ -72,7 +75,12 @@ const FeaturedRatesSection = ({resultData, ZipCode}) =>{
 
 
                 if(index < 4){
-                    return <FeaturedRatesCard rate={prov} ZipCode={ZipCode}/>
+                    return(
+                        
+                            
+                        <FeaturedRatesCard changePDP={changePDP} setChangePDP={setChangePDP} rate={prov} ZipCode={ZipCode}/>
+                        
+                    )
                 }
             })}
             </div>

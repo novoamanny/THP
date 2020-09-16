@@ -3,7 +3,7 @@
     margin-top: 110px;
 }
 .of-info span{
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
     font-family: "industry", sans-serif;
     font-weight: 400;
@@ -27,7 +27,7 @@
 }
 @media(max-width:3100px){
     .of-info span{
-        font-size: 28px;
+        font-size: 32px;
         
     }
 }

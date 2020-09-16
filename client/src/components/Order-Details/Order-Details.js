@@ -30,7 +30,7 @@ const images = [
     
 ]
 
-const OrderDetails = ({rate, provider}) =>{
+const OrderDetails = ({rate, provider, setChangePDP}) =>{
 
     
   
@@ -69,7 +69,7 @@ const OrderDetails = ({rate, provider}) =>{
                             <div className='OD-Details-Image'>
                                 <img src={image}/>
                             </div>
-                            <div className='OD-Details-Button'>
+                            <div className='OD-Details-Button' onClick={() => setChangePDP(true)}>
                                 <span>Plan Details</span>
                             </div>
                         </div>
@@ -117,6 +117,17 @@ const OrderDetails = ({rate, provider}) =>{
                         </div>
                         <div className='OD-Details-Four-2'>
                             <h2>{`$${rate && rate[0].CancellationFeeAmount}/month remaining in contract`}</h2>
+                        </div>
+                    </div>
+                    <div className='OD-Details-Five'>
+                        <div className='PDF-btn-OD'>
+                            <a target='_blank' href={rate && rate[0].EFLLink}>Facts Label</a>
+                        </div>
+                        <div className='PDF-btn-OD'>
+                            <a target='_blank' href={rate && rate[0].TOSLink}>Terms of Service</a>
+                        </div>
+                        <div className='PDF-btn-OD'>
+                            <a target='_blank' href={rate && rate[0].YRACLink}>YRAC</a>
                         </div>
                     </div>
 

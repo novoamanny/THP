@@ -1,11 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
+
 import './Featured-Rates-Card.css';
 
-const FeaturedRatesCard = ({rate, ZipCode}) =>{
+const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode}) =>{
     return(
         <div className='FRC'>
+             {
+                changePDP && <PlanDetailsPop setChangePDP={setChangePDP} rate={rate}/>
+            }
             <div className='FRC-row-one'>
                 <div className='FRC-id'>
                     <span>{`${rate.provider} | ${rate.rateData.RateID}`}</span>
@@ -30,7 +35,7 @@ const FeaturedRatesCard = ({rate, ZipCode}) =>{
                     </div>
                 </div>
                 <div className='FRC-two-B'>
-                    <div className='FRC-details-btn'>
+                    <div className='FRC-details-btn' onClick={() => setChangePDP(true)}>
                         <span>Plan Details</span>
                     </div>
                     <div className='FRC-other-info'>

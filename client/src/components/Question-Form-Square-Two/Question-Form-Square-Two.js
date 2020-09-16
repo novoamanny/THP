@@ -59,7 +59,7 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
                                 <p>Switching [Specific Date]</p>
                             </div>
                         </div>
-                        <div className='qfs-option' onClick={() => setFormSlideIndex(1)}>
+                        {/* <div className='qfs-option' onClick={() => setFormSlideIndex(1)}>
                             <div className='qfs-option-box-container'>
                                 <div className='qfs-option-box'>
 
@@ -68,7 +68,7 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
                             <div className='qfs-option-text'>
                                 <p>Switching [Standard Switch]</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className={ formSlideIndex === 1 ? 'qfs-two' : 'not-active'}>

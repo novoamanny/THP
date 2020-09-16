@@ -5,14 +5,14 @@ import OrderDetailsTwo from '../Order-Details-Two/Order-Details-Two';
 
 import './Registration-Right-Section.css';
 
-const RegistrationRightSection = ({rate, provider, formData, mainFormIndex, setMainFormIndex}) =>{
+const RegistrationRightSection = ({setChangePDP, rate, provider, formData, mainFormIndex, setMainFormIndex}) =>{
     return(
         <div className='Rrs'>
             {
                 mainFormIndex >= 1 && <OrderDetailsTwo formData={formData} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex}/>
             }
             
-            <OrderDetails rate={rate} provider={provider}/>
+            <OrderDetails setChangePDP={setChangePDP} rate={rate} provider={provider}/>
             
         </div>
     )

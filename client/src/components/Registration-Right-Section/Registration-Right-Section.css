@@ -42,7 +42,12 @@
 }
 @media(max-width: 2100px){
     .Rrs{
-        padding-top: 70px;
+        padding-top: 80px;
+    }
+}
+@media(max-width: 1900px){
+    .Rrs{
+        padding-top: 65px;
     }
 }
 @media(max-width: 1200px){

@@ -1,9 +1,9 @@
 .Filter-Layout{
     margin-left: 25%;
     margin-right: 10%;
-    margin-top: 8%;
+    /* margin-top: 280px; */
     overflow-y: scroll;
-    height: 85vh;
+    height: 95vh;
     /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .top-filters{
@@ -12,9 +12,12 @@
     justify-content: center;
     position: fixed;
     z-index: 10;
-    top: 5%;
+    top: 70px;
     width: 100%;
-    
+    background-color: #fff;
+    padding-bottom: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .filters-mobile{
     display: none;
@@ -148,6 +151,11 @@
     border-radius: 20px;
     margin: 20px 0;
     cursor: pointer;
+}
+@media(max-width: 3500px){
+    /* .top-filters{
+        top: 80px
+    } */
 }
 @media(max-width: 3290px){
     .Filter-Layout{

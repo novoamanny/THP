@@ -7,6 +7,7 @@ import RegistrationMidSection from '../Registration-Mid-Section/Registration-Mid
 import RegistrationRightSection from '../Registration-Right-Section/Registration-Right-Section';
 import ConfirmationModal from '../Confirmation-Modal/Confirmation-Modal';
 import ChangeZipCodeModal from '../Change-ZipCode-Modal/Change-ZipCode-Modal';
+import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
 
 
 import {getRate} from '../../actions/rates';
@@ -48,6 +49,11 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation
 
     const [mainFormIndex, setMainFormIndex] = useState(0);
     const [changeZipModal, setChangeZipModal] = useState(false)
+    const [changePDP, setChangePDP] = useState(false)
+      const RATE = {
+          Provider: match.params.provider,
+          rateData: rate && rate[0]
+      }
       
 
       const data = {
@@ -62,13 +68,14 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation
             
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
             <RegistrationMidSection mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
-            <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex}/>
+            <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP}/>
             {
                 changeZipModal && <ChangeZipCodeModal setChangeZipModal={setChangeZipModal} ZipCode={match.params.zipcode}/>
             }
             {
-                confirmation && <ConfirmationModal confirmation={confirmation && confirmation}/>
+                changePDP && <PlanDetailsPop setChangePDP={setChangePDP} rate={RATE}/>
             }
+          
         </div>
     )
 }

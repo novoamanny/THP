@@ -17,10 +17,10 @@ const qfData = [
         label: 'Large Home',
         kwh: 2000
     },
-    {
-        label: 'Your Home',
-        kwh: '_____'
-    },
+    // {
+    //     label: 'Your Home',
+    //     kwh: '_____'
+    // },
 ]
 
 const QuickFilters = ({setQuickFilters, quickFilters}) =>{

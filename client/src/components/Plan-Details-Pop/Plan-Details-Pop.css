@@ -1,0 +1,107 @@
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+}
+
+.PDP-UI{
+    position: fixed;
+    z-index: 400;
+    width: 45%;
+    left: 30%;
+    top: 18%;
+    background-color: #fff;
+    border-radius: 20px;
+   
+    
+    font-family: "industry", sans-serif;
+    
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.PDP-label-one{
+    background-color:#1333A6;
+    width: 100%;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 45px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.PDP-label-one span{
+    margin-left: 50px;
+}
+.PDP-sec-one{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.PDP-ETF{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.PDP-note{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+.PDP-RD{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.PDP-desc{
+    font-size: 30px;
+    font-weight: 400;
+}
+.PDP-sec-two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    padding: 50px 150px;
+    
+}
+.PDP-row{
+    width: 100%;
+    display: flex;
+    border-bottom: solid rgba(0, 0, 0, 0.1) 2px;
+    padding: 30px 0;
+}
+.PDP-row:nth-child(3){
+  border-bottom: none;
+  
+}
+.PDP-col{
+    width: 50%;
+    display: flex;
+}
+.PDP-col-col{
+    width: 30%;
+    text-align: center;
+}
+.PDP-PDF{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.PDF-btn{
+    margin: 0 40px;
+    font-size: 28px;
+   
+    
+}
+.PDF-btn a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}

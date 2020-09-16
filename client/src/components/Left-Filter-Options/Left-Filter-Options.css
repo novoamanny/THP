@@ -5,7 +5,7 @@
     z-index: 10;
     height: 100%;
     width: 15%;
-    padding-top: 150px;
+    padding-top: 220px;
     background-color: #fff;
     border-right: solid 2px rgba(0,0,0,0.2);;
     margin-left: 10%;
@@ -30,14 +30,14 @@
     
 }
 @media(max-width: 3400px){
-    .LFOS-title{
-        margin-top: 400px;
-    }
+    /* .LFOS-title{
+        margin-top: 40px;
+    } */
 }
 @media(max-width: 3290px){
-    .Left-Filter-Options{
+    /* .Left-Filter-Options{
         margin-left: 9%;
-    }
+    } */
 }@media(max-width: 3110px){
     .Left-Filter-Options{
         margin-left: 7%;

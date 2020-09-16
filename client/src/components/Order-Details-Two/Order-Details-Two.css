@@ -237,7 +237,7 @@
 
     } 
 }
-@media(max-width: 2100px){
+@media(max-width: 2200px){
     .Details-SA-label{
         margin-left: 10px;
         font-size: 12px;
@@ -274,9 +274,14 @@
     .ODT-Details-R-BTN button{
        
         width: 130px;
-        height: 30px;
+        height: 40px;
         
     }
+    .ODT-Label h2{
+        margin-left: 50px;
+        font-size: 21px;
+     
+      }
 }
 @media(max-width: 1900px){
     .Details-SA-label{
@@ -295,19 +300,19 @@
         margin: 5px 0;
         margin-left: 12px;
         
-        font-size: 10px;
+        font-size: 12px;
     }
     .ODT-Details-City{
         margin: 5px 0;
         margin-left: 12px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .Details-Esiid-label{
         margin-left: 10px;
         font-size: 10px;
     }
     .Details-Esiid{
-        font-size: 10px;
+        font-size: 12px;
         margin: 8px 0;
         margin-left: 12px;
         
@@ -315,9 +320,17 @@
     .ODT-Details-R-BTN button{
        
         width: 100px;
-        height: 30px;
+        height: 34px;
+        font-size: 14px;
+        
+        
         
     }
+    .ODT-Label h2{
+        margin-left: 20px;
+        font-size: 20px;
+     
+      }
 }
 
 @media(max-width: 1500px){
