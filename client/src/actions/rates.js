@@ -18,7 +18,7 @@ export const getRates = (ZipCode, filterOptions) => async dispatch =>{
     
 
     try {
-        const res = await axios.post(`http://localhost:5000/api/pulse/rates/get/rates/`, body, config);
+        const res = await axios.post(`api/pulse/rates/get/rates/`, body, config);
 
         
         var result;
@@ -122,7 +122,7 @@ export const getRate = (RateID, Provider, ZipCode) => async dispatch =>{
   const body = JSON.stringify({ ZipCode, Provider, RateID});
 
   try {
-      const res = await axios.post(`http://localhost:5000/api/pulse/rates/get/rate/${RateID}`, body, config);
+      const res = await axios.post(`/api/pulse/rates/get/rate/${RateID}`, body, config);
        
       dispatch({
         type: GET_RATE_SUCCESS,
