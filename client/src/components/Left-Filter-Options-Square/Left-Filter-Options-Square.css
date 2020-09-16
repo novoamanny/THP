@@ -17,7 +17,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 35px;
     color: #1333A6;
     font-family: "industry", sans-serif;
     font-weight: 600;
@@ -38,6 +38,7 @@
    font-family: "industry", sans-serif;
    font-weight: 500;
    font-style: normal;
+   
 }
 .LFOS-option:hover{
     background-color: #f9f9f9;
@@ -54,7 +55,16 @@
 }
 .checkbox span{
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 28px;
+}
+
+@media(max-width: 2900px){
+    .LFOS-Label{
+        font-size: 31px;
+    }
+    .checkbox span{
+        font-size: 25px;
+    }
 }
 
 @media(max-width: 2485px){

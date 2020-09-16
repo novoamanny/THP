@@ -46,8 +46,10 @@
     }
 } */
 
-@media(max-width: 2870px){
-   
+@media(max-width: 2900px){
+   .FRS{
+       margin-top: 250px;
+   }
 }
 @media(max-width: 2400px){
    .FRS{

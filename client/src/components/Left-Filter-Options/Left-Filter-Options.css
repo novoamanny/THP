@@ -5,7 +5,7 @@
     z-index: 10;
     height: 100%;
     width: 15%;
-    padding-top: 220px;
+    padding-top: 185px;
     background-color: #fff;
     border-right: solid 2px rgba(0,0,0,0.2);;
     margin-left: 10%;
@@ -22,7 +22,7 @@
 }
 .LFOS-title span{
     color: #2f2f2f;
-    font-size: 30px;
+    font-size: 50px;
     font-family: "industry", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -41,6 +41,14 @@
 }@media(max-width: 3110px){
     .Left-Filter-Options{
         margin-left: 7%;
+    }
+}
+@media(max-width: 2900px){
+    .Left-Filter-Options{
+        padding-top: 180px;
+    }
+    .LFOS-title span{
+        font-size: 40px;
     }
 }
 @media(max-width: 2870px){
