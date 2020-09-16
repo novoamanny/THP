@@ -18,7 +18,7 @@ export const getRates = (ZipCode, filterOptions) => async dispatch =>{
     
 
     try {
-        const res = await axios.post(`api/pulse/rates/get/rates/`, body, config);
+        const res = await axios.post(`/api/pulse/rates/get/rates/`, body, config);
 
         
         var result;
