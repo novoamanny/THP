@@ -3,7 +3,7 @@
     margin-right: 10%;
     /* margin-top: 280px; */
     overflow-y: scroll;
-    height: 95vh;
+    height: 98vh;
     /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .top-filters{
@@ -24,8 +24,8 @@
     width: 100%;
     
     position: fixed;
-    top: 4%;
-    z-index:500;
+    top: 60px;
+    z-index:300;
     
     
 }
@@ -33,17 +33,21 @@
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    width: 80%;
+    width: 95%;
     background-color: #f9f9f9;
     padding: 15px 0;
     text-decoration: underline;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     
 }
 .filter-mobile-button span{
     margin-left: 20px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .filter-mobile-active{
     
@@ -61,10 +65,12 @@
     
 }
 .filter-mobile-ui-active{
-    width: 80%;
+    width: 95%;
     background-color: #f9f9f9;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+   
     
     
     
@@ -76,7 +82,10 @@
 }
 .mobile-ui-labels{
    color: #1333a6;
-   font-weight: bold;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
    margin-left: 50px;
    margin-bottom: 10px;
 }
@@ -85,8 +94,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-    margin-top: 30px;
+    font-family: "industry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 .left-mobile-options{
     width:50%;
@@ -102,12 +116,18 @@
     
 }
 .mobile-option{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: left;
     list-style: none;
-    margin: 16px 0;
+    margin: 5px 0;
     cursor: pointer;
+    padding: 8px 0;
+    border-radius: 10px;
+    
+}
+.mobile-option:hover{
+    background-color: #fff;
     
 }
 /* .mobile-option:hover{
@@ -116,8 +136,8 @@
     
 } */
 .mobile-option-checkbox{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     background-color: blue;
     margin-left: 50px;
     margin-right: 20px;
@@ -142,8 +162,11 @@
     
 }
 .hide-filters-button{
-    width: 250px;
-    font-size: 16px;
+    width: 370px;
+    font-size: 20px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     padding: 10px 0;
     background-color: #1333a6;
     color: #fff;
@@ -184,6 +207,11 @@
         
     } */
 }
+@media(max-width: 2800px){
+    /* .top-filters{
+        top: 60px;
+    } */
+}
 @media(max-width: 2740px){
     .Filter-Layout{
         margin-right: 3%;
@@ -196,6 +224,11 @@
         margin-left: 17%;
     }
 }
+@media(max-width: 2500px){
+    .top-filters{
+        top: 50px;
+    }
+}
 @media(max-width: 2485px){
     .Filter-Layout{
         margin-right: 0;
@@ -205,14 +238,12 @@
     
 }
 @media(max-width: 2200px){
-    .top-filters{
+    /* .top-filters{
         position: fixed;
         z-index: 10;
-        top: 4%;
-    }
-    .Filter-Layout{
-        margin-top: 9%;
-    }
+        
+    } */
+  
 }
 
 @media(max-width: 1800px){
@@ -270,7 +301,10 @@
         
     }
     .mobile-ui-options{
-        font-size: 14px;
+        font-size: 15px;
+    }
+    .mobile-ui-labels{
+        font-size: 17px;
     }
     .mobile-option-checkbox{
         width: 14px;
@@ -278,29 +312,32 @@
        
     }
     .hide-filters-button{
-        width: 220px;
-        font-size: 14px;
-        padding: 10px 0;
+        
+        font-size: 16px;
         
         
         
-        border-radius: 20px;
-        margin: 20px 0;
+        width: 320px;
+        
+        
         
     }
 }
 
 @media(max-width: 1000px){
-    .filter-mobile-button{
+    /* .filter-mobile-button{
         padding: 15px 0;
         
-    }
+    } */
     .filter-mobile-button span{
-        font-size: 14px;
+        font-size: 15px;
         
     }
+    .mobile-ui-labels{
+        font-size: 15px;
+    }
     .mobile-ui-options{
-        font-size: 12px;
+        font-size: 13px;
     }
     .mobile-option-checkbox{
         width: 12px;
@@ -309,119 +346,248 @@
     }
     .mobile-option{
         
-        margin: 13px 0;
+        
     }.mobile-ui-options{
        
         
         margin-top: 20px;
     }
     .hide-filters-button{
-        width: 180px;
-        font-size: 12px;
-        padding: 10px 0;
+        width: 280px;
+        font-size: 14px;
         
         
         
-        border-radius: 20px;
-        margin: 20px 0;
+        
+        
+        
         
     }
 
 }
-@media(max-width: 800px){
-    .filter-mobile-button{
-        padding: 15px 0;
+@media(max-width: 900px) and (orientation: landscape){
+     .filter-mobile-button{
+        padding: 10px 0;
         
+    }
+    .filters-mobile{
+        top: 50px;
     }
     .filter-mobile-button span{
         font-size: 12px;
         
     }
+    .mobile-ui-labels{
+        font-size: 13px;
+        width: 100%;
+    }
     .mobile-ui-options{
-        font-size: 10px;
+        font-size: 13px;
+        width: 68%;
+        padding-top: 5px;
+        margin: 0;
+        border-top: none;
+        border-left: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .mobile-option-checkbox{
+        width: 12px;
+        height: 12px;
+       
+    }
+    .mobile-option{
+        width: 100%;
+        margin: 2px;
+        padding: 6px 0;
+    }.mobile-ui-options{
+       
+        
+    
+    }
+    .hide-filters-button{
+        width: 280px;
+        font-size: 14px;
+        margin-top: 5px;
+
+        
+    }
+    .filter-mobile-ui-active{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 800px){
+      /* .filter-mobile-button{
+        padding: 15px 0;
+        
+    } */
+    .filter-mobile-button span{
+        font-size: 13px;
+        
+    }
+    .mobile-ui-labels{
+        font-size: 13px;
+    }
+    .mobile-ui-options{
+        font-size: 11px;
     }
     .mobile-option-checkbox{
         width: 10px;
-        height: 10px;
+        height: 10x;
        
     }
     .mobile-option{
+        margin: 3px 0;
         
-        margin: 10px 0;
     }.mobile-ui-options{
        
         
         margin-top: 20px;
     }
     .hide-filters-button{
-        width: 150px;
-        font-size: 10px;
-        padding: 8px 0;
-        
-        
-        
-        border-radius: 20px;
-        margin: 20px 0;
-        
-    }
-
-}
-/* @media(max-width: 700px){
-    .filter-mobile-button{
-        padding: 10px 0;
-        font-size: 15px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .mobile-ui-options{
-        font-size: 8px;
-    }
-    .mobile-option-checkbox{
-        width: 12px;
-        height: 12px;
-        margin-right: 10px;
-        margin-left: 20px;
-    }
-    .mobile-option{
-        
-        margin: 10px 0;
-    }.mobile-ui-options{
-       
-        
-        margin-top: 10px;
-    }
-
-
-} */
-/* @media(max-width: 500px){
-    .filter-mobile-button{
-        padding: 5px 0;
+        width: 250px;
         font-size: 12px;
         
+        
+        
+        
+        
+        
+        
     }
-} */
 
-@media(max-width: 400px){
-    .Filter-Layout{
-        margin-top: 22%;
-        height: 87vh;
-        /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
-    }
 }
-/* @media screen and (max-height: 1200px){
-    .top-filters{
+@media(max-width: 700px) and (orientation: landscape){
+    .filter-mobile-button{
+       padding: 10px 0;
        
-        position: fixed;
-        z-index: 10;
-        top: 8%;
-    }
+   }
+   .filters-mobile{
+       top: 50px;
+   }
+   .filter-mobile-button span{
+       font-size: 12px;
        
-}@media screen and (max-height: 700px){
-    .top-filters{
+   }
+   .mobile-ui-labels{
+       font-size: 13px;
+       width: 100%;
+   }
+   .mobile-ui-options{
+       font-size: 11px;
+       width: 68%;
+       padding-top: 5px;
+       margin: 0;
+       border-top: none;
+       border-left: 1px solid rgba(0, 0, 0, 0.05);
+   }
+   .mobile-option-checkbox{
+       width: 12px;
+       height: 12px;
+      
+   }
+   .mobile-option{
+       width: 100%;
+       margin: 2px;
+       padding: 3px 0;
+   }.mobile-ui-options{
+      
        
-        position: fixed;
-        z-index: 10;
-        top: 10%;
-    }
+   
+   }
+   .hide-filters-button{
+       width: 280px;
+       font-size: 12px;
+       margin-top: 5px;
+
        
-} */
+   }
+   .filter-mobile-ui-active{
+       display: flex;
+       flex-wrap: wrap;
+   }
+}
+@media(max-width: 600px){
+    /* .filter-mobile-button{
+      padding: 15px 0;
+      
+  } */
+  .filter-mobile-button span{
+      font-size: 12px;
+      
+  }
+  .mobile-ui-labels{
+      font-size: 12px;
+  }
+  .mobile-ui-options{
+      font-size: 10px;
+  }
+  .mobile-option-checkbox{
+      width: 10px;
+      height: 10x;
+     
+  }
+  .mobile-option{
+      margin: 2px 0;
+      padding: 6px 0;
+      
+  }.mobile-ui-options{
+     
+      
+      margin-top: 20px;
+  }
+  .hide-filters-button{
+      width: 230px;
+      font-size: 12px;
+      
+      
+      
+      
+      
+      
+      
+  }
+
+}
+
+@media(max-width: 500px){
+    .filter-mobile-button{
+      padding: 10px 0;
+      
+  }
+  .filter-mobile-button span{
+      font-size: 10px;
+      
+  }
+  .mobile-ui-labels{
+      font-size: 10px;
+  }
+  .mobile-ui-options{
+      font-size: 9px;
+  }
+  .mobile-option-checkbox{
+      width: 8px;
+      height: 8px;
+     
+  }
+  .mobile-option{
+      margin: 2px 0;
+      padding: 6px 0;
+      
+  }.mobile-ui-options{
+     
+      
+      margin-top: 20px;
+  }
+  .hide-filters-button{
+      width: 210px;
+      font-size: 11px;
+      
+      
+      
+      
+      
+      
+      
+  }
+
+}

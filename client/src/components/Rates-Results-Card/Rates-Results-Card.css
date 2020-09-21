@@ -23,6 +23,7 @@
     display: flex;
     /* grid-template-columns: 1fr 1fr 1fr; */
 }
+
 .RSC-Top-Left-Two{
     margin-left: 100px;
     margin-top: 20px;
@@ -36,25 +37,27 @@
     color: rgba(0,0,0, 0.4);
     font-family: "industry", sans-serif;
     font-weight: 600;
+    font-size: 24px;
     font-style: normal;
 }
 .tltt{
     width: 100%;
 }
 .tltt span{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     font-family: "industry", sans-serif;
     font-weight: 800;
     font-style: normal;
 }
 .RSC-Top-Left-Three {
-   padding-top: 50px;
+   margin-top: 70px;
+   cursor: pointer;
 }
 .RSC-Top-Left-Three span{
     color: #EA2335;
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "industry", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -75,7 +78,7 @@
     text-align: right;
 }
 .RSC-Top-Right-One-T span{
-    font-size: 3em;
+    font-size: 50px;
     color: #1333A6;
     font-family: "industry", sans-serif;
     font-weight: 600;
@@ -86,7 +89,7 @@
    text-align: right;
 }
 .RSC-Top-Right-One-B span{
-    font-size: 1em;
+    font-size: 20px;
     font-family: "industry", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -101,7 +104,7 @@
     text-align: right;
 }
 .RSC-Top-Right-Two-T span{
-    font-size: 3em;
+    font-size: 50px;
     color: #1333A6;
     font-family: "industry", sans-serif;
     font-weight: 600;
@@ -112,7 +115,7 @@
    text-align: right;
 }
 .RSC-Top-Right-Two-B span{
-    font-size: 1em;
+    font-size: 20px;
     font-family: "industry", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -127,7 +130,7 @@
     text-align: right;
 }
 .RSC-Top-Right-Three-T span{
-    font-size: 3em;
+    font-size: 50px;
     color: #1333A6;
     font-family: "industry", sans-serif;
     font-weight: 600;
@@ -138,7 +141,7 @@
    text-align: right;
 }
 .RSC-Top-Right-Three-B span{
-    font-size: 1em;
+    font-size: 20px;
     font-family: "industry", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -161,7 +164,7 @@
 }
 .RSC-Bot-Left span{
     
-    font-size: 25px;
+    font-size: 35px;
     font-family: "industry", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -192,18 +195,21 @@
 .RSC-Link{
     text-decoration: none;
     color: #fff;
-    padding: 8px 100px;
+    padding: 15px 0;
+    width: 350px;
+    text-align: center;
     border-radius: 30px;
     background-color: #1333A6;
     font-family: "industry", sans-serif;
     font-weight: 600;
+    font-size: 24px;
     font-style: normal;
     
    
 }
 .RSC-Top-Left-One img{
-    height: 100px;
-    width: 150px;
+    height: 110px;
+    width: 180px;
 }
 .RSC-bot-call{
     margin-top: 15px;
@@ -211,13 +217,14 @@
     font-family: "industry", sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 20px;
 }
 .RSC-bot-num{
     margin-top: 10px;
 }
 .RSC-bot-num span{
     color: #EA2335;
-    font-size: 2em;
+    font-size: 32px;
     text-decoration: underline;
     font-family: "industry", sans-serif;
     font-weight: 600;
@@ -226,11 +233,11 @@
 
 
 @media(max-width: 3630px){
-    .RSC-Link{
+    /* .RSC-Link{
       
         padding: 8px 80px;
 
-    }
+    } */
 }
 @media(max-width: 3320px){
     .RSC-Link{
@@ -557,10 +564,14 @@
         padding: 20px 30px;
     }
     .tltt span{
-        font-size: 20px;
+        font-size: 24px;
         
     }
-
+    .tlto span{
+      
+        font-size: 15px;
+        
+    }
     .RSC-Top-Left-Two{
         margin-left: 50px;
      
@@ -619,9 +630,12 @@
         padding: 15px 0;
         
     }
+    .RSC-Top-Left-Three{
+        margin-top: 45px;
+    }
     .RSC-Top-Left-Three span{
         
-        font-size: 14px;
+        font-size: 15px;
     }
 
 }

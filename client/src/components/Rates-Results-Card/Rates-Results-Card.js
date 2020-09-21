@@ -2,16 +2,21 @@ import React from 'react';
 
 import {Link} from 'react-router-dom';
 
+import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
+
 import './Rates-Results-Card.css';
 
 
 
 
 
-const RatesResultsCard = ({rate, quickFilters, ZipCode}) =>{
+const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) =>{
 
     return(
         <div className='RSC'>
+            {
+                changePDP && <PlanDetailsPop setChangePDP={setChangePDP} rate={rate}/>
+            }
            <div className='RSC-Top'>
                <div className='RSC-Top-Left'>
                     <div className='RSC-Top-Left-One'>
@@ -26,7 +31,7 @@ const RatesResultsCard = ({rate, quickFilters, ZipCode}) =>{
                         </div>
                         
                     </div>
-                    <div className='RSC-Top-Left-Three'>
+                    <div className='RSC-Top-Left-Three' onClick={() => setChangePDP(true)}>
                         <div>
                         <span>Plan Details</span>
                         </div>
@@ -76,7 +81,7 @@ const RatesResultsCard = ({rate, quickFilters, ZipCode}) =>{
                     </div>
                     <div className='RSC-Bot-Right-B'>
                         <div className='RSC-bot-call'>
-                            <span>- or call -</span>
+                            <span>- OR CALL -</span>
                         </div>
                         <div className='RSC-bot-num'>
                             <span>888-123-1234</span>

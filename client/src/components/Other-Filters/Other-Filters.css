@@ -34,12 +34,12 @@
 @media(max-width:2900px){
     .Other-Filters{
         
-        margin-top: 80px;
+        margin-top: 90px;
     }
 }
-@media(max-width:2400px){
+@media(max-width:2500px){
     .of-info span{
-        font-size: 25px;
+        font-size: 28px;
         
     }
 }

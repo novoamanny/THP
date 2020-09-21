@@ -1,16 +1,21 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 import {Link} from 'react-router-dom';
+
+import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
 
 import './Mobile-Rates-Card.css';
 
 
-const MobileRatesCard = ({rate, ZipCode}) =>{
+const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode}) =>{
     const tempPrice = rate.rateData.Rate * 500
     
     const price = Math.round(tempPrice);
     return(
         <div className='MRC'>
+            {
+                changePDP && <PlanDetailsPop setChangePDP={setChangePDP} rate={rate}/>
+            }
             <div className='FRC-row-one'>
                 <div className='FRC-id'>
                     <span>{`${rate.provider} | ${rate.rateData.RateID}`}</span>
@@ -35,7 +40,7 @@ const MobileRatesCard = ({rate, ZipCode}) =>{
                     </div>
                 </div>
                 <div className='FRC-two-B'>
-                    <div className='FRC-details-btn'>
+                    <div className='FRC-details-btn' onClick={() => setChangePDP(true)}>
                         <span>Plan Details</span>
                     </div>
                     <div className='FRC-other-info'>

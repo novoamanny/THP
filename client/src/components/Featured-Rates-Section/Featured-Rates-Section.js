@@ -37,7 +37,7 @@ const images = [
 const FeaturedRatesSection = ({resultData, ZipCode}) =>{
 
 
-    const [changePDP, setChangePDP] = useState(false)
+    const [changePDP, setChangePDP] = useState(false);
 
     let list = []
     let temp;

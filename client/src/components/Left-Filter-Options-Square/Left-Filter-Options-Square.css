@@ -57,13 +57,25 @@
     margin-left: 20px;
     font-size: 28px;
 }
-
-@media(max-width: 2900px){
-    .LFOS-Label{
-        font-size: 31px;
-    }
+@media(max-width: 3400px){
     .checkbox span{
         font-size: 25px;
+    }
+    .LFOS-option{
+        padding: 15px;
+    }
+    .LFOS-Label{
+       
+        font-size: 32px;
+      
+    }
+}
+@media(max-width: 2900px){
+    .LFOS-Label{
+        font-size: 28px;
+    }
+    .checkbox span{
+        font-size: 22px;
     }
 }
 

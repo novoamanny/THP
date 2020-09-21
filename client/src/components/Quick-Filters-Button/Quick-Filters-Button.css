@@ -85,14 +85,14 @@
 }
 @media(max-width: 1400px){
     .QF-Button{
-        padding: 10px 20px;
+        padding: 10px 30px;
         
     } 
     .QF-Button-label span{
-        font-size: 13px;
+        font-size: 12px;
     }
     .QF-Button-details span{
-        font-size:22px;
+        font-size:20px;
     }
 }
 @media(max-width: 1200px){
@@ -103,31 +103,55 @@
         margin: 10px;
     }  */
     .QF-Button-label span{
-        font-size: 11px;
+        font-size: 12px;
     }
     .QF-Button-details span{
-        font-size:18px;
+        font-size:20px;
     }
 }
 @media(max-width: 1000px){
     
     .QF-Button-label span{
+        font-size: 12px;
+    }
+    .QF-Button-details span{
+        font-size: 20px;
+    }
+}
+@media(max-width: 900px) and (orientation: landscape){
+    .QF-Button{
+        padding: 5px 25px;
+       margin: 5px 0;
+    } 
+    .QF-Button-label span{
         font-size: 9px;
     }
     .QF-Button-details span{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 @media(max-width: 800px){
     .QF-Button{
-        padding: 7px 15px;
+        padding: 8px 25px;
        
+    } 
+    .QF-Button-label span{
+        font-size: 10px;
+    }
+    .QF-Button-details span{
+        font-size: 16px;
+    }
+}
+@media(max-width: 700px) and (orientation: landscape){
+    .QF-Button{
+        padding: 3px 25px;
+       margin: 5px 0;
     } 
     .QF-Button-label span{
         font-size: 8px;
     }
     .QF-Button-details span{
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 /* @media(max-width: 700px){
@@ -145,7 +169,7 @@
         font-size: 15px;
     }
 } */
-@media(max-width: 700px){
+/* @media(max-width: 700px){
     .QF-Button{
         padding: 7px 0px;
         width: 50%;
@@ -159,23 +183,44 @@
     .QF-Button-details span{
         font-size: 16px;
     }
-}
+} */
 @media(max-width: 600px){
     .QF-Button{
-        padding: 5px 0px;
-        width: 45%;
-        text-align: center;
-        
-        border-radius: 7px;
+        padding: 5px 20px;
+       
     } 
     .QF-Button-label span{
-        font-size: 8px;
+        font-size: 9px;
     }
     .QF-Button-details span{
         font-size: 14px;
     }
 }
+@media(max-width: 500px){
+    .QF-Button{
+        padding: 3px 20px;
+       margin: 0 8px;
+    } 
+    .QF-Button-label span{
+        font-size: 8px;
+    }
+    .QF-Button-details span{
+        font-size: 12px;
+    }
+}
 @media(max-width: 400px){
+    .QF-Button{
+        padding: 2px 15px;
+       margin: 0 5px;
+    } 
+    .QF-Button-label span{
+        font-size: 8px;
+    }
+    .QF-Button-details span{
+        font-size: 12px;
+    }
+}
+/* @media(max-width: 400px){
     .QF-Button{
         padding: 0px 0px;
         width: 25%;
@@ -190,4 +235,4 @@
     .QF-Button-details span{
         font-size: 10px;
     }
-}
+} */
