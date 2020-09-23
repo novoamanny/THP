@@ -64,6 +64,9 @@
     .FRS{
         margin-top: 200px;
     }
+    .FRS-title h2{
+        font-size: 32px;
+    }
 }
 
 @media(max-width: 1900px){
@@ -85,7 +88,7 @@
     }
     .FRS-title h2{
         
-        font-size: 25px;
+        font-size: 23px;
         
     }
 }

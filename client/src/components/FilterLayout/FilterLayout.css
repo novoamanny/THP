@@ -175,11 +175,7 @@
     margin: 20px 0;
     cursor: pointer;
 }
-@media(max-width: 3500px){
-    /* .top-filters{
-        top: 80px
-    } */
-}
+
 @media(max-width: 3290px){
     .Filter-Layout{
         margin-right: 9%;

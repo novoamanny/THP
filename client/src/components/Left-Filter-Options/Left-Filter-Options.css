@@ -30,9 +30,9 @@
     
 }
 @media(max-width: 3400px){
-    /* .LFOS-title{
-        margin-top: 40px;
-    } */
+    .LFOS-title{
+        margin-top: 8px;
+    }
     .LFOS-title span{
         font-size: 45px;
     }
@@ -41,14 +41,20 @@
     /* .Left-Filter-Options{
         margin-left: 9%;
     } */
-}@media(max-width: 3110px){
+}
+@media(max-width: 3200px){
+    .Left-Filter-Options{
+        padding-top: 183px;
+    }
+}
+@media(max-width: 3110px){
     .Left-Filter-Options{
         margin-left: 7%;
     }
 }
 @media(max-width: 2900px){
     .Left-Filter-Options{
-        padding-top: 185px;
+        padding-top: 178px;
     }
     .LFOS-title span{
         font-size: 37px;

@@ -14,18 +14,32 @@
 .mobile-rates{
     display: none;
 }
-@media(max-width: 2250px){
+@media(max-width: 3500px){
     .RRS{
-    
-        padding: 0 70px;
-        padding-top: 50px;
+
+       padding: 0 70px;
+       padding-top: 70px;
+        
         
     }
 }
+@media(max-width: 3400px){
+    .RRS{
+
+       padding: 0 40px;
+       padding-top: 60px;
+        
+        
+    }
+}
+
+
+
+
 @media(max-width: 2000px){
     .RRS{
 
-        padding: 0 50px;
+        
         padding-top: 30px;
         
     }
@@ -43,7 +57,7 @@
     .RRS{
 
        margin-left: 0px;
-        margin-right: px;
+        margin-right: 0px;
         
         
     }

@@ -231,27 +231,131 @@
     font-style: normal;
 }
 
-
-@media(max-width: 3630px){
-    /* .RSC-Link{
-      
-        padding: 8px 80px;
-
+@media(max-width: 3300px){
+    
+    .tltt span{
+        font-size: 35px;
+        
+        
+    }
+    .tlto span{
+     
+        font-size: 22px;
+        
+    }
+    .RSC-Top-Left-One img{
+        height: 110px;
+        width: 180px;
+    }
+    .RSC-Top-Left-Two{
+        margin-left: 50px;
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 43px;
+        
+    }
+    .RSC-Top-Right-Two-T span{
+        font-size: 43px;
+        
+    }
+    .RSC-Top-Right-Three-T span{
+        font-size: 43px;
+        
+    }
+    /* .RSC-Bot-Left{
+       
+        padding: 40px 0;
     } */
-}
-@media(max-width: 3320px){
+    .RSC-bot-call{
+      
+        font-size: 18px;
+    }
+    .RSC-bot-num span{
+       font-size: 28px;
+    }
     .RSC-Link{
       
-        padding: 8px 70px;
+        padding: 10px 40px;
 
     }
-    .RSC-Bot-Right-B{
-      
-        padding-left: 30px;
+    
+    .RSC-Bot-Left span{
+    
+        font-size: 32px;
+    }
+    .RSC-Bot-Right{
+       
+        padding: 20px 0;
         
     }
 }
-@media(max-width: 3155px){
+
+@media(max-width: 2800px){
+    
+    .tltt span{
+        font-size: 32px;
+        
+        
+    }
+    .tlto span{
+     
+        font-size: 20px;
+        
+    }
+    .RSC-Top-Left-One img{
+        height: 100px;
+        width: 160px;
+    }
+    .RSC-Top-Left-Two{
+        margin-left: 50px;
+    }
+    .RSC-Top-Left-Three span{
+      
+        font-size: 23px;
+      
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 40px;
+        
+    }
+    .RSC-Top-Right-Two-T span{
+        font-size: 40px;
+        
+    }
+    .RSC-Top-Right-Three-T span{
+        font-size: 40px;
+        
+    }
+    /* .RSC-Bot-Left{
+       
+        padding: 40px 0;
+    } */
+    .RSC-bot-call{
+      
+        font-size: 17px;
+    }
+    .RSC-bot-num span{
+       font-size: 26px;
+    }
+    .RSC-Link{
+      
+        padding: 10px 0;
+        width: 300px;
+        font-size: 23px;
+    }
+    
+    .RSC-Bot-Left span{
+    
+        font-size: 30px;
+    }
+    .RSC-Bot-Right{
+       
+        padding: 20px 0;
+        
+    }
+}
+
+/* @media(max-width: 3155px){
     .RSC-Link{
       
         padding: 8px 60px;
@@ -265,45 +369,67 @@
     .RSC-bot-call{
         margin-right: 10px;
     }
-}
+} */
 
-@media(max-width: 2250px){
+@media(max-width: 2300px){
     .tltt span{
-        font-size: 25px;
+        font-size: 29px;
+        
+        
+    }
+    .tlto span{
+     
+        font-size: 20px;
         
     }
     .RSC-Top-Left-One img{
-        height: 70px;
-        width: 130px;
+        height: 90px;
+        width: 150px;
+    }
+    .RSC-Top-Left-Two{
+        margin-left: 50px;
+    }
+    .RSC-Top-Left-Three{
+        margin-top: 60px;
+    }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 20px;
+      
     }
     .RSC-Top-Right-One-T span{
-        font-size: 40px;
+        font-size: 37px;
         
     }
     .RSC-Top-Right-Two-T span{
-        font-size: 40px;
+        font-size: 37px;
         
     }
     .RSC-Top-Right-Three-T span{
-        font-size: 40px;
+        font-size: 37px;
         
     }
     /* .RSC-Bot-Left{
        
         padding: 40px 0;
     } */
+    .RSC-bot-call{
+      
+        font-size: 15px;
+    }
     .RSC-bot-num span{
        font-size: 23px;
     }
     .RSC-Link{
       
-        padding: 8px 40px;
-
+        padding: 8px 0;
+        width: 280px;
+        font-size: 20px;
     }
     
     .RSC-Bot-Left span{
     
-        font-size: 22px;
+        font-size: 26px;
     }
     .RSC-Bot-Right{
        
@@ -316,60 +442,82 @@
 @media(max-width: 2000px){
     
     .tltt span{
-        font-size: 20px;
+        font-size: 26px;
+        
         
     }
+    .tlto span{
+     
+        font-size: 17px;
+        
+    }
+   
     .RSC-Top-Left-One img{
-        height: 60px;
-        width: 110px;
+        height: 80px;
+        width: 130px;
+        
+    }
+    .RSC-Top-Left-Two{
+        margin-left: 40px;
+    }
+    .RSC-Top-Left-Three{
+        margin-top: 50px;
+    }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 17px;
+      
     }
     .RSC-Top-Right-One-T span{
-        font-size: 30px;
+        font-size: 34px;
         
     }
     .RSC-Top-Right-One-B span{
-        font-size: 10px;
+        font-size: 17px;
+        
     }
     .RSC-Top-Right-Two-T span{
-        font-size: 30px;
+        font-size: 34px;
         
     }
     .RSC-Top-Right-Two-B span{
-        font-size: 10px;
+        font-size: 17px;
+        
     }
     .RSC-Top-Right-Three-T span{
-        font-size: 30px;
+        font-size: 34px;
         
     }
     .RSC-Top-Right-Three-B span{
-        font-size: 10px;
+        font-size: 17px;
+        
     }
-   
     /* .RSC-Bot-Left{
        
         padding: 40px 0;
     } */
+    .RSC-bot-call{
+      
+        font-size: 13px;
+    }
     .RSC-bot-num span{
        font-size: 20px;
     }
     .RSC-Link{
       
-        padding: 8px 30px;
-
+        padding: 8px 0;
+        width: 250px;
+        font-size: 17px;
     }
     
     .RSC-Bot-Left span{
     
-        font-size: 20px;
+        font-size: 23px;
     }
     .RSC-Bot-Right{
        
-        padding: 15px 0;
+        padding: 20px 0;
         
-    }
-    .RSC-Top-Left-Three span{
-        
-        font-size: 16px;
     }
 }
 
@@ -377,186 +525,178 @@
 @media(max-width: 1800px){
     
     .tltt span{
-        font-size: 20px;
+        font-size: 23px;
+        
+        
+    }
+    .tlto span{
+     
+        font-size: 15px;
+        
+    }
+   
+    .RSC-Top-Left-One img{
+        height: 70px;
+        width: 120px;
         
     }
     .RSC-Top-Left-Two{
-        margin-left: 60px;
-     
+        margin-left: 30px;
     }
-    .RSC-Top-Left-One img{
-        height: 60px;
-        width: 110px;
+    .RSC-Top-Left-Three{
+        margin-top: 45px;
     }
-    .RSC-Top-Right-One-T span{
-        font-size: 30px;
+    .RSC-Top-Left-Three span{
         
-    }
-     
-    
-    .RSC-Top-Right-Two-T span{
-        font-size: 30px;
-        
-    }
-    .RSC-Top-Right-Three-T span{
-        font-size: 30px;
-        
-    }
-    /* .RSC-Bot-Left{
-       
-        padding: 40px 0;
-    } */
-    .RSC-bot-num span{
-       font-size: 20px;
-    }
-    .RSC-Link{
+        font-size: 15px;
       
-        padding: 8px 10px;
-        
-        font-size: 10px;
-    }
-    
-    .RSC-Bot-Left span{
-    
-        font-size: 20px;
-    }
-    .RSC-Bot-Right{
-       
-        padding: 15px 0;
-        
-    }
-}
-
-@media(max-width: 1700px){
-    .RSC-Top{
-       
-        padding: 20px 30px;
-    }
-    .tltt span{
-        font-size: 17px;
-        
-    }
-
-    .RSC-Top-Left-Two{
-        margin-left: 50px;
-     
-    }
-    .RSC-Top-Left-One img{
-        height: 60px;
-        width: 110px;
     }
     .RSC-Top-Right-One-T span{
-        font-size: 26px;
+        font-size: 31px;
         
     }
     .RSC-Top-Right-One-B span{
-        font-size: 9px;
+        font-size: 15px;
+        
     }
-    
     .RSC-Top-Right-Two-T span{
-        font-size: 26px;
+        font-size: 31px;
         
     }
     .RSC-Top-Right-Two-B span{
-        font-size: 9px;
+        font-size: 15px;
+        
     }
     .RSC-Top-Right-Three-T span{
-        font-size: 26px;
+        font-size: 31px;
         
     }
     .RSC-Top-Right-Three-B span{
-        font-size: 9px;
+        font-size: 15px;
+        
     }
     /* .RSC-Bot-Left{
        
         padding: 40px 0;
     } */
+    .RSC-bot-call{
+      
+        font-size: 12px;
+    }
     .RSC-bot-num span{
        font-size: 18px;
     }
     .RSC-Link{
       
-        padding: 10px 20px;
-        font-size: 9px;
-
+        padding: 8px 0;
+        width: 230px;
+        font-size: 15px;
     }
     
     .RSC-Bot-Left span{
     
-        font-size: 18px;
+        font-size: 20px;
     }
     .RSC-Bot-Right{
        
-        padding: 15px 0;
+        padding: 20px 0;
         
     }
-    .RSC-Top-Left-Three span{
-        
-        font-size: 13px;
-    }
-
 }
-@media(max-width: 1500px){
-    .RSC-Top{
-       
-        padding: 15px 20px;
-    }
+
+@media(max-width: 1700px){
+    
     .tltt span{
+        font-size: 23px;
+        
+        
+    }
+    .tlto span{
+     
         font-size: 15px;
         
     }
-
-    .RSC-Top-Left-Two{
-        margin-left: 40px;
-     
-    }
+   
     .RSC-Top-Left-One img{
-        margin-top: 10px;
-        height: 50px;
-        width: 90px;
-    }
-    .RSC-Top-Right-One-T span{
-        font-size: 22px;
+        height: 70px;
+        width: 120px;
         
     }
-     
-    
+    .RSC-Top-Left-Two{
+        margin-left: 30px;
+    }
+    .RSC-Top-Left-Three{
+        margin-top: 45px;
+    }
+    .RSC-Top-Left-Three span{
+        
+        font-size: 15px;
+      
+    }
+    .RSC-Top-Right-One-T span{
+        font-size: 31px;
+        
+    }
+    .RSC-Top-Right-One-B span{
+        font-size: 15px;
+        
+    }
     .RSC-Top-Right-Two-T span{
-        font-size: 22px;
+        font-size: 31px;
+        
+    }
+    .RSC-Top-Right-Two-B span{
+        font-size: 15px;
         
     }
     .RSC-Top-Right-Three-T span{
-        font-size: 22px;
+        font-size: 31px;
+        
+    }
+    .RSC-Top-Right-Three-B span{
+        font-size: 15px;
         
     }
     /* .RSC-Bot-Left{
        
         padding: 40px 0;
     } */
+    .RSC-bot-call{
+      
+        font-size: 12px;
+    }
     .RSC-bot-num span{
-       font-size: 15px;
+       font-size: 18px;
     }
     .RSC-Link{
       
-        padding: 8px 20px;
-        
-
+        padding: 8px 0;
+        width: 230px;
+        font-size: 15px;
     }
-    
+    .RSC-Bot-Left{
+        width: 65%;
+    }
     .RSC-Bot-Left span{
     
-        font-size: 14px;
+        font-size: 20px;
     }
     .RSC-Bot-Right{
        
-        padding: 10px 0;
-        
+        padding: 20px 0;
+        width: 30%;
     }
-    .RSC-Top-Left-Three span{
-        
-        font-size: 12px;
-    }
+}
 
+@media(max-width:1600px){
+    .RSC-Top{
+        padding: 30px 30px;
+    }
+}
+@media(max-width: 1500px){
+    .RSC-Top{
+        padding: 23px 20px;
+    }
 }
 @media(max-width: 1400px){
     .RSC-Top{
