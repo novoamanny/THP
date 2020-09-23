@@ -80,6 +80,11 @@
         
     }
 }
+@media(max-width: 1800px){
+    .FRS{
+        margin-top: 180px;
+    }
+}
 
 @media(max-width: 1500px){
     .FRS-card-section{

@@ -33,15 +33,24 @@
     }
 }
 
-
+@media(max-width: 2000px){
+    .qf-title h2{
+        font-size: 17px;
+    }
+}
+@media(max-width: 2000px){
+    .qf-title h2{
+        font-size: 16px;
+    }
+}
 @media(max-width: 1600px){
     .qf-title h2{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 @media(max-width: 1500px){
     .qf-title h2{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 @media(max-width: 1400px){

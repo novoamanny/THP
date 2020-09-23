@@ -41,24 +41,27 @@
 
 @media(max-width: 2200px){
     .QF-Button-label span{
-        font-size: 13px;
+        font-size: 15px;
     }
     .QF-Button-details span{
-        font-size: 22px;
+        font-size: 25px;
     }
 }
 
 @media(max-width: 2000px){
     .QF-Button-label span{
-        font-size: 11px;
+        font-size: 13px;
     }
     .QF-Button-details span{
-        font-size: 19px;
+        font-size: 22px;
     }
+    .QF-Button{
+        padding: 10px 30px;
+    } 
 }
 @media(max-width: 1800px){
     .QF-Button{
-        padding: 5px 20px;
+        padding: 7px 25px;
     } 
     
 }@media(max-width: 1600px){
@@ -66,23 +69,13 @@
         padding: 2px 20px;
     }  */
     .QF-Button-label span{
-        font-size: 9px;
+        font-size: 11px;
     }
     .QF-Button-details span{
-        font-size: 17px;
+        font-size: 19px;
     }
 }
-@media(max-width: 1500px){
-    /* .QF-Button{
-        padding: 2px 20px;
-    }  */
-    .QF-Button-label span{
-        font-size: 7px;
-    }
-    .QF-Button-details span{
-        font-size: 15px;
-    }
-}
+
 @media(max-width: 1400px){
     .QF-Button{
         padding: 10px 30px;

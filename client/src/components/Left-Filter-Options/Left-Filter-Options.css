@@ -67,7 +67,7 @@
 }
 @media(max-width: 2800px){
     .Left-Filter-Options{
-        padding-top: 175px;
+        padding-top: 180px;
     }
 }
 @media(max-width: 2740px){
@@ -82,7 +82,7 @@
 }
 @media(max-width: 2500px){
     .Left-Filter-Options{
-        padding-top: 166px;
+        padding-top: 160px;
     }
 }
 @media(max-width: 2485px){
@@ -92,19 +92,47 @@
     }
     
 } 
+@media(max-width: 2200px){
+    .LFOS-title span{
+        font-size: 33px;
+    }
+    .Left-Filter-Options{
+        padding-top: 135px;
+    }
+}
+@media(max-width: 2000px){
+    .LFOS-title span{
+        font-size: 30px;
+    }
+    .Left-Filter-Options{
+        padding-top: 135px;
+    }
+}
+@media(max-width: 1800px){
+    .LFOS-title span{
+        font-size: 28px;
+    }
+    .Left-Filter-Options{
+        padding-top: 128px;
+    }
+}
+@media(max-width: 1600px){
+    .LFOS-title span{
+        font-size: 25px;
+    }
+    .Left-Filter-Options{
+        padding-top: 125px;
+    }
+}
 @media(max-width: 1500px){
     .Left-Filter-Options{
        
-        
+        padding-top: 124px;
         width: 12%;
     }
-    .LFOS-title{
-        
-        padding: 20px 0;
-        margin-top: 50px;
-    }
+    
     .LFOS-title span{
-      font-size: 20px;
+      font-size: 22px;
     }
 } 
 

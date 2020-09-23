@@ -249,12 +249,7 @@
     .Filter-Layout{
         margin-left: 12%;
     }
-    .top-filters{
-        position: fixed;
-        z-index: 10;
-        top: 4%;
-        
-    }
+    
 }
 @media(max-width: 1400px){
     .Filter-Layout{
