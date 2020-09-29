@@ -71,7 +71,7 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
                     </div>
                 </div>
             </div>
-            <RegisterFormButtons mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex}/>
+            <RegisterFormButtons total={total} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex}/>
         </div>
     )
 }

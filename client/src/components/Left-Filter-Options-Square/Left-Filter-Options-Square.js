@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Left-Filter-Options-Square.css';
 
-const LeftFilterOptionsSquare = ({data, index, filterHandle}) =>{
+const LeftFilterOptionsSquare = ({filterOptions, data, index, filterHandle}) =>{
     return(
         <div className={`LFOS LFOS-${index}`}>
             <div className='LFOS-Label'>

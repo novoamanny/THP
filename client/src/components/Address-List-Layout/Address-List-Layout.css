@@ -5,10 +5,30 @@
     
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    font-family: "industry", sans-serif;
+    
+    font-style: normal;
 }
 .ALL-list-layout{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
     
+}
+.best-match-address{
+    width: 100%;
+    margin-bottom: 40px;
+    
+}
+.best-match-title{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 40px;
+    background-color: #1333A6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.best-match-title span{
+   margin-left: 35px;
+   color: #fff;
+   font-weight: 600;
 }

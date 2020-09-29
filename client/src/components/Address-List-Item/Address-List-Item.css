@@ -3,6 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: "industry", sans-serif;
+    
+    font-style: normal;
 }
 .ALI-col{
     width: 100%;
@@ -12,6 +15,8 @@
 }
 .ALI-col-one, .ALI-col-two, .ALI-col-three{
     width: 30%;
+    font-size: 20px;
+    
 }
 .ALI-row{
     width: 100%;
@@ -22,17 +27,20 @@
     margin-left: 80px;
     cursor: pointer;
     border-radius: 10px;
+    font-size: 25px;
+    font-weight: 500;
 }
 .ALI-confirm-button li{
    
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 50px;
    
     list-style: none;
 }
 .ALI-confirm-button{
     background-color: #1333A6;
 }
+
 @media(max-width: 2100px){
     .ALI-col-one h2, .ALI-col-two h2, .ALI-col-three h2{
         font-size: 20px;
