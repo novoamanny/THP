@@ -5,7 +5,7 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
     
     return(
         <div className='PDP'>
-            <div className='backdrop' onClick={() => setChangePDP(false)}></div>
+            <div className='PDP-backdrop' onClick={() => setChangePDP(false)}></div>
             <div className='PDP-UI'>
                 <div className='PDP-label-one'>
                     <span>Plan Details</span>

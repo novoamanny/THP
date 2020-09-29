@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import RegisterFormButtons from '../Register-Form-Buttons/Register-Form-Buttons';
 
 import './Submit-For-Service.css';
 
 
 const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
+
+    const [boxes, setBoxes] = useState({
+        boxOne: 0,
+        boxTwo: 0,
+        boxThree: 0
+    })
+
+    const total = boxes.boxOne + boxes.boxTwo + boxes.boxThree
+    total === 3 && console.log('Approvd')
+
+    const onClickHandle = (label) =>{
+        if(boxes[label] === 0){
+            let b = {...boxes};
+            b[label] = 1;
+            setBoxes({...b})
+        }
+        if(boxes[label] === 1){
+            let b = {...boxes};
+            b[label] = 0;
+            setBoxes({...b})
+        }
+    }
+
     return(
         <div className='SFS'>
             <div className='SFS-title'>
@@ -14,16 +37,16 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
                 <h2>I Agree</h2>
             </div>
             <div className='SFS-questions'>
-                <div className='SFS-question'>
-                    <div className='SFS-checkbox'>
+                <div className='SFS-question' onClick={() => onClickHandle('boxOne')}>
+                    <div className={boxes.boxOne === 0 ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
 
                     </div>
                     <div className='SFS-text'>
                         <span>I have verified my enrollment details presented on this page and confirm everything is correct.</span>
                     </div>
                 </div>
-                <div className='SFS-question'>
-                    <div className='SFS-checkbox'>
+                <div className='SFS-question' onClick={() => onClickHandle('boxTwo')}>
+                    <div className={boxes.boxTwo === 0 ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
 
                     </div>
                     <div className='SFS-text'>
@@ -34,8 +57,8 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
                         </span>
                     </div>
                 </div>
-                <div className='SFS-question'>
-                    <div className='SFS-checkbox'>
+                <div className='SFS-question' onClick={() => onClickHandle('boxThree')}>
+                    <div className={boxes.boxThree === 0 ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
 
                     </div>
                     <div className='SFS-text'>

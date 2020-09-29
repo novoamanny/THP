@@ -26,7 +26,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
 
     const [currentZipCode, setCurrentZipCode] = useState(ZipCode)
     const [quickFilters, setQuickFilters] = useState(500);
-    const [currentRates, setCurrentRates] = useState([]);
+    // const [currentRates, setCurrentRates] = useState([]);
     const [mobileSlide, setMobileSlide] = useState(false);
 
 
@@ -69,7 +69,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
         }
 
         
-        getRates(ZipCode, oldFilters, label,)
+        // getRates(ZipCode, oldFilters, label,)
         
     }
    
@@ -119,7 +119,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
 
     return(
         <div className='Filter-Layout'>
-           <LeftFilterOptions filterHandle={filterHandle}/>
+           <LeftFilterOptions filterOptions={filterOptions} filterHandle={filterHandle}/>
            <div className='top-filters'>
                 <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/>
                 <OtherFilters rates={rates} ZipCode={currentZipCode} resultCount={resultCount}/>

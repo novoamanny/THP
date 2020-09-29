@@ -86,6 +86,9 @@
     border: solid 1px #2f2f2f;
     margin-top: 12px;
 }
+.qfs-active{
+    background-color: #1333A6;
+}
 .qfs-option{
     display: flex;
     flex-wrap: wrap;

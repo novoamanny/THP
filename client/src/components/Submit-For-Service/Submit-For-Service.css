@@ -53,6 +53,10 @@
     height: 20px;
     
 }
+.SFS-checkbox-active{
+background-color: #1333A6;
+    
+}
 .SFS-text{
     width: 90%;
     margin-left:20px;

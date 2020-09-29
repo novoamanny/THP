@@ -8,11 +8,15 @@ import '../Question-Form-Square/Question-Form-Square.css';
 import './Question-Form-Square-Two.css';
 
 
-const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFormIndex}) =>{
+const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, setMainFormIndex, mainFormIndex}) =>{
 
     const [formSlideIndex, setFormSlideIndex] = useState(0);
     const [disabledOn, setDisabledOn] = useState(true);
 
+    const onCLickHandle = (index, answer, slideIndex) =>{
+        questionHandle(index, answer);
+        setFormSlideIndex(slideIndex);
+    }
 
     const onCalendarClickHandle = (e) =>{
         console.log(e)
@@ -39,9 +43,9 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
                         <h2>You can select a future start date and still lock in today's rate. Texas Public Utility Commission rules allow you to select a switch date up to 14 days prior to your contract expiration date without an early termination penalty from your curretn provider.</h2>
                     </div>
                     <div className='qfs-options'>
-                        <div className='qfs-option' onClick={() => setFormSlideIndex(1)}>
+                        <div className='qfs-option' onClick={() => onCLickHandle('Three', 'MoveIn', 1)}>
                             <div className='qfs-option-box-container'>
-                                <div className='qfs-option-box'>
+                                <div className={answers.Three === 'MoveIn' ? 'qfs-option-box qfs-active' : 'qfs-option-box'}>
 
                                 </div>
                             </div>
@@ -49,9 +53,9 @@ const QuestionFormSquareTwo = ({formData, setFormData, setMainFormIndex, mainFor
                                 <p>Move / New Service</p>
                             </div>
                         </div>
-                        <div className='qfs-option' onClick={() => setFormSlideIndex(1)}>
+                        <div className='qfs-option' onClick={() => onCLickHandle('Three', 'Switching', 1)}>
                             <div className='qfs-option-box-container'>
-                                <div className='qfs-option-box'>
+                                <div className={answers.Three === 'Switching' ? 'qfs-option-box qfs-active' : 'qfs-option-box'}>
 
                                 </div>
                             </div>

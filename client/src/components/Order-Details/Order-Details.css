@@ -326,8 +326,77 @@
         font-size: 70px;
         color: #1333A6;
     }
+    .PDF-btn-OD{
+        font-size: 25px;
+        margin: 0 30px;
+    }
     
 }
+
+@media(max-width: 3200px){
+    .OD-Details-One-1 p{
+        margin-right: 30px;
+        font-size: 17px;
+    }
+    .OD-Details-One-2 h2{
+       
+        font-size: 27px;
+    }
+    .OD-Details-Two-1 p{
+        
+        font-size: 17px;
+    }
+    .OD-Details-Two-2 h2{
+       
+        font-size: 27px;
+    }
+    .OD-Details-Three-1 p{
+        
+        font-size: 17px;
+    }
+    .OD-Details-Three-2 h2{
+       
+        font-size: 27px;
+    }
+    .OD-Details-Four-1 p{
+      
+        font-size: 17px;
+    }
+   
+    .OD-Details-Four-2 h2{
+       
+        font-size: 15px;
+    }
+    .OD-label h2{
+        
+        font-size: 29px;
+    }
+    .OD-label{
+       
+        padding: 5px 0;
+        
+    }
+    .OD-Details-p-two{
+       
+        font-size: 34px;
+    }
+    .OD-Details-Image img{
+        width: 150px;
+        height: 80px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .DTBR-two span{
+        font-size: 70px;
+        color: #1333A6;
+    }
+    .PDF-btn-OD{
+        font-size: 23px;
+        margin: 0 30px;
+    }
+    
+}
+
 @media(max-width: 2800px){
     .OD-Details-One-1 p{
         margin-right: 30px;

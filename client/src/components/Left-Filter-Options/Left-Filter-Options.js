@@ -30,7 +30,8 @@ const LFOSData = [
             18,
             24,
             36
-        ]
+        ],
+       
     },
     {
         label: 'Provider',
@@ -45,17 +46,18 @@ const LFOSData = [
         ],
         value: [
             'none',
-            'pulse',
-            'etg',
-            'lonestar',
-            'newpower',
-            'powernext'
+            'Pulse',
+            'Reliant',
+            'Green Mountain',
+            'Cirro',
+            'Pennywise',
+            'Everything Energy'
         ]
     },
 ]
 
 
-const LeftFilterOptions = ({filterHandle}) =>{
+const LeftFilterOptions = ({filterOptions,filterHandle}) =>{
     return (
         <div className='Left-Filter-Options'>
             <div className='LFOS-title'>
@@ -63,7 +65,7 @@ const LeftFilterOptions = ({filterHandle}) =>{
             </div>
             <div className='LFOS-sq'>
                 {LFOSData.map((data, index) =>{
-                    return <LeftFilterOptionsSquare data={data} index={index} filterHandle={filterHandle}/>
+                    return <LeftFilterOptionsSquare filterOptions={filterOptions} data={data} index={index} filterHandle={filterHandle}/>
                 })} 
             </div>
                       

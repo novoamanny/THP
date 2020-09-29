@@ -10,8 +10,9 @@ const LeftFilterOptionsSquare = ({data, index, filterHandle}) =>{
             </div>
             <div className='LFOS-options'>
                 {data.options.map((option, index) =>{
+                    console.log(option)
                     return (
-                    <div key={option} id={index} className='LFOS-option'>
+                    <div key={index} id={option} className='LFOS-option'>
                         <div className='checkbox'  onClick={(e) => filterHandle(data.label, data.value[index])}>
                             <div className='checkbox-square'>
 

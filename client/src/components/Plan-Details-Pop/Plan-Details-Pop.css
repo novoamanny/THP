@@ -1,11 +1,11 @@
-.backdrop{
+.PDP-backdrop{
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 300;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
     
 
 }
@@ -15,11 +15,12 @@
     z-index: 400;
     width: 45%;
     left: 30%;
-    top: 18%;
+    top: 16%;
     background-color: #fff;
     border-radius: 20px;
-   
-    
+   border-left: 1px solid rgba(0, 0, 0, 0.1);
+   border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-family: "industry", sans-serif;
     
     font-style: normal;
@@ -40,7 +41,7 @@
     margin-left: 50px;
 }
 .PDP-sec-one{
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 .PDP-ETF{
@@ -104,4 +105,578 @@
     text-decoration: none;
     color: black;
     font-weight: 300;
+}
+
+@media(max-width: 3200px){
+    .PDP-label-one{
+     
+        padding: 25px 0;
+        
+        font-size: 40px;
+  
+    }
+
+    .PDP-ETF{
+        font-size: 32px;
+     
+    }
+    .PDP-note{
+        font-size: 27px;
+      
+    }
+    .PDP-RD{
+        font-size: 32px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 27px;
+        
+    }
+    .PDP-sec-two{
+       
+        font-size: 27px;
+        
+        
+    }
+    .PDF-btn{
+        
+        font-size: 26px;
+       
+        
+    }
+}
+
+@media(max-width: 2800px){
+    .PDP-label-one{
+     
+        padding: 25px 0;
+        
+        font-size: 37px;
+  
+    }
+
+    .PDP-ETF{
+        font-size: 30px;
+     
+    }
+    .PDP-note{
+        font-size: 25px;
+      
+    }
+    .PDP-RD{
+        font-size: 30px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 25px;
+        
+    }
+    .PDP-sec-two{
+       
+        font-size: 25px;
+        
+        
+    }
+    .PDF-btn{
+        
+        font-size: 24px;
+       
+        
+    }
+}
+
+@media(max-width: 2600px){
+    .PDP-label-one{
+     
+        padding: 25px 0;
+        
+        font-size: 34px;
+  
+    }
+
+    .PDP-ETF{
+        font-size: 27px;
+     
+    }
+    .PDP-note{
+        font-size: 22px;
+      
+    }
+    .PDP-RD{
+        font-size: 27px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 22px;
+        
+    }
+    .PDP-sec-two{
+       
+        font-size: 22px;
+        
+        
+    }
+    .PDF-btn{
+        
+        font-size: 22px;
+       
+        
+    }
+}
+
+
+
+@media(max-width: 2400px){
+    .PDP-label-one{
+     
+        padding: 22px 0;
+        
+        font-size: 30px;
+  
+    }
+
+    .PDP-ETF{
+        font-size: 24px;
+     
+    }
+    .PDP-note{
+        font-size: 19px;
+      
+    }
+    .PDP-RD{
+        font-size: 24px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 19px;
+        
+    }
+    .PDP-sec-one{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .PDP-sec-two{
+       
+        font-size: 19px;
+        
+        padding: 50px 100px;
+        
+    }
+    .PDF-btn{
+        
+        font-size: 19px;
+       
+        
+    }
+   
+    
+}
+
+
+@media(max-width: 2000px){
+    .PDP-label-one{
+     
+        padding: 20px 0;
+        
+        font-size: 27px;
+  
+    }
+
+    .PDP-ETF{
+        font-size: 20px;
+     
+    }
+    .PDP-note{
+        font-size: 16px;
+      
+    }
+    .PDP-RD{
+        font-size: 20px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 16px;
+        
+    }
+    .PDP-sec-one{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .PDP-sec-two{
+       
+        font-size: 16px;
+        
+        padding: 50px 80px;
+        
+    }
+    .PDF-btn{
+        
+        font-size: 16px;
+       
+        
+    }
+    .PDP-UI{
+        top: 13%
+    }
+   
+    
+}
+
+
+@media(max-width: 1800px){
+    .PDP-label-one{
+     
+        padding: 20px 0;
+        
+        font-size: 24px;
+  
+    }
+
+    .PDP-ETF{
+        font-size: 17px;
+     
+    }
+    .PDP-note{
+        font-size: 13px;
+      
+    }
+    .PDP-RD{
+        font-size: 17px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 13px;
+        
+    }
+    .PDP-sec-one{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .PDP-sec-two{
+       
+        font-size: 13px;
+        
+        padding: 30px 70px;
+        
+    }
+    .PDF-btn{
+        
+        font-size: 13px;
+       
+        
+    }
+    .PDP-UI{
+        top: 13%
+    }
+   
+    
+}
+
+
+
+@media(max-width: 1500px){
+    .PDP-label-one{
+     
+        padding: 15px 0;
+        
+        font-size: 20px;
+        
+  
+    }
+    .PDP-label-one span{
+     
+        margin-left: 30px;
+        
+  
+    }
+
+    .PDP-ETF{
+        font-size: 15px;
+     
+    }
+    .PDP-note{
+        font-size: 11px;
+      
+    }
+    .PDP-RD{
+        font-size: 15px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 11px;
+        
+    }
+    .PDP-sec-one{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .PDP-sec-two{
+       
+        font-size: 11px;
+        
+        padding: 20px 70px;
+        
+    }
+    .PDF-btn{
+        
+        font-size: 11px;
+       
+        
+    }
+    .PDP-UI{
+        top: 13%
+    }
+   
+    
+}
+
+@media(max-width: 1400px) and (orientation: landscape){
+    .PDP-label-one{
+     
+        padding: 20px 0;
+        
+        font-size: 23px;
+        
+  
+    }
+    .PDP-label-one span{
+     
+        margin-left: 30px;
+        
+  
+    }
+
+    .PDP-ETF{
+        font-size: 17px;
+     
+    }
+    .PDP-note{
+        font-size: 14px;
+      
+    }
+    .PDP-RD{
+        font-size: 17px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 14px;
+        
+    }
+    .PDP-sec-one{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .PDP-sec-two{
+       
+        font-size: 14px;
+        
+        padding: 20px 70px;
+        
+    }
+    .PDF-btn{
+        
+        font-size: 14px;
+       
+        
+    }
+    .PDP-UI{
+        top: 13%;
+        width: 60%;
+        left: 20%
+    }
+}
+
+@media(max-width: 1300px){
+    /* .PDP-label-one{
+     
+        padding: 15px 0;
+        
+        font-size: 18px;
+        
+  
+    }
+    .PDP-label-one span{
+     
+        margin-left: 30px;
+        
+  
+    }
+
+    .PDP-ETF{
+        font-size: 13px;
+     
+    }
+    .PDP-note{
+        font-size: 10px;
+      
+    }
+    .PDP-RD{
+        font-size: 13px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 10px;
+        
+    }
+    .PDP-sec-one{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .PDP-sec-two{
+       
+        font-size: 10px;
+        
+        padding: 20px 55px;
+        
+    }
+    .PDF-btn{
+        
+        font-size: 10px;
+       
+        
+    } */
+    /* .PDP-UI{
+        top: 13%;
+        left: 25%;
+        width: 50%
+    } */
+   
+    
+}
+
+@media(max-width: 1200px){
+    .PDP-UI{
+        top: 13%;
+        left: 15%;
+        width: 70%
+    }
+}
+
+@media(max-width: 1100px) and (orientation: landscape){
+    .PDP-UI{
+        top: 5%;
+        left: 20%;
+        width: 60%
+    }
+    .PDP-label-one{
+     
+        padding: 15px 0;
+        
+        font-size: 20px;
+        
+  
+    }
+    .PDP-label-one span{
+     
+        margin-left: 30px;
+        
+  
+    }
+
+    .PDP-ETF{
+        font-size: 15px;
+     
+    }
+    .PDP-note{
+        font-size: 12px;
+      
+    }
+    .PDP-RD{
+        font-size: 15px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 12px;
+        
+    }
+    .PDP-sec-one{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .PDP-sec-two{
+       
+        font-size: 12px;
+        
+        padding: 20px 70px;
+        
+    }
+    .PDF-btn{
+        
+        font-size: 12px;
+       
+        
+    }
+}
+@media(max-width: 1100px){
+    .PDP-UI{
+        top: 18%;
+        left: 15%;
+        width: 70%
+    }
+    .PDP-label-one{
+     
+        padding: 20px 0;
+        
+        font-size: 23px;
+        
+  
+    }
+    .PDP-label-one span{
+     
+        margin-left: 30px;
+        
+  
+    }
+
+    .PDP-ETF{
+        font-size: 17px;
+     
+    }
+    .PDP-note{
+        font-size: 14px;
+      
+    }
+    .PDP-RD{
+        font-size: 17px;
+        
+     
+    }
+    .PDP-desc{
+        font-size: 14px;
+        
+    }
+    .PDP-sec-one{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .PDP-sec-two{
+       
+        font-size: 14px;
+        
+        padding: 20px 70px;
+        
+    }
+    .PDF-btn{
+        
+        font-size: 14px;
+       
+        
+    }
+}
+@media(max-width: 1000px){
+    .PDP-UI{
+        top: 13%;
+        left: 15%;
+        width: 70%
+    }
 }

@@ -4,7 +4,7 @@ import AddressListLayout from '../Address-List-Layout/Address-List-Layout';
 
 import './Question-Form-Square.css';
 
-const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, meters, setMainFormData, mainFormData, setChangeZipCodeModal}) =>{
+const QuestionFormSquare = ({ answers, questionHandle,getMeters, ZipCode, Provider, setMainFormIndex, meters, setMainFormData, mainFormData, setChangeZipCodeModal}) =>{
 
     const [formData, setFormData] = useState({
         Address1: '',
@@ -16,6 +16,11 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
     
 
     const onChange = e => setFormData({...formData, [e.target.name]: e.target.value});
+
+    const onCLickHandle = (index, answer, slideIndex) =>{
+        questionHandle(index, answer);
+        setFormSlideIndex(slideIndex);
+    }
 
     const onSubmit = e =>{
 
@@ -45,9 +50,9 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
                         <h2>What Type of Home is This Service For?</h2>
                     </div>
                     <div className='qfs-options'>
-                        <div className='qfs-option' onClick={() => setFormSlideIndex(2)}>
+                        <div className='qfs-option' onClick={() => onCLickHandle('One', 'Apartment', 2)}>
                             <div className='qfs-option-box-container'>
-                                <div className='qfs-option-box'>
+                                <div className={answers.One === 'Apartment' ? 'qfs-option-box qfs-active' : 'qfs-option-box'}>
 
                                 </div>
                             </div>
@@ -55,9 +60,9 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
                                 <p>Apartment</p>
                             </div>
                         </div>
-                        <div className='qfs-option' onClick={() => setFormSlideIndex(1)}>
-                            <div className='qfs-option-box-container'>
-                                <div className='qfs-option-box'>
+                        <div className='qfs-option' onClick={() => onCLickHandle('One', 'Home', 1)}>
+                            <div className='qfs-option-box-container' >
+                                <div className={answers.One === 'Home' ? 'qfs-option-box qfs-active' : 'qfs-option-box'}>
 
                                 </div>
                             </div>
@@ -72,9 +77,9 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
                         <h2>What Type of Home is This?</h2>
                     </div>
                     <div className={ formSlideIndex === 1 ? 'qfs-options' : (formSlideIndex === 3 ? 'qfs-options' : 'no-display')}>
-                        <div className='qfs-option' onClick={() => setFormSlideIndex(3)}>
+                        <div className='qfs-option' onClick={() => onCLickHandle('Two', 'Own', 3)}>
                             <div className='qfs-option-box-container'>
-                                <div className='qfs-option-box'>
+                                <div className={answers.Two === 'Own' ? 'qfs-option-box qfs-active' : 'qfs-option-box'}>
 
                                 </div>
                             </div>
@@ -85,11 +90,11 @@ const QuestionFormSquare = ({getMeters, ZipCode, Provider, setMainFormIndex, met
                         </div>
                         <div className='qfs-option'>
                             <div className='qfs-option-box-container'>
-                                <div className='qfs-option-box'>
+                                <div className={answers.Two === 'Rent' ? 'qfs-option-box qfs-active' : 'qfs-option-box'}>
 
                                 </div>
                             </div>
-                            <div className='qfs-option-text' onClick={() => setFormSlideIndex(3)}>
+                            <div className='qfs-option-text' onClick={() => onCLickHandle('Two', 'Rent', 3)}>
                                 <p>Rent</p>
                             </div>  
                         </div>
