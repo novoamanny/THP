@@ -11,7 +11,7 @@ const ConfirmationModal = ({ZipCode, setChangeZipModal}) =>{
 
     return(
         <div className='Confirmation-Modal'>
-            <div className='backdrop' onClick={() => setChangeZipModal(false)}></div>
+            <div className='backdrop-zip' onClick={() => setChangeZipModal(false)}></div>
             <div className='zip-modal-UI'>
                 <div className='Modal-label'>
                     <h2>Change Sevice ZipCode</h2>
@@ -23,7 +23,7 @@ const ConfirmationModal = ({ZipCode, setChangeZipModal}) =>{
                     <input type='text' name='newZip' placeholder={ZipCode} onChange={(e) => onChange(e)}/>
                 </div>
                 <div className='change-zip-link'>
-                    <Link className='change-zip-link-l' to={`/${newZip}`}>Compare</Link>
+                    <a className='change-zip-link-l' href={`/${newZip}`}>Compare</a>
                 </div>
             </div>
         </div>

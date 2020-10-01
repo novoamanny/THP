@@ -21,7 +21,7 @@
 }
 .best-match-title{
     margin-top: 20px;
-    padding: 20px;
+    padding: 30px 10px;
     font-size: 40px;
     background-color: #1333A6;
     border-top-left-radius: 15px;
@@ -31,4 +31,49 @@
    margin-left: 35px;
    color: #fff;
    font-weight: 600;
+}
+
+@media(max-width:3400px){
+    .best-match-title{
+       
+        font-size: 35px;
+        padding: 27px 10px;
+   
+    }
+}
+
+@media(max-width:3000px){
+    .best-match-title{
+       
+        font-size: 32px;
+        padding: 25px 10px;
+   
+    }
+}
+@media(max-width:2600px){
+    .best-match-title{
+       
+        font-size: 30px;
+        padding: 22px 10px;
+   
+    }
+}
+
+@media(max-width:2300px){
+    .best-match-title{
+       
+        font-size: 27px;
+        padding: 20px 10px;
+   
+    }
+}
+
+
+@media(max-width:2000px){
+    .best-match-title{
+       
+        font-size: 23px;
+        padding: 15px 10px;
+   
+    }
 }

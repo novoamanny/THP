@@ -126,7 +126,7 @@ const QuestionFormSquare = ({ answers, questionHandle,getMeters, ZipCode, Provid
                                 <input disabled value={ZipCode} type='text'/>
                             </div>
                             <div className='zip-text' onClick={() => setChangeZipCodeModal(true)}>
-                                <p>Change Zip</p>
+                                <p style={{cursor: 'pointer'}}>Change Zip</p>
                             </div>
                         </div>
 

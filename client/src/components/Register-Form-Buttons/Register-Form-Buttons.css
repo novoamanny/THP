@@ -1,51 +1,65 @@
 .Form-BTN{
-    display: flex;
+    
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+    
+    
 }
 .Form-BTN button {
-    margin: 20px 40px;
+    margin: 20px 20px;
+    padding: 10px 0;
+    width: 300px;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 38px;
     cursor: pointer;
+    color: #fff;
 }
 .back-btn button{
     background-color: #1333A6;
-    padding: 10px 20px;
-    color: #fff;
+    
+    
+    float: left;
 }
 .next-btn button{
     background-color: red;
-    padding: 10px 20px;
-    color: #fff;
+    float: right;
+    
 }
 
-@media(max-width: 2500px){
+@media(max-width: 3000px){
+    .Form-BTN button{
+        
+        width: 270px;
+        font-size: 34px;
+        
+    }
+    
+}
+
+@media(max-width: 2600px){
     .Form-BTN button{
         
         
-        font-size: 22px;
-        
+        font-size: 30px;
+        width: 250px;
     }
     
 }
 
-@media(max-width: 2100px){
+@media(max-width: 2300px){
     .Form-BTN button {
         
         
-        font-size: 18px;
-        
+        font-size: 27px;
+        width: 230px;
     }
     
 }
-@media(max-width: 1900px){
+@media(max-width: 2000px){
     .Form-BTN button {
         
-        
-        font-size: 16px;
-        
+        padding: 7px 0;
+        font-size: 24px;
+        width: 200px;
     }
     
 }
@@ -57,16 +71,7 @@
         font-size: 12px;
         
     }
-    .back-btn button{
-        
-        padding: 7px 20px;
-        
-    }
-    .next-btn button{
-        
-        padding: 7px 20px;
-        
-    }
+   
     
 }
 
@@ -77,15 +82,7 @@
         font-size: 10px;
         
     }
-    .back-btn button{
-        
-        padding: 7px 20px;
-        
-    }
-    .next-btn button{
-        
-        padding: 7px 20px;
-        
-    }
+   
+    
     
 }

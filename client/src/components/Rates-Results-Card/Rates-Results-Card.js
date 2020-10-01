@@ -47,6 +47,9 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                         <div className='RSC-Top-Right-One-B'>
                             <span>{`Estimated Montly Bill on ${quickFilters}KWh`}</span>
                         </div>
+                        <div className='RSC-Top-Right-One-B'>
+                            <span>{`(${rate && rate.rateData.Rate} X ${quickFilters} KWH)`}</span>
+                        </div>
                     </div>
                      <div className='RSC-Top-Right-Two'>
                         <div className='RSC-Top-Right-Two-T'>
