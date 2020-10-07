@@ -1,3 +1,5 @@
+
+
 .QFS{
     display: flex;
     flex-wrap: wrap;
@@ -189,9 +191,9 @@
     font-style: normal;
     margin-left: 20px;
 }
-.qfs-options-cal{
-  
-}
+
+
+
 
 @media(max-width: 3400px){
     .qfs-question{

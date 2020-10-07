@@ -79,7 +79,10 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
 
     return(
         <div className='RF'>
-            <div className='form-title'>
+            <div className='qfs-question'>
+                <h2>Enrollment Details</h2> 
+            </div>
+            <div className='qfs-label'>
                 <h2>Account Details</h2>
             </div>
             <form onSubmit={(e) => onSubmitHandle(e)}>

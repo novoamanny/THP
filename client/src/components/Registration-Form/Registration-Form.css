@@ -1,3 +1,5 @@
+
+
 .RF{
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +9,7 @@
    
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    margin-top: 150px;
+    
 }
 .form{
     display: flex;
@@ -44,7 +46,7 @@
     justify-content: center;
 }
 .form-btn input{
-    padding: 25px 40px;
+    padding: 25px 0px;
     background-color: #fff; 
     border-radius: 15px;
 }
@@ -84,10 +86,10 @@
 }
 .form-input input{ 
     width: 80%;
-    height: 40px;
-    font-size: 25px;
+    height: 55px;
+    font-size: 28px;
     font-family: "industry", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     padding: 2px 20px;
     border-radius: 7px;
@@ -107,10 +109,10 @@
 }
 .DOB-input input{
     width: 160px;
-    height: 40px;
+    height: 55px;
     font-family: "industry", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
+    font-weight: 500;
+    font-size: 28px;
     font-style: normal;
     padding: 2px 20px;
     border-radius: 7px;
@@ -189,7 +191,7 @@
     margin-left: 63px;
     font-size: 28px;
     font-family: "industry", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 .form-input-state, .form-input-zipcode{
@@ -199,13 +201,13 @@
 }
 .form-input-state input, .form-input-zipcode input{
     width: 60%;
-    height: 40px;
+    height: 55px;
     font-family: "industry", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding: 2px 20px;
     border-radius: 7px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .form-SSN{
@@ -256,10 +258,10 @@
 }
 .UCC-form-input input{
     width: 40%;
-    height: 40px;
+    height: 55px;
     font-size: 24px;
     font-family: "industry", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     padding: 2px 20px;
     border-radius: 7px;
@@ -282,6 +284,9 @@
     font-weight: 400;
     font-style: normal;
 }
+.form-sec-three-one{
+    font-size: 20px;
+}
 
 @media(max-width: 2800px){
     .form-title{
@@ -289,17 +294,17 @@
        
     }
     .form-input input{ 
-        width: 70%;
-        height: 30px;
+        width: 80%;
+        height: 50px;
         
        
     }
     .DOB-input input{
-        width: 120px;
-        height: 30px;
+        width: 130px;
+        height: 50px;
         
         
-        margin: 0 15px;
+        /* margin: 0 15px; */
     }
     .form-sec-two-one{
        
@@ -311,14 +316,14 @@
         margin-left: 45px;
     }
     .form-input-state input, .form-input-zipcode input{
-        width: 40%;
-        height: 30px;
+        width: 60%;
+        height: 50px;
         
        
     }
     .UCC-label{
         
-        padding: 10px 50px;
+        padding: 0px 10px;
        
     }
    
@@ -328,16 +333,80 @@
    
  
     .UCC-form-input input{
-        width: 40%;
-        height: 30px;
+        width: 60%;
+        height: 50px;
         
       
     }
+
+
+   
    
   
    
     
 }
+
+@media(max-width: 2500px){
+   
+    .form-input input{ 
+        width: 80%;
+        height: 45px;
+        font-size: 25px;
+       
+    }
+    .DOB-input input{
+        width: 110px;
+        height: 45px;
+        
+        
+        margin: 0 25px;
+        font-size: 25px;
+    }
+    .form-sec-two-one{
+       
+        margin-top: 30px;
+        margin-left: 45px;
+    }
+    .form-sec-two-two{
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .form-input-state input, .form-input-zipcode input{
+        width: 60%;
+        height: 45px;
+        font-size: 25px;
+        
+       
+    }
+    .UCC-label{
+        
+        padding: 10px 10px;
+       
+    }
+   
+    
+  
+    
+   
+ 
+    .UCC-form-input input{
+        width: 60%;
+        height: 45px;
+        font-size: 25px;
+        
+      
+    }
+
+
+   
+   
+  
+   
+    
+}
+
+
 @media(max-width: 2200px){
     .form-title{
         padding: 5px 0;

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import styles from 'react-calendar/dist/Calendar.css';
 import ImportantNoteBoxTwo from '../Important-Note-Box-Two/Important-Note-Box-Two';
 import RegisterFormButtons from '../Register-Form-Buttons/Register-Form-Buttons';
 import Calendar from 'react-calendar'
@@ -9,7 +10,7 @@ import './Question-Form-Square-Two.css';
 
 
 const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, setMainFormIndex, mainFormIndex}) =>{
-
+console.log(styles)
     const [formSlideIndex, setFormSlideIndex] = useState(0);
     const [disabledOn, setDisabledOn] = useState(true);
 
@@ -25,6 +26,7 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
             setDisabledOn(!disabledOn);
         }
     }
+    
 
     return(
         <div className='QFST'>
@@ -76,7 +78,7 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
                     </div>
                 </div>
                 <div className={ formSlideIndex === 1 ? 'qfs-two' : 'not-active'}>
-                    <div className={formSlideIndex !== 1 && 'no-display'}> 
+                    <div className={formSlideIndex !== 1 ? 'no-display' : undefined}> 
                         <ImportantNoteBoxTwo/>
                     </div>
                     
@@ -84,7 +86,7 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
                         <p>Select Date:</p>
                     </div>
                     <div className={ formSlideIndex === 1 ? 'qfs-options-cal' : (formSlideIndex === 3 ? 'qfs-optionsl' : 'no-display')}>
-                        <Calendar onClickDay={(e) => onCalendarClickHandle(e)}/>
+                        <Calendar className='calendar-size' tileClassName='calendar-size' onClickDay={(e) => onCalendarClickHandle(e)}/>
                     </div>
                 </div>
                 
