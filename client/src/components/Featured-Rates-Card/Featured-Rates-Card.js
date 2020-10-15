@@ -5,7 +5,7 @@ import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
 
 import './Featured-Rates-Card.css';
 
-const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode}) =>{
+const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
     return(
         <div className='FRC'>
              {
@@ -51,12 +51,12 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode}) =>{
             </div>
             <div className='FRC-row-four'>
                 <div className='FRC-bill-desc'>
-                    <span>Estimated Montly Bill Based on 2000 KWH</span>
+                    <span>{`Estimated Montly Bill Based on ${watt} KWH`}</span>
                 </div>
                 <div className='FRC-bill-price'>
                 
-                    <span>{rate.rateData.Rate * 500}</span>
-                    <span>&#36;</span>
+                    <span>{`$${rate.rateData.Rate * 500}`}</span>
+                   
                 </div>
             </div>
             <div className='FRC-row-five'>
@@ -69,7 +69,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode}) =>{
             </div>
             <div className='FRC-row-six'>
                 <div className='FRC-link'>
-                    <Link  to={`/${ZipCode}/${rate.provider}/register/00${rate.rateData.RateID}`} className='FRC-Link'>Check Availability</Link>
+                    <Link  to={`/${ZipCode}/${rate.provider}/register/00${rate.rateData.RateID}/${watt}`} className='FRC-Link'>Check Availability</Link>
                 </div>
                 <div className='FRC-link-details'>
                     <div className='FRC-link-details-one'>

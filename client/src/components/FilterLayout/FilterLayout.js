@@ -231,7 +231,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
            </div>
            
             <div>
-            <FeaturedRatesSection ZipCode={currentZipCode} resultData={result}/>
+            <FeaturedRatesSection watt={quickFilters} ZipCode={currentZipCode} resultData={result}/>
             </div>
            <div>
             

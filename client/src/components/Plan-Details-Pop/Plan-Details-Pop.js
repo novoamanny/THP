@@ -15,12 +15,15 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                     <div className='PDP-sec-one-one'>
                         <div className='PDP-PDF'>
                             <div className='PDF-btn'>
+                                <i className="far fa-file-alt"></i>
                                 <a target='_blank' href={rate && rate.rateData.EFLLink}>Facts Label</a>
                             </div>
                             <div className='PDF-btn'>
+                                <i className="far fa-file-alt"></i>
                                 <a target='_blank' href={rate && rate.rateData.TOSLink}>Terms of Service</a>
                             </div>
                             <div className='PDF-btn'>
+                                <i className="far fa-file-alt"></i>
                                 <a target='_blank' href={rate && rate.rateData.YRACLink}>YRAC</a>
                             </div>
                         </div>
@@ -49,13 +52,13 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                         </div>
                         <div className='PDP-col'>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`500 kwh`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`1000 kwh`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`2000 kwh`}</span>
                             </div>
                         </div>
                     </div>
@@ -65,29 +68,29 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                         </div>
                         <div className='PDP-col'>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`$${rate && rate.rateData.Rate * 500}`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`$${rate && rate.rateData.Rate * 1000}`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`$${rate && rate.rateData.Rate * 2000}`}</span>
                             </div>
                         </div>
                     </div>
                     <div className='PDP-row'> 
                         <div className='PDP-col'>
-                            <span>{`Average Price Per KWH`}</span>
+                            <span>{`Average Price Per KWH (Total / Usage)`}</span>
                         </div>
                         <div className='PDP-col'>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`${rate && rate.rateData.Rate}`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`${rate && rate.rateData.Rate}`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`500 hwh`}</span>
+                                <span>{`${rate && rate.rateData.Rate}`}</span>
                             </div>
                         </div>
                     </div>

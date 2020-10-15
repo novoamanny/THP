@@ -8,7 +8,7 @@ const Routes = () => {
     return (
       <section className='container'>
         <Switch>
-          <Route exact path={'/:zipcode/:provider/register/00:id'} component={RegistrationLayout}/>
+          <Route exact path={'/:zipcode/:provider/register/00:id/:watt'} component={RegistrationLayout}/>
         </Switch>
       </section>
     );

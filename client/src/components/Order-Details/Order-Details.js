@@ -30,7 +30,7 @@ const images = [
     
 ]
 
-const OrderDetails = ({rate, provider, setChangePDP}) =>{
+const OrderDetails = ({rate, provider, setChangePDP, watt}) =>{
 
     
   
@@ -79,9 +79,10 @@ const OrderDetails = ({rate, provider, setChangePDP}) =>{
                             </div>
                             <div className='DTBR-two'>
                                 <span>{rate && rate[0].Rate * 100}</span>
+                                <span>&#162;</span>
                             </div>
                             <div className='DTBR-three'>
-                                <p>[$230.51 / 2000KWh]</p>
+                                <p>{`${watt} kwh`}</p>
                             </div>
                         </div>
                     </div>
@@ -89,7 +90,7 @@ const OrderDetails = ({rate, provider, setChangePDP}) =>{
                 <div className='OD-Details-Bottom'>
                     <div className='OD-Details-One'>
                         <div className='OD-Details-One-1'>
-                            <p>Estimated Monthly Bill Based on 2000KWh</p>
+                            <p>{`Estimated Monthly Bill Based on ${watt} KWh`}</p>
                         </div>
                         <div className='OD-Details-One-2'>
                             <h2>{rate && rate[0].Rate}</h2>

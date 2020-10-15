@@ -34,7 +34,7 @@ const images = [
 ]
 
 
-const FeaturedRatesSection = ({resultData, ZipCode}) =>{
+const FeaturedRatesSection = ({resultData, ZipCode, watt}) =>{
 
 
     const [changePDP, setChangePDP] = useState(false);
@@ -78,7 +78,7 @@ const FeaturedRatesSection = ({resultData, ZipCode}) =>{
                     return(
                         
                             
-                        <FeaturedRatesCard changePDP={changePDP} setChangePDP={setChangePDP} rate={prov} ZipCode={ZipCode}/>
+                        <FeaturedRatesCard watt={watt} changePDP={changePDP} setChangePDP={setChangePDP} rate={prov} ZipCode={ZipCode}/>
                         
                     )
                 }

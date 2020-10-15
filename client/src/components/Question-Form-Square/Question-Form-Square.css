@@ -558,6 +558,82 @@
 }
 
 
+@media(max-width: 2000px){
+    .qfs-question{
+        font-size: 20px;
+        
+    }
+    .qfs-label{
+        
+        font-size: 17px;
+    }
+    .qfs-text h2{
+        
+        font-size: 22px;
+    }
+    .qfs-option-box{
+        width: 18px;
+        height: 18px;
+        
+        margin-top: 5px;
+    }
+    .qfs-option-text{
+    
+        
+        font-size: 19px;
+        
+    }
+    .ofs-text-red{
+        
+        font-size: 14px;
+    }
+    .qfs-one{
+    
+        
+        padding: 7px 30px;
+    }
+    .qfs-two{
+        /* height: 0; */
+        margin: 7px 50px;
+        
+        padding: 7px 20px;
+        
+    }
+    .qfs-three{
+        
+        margin: 7px 30px;
+        padding: 7px 0px;
+    }
+    .qfs-address-input p{
+        font-size: 17px;
+    }
+    .qfs-zip-input p{
+        font-size: 17px;
+    }
+    .qfs-search-button{
+        margin-top: 58px;
+        padding: 3px 0px;
+        font-size: 15px;
+       
+        
+    }
+    .qfs-zip-input  input{
+        height: 40px;
+        width: 60%;
+        padding: 0 20px;
+        font-size: 18px;
+        
+    }
+    .qfs-address-input input{
+        width: 80%;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 18px;
+        
+    }
+}
+
+
 
 
 @media(max-width: 1500px){

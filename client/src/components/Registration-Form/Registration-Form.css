@@ -321,9 +321,10 @@
         
        
     }
+   
     .UCC-label{
         
-        padding: 0px 10px;
+        padding: 10px 10px;
        
     }
    
@@ -348,7 +349,9 @@
 }
 
 @media(max-width: 2500px){
-   
+   .form-label{
+       font-size: 23px;
+   }
     .form-input input{ 
         width: 80%;
         height: 45px;
@@ -382,7 +385,11 @@
     .UCC-label{
         
         padding: 10px 10px;
+        font-size: 21px;
        
+    }
+    .UCC-form-label{
+        font-size: 23px;
     }
    
     
@@ -401,7 +408,10 @@
 
    
    
-  
+    .form-sec-two li{
+        
+        font-size: 21px;
+    }
    
     
 }
