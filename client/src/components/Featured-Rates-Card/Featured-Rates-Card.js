@@ -69,7 +69,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             </div>
             <div className='FRC-row-six'>
                 <div className='FRC-link'>
-                    <Link  to={`/${ZipCode}/${rate.provider}/register/00${rate.rateData.RateID}/${watt}`} className='FRC-Link'>Check Availability</Link>
+                    <Link  to={`/${ZipCode}/${rate.provider}/enrollment/00${rate.rateData.RateID}/${watt}`} className='FRC-Link'>Check Availability</Link>
                 </div>
                 <div className='FRC-link-details'>
                     <div className='FRC-link-details-one'>

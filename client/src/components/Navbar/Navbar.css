@@ -6,14 +6,40 @@
     background-color: #fff;
     border-bottom: solid 2px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.1);
+    display: flex;
+    
 }
 .nav-logo{
     margin-left: 10%;
+    width: 70%;
 }
 .nav-logo img{
     width: 230px;
     height: 70px;
 }
+.nav-b{
+    display: none;
+
+}
+.nav-b-order{
+    display: none;
+}
+
+.nav-button{
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 7px ;
+    border-radius: 18px;
+    margin: 5px 0;
+    width: 170px;
+    font-size: 17px;
+    background: #1333A6;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 @media(max-width: 2800px){
     .nav-logo img{
@@ -34,31 +60,7 @@
         height: 45px;
     }
 }
-/* @media(max-width: 1900px){
-    .nav-logo img{
-        width: 150px;
-        height: 40px;
-    }
-} */
 
-
-
-
-
-/* @media(max-width: 1900px){
-    .nav-logo img{
-        width: 100px;
-        height: 30px;
-    }
-    .nav-logo{
-        margin-left: 5%;
-    }
-    .Navbar{
-        
-        
-        box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
-    }
-} */
 
 
 @media(max-width: 1400px){
@@ -74,14 +76,27 @@
         
         box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
     }
+    .nav-b{
+        display: flex;
+    }
 }
-@media(max-width: 900px) and (orientation: landscape){
+@media(max-width: 1100px){
+    .nav-b-order{
+        display: flex;
+    }
+    
+}
+
+@media(max-width: 1000px){
     .nav-logo img{
-        width: 120px;
-        height: 35px;
+        width: 130px;
+        height: 38px;
     }
     .nav-logo{
-        margin-left: 20px;
+        margin-left: 3%;
+    }
+    .nav-button{
+        font-size: 15px;
     }
     .Navbar{
         
@@ -89,13 +104,17 @@
         box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
     }
 }
-@media(max-width: 500px){
+@media(max-width: 900px){
     .nav-logo img{
         width: 120px;
         height: 35px;
     }
     .nav-logo{
-        margin-left: 15px;
+        margin-left: 3%;
+    }
+    .nav-button{
+        font-size: 13px;
+        width: 130px;
     }
     .Navbar{
         
@@ -103,3 +122,18 @@
         box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
     }
 }
+@media(max-width: 700px){
+    .nav-logo img{
+        width: 100px;
+        height: 30px;
+    }
+    .nav-logo{
+        margin-left: 3%;
+    }
+    .nav-button{
+        font-size: 11px;
+        width: 130px;
+    }
+    
+}
+

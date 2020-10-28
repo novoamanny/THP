@@ -11,6 +11,7 @@
     border-top-left-radius: 15px;
     
 }
+
 .form{
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +192,7 @@
     margin-left: 63px;
     font-size: 28px;
     font-family: "industry", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
 .form-input-state, .form-input-zipcode{
@@ -286,446 +287,562 @@
 }
 .form-sec-three-one{
     font-size: 20px;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
-@media(max-width: 2800px){
-    .form-title{
-        padding: 10px 0;
-       
+
+@media(max-width: 3000px){
+    .form-label{
+        font-size: 24px;
     }
-    .form-input input{ 
-        width: 80%;
-        height: 50px;
-        
-       
-    }
-    .DOB-input input{
-        width: 130px;
-        height: 50px;
-        
-        
-        /* margin: 0 15px; */
-    }
-    .form-sec-two-one{
-       
-        margin-top: 30px;
-        margin-left: 45px;
-    }
-    .form-sec-two-two{
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-input-state input, .form-input-zipcode input{
-        width: 60%;
-        height: 50px;
-        
-       
-    }
-   
-    .UCC-label{
-        
-        padding: 10px 10px;
-       
-    }
-   
-    
+    .form-label-state{
+        margin-bottom: 5px;
+        margin-left: 63px;
+        font-size: 24px;
   
-    
-   
- 
-    .UCC-form-input input{
-        width: 60%;
-        height: 50px;
+    }
+     .form-input input{ 
+         width: 80%;
+         height: 45px;
+         font-size: 24px;
         
+     }
+     .DOB-input input{
+         width: 110px;
+         height: 45px;
+         
+         
+         margin: 0 25px;
+         font-size: 24px;
+     }
+     .form-sec-two-one{
+        
+         margin-top: 30px;
+         margin-left: 45px;
+     }
+     .form-sec-two-two{
+         margin-top: 20px;
+         margin-left: 45px;
+     }
+     .form-input-state input, .form-input-zipcode input{
+         width: 60%;
+         height: 45px;
+         font-size: 24px;
+         
+        
+     }
+     .UCC-label{
+         
+         padding: 8px 10px;
+         font-size: 23px;
+        
+     }
+     .UCC-form-label{
+         font-size: 24px;
+     }
+    
+     .UCC-form-checkbox-text{
+        width: 90%;
+        margin-left: 20px;
+        font-size: 20px;
+        
+    }
+    .form-sec-two-square{
+        width: 21px;
+        height: 21px;
       
     }
-
-
-   
-   
-  
-   
-    
-}
-
-@media(max-width: 2500px){
-   .form-label{
-       font-size: 23px;
-   }
-    .form-input input{ 
-        width: 80%;
-        height: 45px;
-        font-size: 25px;
-       
-    }
-    .DOB-input input{
-        width: 110px;
-        height: 45px;
+     .UCC-form-checkbox-square{
+        width: 21px;
+        height: 21px;
         
-        
-        margin: 0 25px;
-        font-size: 25px;
+        margin-left: 40px;
     }
-    .form-sec-two-one{
-       
-        margin-top: 30px;
-        margin-left: 45px;
-    }
-    .form-sec-two-two{
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-input-state input, .form-input-zipcode input{
-        width: 60%;
-        height: 45px;
-        font-size: 25px;
-        
-       
-    }
-    .UCC-label{
-        
-        padding: 10px 10px;
-        font-size: 21px;
-       
-    }
-    .UCC-form-label{
-        font-size: 23px;
-    }
-   
-    
-  
-    
-   
- 
-    .UCC-form-input input{
-        width: 60%;
-        height: 45px;
-        font-size: 25px;
-        
-      
-    }
-
-
-   
-   
-    .form-sec-two li{
-        
-        font-size: 21px;
-    }
-   
-    
-}
-
-
-@media(max-width: 2200px){
-    .form-title{
-        padding: 5px 0;
-       
-    }
-    .form-input input{ 
-        width: 70%;
-        height: 30px;
-        
-       
-    }
-    .DOB-input input{
-        width: 90px;
-        height: 30px;
-        
-        
-        margin: 0 10px;
-    }
-    .form-sec-two-one{
-       
-        margin-top: 30px;
-        margin-left: 45px;
-    }
-    .form-sec-two-two{
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-input-state input, .form-input-zipcode input{
-        width: 30%;
-        height: 30px;
-        
-       
-    }
-    .UCC-label{
-        
-        padding: 5px 50px;
-       
-    }
-
-    .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+     .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
         margin: 30px 30px;
-        font-size: 12px;
-    }
-    .UCC-form-checkbox-text{
-        font-size: 12px;
-    }
-    .UCC-form-label{
-        font-size: 13px;
-    }
-
-    .UCC-form-checkbox-square{
-        width: 20px;
-        height: 20px;
-      
-    }
-}
-@media(max-width: 1800px){
-    .form-title{
-        padding: 0px 0;
+        font-size: 22px;
        
     }
-    .form-input input{ 
-        width: 65%;
-        height: 25px;
-        
-       
-    }
-    .DOB-input input{
-        width: 70px;
-        height: 25px;
-        
-        
-        margin: 0 10px;
-    }
-    .form-sec-two-one{
-       
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-sec-two-two{
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-input-state input, .form-input-zipcode input{
-        width: 25%;
-        height: 25px;
-        
-       
-    }
-    .UCC-label{
-        
-        padding: 3px 50px;
-       
-    }
-    .form-sec-three{
     
-        padding-top: 40px;
-    }
-    .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
-        margin: 20px 30px;
-        font-size: 10px;
-    }
-    .UCC-form-checkbox-text{
-        font-size: 10px;
-    }
-    .UCC-form-label{
-        font-size: 11px;
-    }
-
-    .UCC-form-checkbox-square{
-        width: 17px;
-        height: 17px;
-      
-    }
   
-    .UCC-form-input input{
-        width: 40%;
-        height: 25px;
+     .UCC-form-input input{
+         width: 60%;
+         height: 45px;
+         font-size: 24px;
+         
+       
+     }
+ 
+ 
+    
+    
+     .form-sec-two li{
+         
+         font-size: 21px;
+     }
+     .form-sec-three-one{
+        font-size: 20px;
+  
+    }
+     
+ }
+
+
+
+ @media(max-width: 2500px){
+    .form-label{
+        font-size: 22px;
+    }
+    .form-label-state{
+        margin-bottom: 5px;
+        margin-left: 63px;
+        font-size: 22px;
+     
+    }
+     .form-input input{ 
+         width: 80%;
+         height: 40px;
+         font-size: 22px;
         
+     }
+     .DOB-input input{
+         width: 100px;
+         height: 40px;
+         
+         
+         margin: 0 25px;
+         font-size: 22px;
+     }
+     .form-sec-two-one{
+        
+         margin-top: 30px;
+         margin-left: 45px;
+     }
+     .form-sec-two-two{
+         margin-top: 20px;
+         margin-left: 45px;
+     }
+     .form-input-state input, .form-input-zipcode input{
+         width: 60%;
+         height: 40px;
+         font-size: 22px;
+         
+        
+     }
+     .UCC-label{
+         
+         padding: 5px 10px;
+         font-size: 22px;
+        
+     }
+     .UCC-form-label{
+         font-size: 22px;
+     }
+    
+     .UCC-form-checkbox-text{
+        width: 90%;
+        margin-left: 20px;
+        font-size: 18px;
+        
+    }
+    .form-sec-two-square{
+        width: 19px;
+        height: 19px;
       
+    }
+     .UCC-form-checkbox-square{
+        width: 19px;
+        height: 19px;
+        
+        margin-left: 40px;
+    }
+     .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+        margin: 25px 30px;
+        font-size: 19px;
+       
+    }
+    
+  
+     .UCC-form-input input{
+         width: 60%;
+         height: 40px;
+         font-size: 22px;
+         
+       
+     }
+ 
+ 
+    
+    
+     .form-sec-two li{
+         
+         font-size: 19px;
+     }
+     .form-sec-three{
+        
+        padding-top: 35px;
+ 
+    }
+     .form-sec-three-one{
+        font-size: 18px;
+  
+    }
+     
+ }
+
+@media(max-width: 2300px){
+    .UCC-label{
+         
+        padding: 5px 10px;
+        font-size: 20px;
+       
+    }
+}
+@media(max-width: 2200px){
+    .form-label{
+        font-size: 20px;
+    }
+    .form-label-state{
+        margin-bottom: 5px;
+        margin-left: 63px;
+        font-size: 20px;
+     
+    }
+     .form-input input{ 
+         width: 80%;
+         height: 35px;
+         font-size: 20px;
+        
+     }
+     .DOB-input input{
+         width: 80px;
+         height: 35px;
+         
+         
+         margin: 0 25px;
+         font-size: 20px;
+     }
+     .form-sec-two-one{
+        
+         margin-top: 30px;
+         margin-left: 45px;
+     }
+     .form-sec-two-two{
+         margin-top: 20px;
+         margin-left: 45px;
+     }
+     .form-input-state input, .form-input-zipcode input{
+         width: 60%;
+         height: 35px;
+         font-size: 20px;
+         
+        
+     }
+   
+     .UCC-form-label{
+         font-size: 20px;
+     }
+    
+     .UCC-form-checkbox-text{
+        width: 90%;
+        margin-left: 20px;
+        font-size: 15px;
+        
+    }
+    .form-sec-two-square{
+        width: 16px;
+        height: 16px;
+      
+    }
+     .UCC-form-checkbox-square{
+        width: 16px;
+        height: 16px;
+        
+        margin-left: 40px;
+    }
+     .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+        margin: 20px 30px;
+        font-size: 17px;
+       
+    }
+    
+  
+     .UCC-form-input input{
+         width: 60%;
+         height: 35px;
+         font-size: 20px;
+         
+       
+     }
+ 
+ 
+    
+    
+     .form-sec-two li{
+         
+         font-size: 17px;
+     }
+     .form-sec-three{
+        
+        padding-top: 35px;
+ 
+    }
+     .form-sec-three-one{
+        font-size: 16px;
+  
+    }
+     
+ }
+
+
+
+ @media(max-width: 2000px){
+    .UCC-label{
+         
+        padding: 03px 0px;
+        font-size: 17px;
+       
     }
 }
 
-
-
+@media(max-width: 1900px){
+    .form-label{
+        font-size: 18px;
+    }
+    .form-label-state{
+        margin-bottom: 5px;
+        margin-left: 63px;
+        font-size: 18px;
+     
+    }
+     .form-input input{ 
+         width: 80%;
+         height: 30px;
+         font-size: 18px;
+        
+     }
+     .DOB-input input{
+         width: 60px;
+         height: 30px;
+         
+         
+         margin: 0 25px;
+         font-size: 18px;
+     }
+     .form-sec-two-one{
+        
+         margin-top: 20px;
+         margin-left: 45px;
+     }
+     .form-sec-two-two{
+         margin-top: 10px;
+         margin-left: 45px;
+     }
+     .form-input-state input, .form-input-zipcode input{
+         width: 60%;
+         height: 30px;
+         font-size: 18px;
+         
+        
+     }
+   
+     .UCC-form-label{
+         font-size: 18px;
+     }
+    
+     .UCC-form-checkbox-text{
+        width: 90%;
+        margin-left: 20px;
+        font-size: 13px;
+        
+    }
+    .form-sec-two-square{
+        width: 13px;
+        height: 13px;
+      
+    }
+     .UCC-form-checkbox-square{
+        width: 13px;
+        height: 13px;
+        
+        margin-left: 40px;
+    }
+     .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+        margin: 15px 30px;
+        font-size: 15px;
+       
+    }
+    
+  
+     .UCC-form-input input{
+         width: 60%;
+         height: 30px;
+         font-size: 18px;
+         
+       
+     }
+ 
+ 
+    
+    
+     .form-sec-two li{
+         
+         font-size: 15px;
+     }
+     .form-sec-three{
+        
+        padding-top: 25px;
+ 
+    }
+     .form-sec-three-one{
+        font-size: 13px;
+  
+    }
+     
+ }
+ @media(max-width: 1700px){
+    .UCC-label{
+         
+        padding: 3px 0px;
+        font-size: 14px;
+       
+    }
+}
 
 @media(max-width: 1600px){
-    .form-title{
-        padding: 0px 0;
+    .form-label{
+        font-size: 16px;
+        margin: 5px 30px;
+    }
+    .form-label-state{
+        margin-bottom: 5px;
+        margin-left: 30px;
+        font-size: 16px;
+     
+    }
+     .form-input input{ 
+         width: 80%;
+         height: 25px;
+         font-size: 16px;
+        
+     }
+     .DOB-input input{
+         width: 50px;
+         height: 25px;
+         
+         
+         margin: 0 15px;
+         font-size: 16px;
+     }
+     .form-sec-two-one{
+        
+         margin-top: 20px;
+         margin-left: 45px;
+     }
+     .form-sec-two-two{
+         margin-top: 10px;
+         margin-left: 45px;
+     }
+     .form-input-state input, .form-input-zipcode input{
+         width: 60%;
+         height: 25px;
+         font-size: 16px;
+         
+        
+     }
+   
+     .UCC-form-label{
+         font-size: 16px;
+         margin: 10px 30px;
+     }
+    
+     .UCC-form-checkbox-text{
+        width: 90%;
+        margin-left: 10px;
+        font-size: 11px;
+        
+    }
+    .form-sec-two-square{
+        width: 11px;
+        height: 11px;
+      
+    }
+     .UCC-form-checkbox-square{
+        width: 11px;
+        height: 11px;
+        
+        margin-left: 40px;
+    }
+     .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+        margin: 12px 30px;
+        font-size: 13px;
        
     }
-    .form-input input{ 
-        width: 55%;
+    .UCC-form-input{
+        margin: 15px 30px;
+    }
+  
+     .UCC-form-input input{
+         width: 60%;
+         height: 25px;
+         font-size: 16px;
+         
+       
+     }
+ 
+ 
+    
+    
+     .form-sec-two li{
+         
+         font-size: 12px;
+     }
+     .form-sec-three{
+        
+        padding-top: 15px;
+ 
+    }
+     .form-sec-three-one{
+        font-size: 12px;
+  
+    }
+     
+ }
+ @media(max-width: 1400px){
+    .UCC-label{
+         
+        padding: 3px 0px;
+        font-size: 12px;
+       
+    }
+}
+
+ @media(max-width: 1300px)
+{
+    .DOB-input input{
+        width: 50px;
         height: 25px;
         
-       
+        
+        margin: 0 5px;
+        font-size: 16px;
     }
+}
+
+
+@media(max-width:1100px){
     .DOB-input input{
         width: 60px;
         height: 25px;
         
         
-        margin: 0 10px;
-    }
-    .form-sec-two-one{
-       
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-sec-two-two{
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-input-state input, .form-input-zipcode input{
-        width: 25%;
-        height: 25px;
-        
-       
-    }
-    .UCC-label{
-        
-        padding: 3px 50px;
-       
-    }
-    .form-sec-three{
-    
-        padding-top: 40px;
-    }
-
-
-    .form-sec-two li{
-        
-        font-size: 10px;
-    }
-    
-    .form-sec-two-square{
-        width: 12px;
-        height: 12px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 0 15px;
+        font-size: 16px;
     }
 }
-
-
-@media(max-width: 1400px){
-    .form-title{
-        padding: 0px 0;
-       
-    }
-    .form-input input{ 
-        width: 55%;
-        height: 25px;
-        
-       
-    }
-    .DOB-input input{
-        width: 40px;
-        height: 25px;
-        
-        font-size: 10px;
-        margin: 0 10px;
-    }
-    .form-sec-two-one{
-       
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-sec-two-two{
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-input-state input, .form-input-zipcode input{
-        width: 25%;
-        height: 25px;
-        
-       
-    }
-    .UCC-label{
-        
-        padding: 3px 50px;
-       
-    }
-    .form-sec-three{
-    
-        padding-top: 40px;
-    }
-
-
-    .form-sec-two li{
-        
-        font-size: 10px;
-    }
-    
-    .form-sec-two-square{
-        width: 12px;
-        height: 12px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-    }
-    .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
-        margin: 20px 30px;
-        font-size: 9px;
-    }
-    .UCC-form-checkbox-text{
-        font-size: 8px;
-    }
-    .UCC-form-label{
-        font-size: 9px;
-    }
-
-    .UCC-form-checkbox-square{
-        width: 14px;
-        height: 14px;
-      
-    }
-  
-    .UCC-form-input input{
-        width: 40%;
-        height: 25px;
-        
-      
-    }
-}
-
-@media(max-width: 1100px){
-    .form-title{
-        padding: 0px 0;
-       
-    }
-    .form-input input{ 
-        width: 65%;
-        height: 25px;
-        
-       
-    }
-    .DOB-input input{
-        width: 70px;
-        height: 25px;
-        
-        
-        margin: 0 10px;
-    }
-    .form-sec-two-one{
-       
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-sec-two-two{
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-input-state input, .form-input-zipcode input{
-        width: 25%;
-        height: 25px;
-        
-       
-    }
-    .UCC-label{
-        
-        padding: 3px 50px;
-       
-    }
-    .form-sec-three{
-    
-        padding-top: 40px;
-    }
-    .UCC-form-checkbox-text{
-        font-size: 9px;
-    }
-}
-
+/* 
 @media(max-width: 900px){
     .form-title{
         padding: 0px 0;
@@ -790,7 +907,7 @@
         font-size: 8px;
         margin-left: 10px;
     }
-}
+} */
 
 @media(max-width: 700px){
     .form-title{

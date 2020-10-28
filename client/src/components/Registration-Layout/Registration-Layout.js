@@ -16,6 +16,7 @@ import {getMeters, postRegister} from '../../actions/register';
 
 
 import './Registration-Layout.css';
+import Navbar from '../Navbar/Navbar';
 
 
 const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation}, getRate, getMeters, postRegister}) =>{
@@ -65,6 +66,7 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation
 
     return(
         <div className='Registration'>
+            <Navbar url={match.params}/>
             
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
             <RegistrationMidSection mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>

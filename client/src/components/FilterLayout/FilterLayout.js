@@ -11,6 +11,7 @@ import FeaturedRatesSection from '../Featured-Rates-Section/Featured-Rates-Secti
 import RatesResultsSection from '../Rates-Results-Section/Rates-Results-Section';
 
 import './FilterLayout.css';
+import Navbar from '../Navbar/Navbar';
 
 
 const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
@@ -119,6 +120,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
 
     return(
         <div className='Filter-Layout'>
+            
            <LeftFilterOptions filterOptions={filterOptions} filterHandle={filterHandle}/>
            <div className='top-filters'>
                 <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/>
@@ -126,9 +128,9 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
            </div>
            <div className='filters-mobile' >
            {/* <div className={mobileSlide && 'mobile-backdrop'}></div> */}
-                <div className='filter-mobile-button' onClick={() => setMobileSlide(!mobileSlide)}>
+                {/* <div className='filter-mobile-button' onClick={() => setMobileSlide(!mobileSlide)}>
                     <span>Search Filters</span>
-                </div>
+                </div> */}
                 <div className={!mobileSlide ? 'filter-mobile-not-active' : 'filter-mobile-active'}>
                 
                     <div className={!mobileSlide ? 'filter-mobile-ui-not-active' : 'filter-mobile-ui-active'}>

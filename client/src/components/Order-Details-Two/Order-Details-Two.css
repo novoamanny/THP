@@ -436,138 +436,105 @@
       }
 }
 
-@media(max-width: 1500px){
+@media(max-width: 1600px){
     .Details-SA-label{
         margin-left: 10px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .Details-ST-label{
         margin-left: 10px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .Details-SD-label{
         margin-left: 10px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .ODT-Details-Address1{
         margin: 5px 0;
         margin-left: 12px;
         
-        font-size: 8px;
+        font-size: 13px;
     }
     .ODT-Details-City{
         margin: 5px 0;
         margin-left: 12px;
-        font-size: 8px;
+        font-size: 13px;
     }
     .Details-Esiid-label{
         margin-left: 10px;
-        font-size: 8px;
-    }
-    .Details-Esiid{
-        font-size: 10px;
-        margin: 8px 0;
-        margin-left: 10px;
-        
-    }
-    .ODT-Details-R-BTN{
-        margin-top: 20px;
-     }
-    .ODT-Details-R-BTN button{
-      
-        width: 80px;
-        height: 20px;
         font-size: 10px;
     }
-}
-
-@media(max-width: 1300px){
-    .Details-SA-label{
-        margin-left: 10px;
-        font-size: 6px;
-    }
-    .Details-ST-label{
-        margin-left: 10px;
-        font-size: 6px;
-    }
-    .Details-SD-label{
-        margin-left: 10px;
-        font-size: 6px;
-    }
-    .ODT-Details-Address1{
-        margin: 5px 0;
-        margin-left: 12px;
-        
-        font-size: 6px;
-    }
-    .ODT-Details-City{
-        margin: 5px 0;
-        margin-left: 12px;
-        font-size: 6px;
-    }
-    .Details-Esiid-label{
-        margin-left: 10px;
-        font-size: 6px;
-    }
     .Details-Esiid{
-        font-size: 8px;
+        font-size: 13px;
         margin: 8px 0;
-        margin-left: 10px;
+        margin-left: 12px;
         
     }
-    .ODT-Details-R-BTN{
-        margin-top: 20px;
-     }
     .ODT-Details-R-BTN button{
-      
-        width: 60px;
-        height: 20px;
-        font-size: 8px;
+       
+        width: 100px;
+        height: 30px;
+        padding: 0px 0;
+        font-size: 12px;
+        
+        
+        
     }
+    .ODT-Label h2{
+        margin-left: 20px;
+        font-size: 18px;
+     
+      }
 }
 
 
 @media(max-width: 1200px){
     .Details-SA-label{
         margin-left: 10px;
-        font-size: 8px;
+        font-size: 9px;
     }
     .Details-ST-label{
         margin-left: 10px;
-        font-size: 8px;
+        font-size: 9px;
     }
     .Details-SD-label{
         margin-left: 10px;
-        font-size: 8px;
+        font-size: 9px;
     }
     .ODT-Details-Address1{
         margin: 5px 0;
         margin-left: 12px;
         
-        font-size: 8px;
+        font-size: 11px;
     }
     .ODT-Details-City{
         margin: 5px 0;
         margin-left: 12px;
-        font-size: 8px;
+        font-size: 11px;
     }
     .Details-Esiid-label{
         margin-left: 10px;
-        font-size: 8px;
+        font-size: 9px;
     }
     .Details-Esiid{
-        font-size: 10px;
+        font-size: 11px;
         margin: 8px 0;
-        margin-left: 10px;
+        margin-left: 12px;
         
     }
-    .ODT-Details-R-BTN{
-        margin-top: 20px;
-     }
     .ODT-Details-R-BTN button{
-      
-        width: 80px;
-        height: 20px;
-        font-size: 10px;
+       
+        width: 90px;
+        height: 28px;
+        padding: 0px 0;
+        font-size: 11px;
+        
+        
+        
     }
+    .ODT-Label h2{
+        margin-left: 20px;
+        font-size: 16px;
+     
+      }
 }

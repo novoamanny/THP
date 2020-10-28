@@ -10,9 +10,10 @@
     }
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1400px){
     .RMS{
-        width: 65%;
+        width: 60%;
+        margin-left: 0;
         margin-left: 0;
     }
 }

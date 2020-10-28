@@ -5,4 +5,9 @@
     justify-content: center;
     
 }
+@media(max-width: 1200px){
+    .Registration{
+        margin-top: 40px;
+    }
+}
 

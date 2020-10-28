@@ -558,208 +558,281 @@
 }
 
 
-@media(max-width: 2000px){
+
+
+@media(max-width: 1700px){
     .qfs-question{
-        font-size: 20px;
+        font-size: 17px;
         
     }
     .qfs-label{
         
-        font-size: 17px;
+        font-size: 15px;
     }
     .qfs-text h2{
         
-        font-size: 22px;
+        font-size: 19px;
     }
     .qfs-option-box{
-        width: 18px;
-        height: 18px;
+        width: 15px;
+        height: 15px;
         
-        margin-top: 5px;
+        margin-top: 2px;
     }
     .qfs-option-text{
     
         
-        font-size: 19px;
+        font-size: 16px;
         
     }
     .ofs-text-red{
         
-        font-size: 14px;
+        font-size: 12px;
     }
     .qfs-one{
     
         
-        padding: 7px 30px;
+        padding: 5px 20px;
     }
     .qfs-two{
         /* height: 0; */
-        margin: 7px 50px;
+        margin: 7px 40px;
         
-        padding: 7px 20px;
+        padding: 5px 10px;
         
     }
     .qfs-three{
         
-        margin: 7px 30px;
-        padding: 7px 0px;
+        margin: 7px 20px;
+        padding: 5px 0px;
     }
     .qfs-address-input p{
-        font-size: 17px;
+        font-size: 15px;
     }
     .qfs-zip-input p{
-        font-size: 17px;
+        font-size: 15px;
     }
     .qfs-search-button{
-        margin-top: 58px;
-        padding: 3px 0px;
-        font-size: 15px;
+        margin-top: 50px;
+        padding: 2px 0px;
+        font-size: 13px;
        
         
     }
     .qfs-zip-input  input{
-        height: 40px;
+        height: 33px;
         width: 60%;
         padding: 0 20px;
-        font-size: 18px;
+        font-size: 15px;
         
     }
     .qfs-address-input input{
         width: 80%;
-        height: 40px;
+        height: 33px;
         padding: 0 20px;
-        font-size: 18px;
+        font-size: 15px;
         
     }
 }
 
-
-
-
-@media(max-width: 1500px){
+@media(max-width: 1400px){
     .qfs-question{
-        font-size: 12px;
+        font-size: 15px;
         
     }
     .qfs-label{
         
-        font-size: 9px;
+        font-size: 13px;
     }
-    .qfs-text{
-        margin-left: 0px;
-        font-size: 8px;
+    .qfs-text h2{
+        
+        font-size: 17px;
     }
     .qfs-option-box{
-        width: 10px;
-        height: 10px;
+        width: 13px;
+        height: 13px;
         
-        margin-top: 5px;
+        margin-top: 0px;
     }
     .qfs-option-text{
     
         
-        font-size: 12px;
+        font-size: 14px;
         
     }
     .ofs-text-red{
         
-        font-size: 8px;
+        font-size: 11px;
     }
+    .qfs-one{
     
+        
+        padding: 5px 15px;
+    }
+    .qfs-two{
+        /* height: 0; */
+        margin: 7px 30px;
+        
+        padding: 5px 10px;
+        
+    }
+    .qfs-three{
+        
+        margin: 7px 20px;
+        padding: 5px 0px;
+    }
     .qfs-address-input p{
-        font-size: 12px;
+        font-size: 13px;
     }
     .qfs-zip-input p{
-        font-size: 12px;
+        font-size: 13px;
     }
     .qfs-search-button{
-        margin-top: 40px;
+        margin-top: 45px;
         padding: 0px 0px;
         font-size: 11px;
-        margin-left: 10px;
        
         
     }
-    .qfs-address-input input{
-        width: 65%;
-        height: 30px;
-        
-        font-size: 12px;
-    }
     .qfs-zip-input  input{
-        height: 30px;
-        width: 70px;
-        
-        font-size: 12px;
-    }
-    .qfs-address-input{
-        width: 20%;
-    }
-    .qfs-one{
-    
-        
-        padding: 5px 20px;
-    }
-    .qfs-two{
-        /* height: 0; */
-        margin: 5px 40px;
-        
-        padding: 5px 10px;
+        height: 28px;
+        width: 60%;
+        padding: 0 20px;
+        font-size: 13px;
         
     }
-    .qfs-three{
-        
-        margin: 5px 30px;
-        padding: 5px 0px;
-    }
-}
-
-@media(max-width: 1200px){
     .qfs-address-input input{
-        width: 75%;
-        height: 30px;
+        width: 80%;
+        height: 28px;
+        padding: 0 20px;
+        font-size: 13px;
         
-        font-size: 12px;
     }
-    .qfs-zip-input{
-        margin-left: 40px;
-    }
-    .qfs-search-button{
-        margin-left: 20px;
-    }
-   
 }
 
-@media(max-width: 1000px){
+
+@media(max-width: 900px){
     .qfs-question{
-        font-size: 10px;
+        font-size: 13px;
         
     }
     .qfs-label{
         
-        font-size: 8px;
+        font-size: 11px;
     }
-    .qfs-text{
-        margin-left: 0px;
-        font-size: 7px;
+    .qfs-text h2{
+        
+        font-size: 14px;
     }
     .qfs-option-box{
-        width: 8px;
-        height: 8px;
+        width: 11px;
+        height: 11px;
         
-        margin-top: 5px;
+        margin-top: 0px;
     }
     .qfs-option-text{
+        margin-top: 3px;
+        
+        font-size: 12px;
+        
+    }
+    .ofs-text-red{
+        
+        font-size: 10px;
+    }
+    .qfs-one{
     
+        
+        padding: 5px 10px;
+    }
+    .qfs-two{
+        /* height: 0; */
+        margin: 5px 20px;
+        
+        padding: 5px 5px;
+        
+    }
+    .qfs-three{
+        
+        margin: 5px 10px;
+        padding: 5px 0px;
+    }
+    .qfs-address-input p{
+        font-size: 11px;
+    }
+    .qfs-zip-input p{
+        font-size: 11px;
+    }
+    .qfs-search-button{
+        margin-top: 37px;
+        padding: 0px 0px;
+        font-size: 10px;
+       
+        
+    }
+    .qfs-zip-input  input{
+        height: 25px;
+        width: 60%;
+        padding: 0 10px;
+        font-size: 11px;
+        
+    }
+    .qfs-address-input input{
+        width: 80%;
+        height: 25px;
+        padding: 0 10px;
+        font-size: 11px;
+        
+    }
+}
+
+
+@media(max-width: 700px){
+    .qfs-question{
+        font-size: 11px;
+        
+    }
+    .qfs-label{
+        
+        font-size: 10px;
+    }
+    .qfs-text h2{
+        
+        font-size: 12px;
+    }
+    .qfs-option-box{
+        width: 9px;
+        height: 9px;
+        
+        margin-top: 3px;
+    }
+    .qfs-option-text{
+        margin-top: px;
         
         font-size: 10px;
         
     }
     .ofs-text-red{
         
-        font-size: 7px;
+        font-size: 9px;
     }
+    .qfs-one{
     
+        
+        padding: 0px 5px;
+    }
+    .qfs-two{
+        /* height: 0; */
+        margin: 0px 15px;
+        
+        padding: 0px 5px;
+        
+    }
+    .qfs-three{
+        
+        margin: 0px 5px;
+        padding: 0px 0px;
+    }
     .qfs-address-input p{
         font-size: 10px;
     }
@@ -767,293 +840,33 @@
         font-size: 10px;
     }
     .qfs-search-button{
-        margin-top: 40px;
+        margin-top: 32px;
         padding: 0px 0px;
         font-size: 9px;
-        margin-left: 10px;
        
         
     }
-    .qfs-address-input input{
-        width: 65%;
-        height: 30px;
-        
-        font-size: 10px;
-    }
     .qfs-zip-input  input{
-        height: 30px;
-        width: 70px;
-        
-        font-size: 10px;
-    }
-    .qfs-address-input{
-        width: 20%;
-    }
-    .qfs-one{
-    
-        
-        padding: 5px 20px;
-    }
-    .qfs-two{
-        /* height: 0; */
-        margin: 5px 20px;
-        
-        padding: 5px 10px;
-        
-    }
-    .qfs-three{
-        
-        margin: 5px 20px;
-        padding: 5px 0px;
-    }
-}
-
-@media(max-width: 800px){
-    .qfs-address-input input{
-        width: 85%;
-        height: 30px;
-        
-        font-size: 12px;
-    }
-    .qfs-zip-input{
-        margin-left: 50px;
-    }
-    .qfs-search-button{
-        margin-left: 50px;
-        width: 100px;
-    }
-   
-}
-@media(max-width: 700px){
-    .qfs-options-cal{
-        width: 300px;
-        margin-left: 20px;
-    }
-    .qfs-address-input input{
-        width: 100%;
-        height: 25px;
-        
-        font-size: 10px;
-    }
-    .qfs-zip-input{
-        margin-left: 60px;
-    }
-    .qfs-zip-input input{
-        height: 25px;
-        font-size: 10px;
-    }
-    .qfs-search-button{
-        margin-left: 50px;
-        width: 100px;
-    }
-    .qfs-address-input{
-        width: 20%;
-
-    }
-    .qfs-one{
-    
-        
-        padding: 5px 20px;
-    }
-    .qfs-two{
-        /* height: 0; */
-        margin: 5px 20px;
-        
-        padding: 5px 10px;
-        
-    }
-    .qfs-three{
-        
-        margin: 5px 20px;
-        padding: 5px 0px;
-    }
-    .qfs-question{
-        font-size: 10px;
-        
-    }
-    .qfs-label{
-        
-        font-size: 8px;
-    }
-    .qfs-text{
-        margin-left: 0px;
-        font-size: 7px;
-    }
-    .qfs-option-box{
-        width: 8px;
-        height: 8px;
-        
-        margin-top: 5px;
-    }
-    .qfs-option-text{
-    
-        
-        font-size: 10px;
-        
-    }
-    .ofs-text-red{
-        
-        font-size: 7px;
-    }
-    
-    .qfs-address-input p{
-        font-size: 10px;
-    }
-    .qfs-zip-input p{
-        font-size: 10px;
-    }
-   
-}
-@media(max-width: 500px){
-    .qfs-address-input input{
-        width: 100%;
-        height: 25px;
-        
-        font-size: 10px;
-    }
-    .qfs-zip-input{
-        margin-left: 70px;
-    }
-    .qfs-zip-input input{
-        height: 25px;
-        font-size: 10px;
-    }
-    .qfs-search-button{
-        margin-left: 70px;
-        width: 100px;
-    }
-    .qfs-address-input{
-        width: 20%;
-
-    }
-    .qfs-one{
-    
-        
-        padding: 5px 20px;
-    }
-    .qfs-two{
-        /* height: 0; */
-        margin: 5px 20px;
-        
-        padding: 5px 10px;
-        
-    }
-    .qfs-three{
-        
-        margin: 5px 20px;
-        padding: 5px 0px;
-    }
-    .qfs-question{
-        font-size: 10px;
-        
-    }
-    .qfs-label{
-        
-        font-size: 8px;
-    }
-    .qfs-text{
-        margin-left: 0px;
-        font-size: 7px;
-    }
-    .qfs-option-box{
-        width: 8px;
-        height: 8px;
-        
-        margin-top: 5px;
-    }
-    .qfs-option-text{
-    
-        
-        font-size: 10px;
-        
-    }
-    .ofs-text-red{
-        
-        font-size: 7px;
-    }
-    
-    .qfs-address-input p{
-        font-size: 10px;
-    }
-    .qfs-zip-input p{
-        font-size: 10px;
-    }
-   
-}
-@media(max-width: 400px){
-   
-    .qfs-address-input input{
-        width: 100%;
         height: 20px;
+        width: 60%;
+        padding: 0 10px;
+        font-size: 10px;
         
-        font-size: 8px;
     }
-    .qfs-zip-input{
-        margin-left: 70px;
-    }
-    .qfs-zip-input input{
+    .qfs-address-input input{
+        width: 80%;
         height: 20px;
-        font-size: 8px;
-    }
-    .qfs-search-button{
-        margin-left: 70px;
-        width: 80px;
-    }
-    .qfs-address-input{
-        width: 20%;
-
-    }
-    .qfs-one{
-    
-        
-        padding: 5px 20px;
-    }
-    .qfs-two{
-        /* height: 0; */
-        margin: 5px 10px;
-        
-        padding: 5px 10px;
+        padding: 0 10px;
+        font-size: 10px;
         
     }
-    .qfs-three{
+    .qfs-option-box-container{
+      
         
-        margin: 5px 10px;
-        padding: 5px 0px;
-    }
-    .qfs-question{
-        font-size: 8px;
+        margin: 10px 10px;
         
     }
-    .qfs-label{
-        
-        font-size: 7px;
-    }
-    .qfs-text{
-        margin-left: 0px;
-        font-size: 6px;
-    }
-    .qfs-option-box{
-        width: 6px;
-        height: 6px;
-        
-        margin-top: 5px;
-    }
-    .qfs-option-text{
-    
-        
-        font-size: 8px;
-        
-    }
-    .ofs-text-red{
-        
-        font-size: 6px;
-    }
-    
-    .qfs-address-input p{
-        font-size: 8px;
-    }
-    .qfs-zip-input p{
-        font-size: 8px;
-    }
-   
 }
+
+
+

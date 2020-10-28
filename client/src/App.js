@@ -15,7 +15,7 @@ import Navbar from './components/Navbar/Navbar';
 import './App.css'
 
 
-function App() {
+function App(props) {
 
 
   // const [filterOptions, setFilter] = useState({
@@ -35,12 +35,13 @@ function App() {
   //    No Contract
   return (
     <Provider store={store}>
-      <Navbar/>
+      {/* <Navbar/> */}
+      
       <Router>
         <div className="App">
           
           <Switch>
-              <Route exact path='/:id' component={Landing}/>
+              <Route exact path='/:id/' component={Landing}/>
               <Route component={Routes}/>
           </Switch>
           

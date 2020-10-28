@@ -80,7 +80,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                 </div>
                 <div className='RSC-Bot-Right'>
                     <div className='RSC-Bot-Right-T'>
-                            <Link to={`/${ZipCode}/${rate && rate.provider}/register/00${rate && rate.rateData.RateID}/${quickFilters}`} className='RSC-Link'>Check Availability</Link>
+                            <Link to={`/${ZipCode}/${rate && rate.provider}/enrollment/00${rate && rate.rateData.RateID}/${quickFilters}`} className='RSC-Link'>Check Availability</Link>
                                 
                     </div>
                     <div className='RSC-Bot-Right-B'>

@@ -6,6 +6,7 @@ import FilterLayout from '../FilterLayout/FilterLayout';
 
 import {getRates} from '../../actions/rates';
 import {filterByProvider} from '../../actions/filter';
+import Navbar from '../Navbar/Navbar';
 
 const Landing = ({match, getRates, filterByProvider, rates:{rates, currentRates, loading}}) =>{
     
@@ -21,6 +22,7 @@ const Landing = ({match, getRates, filterByProvider, rates:{rates, currentRates,
 
     return(
         <div>
+            <Navbar url={match.params}/>
            <FilterLayout loading={loading} getRates={getRates} filterByProvider={filterByProvider} ZipCode={ZipCode} rates={rates}/>
         </div>
     )
