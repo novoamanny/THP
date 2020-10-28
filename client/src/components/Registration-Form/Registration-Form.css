@@ -908,7 +908,7 @@
         margin-left: 10px;
     }
 } */
-
+/* 
 @media(max-width: 700px){
     .form-title{
         padding: 0px 0;
@@ -979,6 +979,38 @@
     }
     .side-a, .side-b{
         width: 100%;
+    }
+} */
+@media(max-width:900px){
+    .DOB-input input{
+        width: 60px;
+        height: 25px;
+        
+        
+        margin: 0 7px;
+        font-size: 16px;
+    }
+    .UCC-label{
+         
+        padding: 3px 0px;
+        font-size: 11px;
+       
+    }
+}
+@media(max-width:800px){
+    .DOB-input input{
+        width: 50px;
+        height: 25px;
+        
+        
+        margin: 0 5px;
+        font-size: 16px;
+    }
+    .UCC-label{
+         
+        padding: 3px 0px;
+        font-size: 11px;
+       
     }
 }
 
