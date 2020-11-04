@@ -21,7 +21,7 @@ const Landing = ({match, getRates, filterByProvider, rates:{rates, currentRates,
         
       },[getRates])
 
-    return loading && rates.length === 0 ? <Spinner/> : (
+    return loading && rates.length === 0 ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div> : (
         <div>
             <Navbar setMobileSlide={setMobileSlide} mobileSlide={mobileSlide} url={match.params}/>
             

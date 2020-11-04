@@ -144,9 +144,9 @@ const QuestionFormSquare = ({ answers, questionHandle,getMeters,metersLoading, Z
                 
             </div>
             {
-                !active ? null : <div>
+                !active ? null : <div style={{width: '100%'}}>
                 {
-                    metersLoading && meters === null ? <Spinner/> : <AddressListLayout  meters={meters} setFormData={setMainFormData} form={formData} formData={mainFormData} setMainFormIndex={setMainFormIndex}/>
+                    metersLoading && meters === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}><Spinner/></div> : <AddressListLayout  meters={meters} setFormData={setMainFormData} form={formData} formData={mainFormData} setMainFormIndex={setMainFormIndex}/>
                 }
                 </div>
             }

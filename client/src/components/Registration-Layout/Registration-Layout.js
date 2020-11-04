@@ -64,7 +64,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
           Provider: match.params.provider
       }
 
-    return rateLoading && rate === null ? <Spinner/> : (
+    return rateLoading && rate === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div> : (
         <div className='Registration'>
             <Navbar url={match.params}/>
             
