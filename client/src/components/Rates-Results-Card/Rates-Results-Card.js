@@ -24,7 +24,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                     </div>
                     <div className='RSC-Top-Left-Two'>
                         <div className='tlto'>
-                            <span>{`${rate.provider} | ${rate.rateData.RateID}`}</span>
+                            <span>{`${rate.provider} | PUCT #${rate.PUCT}`}</span>
                         </div>
                         <div className='tltt'>
                             <span>{rate && rate.rateData.Plan.PlanName}</span>
@@ -39,7 +39,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                     </div>
                </div>
                <div className='RSC-Top-Right'>
-                    <div className='RSC-Top-Right-One'>
+                    {/* <div className='RSC-Top-Right-One'>
                         <div className='RSC-Top-Right-One-T'>
                             <span>&#36;</span>
                             <span>{ `${rate && rate.rateData.Rate * quickFilters}`}</span>
@@ -50,7 +50,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                         <div className='RSC-Top-Right-One-B'>
                             <span>{`(${rate && rate.rateData.Rate} X ${quickFilters} KWH)`}</span>
                         </div>
-                    </div>
+                    </div> */}
                      <div className='RSC-Top-Right-Two'>
                         <div className='RSC-Top-Right-Two-T'>
                             <span>{`${rate && rate.rateData.Term} Months`}</span>
@@ -80,7 +80,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                 </div>
                 <div className='RSC-Bot-Right'>
                     <div className='RSC-Bot-Right-T'>
-                            <Link to={`/${ZipCode}/${rate && rate.provider}/enrollment/00${rate && rate.rateData.RateID}/${quickFilters}`} className='RSC-Link'>Check Availability</Link>
+                            <Link to={`/${ZipCode}/${rate && rate.provider}/enrollment/${rate.PUCT}/00${rate && rate.rateData.RateID}/${quickFilters}`} className='RSC-Link'>Check Availability</Link>
                                 
                     </div>
                     <div className='RSC-Bot-Right-B'>

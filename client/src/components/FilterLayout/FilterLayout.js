@@ -14,7 +14,7 @@ import './FilterLayout.css';
 import Navbar from '../Navbar/Navbar';
 
 
-const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
+const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobileSlide, setMobileSlide}) =>{
 
     
     const [filterOptions, setFilterOptions] = useState({
@@ -28,7 +28,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
     const [currentZipCode, setCurrentZipCode] = useState(ZipCode)
     const [quickFilters, setQuickFilters] = useState(500);
     // const [currentRates, setCurrentRates] = useState([]);
-    const [mobileSlide, setMobileSlide] = useState(false);
+   
 
 
 
@@ -89,7 +89,9 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
                 
                 temp = {
                     provider: prov.name,
-                    rateData: rate
+                    rateData: rate,
+                    PUCT: prov.PUCT
+                    
                 };
                 
                 Data = Data.concat(temp);
@@ -123,7 +125,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
             
            <LeftFilterOptions filterOptions={filterOptions} filterHandle={filterHandle}/>
            <div className='top-filters'>
-                <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/>
+                {/* <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/> */}
                 <OtherFilters rates={rates} ZipCode={currentZipCode} resultCount={resultCount}/>
            </div>
            <div className='filters-mobile' >
@@ -131,10 +133,11 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading}) =>{
                 {/* <div className='filter-mobile-button' onClick={() => setMobileSlide(!mobileSlide)}>
                     <span>Search Filters</span>
                 </div> */}
+                <div className={!mobileSlide ? 'filter-mobile-not-active' : 'mobile-backdrop'}></div>
                 <div className={!mobileSlide ? 'filter-mobile-not-active' : 'filter-mobile-active'}>
                 
                     <div className={!mobileSlide ? 'filter-mobile-ui-not-active' : 'filter-mobile-ui-active'}>
-                        <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/>
+                        {/* <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/> */}
                         <div className='mobile-ui-options'>
                             
                             <div className='left-mobile-options'>

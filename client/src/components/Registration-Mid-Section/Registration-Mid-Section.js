@@ -9,7 +9,7 @@ import SubmitForService from '../Submit-For-Service/Submit-For-Service';
 import './Registration-Mid-Section.css';
 
 
-const RegistrationMidSection = ({data, getMeters, meters, postRegister, ZipCode, Provider, formData, setFormData, setMainFormIndex, mainFormIndex, setChangeZipModal}) =>{
+const RegistrationMidSection = ({data, getMeters, meters, metersLoading, postRegister, ZipCode, Provider, formData, setFormData, setMainFormIndex, mainFormIndex, setChangeZipModal}) =>{
     const [answers, setAnswers] = useState({
         One: '',
         Two: '',
@@ -24,11 +24,11 @@ const RegistrationMidSection = ({data, getMeters, meters, postRegister, ZipCode,
 
         setAnswers({...oldAnswers})
     }
-  console.log(answers)
+  
     return(
         <div className='RMS'>
             {
-                mainFormIndex === 0 && <QuestionFormSquare answers={answers} questionHandle={questionHandle} setChangeZipCodeModal={setChangeZipModal} setMainFormData={setFormData} mainFormData={formData} meters={meters} getMeters={getMeters} ZipCode={ZipCode} Provider={Provider} setMainFormIndex={setMainFormIndex}/>
+                mainFormIndex === 0 && <QuestionFormSquare metersLoading={metersLoading} answers={answers} questionHandle={questionHandle} setChangeZipCodeModal={setChangeZipModal} setMainFormData={setFormData} mainFormData={formData} meters={meters} getMeters={getMeters} ZipCode={ZipCode} Provider={Provider} setMainFormIndex={setMainFormIndex}/>
             }
             
             {

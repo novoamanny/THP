@@ -7,11 +7,12 @@ import FilterLayout from '../FilterLayout/FilterLayout';
 import {getRates} from '../../actions/rates';
 import {filterByProvider} from '../../actions/filter';
 import Navbar from '../Navbar/Navbar';
+import Spinner from '../Spinner/Spinner';
 
 const Landing = ({match, getRates, filterByProvider, rates:{rates, currentRates, loading}}) =>{
     
     const [ZipCode, SetZipCode] = useState(match.params.id);
-
+    const [mobileSlide, setMobileSlide] = useState(false);
     
     useEffect(() => {
         
@@ -20,10 +21,12 @@ const Landing = ({match, getRates, filterByProvider, rates:{rates, currentRates,
         
       },[getRates])
 
-    return(
+    return loading && rates.length === 0 ? <Spinner/> : (
         <div>
-            <Navbar url={match.params}/>
-           <FilterLayout loading={loading} getRates={getRates} filterByProvider={filterByProvider} ZipCode={ZipCode} rates={rates}/>
+            <Navbar setMobileSlide={setMobileSlide} mobileSlide={mobileSlide} url={match.params}/>
+            
+            <FilterLayout setMobileSlide={setMobileSlide} mobileSlide={mobileSlide} loading={loading} getRates={getRates} filterByProvider={filterByProvider} ZipCode={ZipCode} rates={rates}/>
+            
         </div>
     )
 }

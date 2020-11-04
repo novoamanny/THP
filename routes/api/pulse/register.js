@@ -43,7 +43,7 @@ router.post('/get/meters',
     
         const routes = [
             {
-                prov: 'pulse',
+                prov: 'Pulse',
                 route: 'https://api.pulsepowerpreview.com/api/pulse/GetMeters'
             },
             {

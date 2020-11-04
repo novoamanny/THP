@@ -13,7 +13,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             }
             <div className='FRC-row-one'>
                 <div className='FRC-id'>
-                    <span>{`${rate.provider} | ${rate.rateData.RateID}`}</span>
+                    <span>{`${rate.provider} | PUCT #${rate.PUCT}`}</span>
                 </div>
                 <div className='FRC-name'>
                     <div>
@@ -39,7 +39,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                         <span>Plan Details</span>
                     </div>
                     <div className='FRC-other-info'>
-                        <span>2000 KWH</span>
+                        {/* <span>2000 KWH</span> */}
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                 
                
             </div>
-            <div className='FRC-row-four'>
+            {/* <div className='FRC-row-four'>
                 <div className='FRC-bill-desc'>
                     <span>{`Estimated Montly Bill Based on ${watt} KWH`}</span>
                 </div>
@@ -58,7 +58,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     <span>{`$${rate.rateData.Rate * 500}`}</span>
                    
                 </div>
-            </div>
+            </div> */}
             <div className='FRC-row-five'>
                 <div className='FRC-length-label'>
                     <span>Contract Length</span>
@@ -69,7 +69,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             </div>
             <div className='FRC-row-six'>
                 <div className='FRC-link'>
-                    <Link  to={`/${ZipCode}/${rate.provider}/enrollment/00${rate.rateData.RateID}/${watt}`} className='FRC-Link'>Check Availability</Link>
+                    <Link  to={`/${ZipCode}/${rate.provider}/enrollment/${rate.PUCT}/00${rate.rateData.RateID}/${watt}`} className='FRC-Link'>Check Availability</Link>
                 </div>
                 <div className='FRC-link-details'>
                     <div className='FRC-link-details-one'>

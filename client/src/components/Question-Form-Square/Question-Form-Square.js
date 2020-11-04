@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 
 import AddressListLayout from '../Address-List-Layout/Address-List-Layout';
+import Spinner from '../Spinner/Spinner';
 
 import './Question-Form-Square.css';
 
-const QuestionFormSquare = ({ answers, questionHandle,getMeters, ZipCode, Provider, setMainFormIndex, meters, setMainFormData, mainFormData, setChangeZipCodeModal}) =>{
+const QuestionFormSquare = ({ answers, questionHandle,getMeters,metersLoading, ZipCode, Provider, setMainFormIndex, meters, setMainFormData, mainFormData, setChangeZipCodeModal}) =>{
 
     const [formData, setFormData] = useState({
         Address1: '',
@@ -13,6 +14,7 @@ const QuestionFormSquare = ({ answers, questionHandle,getMeters, ZipCode, Provid
     })
 
     const [formSlideIndex, setFormSlideIndex] = useState(0);
+    const [active, setActive] = useState(false);
     
 
     const onChange = e => setFormData({...formData, [e.target.name]: e.target.value});
@@ -25,7 +27,7 @@ const QuestionFormSquare = ({ answers, questionHandle,getMeters, ZipCode, Provid
     const onSubmit = e =>{
 
         e.preventDefault();
-        
+        setActive(true);
         getMeters(formData);
         
         
@@ -141,9 +143,15 @@ const QuestionFormSquare = ({ answers, questionHandle,getMeters, ZipCode, Provid
                     </div>
                 
             </div>
+            {
+                !active ? null : <div>
                 {
-                    meters && <AddressListLayout  meters={meters} setFormData={setMainFormData} form={formData} formData={mainFormData} setMainFormIndex={setMainFormIndex}/>
+                    metersLoading && meters === null ? <Spinner/> : <AddressListLayout  meters={meters} setFormData={setMainFormData} form={formData} formData={mainFormData} setMainFormIndex={setMainFormIndex}/>
                 }
+                </div>
+            }
+            
+                
         </div>
     )
 }

@@ -8,7 +8,7 @@ import RegistrationRightSection from '../Registration-Right-Section/Registration
 import ConfirmationModal from '../Confirmation-Modal/Confirmation-Modal';
 import ChangeZipCodeModal from '../Change-ZipCode-Modal/Change-ZipCode-Modal';
 import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
-
+import Spinner from '../Spinner/Spinner';
 
 import {getRate} from '../../actions/rates';
 import {getMeters, postRegister} from '../../actions/register';
@@ -19,7 +19,7 @@ import './Registration-Layout.css';
 import Navbar from '../Navbar/Navbar';
 
 
-const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation}, getRate, getMeters, postRegister}) =>{
+const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters, confirmation, metersLoading}, getRate, getMeters, postRegister}) =>{
     
     useEffect(() => {
         
@@ -64,13 +64,13 @@ const RegistrationLayout = ({match, rates:{rate}, register:{meters, confirmation
           Provider: match.params.provider
       }
 
-    return(
+    return rateLoading && rate === null ? <Spinner/> : (
         <div className='Registration'>
             <Navbar url={match.params}/>
             
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
-            <RegistrationMidSection mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
-            <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
+            <RegistrationMidSection metersLoading={metersLoading} loa mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
+            <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} PUCT={match.params.PUCT} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
             {
                 changeZipModal && <ChangeZipCodeModal setChangeZipModal={setChangeZipModal} ZipCode={match.params.zipcode}/>
             }

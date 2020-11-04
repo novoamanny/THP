@@ -8,7 +8,7 @@ const Routes = () => {
     return (
       <section className='container'>
         <Switch>
-          <Route exact path={'/:zipcode/:provider/:page/00:id/:watt'} component={RegistrationLayout}/>
+          <Route exact path={'/:zipcode/:provider/:page/:PUCT/00:id/:watt'} component={RegistrationLayout}/>
         </Switch>
       </section>
     );

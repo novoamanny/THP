@@ -3,7 +3,8 @@ import {GET_METERS_FAIL, GET_METERS_SUCCESS, REGISTER_SUCCESS, REGISTER_FAIL} fr
 const initialState = {
   meters: null,
   confirmation: null,
-  errors:null
+  errors:null,
+  metersLoading: true
 };
 
 export default function(state = initialState, action) {
@@ -11,7 +12,7 @@ export default function(state = initialState, action) {
 
   switch (type) {
     case GET_METERS_SUCCESS:
-      return {...state, meters: payload};
+      return {...state, meters: payload, metersLoading: false};
     case GET_METERS_FAIL:
     return {...state, errors: payload};
     case REGISTER_SUCCESS:

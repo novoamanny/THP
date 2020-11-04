@@ -8,7 +8,7 @@ import './Featured-Rates-Section.css';
 const images = [
     {
         img: require('../../images/pulse.png'),
-        provider: 'pulse'
+        provider: 'Pulse'
     },
     {
         img: require('../../images/energy-to-go-rgb-logo.png'),
@@ -56,6 +56,7 @@ const FeaturedRatesSection = ({resultData, ZipCode, watt}) =>{
         temp ={
             provider: prov.provider,
             rateData: prov.rateData,
+            PUCT: prov.PUCT,
             image: image
         }
 

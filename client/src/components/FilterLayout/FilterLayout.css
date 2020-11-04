@@ -24,7 +24,7 @@
     width: 100%;
     
     position: fixed;
-    top: 60px;
+    top: 50px;
     z-index:300;
     
     
@@ -56,7 +56,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    z-index: 400;
     
 }
 .filter-mobile-not-active{
@@ -149,7 +149,7 @@
     z-index: 300;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(250,250, 250,0.2);
     
 
 }

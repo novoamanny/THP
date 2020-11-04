@@ -32,7 +32,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
 
         const routes = [
             {
-                prov: 'pulse',
+                prov: 'Pulse',
                 route: 'https://api.pulsepowerpreview.com/api/pulse/CreateEnrollment'
             },
             {
@@ -75,7 +75,9 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
         postRegisterHandle(form)
         
     }
-
+    if(window.outerWidth <= 600){
+        console.log('hello')
+    }
 
     return(
         <div className='RF'>
@@ -142,7 +144,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                             </div>
                             <div className='form-DOB'>
                                 <div className='form-label'>
-                                    <span>Date of Birth</span>
+                                    <span>Date of Birth (MM/DD/YYYY)</span>
                                 </div>
                                 <div className='DOB-input'>
                                     <div>

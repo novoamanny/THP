@@ -26,7 +26,7 @@ const config = {
 
 const routes = [
     {
-        prov: 'pulse',
+        prov: 'Pulse',
         route: 'https://api.pulsepowerpreview.com/api/pulse/GetRates'
     },
     // {
@@ -80,8 +80,9 @@ router.post('/get/rates/',
 
         const response = [
             {
-                name: 'pulse',
-                data: pulseRates.data
+                name: 'Pulse',
+                data: pulseRates.data,
+                PUCT: '10259'
             },
             // {
             //     name: 'etg',

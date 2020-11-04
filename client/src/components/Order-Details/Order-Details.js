@@ -5,7 +5,7 @@ import './Order-Details.css';
 const images = [
     {
         img: require('../../images/pulse.png'),
-        provider: 'pulse'
+        provider: 'Pulse'
     },
     {
         img: require('../../images/energy-to-go-rgb-logo.png'),
@@ -30,7 +30,7 @@ const images = [
     
 ]
 
-const OrderDetails = ({rate, provider, setChangePDP, watt}) =>{
+const OrderDetails = ({rate,PUCT, provider, setChangePDP, watt}) =>{
 
     
   
@@ -58,7 +58,7 @@ const OrderDetails = ({rate, provider, setChangePDP, watt}) =>{
                 <div className='OD-Details-Top'>
                     <div className='OD-Details-Top-T'>
                         <div className='OD-Details-p'>
-                            <span>{`${provider} | ${rate && rate[0].RateID}`}</span>
+                            <span>{`${provider} | PUCT #${PUCT}`}</span>
                         </div>
                         <div className='OD-Details-p-two'>
                             <span>{rate && rate[0].Plan.PlanName}</span>
@@ -88,14 +88,14 @@ const OrderDetails = ({rate, provider, setChangePDP, watt}) =>{
                     </div>
                 </div>
                 <div className='OD-Details-Bottom'>
-                    <div className='OD-Details-One'>
+                    {/* <div className='OD-Details-One'>
                         <div className='OD-Details-One-1'>
                             <p>{`Estimated Monthly Bill Based on ${watt} KWh`}</p>
                         </div>
                         <div className='OD-Details-One-2'>
                             <h2>{rate && rate[0].Rate}</h2>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='OD-Details-Two'>
                         <div className='OD-Details-Two-1'>
                             <p>Contract Length</p>

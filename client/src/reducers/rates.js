@@ -5,7 +5,8 @@ const initialState = {
   currentRates: [],
   rate: null,
   error: [],
-  loading: true
+  loading: true,
+  rateLoading: true
 };
 
 export default function(state = initialState, action) {
@@ -17,7 +18,7 @@ export default function(state = initialState, action) {
     case GET_RATES_FAIL:
       return {...state, error: payload};
     case GET_RATE_SUCCESS:
-      return {...state, rate: payload};
+      return {...state, rate: payload, rateLoading: false};
     case GET_RATE_FAIL:
       return {...state, error: payload};
     case CONTRACT_LENGTH_FILTER_SUCCESS:

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Navbar.css'
 
-const Navbar = ({url}) =>{
+const Navbar = ({url,mobileSlide, setMobileSlide}) =>{
     
     return(
         <div className='Navbar'>
@@ -12,7 +12,7 @@ const Navbar = ({url}) =>{
             <div className='nav-b'>
                 {
                     !url.page ? 
-                    <div className='nav-button'>
+                    <div className='nav-button' onClick={() => setMobileSlide(!mobileSlide)}>
                         <span>Search Filters</span>
                     </div> 
                     : 

@@ -1013,76 +1013,113 @@
        
     }
 }
-
-@media(max-width: 500px){
-    .form-title{
-        padding: 0px 0;
-       
+@media(max-width: 700px){
+    .form-label{
+        font-size: 13px;
+        margin: 5px 20px;
     }
+    .form-label-state{
+        margin-bottom: 5px;
+        margin-left: 20px;
+        font-size: 13px;
+     
+    }
+     .form-input input{ 
+         width: 80%;
+         height: 20px;
+         font-size: 13px;
+        
+     }
+     .DOB-input input{
+         width: 40px;
+         height: 20px;
+         
+         
+         margin: 0 5px;
+         font-size: 13px;
+     }
+     .form-sec-two-one{
+        
+         margin-top: 20px;
+         margin-left: 20px;
+     }
+     .form-sec-two-two{
+         margin-top: 10px;
+         margin-left: 20px;
+     }
+     .form-input-state input, .form-input-zipcode input{
+         width: 60%;
+         height: 20px;
+         font-size: 13px;
+         
+        
+     }
+   
+     .UCC-form-label{
+         font-size: 13px;
+         margin: 10px 20px;
+     }
     
-    .form-input input{ 
-        width: 80%;
-        height: 25px;
-        font-size: 12px;
-       
-    }
-    .DOB-input input{
-        width: 60px;
-        height: 25px;
-        
-        font-size: 10px;
-        margin: 0 10px;
-    }
-    .form-sec-two-one{
-       
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-sec-two-two{
-        margin-top: 20px;
-        margin-left: 45px;
-    }
-    .form-input-state input, .form-input-zipcode input{
-        width: 35%;
-        height: 25px;
+     .UCC-form-checkbox-text{
+        width: 90%;
+        margin-left: 10px;
         font-size: 10px;
         
+    }
+    .form-sec-two-square{
+        width: 10px;
+        height: 10px;
+      
+    }
+     .UCC-form-checkbox-square{
+        width: 10px;
+        height: 10px;
+        
+        margin-left: 20px;
+    }
+     .UCC-desc-one, .UCC-desc-two, .UCC-desc-three{
+        margin: 10px 20px;
+        font-size: 11px;
        
+    }
+    .UCC-form-input{
+        margin: 10px 20px;
+    }
+  
+     .UCC-form-input input{
+         width: 60%;
+         height: 20px;
+         font-size: 13px;
+         
+       
+     }
+ 
+ 
+    
+    
+     .form-sec-two li{
+         
+         font-size: 10px;
+     }
+     .form-sec-three{
+        
+        padding-top: 10px;
+ 
+    }
+     .form-sec-three-one{
+        font-size: 10px;
+        margin-left: 20px;
+  
     }
     .UCC-label{
-        
-        padding: 3px 50px;
-       
-    }
-    .form-sec-three{
-    
-        padding-top: 40px;
-    }
-
-
-    .form-sec-two li{
-        
+         
+        padding: 2px 0px;
         font-size: 10px;
-    }
-    
-    .form-sec-two-square{
-        width: 12px;
-        height: 12px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-    }
-
-
-    .form-sec-one-one{
-        width: 100%;
-        
-        
-    }
-    .form-sec-one-two{
-        width: 100%;
-       
        
     }
-    .side-a, .side-b{
-        width: 100%;
-    }
-}
+     
+ }
+
+
+
+ 

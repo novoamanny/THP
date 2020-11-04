@@ -51,11 +51,12 @@
     border: 2px solid #2f2f2f;
     width: 20px;
     height: 20px;
+    cursor: pointer;
     
 }
 .SFS-checkbox-active{
-background-color: #1333A6;
-    
+    background-color: #1333A6;
+    cursor: pointer;
 }
 .SFS-text{
     width: 90%;
