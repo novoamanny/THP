@@ -268,7 +268,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
 
                                 </div>
                                 <div className='UCC-form-checkbox-text'>
-                                    <span>I hereby authorize Texas Home Power to run a credit check and perform all necessary tasks to establish electricuty service. I accept the terns abd conditions of the Tecas Home Power privacy plan and terms of service.</span>
+                                    <span>I hereby authorize my chosen provider to run a credit check and perform all necessary tasks to establish electricity service. I accept the terns and conditions of my chosen provider's privacy plan and terms of service.</span>
                                 </div>
                             </div>
                         </div>

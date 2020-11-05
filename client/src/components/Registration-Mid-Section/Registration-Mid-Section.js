@@ -5,6 +5,7 @@ import ImportantNoteBox from '../Important-Note-Box/Important-Note-Box';
 import RegistrationForm from '../Registration-Form/Registration-Form';
 import AddressListLayout from '../Address-List-Layout/Address-List-Layout';
 import SubmitForService from '../Submit-For-Service/Submit-For-Service';
+import ConfirmationForm from '../Confirmation-Form/Confirmation-Form';
 
 import './Registration-Mid-Section.css';
 
@@ -39,6 +40,9 @@ const RegistrationMidSection = ({data, getMeters, meters, metersLoading, postReg
             }
             {
                 mainFormIndex === 3 && <SubmitForService data={data} postRegister={postRegister} formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+            }
+            {
+                mainFormIndex === 4 && <ConfirmationForm formData={formData}/>
             }
             
             

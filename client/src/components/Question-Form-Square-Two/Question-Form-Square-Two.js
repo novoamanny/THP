@@ -10,7 +10,7 @@ import './Question-Form-Square-Two.css';
 
 
 const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, setMainFormIndex, mainFormIndex}) =>{
-console.log(styles)
+
     const [formSlideIndex, setFormSlideIndex] = useState(0);
     const [disabledOn, setDisabledOn] = useState(true);
 
@@ -20,7 +20,7 @@ console.log(styles)
     }
 
     const onCalendarClickHandle = (e) =>{
-        console.log(e)
+        
         setFormData({...formData, Date: e});
         if(disabledOn){
             setDisabledOn(!disabledOn);

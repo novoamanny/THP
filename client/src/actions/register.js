@@ -11,7 +11,7 @@ const config = {
 }
 
 export const postRegister = (form) => async dispatch =>{
-    console.log(form)
+    
     const {
         EmailAddress,
         FirstName,
@@ -62,7 +62,7 @@ export const postRegister = (form) => async dispatch =>{
         dispatch({
 
             type: REGISTER_SUCCESS,
-            payload: data
+            payload: res.data
         })
         
     }catch(err){

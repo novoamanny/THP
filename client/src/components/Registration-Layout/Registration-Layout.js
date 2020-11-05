@@ -36,10 +36,11 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         Esiid: '',
         Address1: '',
         City: '',
-        Rate: '',
-        RateID: '',
+        ZipCode: match.params.zipcode,
+        Rate: null,
+        RateID: null,
         SSN: '',
-        Provider: '',
+        Provider: match.params.provider,
         Date: '',
         SwitchType: 'Switching',
         DOBMonth: '',
@@ -56,6 +57,12 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
           rateData: rate && rate[0]
       }
       
+      if(rate && formData.Rate === null || rate && formData.RateID === null){
+          setFormData({...formData,
+            Rate: rate[0].Rate,
+            RateID: rate[0].RateID,
+          })
+      }
 
       const data = {
           RateID: rate && rate[0].RateID,
@@ -63,6 +70,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
           Rate: rate && rate[0].Rate,
           Provider: match.params.provider
       }
+      
 
     return rateLoading && rate === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div> : (
         <div className='Registration'>

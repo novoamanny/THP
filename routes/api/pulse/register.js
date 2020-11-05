@@ -123,7 +123,7 @@ router.post('/',
 
         try{
             let body;
-            if(Provider === 'pulse'){
+            if(Provider === 'Pulse'){
                 body = JSON.stringify({
                     ZipCode,
                     PromoCode: 'TXHP',
@@ -157,7 +157,7 @@ router.post('/',
             
             
             
-            const response = await axios.post(ROUTE,body, config);
+            const response = await axios.post('https://api.pulsepowerpreview.com/api/pulse/CreateEnrollment',body, config);
             console.log(response)
             res.json(response.data);
             

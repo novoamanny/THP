@@ -4,7 +4,8 @@ const initialState = {
   meters: null,
   confirmation: null,
   errors:null,
-  metersLoading: true
+  metersLoading: true,
+  confirmationLoading: true
 };
 
 export default function(state = initialState, action) {
@@ -16,7 +17,7 @@ export default function(state = initialState, action) {
     case GET_METERS_FAIL:
     return {...state, errors: payload};
     case REGISTER_SUCCESS:
-    return {...state, confirmation: payload};
+    return {...state, confirmation: payload, confirmationLoading: false};
     case REGISTER_FAIL:
     return {...state, errors: payload};
     default:

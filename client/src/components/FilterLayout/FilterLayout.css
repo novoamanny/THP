@@ -138,9 +138,12 @@
 .mobile-option-checkbox{
     width: 18px;
     height: 18px;
-    background-color: blue;
+    background-color: #fff;
     margin-left: 50px;
     margin-right: 20px;
+}
+.checked{
+    background-color: royalblue;
 }
 .mobile-backdrop{
     width: 100%;

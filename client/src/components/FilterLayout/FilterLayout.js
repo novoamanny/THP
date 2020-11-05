@@ -37,11 +37,13 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
         if(indexFilter === 0){
             if(!document.getElementById(`${0}-filter`).classList.contains('checked')){
                 document.getElementById(`${0}-filter`).classList.add('checked');
+                document.getElementById(`${0}-mobile`).classList.add('checked');
             }
             while(i < 12){
                 
                 if(document.getElementById(`${i}-filter`).classList.contains('checked')){
                     document.getElementById(`${i}-filter`).classList.remove('checked');
+                    document.getElementById(`${i}-mobile`).classList.remove('checked');
                     i = i + 1;
                 }
                 else{
@@ -52,12 +54,15 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
         else{
            if(document.getElementById(`${0}-filter`).classList.contains('checked')){
                document.getElementById(`${0}-filter`).classList.remove('checked');
+               document.getElementById(`${0}-mobile`).classList.remove('checked');
            }
            if(document.getElementById(`${indexFilter}-filter`).classList.contains('checked')){
                 document.getElementById(`${indexFilter}-filter`).classList.remove('checked');
+                document.getElementById(`${indexFilter}-mobile`).classList.remove('checked');
            }
            else{
                 document.getElementById(`${indexFilter}-filter`).classList.add('checked');
+                document.getElementById(`${indexFilter}-mobile`).classList.add('checked');
            }
         }
 
@@ -101,7 +106,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
         rates.forEach(prov => {
                 
         
-            console.log(prov)
+            
             prov.data && prov.data.forEach(rate => {
                 
                 temp = {
@@ -134,7 +139,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
     
 
     
-    console.log(mobileSlide)
+    
      
 
     return(
@@ -161,38 +166,38 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
                             <div className='mobile-ui-labels'>
                                 <span>Contract Length</span>
                             </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 'All Length', 0)}>
+                                    <div id={`${0}-mobile`} className='mobile-option-checkbox checked'>
 
                                     </div>
                                     <li>Show All</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 'Monthly / No Contract', 1)}>
+                                    <div id={`${1}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Monthly / No Contract</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 12, 2)}>
+                                    <div id={`${2}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>12 Months</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 18, 3)}>
+                                    <div id={`${3}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>18 Months</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 24, 4)}>
+                                    <div id={`${4}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>24 Months</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 36, 5)}>
+                                    <div id={`${5}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>36 Months</li>
@@ -203,39 +208,39 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
                             <div className='mobile-ui-labels'>
                                 <span>Provider</span>
                             </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Pulse', 6)}>
+                                    <div id={`${6}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Pulse</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Reliant', 7)}>
+                                    <div id={`${7}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Reliant</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Green Mountain', 8)}>
+                                    <div id={`${8}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Green Mountain</li>
                                 </div>
                                 
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Cirro', 9)}>
+                                    <div id={`${9}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Cirro</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Pennywise', 10)}> 
+                                    <div id={`${10}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Pennywise</li>
                                 </div>
-                                <div className='mobile-option'>
-                                    <div className='mobile-option-checkbox'>
+                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Everything Energy', 11)}>
+                                    <div id={`${11}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Everything Energy</li>

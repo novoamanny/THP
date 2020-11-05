@@ -10,7 +10,7 @@ const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
             </div>
             <div className='ODT-Details'>
                 {
-                    mainFormIndex === 2 && (
+                    mainFormIndex >= 2 && (
                         <div className='ODT-Details-Date'>
                             <div className='ODT-Details-L'>
                                 <div>
