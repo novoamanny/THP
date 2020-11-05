@@ -1,0 +1,14 @@
+.blue-text{
+    color: blue;
+}
+.blue-text:nth-child(2){
+    margin-top: 60px;
+}
+.blue-text:nth-child(3), .blue-text:nth-child(4){
+    margin: 20px 50px;
+}
+.red-text{
+    color: red;
+    margin-top: 60px;
+    
+}

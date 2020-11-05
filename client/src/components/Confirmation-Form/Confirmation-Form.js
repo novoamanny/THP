@@ -4,6 +4,9 @@ import {connect} from 'react-redux';
 import {postRegister} from '../../actions/register'
 import Spinner from '../Spinner/Spinner';
 
+
+import './Confirmation-Form.css';
+
 const ConfirmationForm  = ({formData, postRegister, register:{confirmation, confirmationLoading}}) =>{
     console.log(formData)
     useEffect(() => {
@@ -19,15 +22,21 @@ const ConfirmationForm  = ({formData, postRegister, register:{confirmation, conf
             <div className='qfs-label'>
                 <h2>Enrollment Confirmation</h2>
             </div>
-            <div className='CF-confirmation'>
-                <div className='CF-c-one'>
-
+            <div className='qfs-layout'>
+                <div className='qfs-text'>
+                    <h2>{`Texas Home Power Order Number: ${confirmation.ConfirmationNumber}`}</h2>
                 </div>
-                <div className='CF-c-two'>
-
+                <div className='qfs-text blue-text'>
+                    <h2>{`Your Enrollment with ${formData.Provider} has been completed`}</h2>
                 </div>
-                <div className='CF-c-three'>
-
+                <div className='qfs-text blue-text'>
+                    <h2>{`Order Status: ${confirmation.ConfirmationStatus}`}</h2>
+                </div>
+                <div className='qfs-text blue-text'>
+                    <h2>{`${formData.Provider} Confirmation Number: ${confirmation.ConfirmationNumber}`}</h2>
+                </div>
+                <div className='qfs-text red-text'>
+                    <h2>{`You Should Receive a Confirmation Email Shortly, Thank You!`}</h2>
                 </div>
             </div>
         </div>
