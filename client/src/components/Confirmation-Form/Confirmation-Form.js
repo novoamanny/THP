@@ -36,7 +36,7 @@ const ConfirmationForm  = ({formData, postRegister, register:{confirmation, conf
                     <h2>{`${formData.Provider} Confirmation Number: ${confirmation.ConfirmationNumber}`}</h2>
                 </div>
                 <div className='qfs-text red-text'>
-                    <h2>{`You Should Receive a Confirmation Email Shortly, Thank You!`}</h2>
+                    <h2>{`You Should Receive A Confirmation Email Shortly, Thank You!`}</h2>
                 </div>
             </div>
         </div>
