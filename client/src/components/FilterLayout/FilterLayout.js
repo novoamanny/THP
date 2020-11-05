@@ -30,44 +30,61 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
     // const [currentRates, setCurrentRates] = useState([]);
    
 
-
-
-    const Filter = (oldFilters, label) =>{
-        if(label === 'ContractLength'){
-            console.log('oof')
-        }
-        if(label === 'Prov'){
-            filterByProvider(oldFilters, ZipCode)
-        }
-    }
-
       // FIlter Handle
-    const filterHandle = (label, value) =>{
+    const filterHandle = (label, value, indexFilter) =>{
         
-
-        let oldFilters = {...filterOptions};
-
-        let tempFilterList = oldFilters[label]
-
-        const check = tempFilterList.filter(filt => filt === value && filt)
-        
-        if(value === 'none'){
-            let newFilters = [];
-            oldFilters[label] = newFilters;
-            setFilterOptions({...oldFilters});
-        }
-        else{
-            if(check.length > 0){
-                let newFilters = tempFilterList.filter(filt => filt !== value && filt);
-                oldFilters[label] = newFilters;
-                setFilterOptions({...oldFilters})
-            }else{
-               
-                let newFilters = tempFilterList.concat(value);
-                oldFilters[label] = newFilters;
-                setFilterOptions({...oldFilters})
+        let i = 1;
+        if(indexFilter === 0){
+            if(!document.getElementById(`${0}-filter`).classList.contains('checked')){
+                document.getElementById(`${0}-filter`).classList.add('checked');
+            }
+            while(i < 12){
+                
+                if(document.getElementById(`${i}-filter`).classList.contains('checked')){
+                    document.getElementById(`${i}-filter`).classList.remove('checked');
+                    i = i + 1;
+                }
+                else{
+                    i = i + 1;
+                }
             }
         }
+        else{
+           if(document.getElementById(`${0}-filter`).classList.contains('checked')){
+               document.getElementById(`${0}-filter`).classList.remove('checked');
+           }
+           if(document.getElementById(`${indexFilter}-filter`).classList.contains('checked')){
+                document.getElementById(`${indexFilter}-filter`).classList.remove('checked');
+           }
+           else{
+                document.getElementById(`${indexFilter}-filter`).classList.add('checked');
+           }
+        }
+
+
+        // let oldFilters = {...filterOptions};
+
+        // let tempFilterList = oldFilters[label]
+
+        // const check = tempFilterList.filter(filt => filt === value && filt)
+        
+        // if(value === 'none'){
+        //     let newFilters = [];
+        //     oldFilters[label] = newFilters;
+        //     setFilterOptions({...oldFilters});
+        // }
+        // else{
+        //     if(check.length > 0){
+        //         let newFilters = tempFilterList.filter(filt => filt !== value && filt);
+        //         oldFilters[label] = newFilters;
+        //         setFilterOptions({...oldFilters})
+        //     }else{
+               
+        //         let newFilters = tempFilterList.concat(value);
+        //         oldFilters[label] = newFilters;
+        //         setFilterOptions({...oldFilters})
+        //     }
+        // }
 
         
         // getRates(ZipCode, oldFilters, label,)

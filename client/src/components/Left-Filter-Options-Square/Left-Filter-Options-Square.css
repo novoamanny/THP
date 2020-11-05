@@ -50,8 +50,11 @@
 .checkbox-square{
     height: 23px;
     width: 23px;
-    background-color: royalblue;
+    background-color: #fff;
     border: solid 1px black;
+}
+.checked{
+    background-color: royalblue;
 }
 .checkbox span{
     margin-left: 20px;
