@@ -23,9 +23,9 @@ const ConfirmationForm  = ({formData, postRegister, register:{confirmation, conf
                 <h2>Enrollment Confirmation</h2>
             </div>
             <div className='qfs-layout'>
-                <div className='qfs-text'>
+                {/* <div className='qfs-text'>
                     <h2>{`Texas Home Power Order Number: ${confirmation.ConfirmationNumber}`}</h2>
-                </div>
+                </div> */}
                 <div className='qfs-text blue-text'>
                     <h2>{`Your Enrollment with ${formData.Provider} has been completed`}</h2>
                 </div>
