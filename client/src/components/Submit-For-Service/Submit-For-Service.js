@@ -7,23 +7,22 @@ import './Submit-For-Service.css';
 const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
 
     const [boxes, setBoxes] = useState({
-        boxOne: 0,
-        boxTwo: 0,
-        boxThree: 0
+        boxOne: null,
+        boxTwo: null,
+        boxThree: null
     })
 
-    const total = boxes.boxOne + boxes.boxTwo + boxes.boxThree
-    total === 3 && console.log('Approvd')
+    const nextForm = boxes.boxOne === null || boxes.boxTwo === null || boxes.boxThree === null ? null : '';
 
     const onClickHandle = (label) =>{
-        if(boxes[label] === 0){
+        if(boxes[label] === null){
             let b = {...boxes};
             b[label] = 1;
             setBoxes({...b})
         }
         if(boxes[label] === 1){
             let b = {...boxes};
-            b[label] = 0;
+            b[label] = null;
             setBoxes({...b})
         }
     }
@@ -38,7 +37,7 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
             </div>
             <div className='SFS-questions'>
                 <div className='SFS-question' onClick={() => onClickHandle('boxOne')}>
-                    <div className={boxes.boxOne === 0 ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
+                    <div className={boxes.boxOne === null ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
 
                     </div>
                     <div className='SFS-text'>
@@ -46,7 +45,7 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
                     </div>
                 </div>
                 <div className='SFS-question' onClick={() => onClickHandle('boxTwo')}>
-                    <div className={boxes.boxTwo === 0 ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
+                    <div className={boxes.boxTwo === null ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
 
                     </div>
                     <div className='SFS-text'>
@@ -58,7 +57,7 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
                     </div>
                 </div>
                 <div className='SFS-question' onClick={() => onClickHandle('boxThree')}>
-                    <div className={boxes.boxThree === 0 ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
+                    <div className={boxes.boxThree === null ? 'SFS-checkbox' : 'SFS-checkbox SFS-checkbox-active'}>
 
                     </div>
                     <div className='SFS-text'>
@@ -71,7 +70,7 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
                     </div>
                 </div>
             </div>
-            <RegisterFormButtons total={total} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex}/>
+            <RegisterFormButtons nextForm={nextForm} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex}/>
         </div>
     )
 }

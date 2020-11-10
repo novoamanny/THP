@@ -24,6 +24,13 @@
     float: right;
     
 }
+.disabled-btn button{
+    background-color: #c9c9c9;
+    color: #2f2f2f;
+    cursor: default;
+    float: right;
+    
+}
 
 @media(max-width: 3000px){
     .Form-BTN button{

@@ -16,10 +16,12 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
 
 
     const onChange = e => setFormData({...formData, [e.target.name]: e.target.value});
+    const [SSNBox, setSSNBox] = useState(false);
+    const [addressBox, setAddressBox] = useState(true);
 
     // const buttonHandle = (e,value) => setFormData({...formData, [e.target.name]: value});
 
-
+    const nextForm = formData.FirstName === null || formData.LastName === null || formData.Email === null || formData.Phone === null || formData.Address1 === null || formData.SSN === null || !SSNBox ? null : '';
     const postRegisterHandle = async (formData) =>{
         postRegister(formData)
     }
@@ -166,8 +168,8 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
 
                     </div>
                     <div className='form-sec-two'>
-                        <div className='form-sec-two-one'>
-                            <div className='form-sec-two-square'>
+                        <div className='form-sec-two-one' onClick={() => setAddressBox(!addressBox)}>
+                            <div className={addressBox ? 'form-sec-two-square checked' : 'form-sec-two-square'} >
 
                             </div>
                             <div className='form-sec-two-option'>
@@ -189,7 +191,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                         <span>Address 1</span>
                                     </div>
                                     <div className='form-input'>
-                                        <input name='Address1' placeholder='# Street Address' type='text' value={Address1} onChange={(e) => onChange(e)}/>
+                                        <input name='Address1' placeholder='# Street Address' type='text' value={addressBox ? Address1 : ''} onChange={(e) => onChange(e)}/>
                                     </div>
                                 </div>
                                 <div className='form-city'>
@@ -197,7 +199,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                         <span>City</span>
                                     </div>
                                     <div className='form-input'>
-                                        <input name='City' placeholder='City' type='text' value={City} onChange={(e) => onChange(e)}/>
+                                        <input name='City' placeholder='City' type='text' value={addressBox ? City : ''} onChange={(e) => onChange(e)}/>
                                     </div>
                                     
                                 </div>
@@ -217,7 +219,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                             <span>State</span>
                                         </div>
                                         <div className='form-input-state'>
-                                            <input name='State' placeholder='State' type='text' value={State} onChange={(e) => onChange(e)}/>
+                                            <input name='State' placeholder='State' type='text' value={addressBox ? State : ''} onChange={(e) => onChange(e)}/>
                                         </div>
                                     </div>
                                     <div className='form-zipcode'>
@@ -225,7 +227,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                             <span>ZipCode</span>
                                         </div>
                                         <div className='form-input-zipcode'>
-                                            <input name='ZipCode' placeholder='ZipCode' type='text' value={ZipCode} onChange={(e) => onChange(e)}/>
+                                            <input name='ZipCode' placeholder='ZipCode' type='text' value={addressBox ? ZipCode : ''} onChange={(e) => onChange(e)}/>
                                         </div>
                                     </div>
                                 </div>
@@ -264,7 +266,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                 <input name='SSN' placeholder='___-__-____' type='text' value={SSN} onChange={(e) => onChange(e)}/>
                             </div>
                             <div className='UCC-form-checkbox'>
-                                <div className='UCC-form-checkbox-square'>
+                                <div className={ !SSNBox ? 'UCC-form-checkbox-square' : 'UCC-form-checkbox-square checked'} onClick={() => setSSNBox(!SSNBox)}>
 
                                 </div>
                                 <div className='UCC-form-checkbox-text'>
@@ -281,7 +283,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                 </div>
                 
             </form>
-            <RegisterFormButtons formData={formData} onSubmitHandle={onSubmitHandle} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+            <RegisterFormButtons  nextForm={nextForm} formData={formData} onSubmitHandle={onSubmitHandle} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
         </div>
     )
 }

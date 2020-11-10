@@ -21,22 +21,26 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                <div className='RSC-Top-Left'>
                     <div className='RSC-Top-Left-One'>
                         <img src={rate.image}/>
+                        <div className='tlto tlto-PUCT'>
+                            <span>{`PUCT #${rate.PUCT}`}</span>
+                        </div>
                     </div>
                     <div className='RSC-Top-Left-Two'>
                         <div className='tlto'>
-                            <span>{`${rate.provider} | PUCT #${rate.PUCT}`}</span>
+                            <span>{`${rate.provider} | #00${rate.rateData.RateID}`}</span>
                         </div>
                         <div className='tltt'>
                             <span>{rate && rate.rateData.Plan.PlanName}</span>
                         </div>
-                        
-                    </div>
-                    <div className='RSC-Top-Left-Three' onClick={() => setChangePDP(true)}>
+                        <div className='RSC-Top-Left-Three' onClick={() => setChangePDP(true)}>
                         <div>
                         <span>Plan Details</span>
                         </div>
                         
                     </div>
+                        
+                    </div>
+                   
                </div>
                <div className='RSC-Top-Right'>
                     {/* <div className='RSC-Top-Right-One'>

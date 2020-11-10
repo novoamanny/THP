@@ -42,7 +42,7 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                     </div>
                     
                 </div>
-                <div className='PDP-label-one'>
+                {/* <div className='PDP-label-one'>
                     <span>Pricing Details</span>
                 </div>
                 <div className='PDP-sec-two'>
@@ -94,7 +94,7 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             

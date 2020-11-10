@@ -13,6 +13,7 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
 
     const [formSlideIndex, setFormSlideIndex] = useState(0);
     const [disabledOn, setDisabledOn] = useState(true);
+    
 
     const onCLickHandle = (index, answer, slideIndex) =>{
         questionHandle(index, answer);
@@ -22,11 +23,10 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
     const onCalendarClickHandle = (e) =>{
         
         setFormData({...formData, Date: e});
-        if(disabledOn){
-            setDisabledOn(!disabledOn);
-        }
+       
     }
     
+    const nextForm = answers.Three === null || formData.Date === null ? null : '';
 
     return(
         <div className='QFST'>
@@ -92,7 +92,7 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
                 
                 
             </div>
-            <RegisterFormButtons disabledOn={disabledOn} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+            <RegisterFormButtons nextForm={nextForm} disabledOn={disabledOn} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
         </div>
     )
 }

@@ -12,11 +12,12 @@ import './Registration-Mid-Section.css';
 
 const RegistrationMidSection = ({data, getMeters, meters, metersLoading, postRegister, ZipCode, Provider, formData, setFormData, setMainFormIndex, mainFormIndex, setChangeZipModal}) =>{
     const [answers, setAnswers] = useState({
-        One: '',
-        Two: '',
-        Three: '',
+        One: null,
+        Two: null,
+        Three: null,
+        
     });
-
+    
 
     const questionHandle = (index, answer) =>{
         let oldAnswers = {...answers};

@@ -13,7 +13,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             }
             <div className='FRC-row-one'>
                 <div className='FRC-id'>
-                    <span>{`${rate.provider} | PUCT #${rate.PUCT}`}</span>
+                    <span>{`${rate.provider} | PUCT #${rate.PUCT} | #00${rate.rateData.RateID}`}</span>
                 </div>
                 <div className='FRC-name'>
                     <div>

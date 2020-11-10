@@ -19,7 +19,7 @@
     padding: 30px 50px;
 }
 .RSC-Top-Left{
-    width: 50%;
+    width: 60%;
     display: flex;
     /* grid-template-columns: 1fr 1fr 1fr; */
 }
@@ -29,6 +29,9 @@
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+}
+.tlto-PUCT{
+    margin-top: 10px;
 }
 .tlto{
     width: 100%;
@@ -51,7 +54,7 @@
     font-style: normal;
 }
 .RSC-Top-Left-Three {
-   margin-top: 70px;
+   margin-top: 10px;
    cursor: pointer;
 }
 .RSC-Top-Left-Three span{
@@ -63,7 +66,7 @@
     font-style: normal;
 }
 .RSC-Top-Right{
-    width: 50%;
+    width: 30%;
     display: flex;
     /* grid-template-columns: 1fr 1fr 1fr; */
 
@@ -390,7 +393,7 @@
         margin-left: 50px;
     }
     .RSC-Top-Left-Three{
-        margin-top: 60px;
+        /* margin-top: 60px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -461,7 +464,7 @@
         margin-left: 40px;
     }
     .RSC-Top-Left-Three{
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -544,7 +547,7 @@
         margin-left: 30px;
     }
     .RSC-Top-Left-Three{
-        margin-top: 45px;
+        /* margin-top: 45px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -626,7 +629,7 @@
         margin-left: 30px;
     }
     .RSC-Top-Left-Three{
-        margin-top: 45px;
+        /* margin-top: 45px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -772,7 +775,7 @@
         
     }
     .RSC-Top-Left-Three{
-        margin-top: 45px;
+        /* margin-top: 45px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -935,7 +938,7 @@
         
     }
     .RSC-Top-Left-Three{
-        margin-top: 40px;
+        /* margin-top: 40px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -1103,7 +1106,7 @@
         
     }
     .RSC-Top-Left-Three{
-        margin-top: 33px;
+        /* margin-top: 33px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -1189,7 +1192,7 @@
         
     }
     .RSC-Top-Left-Three{
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -1277,7 +1280,7 @@
         
     }
     .RSC-Top-Left-Three{
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
     .RSC-Top-Left-Three span{
         
@@ -1365,7 +1368,7 @@
         
     }
     .RSC-Top-Left-Three{
-        margin-top: 25px;
+        /* margin-top: 25px; */
     }
     .RSC-Top-Left-Three span{
         

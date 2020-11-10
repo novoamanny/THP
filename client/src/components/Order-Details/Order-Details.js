@@ -122,12 +122,15 @@ const OrderDetails = ({rate,PUCT, provider, setChangePDP, watt}) =>{
                     </div>
                     <div className='OD-Details-Five'>
                         <div className='PDF-btn-OD'>
+                        <i className="far fa-file-alt"></i>
                             <a target='_blank' href={rate && rate[0].EFLLink}>Facts Label</a>
                         </div>
                         <div className='PDF-btn-OD'>
+                        <i className="far fa-file-alt"></i>
                             <a target='_blank' href={rate && rate[0].TOSLink}>Terms of Service</a>
                         </div>
                         <div className='PDF-btn-OD'>
+                        <i className="far fa-file-alt"></i>
                             <a target='_blank' href={rate && rate[0].YRACLink}>YRAC</a>
                         </div>
                     </div>
