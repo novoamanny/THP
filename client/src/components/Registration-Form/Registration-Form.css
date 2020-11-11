@@ -125,6 +125,7 @@
     flex-wrap: wrap;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
+    
 }
 .form-sec-two-one{
     width: 100%;
@@ -163,12 +164,18 @@
 }
 .form-sec-three{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 60px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 0;
+    display: none;
+    transition: 0.3s ease;
+}
+.form-sec-three-slide{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .form-sec-three-one{
     width: 80%;

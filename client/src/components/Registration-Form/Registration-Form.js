@@ -18,6 +18,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
     const onChange = e => setFormData({...formData, [e.target.name]: e.target.value});
     const [SSNBox, setSSNBox] = useState(false);
     const [addressBox, setAddressBox] = useState(true);
+    // const [addressSlide, setAddressSlide] = useState(false);
 
     // const buttonHandle = (e,value) => setFormData({...formData, [e.target.name]: value});
 
@@ -180,7 +181,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                             <li>{`${Address1} ${City}, ${State} ${ZipCode}`}</li>
                         </div>
                     </div>
-                    <div className='form-sec-three'>
+                    <div className={ !addressBox ? 'form-sec-three form-sec-three-slide' : 'form-sec-three'}>
                         <div className='form-sec-three-one'>
                             <h2>Current Address</h2>
                         </div>
