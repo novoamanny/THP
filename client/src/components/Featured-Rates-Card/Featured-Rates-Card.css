@@ -26,6 +26,7 @@
     margin-top: 20px;
     
 }
+
 .FRC-id span{
     color: rgba(0, 0, 0, 0.5);
     font-family: "industry", sans-serif;
@@ -78,7 +79,7 @@
     width: 180px;
     height: 110px;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .FRC-price{
     width: 50%;
@@ -103,8 +104,8 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-   margin: 10px 0;
+    
+   margin-top: 10px;
    
 }
 .FRC-details-btn span{
@@ -116,6 +117,7 @@
     font-family: "industry", sans-serif;
     font-weight: 500;
     font-style: normal;
+    margin-left: 20px;
 }
 .FRC-other-info{
     width: 50%;
@@ -330,7 +332,7 @@
         width: 170px;
         height: 100px;
         margin-top: 20px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     .FRC-price span{
         margin-top: 30px;
@@ -389,7 +391,7 @@
         width: 150px;
         height: 90px;
         margin-top: 20px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     .FRC-price span{
         margin-top: 30px;
@@ -460,7 +462,7 @@
         width: 150px;
         height: 90px;
         margin-top: 20px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     .FRC-price span{
         margin-top: 30px;
@@ -531,7 +533,7 @@
         width: 140px;
         height: 90px;
         margin-top: 10px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     .FRC-price span{
         margin-top: 30px;
@@ -606,7 +608,7 @@
         width: 140px;
         height: 90px;
         margin-top: 10px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     .FRC-price span{
         margin-top: 30px;
@@ -687,7 +689,7 @@
         width: 130px;
         height: 80px;
         
-        margin-left: 30px;
+        margin-left: 20px;
     }
     .FRC-Link{
        
@@ -786,60 +788,7 @@
         font-size: 24px;
     }
 }
-/* @media(max-width: 1900px){
-  
-    .FRC-name span{
-        font-size: 24px;
-       
-        margin-left: 15px;
-        
-    }
-    .FRC-row-three span{
-        font-size: 22px;
-        margin: 0 20px;
-    
-    }
-    .FRC-bill-desc span{
-        font-size: 15px;
-    }
-    .FRC-length-label span{
-        
-        font-size: 15px;
-    }
 
-    .FRC-price span{
-        margin-top: 20px;
-        
-        font-size: 50px;
-        
-      
-    }
-
-    .FRC-length span{
-       
-        font-size: 22px;
-        
-    }
-    .FRC-bill-price span{
-        font-size: 22px;
-       
-        
-    }
-     .FRC-Link{
-        
-        padding: 15px 50px;
-        
-    }
-    .FRC-link-details-two{
-       
-        
-        font-size: 26px;
-    }
-    .FRC-seven-label{
-        
-        font-size: 26px;
-    }
-} */
 
 
 @media(max-width: 1800px){

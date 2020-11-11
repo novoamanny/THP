@@ -13,7 +13,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             }
             <div className='FRC-row-one'>
                 <div className='FRC-id'>
-                    <span>{`${rate.provider} | PUCT #${rate.PUCT} | #00${rate.rateData.RateID}`}</span>
+                    <span>{`${rate.provider} | #00${rate.rateData.RateID}`}</span>
                 </div>
                 <div className='FRC-name'>
                     <div>
@@ -35,6 +35,9 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     </div>
                 </div>
                 <div className='FRC-two-B'>
+                    <div className='FRC-id'>
+                        <span>{`PUCT #${rate.PUCT}`}</span>
+                    </div>
                     <div className='FRC-details-btn' onClick={() => setChangePDP(true)}>
                         <span>Plan Details</span>
                     </div>
