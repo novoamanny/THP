@@ -26,7 +26,7 @@ const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
                                         <h2>Start Date:</h2>
                                     </div>
                                     <div className='ODT-Details-Address1'>
-                                        {/* <span>{formData.Date}</span> */}
+                                        {/* <span>{'mm/dd/yyyy'}</span> */}
                                     </div>
                                 </div>
                             </div>

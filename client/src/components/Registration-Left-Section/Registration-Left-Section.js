@@ -52,6 +52,18 @@ const RegistrationLeftSection = ({mainFormIndex}) =>{
                     <div className='progress-label'> 
                         <span>Submit For Service</span>
                     </div>
+                     <div className='progress-empty'>
+
+                    </div>
+                    
+                </div>
+                <div className='progress'>
+                    <div className={mainFormIndex === 4 ? 'progress-circle-on' : 'progress-circle'}>
+
+                    </div>
+                    <div className='progress-label'> 
+                        <span>Confirmation</span>
+                    </div>
                     
                 </div>
             </div>
