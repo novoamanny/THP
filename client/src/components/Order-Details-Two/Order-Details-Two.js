@@ -17,16 +17,16 @@ const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
                                     <div className='Details-ST-label'>
                                         <h2>Switch Type:</h2>
                                     </div>
-                                    <div className='ODT-Details-ST'>
-
+                                    <div className='ODT-Details-Address1'>
+                                        <span>{formData.SwitchType}</span>
                                     </div>
                                 </div>
                                 <div>
                                     <div className='Details-SD-label'>
                                         <h2>Start Date:</h2>
                                     </div>
-                                    <div>
-                                        
+                                    <div className='ODT-Details-Address1'>
+                                        {/* <span>{formData.Date}</span> */}
                                     </div>
                                 </div>
                             </div>
