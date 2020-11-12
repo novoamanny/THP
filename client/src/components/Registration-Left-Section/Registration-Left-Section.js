@@ -46,7 +46,7 @@ const RegistrationLeftSection = ({mainFormIndex}) =>{
                     </div>
                 </div>
                 <div className='progress'>
-                    <div className='progress-circle'>
+                    <div className={mainFormIndex === 3 ? 'progress-circle-on' : 'progress-circle'}>
 
                     </div>
                     <div className='progress-label'> 

@@ -31,13 +31,17 @@
     font-style: normal;
     padding-top: 7px ;
     border-radius: 18px;
-    margin: 5px 0;
+    margin: 5px 5px;
     width: 170px;
     font-size: 17px;
     background: #1333A6;
     text-align: center;
     color: #fff;
     cursor: pointer;
+}
+.nav-button a{
+    color: #fff;
+    text-decoration: none;
 }
 
 
