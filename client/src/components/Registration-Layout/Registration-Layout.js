@@ -26,7 +26,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         getRate( match.params.id, match.params.provider, match.params.zipcode);
         
       },[getRate])
-      
+      console.log(match.params)
       
       const [formData, setFormData] = useState({
         EmailAddress: null,
@@ -42,7 +42,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         SSN: null,
         Provider: match.params.provider,
         Date: null,
-        SwitchType: 'Switching',
+        SwitchType: null,
         DOBMonth: '',
         DOBDay: '',
         DOBYear: '',
@@ -77,7 +77,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
             <Navbar url={match.params}/>
             
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
-            <RegistrationMidSection metersLoading={metersLoading} loa mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
+            <RegistrationMidSection metersLoading={metersLoading} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
             <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} PUCT={match.params.PUCT} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
             {
                 changeZipModal && <ChangeZipCodeModal setChangeZipModal={setChangeZipModal} ZipCode={match.params.zipcode}/>

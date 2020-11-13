@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
-import styles from 'react-calendar/dist/Calendar.css';
+import {styles} from 'react-calendar/dist/Calendar.css';
 import ImportantNoteBoxTwo from '../Important-Note-Box-Two/Important-Note-Box-Two';
 import RegisterFormButtons from '../Register-Form-Buttons/Register-Form-Buttons';
 import Calendar from 'react-calendar'
+// import Calendar from '../Calendar/Calendar';
 import 'react-calendar/dist/Calendar.css';
 
 import '../Question-Form-Square/Question-Form-Square.css';
@@ -14,14 +15,14 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
     const [formSlideIndex, setFormSlideIndex] = useState(0);
     const [disabledOn, setDisabledOn] = useState(true);
     
-
+// console.log(styles);
     const onCLickHandle = (index, answer, slideIndex) =>{
         questionHandle(index, answer);
         setFormSlideIndex(slideIndex);
     }
 
     const onCalendarClickHandle = (e) =>{
-        
+        console.log(e)
         setFormData({...formData, Date: e});
        
     }
@@ -86,7 +87,8 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
                         <p>Select Date:</p>
                     </div>
                     <div className={ formSlideIndex === 1 ? 'qfs-options-cal' : (formSlideIndex === 3 ? 'qfs-optionsl' : 'no-display')}>
-                        <Calendar className='calendar-size' tileClassName='calendar-size' onClickDay={(e) => onCalendarClickHandle(e)}/>
+                        <Calendar className={'calendar'} tileClassName={'tile'} onClickDay={(e) => onCalendarClickHandle(e)}/>
+                        {/* <Calendar setFormData={onCalendarClickHandle} formData/> */}
                     </div>
                 </div>
                 

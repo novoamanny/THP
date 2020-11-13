@@ -29,10 +29,10 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex}) =>{
 
     return(
         <div className='SFS'>
-            <div className='SFS-title'>
+            <div className='qfs-question'>
                 <h2>Submit For Enrollment</h2>
             </div>
-            <div className='SFS-label'>
+            <div className='qfs-label'>
                 <h2>I Agree</h2>
             </div>
             <div className='SFS-questions'>

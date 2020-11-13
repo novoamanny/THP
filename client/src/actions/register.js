@@ -38,7 +38,7 @@ export const postRegister = (form) => async dispatch =>{
         Address1,
         City,
         State,
-        SwitchType,
+        SwitchType: 'Switching',
         SSN,
         RateID,
         Rate,

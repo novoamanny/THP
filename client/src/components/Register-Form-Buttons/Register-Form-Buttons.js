@@ -22,7 +22,8 @@ const RegisterFormButtons = ({disabledOn, setMainFormIndex, mainFormIndex, onSub
     return(
         <div className='Form-BTN'>
             <div className='back-btn'>
-                <button  onClick={() => setMainFormIndex(sub)}> Back</button>
+                {mainFormIndex === 1 ? <a href={''}><button> Back</button></a> : <button  onClick={() => setMainFormIndex(sub)}> Back</button>}
+                
             </div>
             <div className={nextForm === null ? 'next-btn disabled-btn' : 'next-btn'}>
                 <button onClick={nextForm === null ? null : () => clickHandle()}>Next</button>

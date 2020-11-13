@@ -9,6 +9,43 @@ const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
                 <h2>Order Details</h2>
             </div>
             <div className='ODT-Details'>
+            {
+                    mainFormIndex >= 3 && (
+                        <div className='ODT-Details-Date'>
+                            <div className='ODT-Details-L'>
+                                <div>
+                                    <div className='Details-ST-label'>
+                                        <h2>Name:</h2>
+                                    </div>
+                                    <div className='ODT-Details-Address1'>
+                                        <span>{`${formData.FirstName} ${formData.LastName}`}</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className='Details-SD-label'>
+                                        <h2>Email:</h2>
+                                    </div>
+                                    <div className='ODT-Details-Address1'>
+                                        <span>{`${formData.EmailAddress}`}</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className='Details-SD-label'>
+                                        <h2>Phone:</h2>
+                                    </div>
+                                    <div className='ODT-Details-Address1'>
+                                        <span>{`${formData.Phone}`}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ODT-Details-R'>
+                            <div className='ODT-Details-R-BTN'> 
+                                <button onClick={() => setMainFormIndex(2)}>EDIT</button>
+                            </div>
+                            </div>
+                        </div>
+                    )
+                }
                 {
                     mainFormIndex >= 2 && (
                         <div className='ODT-Details-Date'>
@@ -26,7 +63,7 @@ const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
                                         <h2>Start Date:</h2>
                                     </div>
                                     <div className='ODT-Details-Address1'>
-                                        {/* <span>{'mm/dd/yyyy'}</span> */}
+                                        <span>{`${formData.Date}`}</span>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +100,7 @@ const OrderDetailsTwo = ({formData, mainFormIndex, setMainFormIndex}) =>{
                     </div>
                     <div className='ODT-Details-R'>
                         <div className='ODT-Details-R-BTN'>
-                           <button onClick={() => setMainFormIndex(0)}>EDIT</button>
+                           <a href={``}><button>Edit</button></a>
                        </div>
                     </div>
                 </div>

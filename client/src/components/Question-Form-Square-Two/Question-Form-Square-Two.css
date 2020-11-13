@@ -1,0 +1,126 @@
+.calendar{
+    width: 60%;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.tile{
+    height: 120px;
+    font-size: 25px;
+}
+
+@media(max-width: 2800px){
+    .calendar{
+        font-size: 27px;
+    }
+    .tile{
+        height: 100px;
+        font-size: 23px;
+    }
+}
+@media(max-width: 2300px){
+    .calendar{
+        font-size: 24px;
+    }
+    .tile{
+        height: 80px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 2000px){
+    .calendar{
+        font-size: 21px;
+        border-radius: 25px;
+    }
+    .tile{
+        height: 70px;
+        font-size: 18px;
+    }
+}
+@media(max-width: 1700px){
+    .calendar{
+        font-size: 19px;
+        border-radius: 25px;
+    }
+    .tile{
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 1200px){
+    .calendar{
+        font-size: 16px;
+        border-radius: 20px;
+    }
+    .tile{
+        height: 50px;
+        font-size: 14px;
+    }
+}
+@media(max-width: 1100px){
+    .calendar{
+        font-size: 16px;
+        border-radius: 20px;
+        width: 50%;
+    }
+    .tile{
+        height: 50px;
+        font-size: 14px;
+    }
+}
+@media(max-width: 900px){
+    .calendar{
+        font-size: 14px;
+        border-radius: 20px;
+        width: 45%;
+    }
+    .tile{
+        height: 45px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 800px){
+    .calendar{
+        font-size: 12px;
+        border-radius: 20px;
+        width: 50%;
+    }
+    .tile{
+        height: 45px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 700px){
+    .calendar{
+        font-size: 12px;
+        border-radius: 20px;
+        width: 60%;
+    }
+    .tile{
+        height: 45px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 600px){
+    .calendar{
+        font-size: 12px;
+        border-radius: 20px;
+        width: 70%;
+    }
+    .tile{
+        height: 45px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 500px){
+    .calendar{
+        font-size: 12px;
+        border-radius: 20px;
+        width: 80%;
+    }
+    .tile{
+        height: 45px;
+        font-size: 12px;
+    }
+}

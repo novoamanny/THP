@@ -1,8 +1,9 @@
 .Other-Filters{
-    width: 50%;
+    width: 100%;
     margin-top: 110px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 .of-info span{
@@ -27,6 +28,11 @@
 }
 .of-option{
     margin: 0 10px;
+}
+.of-zipcode-pop{
+    width: 100%;
+    text-align: center;
+    
 }
 @media(max-width:3100px){
     .of-info span{

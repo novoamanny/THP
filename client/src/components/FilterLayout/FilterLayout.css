@@ -12,8 +12,8 @@
     justify-content: center;
     position: fixed;
     z-index: 10;
-    top: 70px;
-    width: 100%;
+    top: 10px;
+    width: 60%;
     background-color: #fff;
     padding-bottom: 10px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -184,10 +184,16 @@
         margin-right: 9%;
         
     }
+    .top-filters{
+        width: 65%;
+    }
 }@media(max-width: 3110px){
     .Filter-Layout{
         margin-right: 7%;
         margin-left: 22%;
+    }
+    .top-filters{
+        width: 70%;
     }
 }
 
@@ -197,14 +203,12 @@
         margin-left: 20%;
         /* margin-top: 9%; */
     }
-    /* .top-filters{
+    .top-filters{
        
-        position: fixed;
-        z-index: 10;
-        top: 5%;
+       width: 73%;
         
         
-    } */
+    }
 }
 @media(max-width: 2800px){
     /* .top-filters{
@@ -216,23 +220,38 @@
         margin-right: 3%;
         margin-left: 18%;
     }
+    .top-filters{
+       
+        width: 77%;
+         
+         
+     }
 }
 @media(max-width: 2590px){
     .Filter-Layout{
         margin-right: 1%;
         margin-left: 17%;
     }
+    .top-filters{
+       
+        width: 80%;
+         
+         
+     }
 }
 @media(max-width: 2500px){
-    .top-filters{
+    /* .top-filters{
         top: 50px;
-    }
+    } */
 }
 @media(max-width: 2485px){
     .Filter-Layout{
         margin-right: 0;
         margin-left: 15%;
         /* margin-top: 10%; */
+    }
+    .top-filters{
+        width: 83%;
     }
     
 }
@@ -245,12 +264,23 @@
   
 }
 
+@media(max-width: 2000px){
+    .top-filters{
+       width: 85%;
+        
+    }
+  
+}
+
 @media(max-width: 1800px){
     
 }
 @media(max-width: 1500px){
     .Filter-Layout{
         margin-left: 12%;
+    }
+    .top-filters{
+        width: 88%;
     }
     
 }

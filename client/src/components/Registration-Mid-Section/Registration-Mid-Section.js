@@ -25,6 +25,9 @@ const RegistrationMidSection = ({data, getMeters, meters, metersLoading, postReg
 
 
         setAnswers({...oldAnswers})
+        if(index === 'Three'){
+            setFormData({...formData, SwitchType: answer})
+        }
     }
   
     return(
