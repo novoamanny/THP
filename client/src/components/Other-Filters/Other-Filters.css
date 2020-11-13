@@ -1,5 +1,5 @@
 .Other-Filters{
-    width: 100%;
+    width: 92%;
     margin-top: 110px;
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +34,16 @@
     text-align: center;
     
 }
+@media(max-width:3290px){
+    .Other-Filters{
+        width: 93%;
+    }
+}
+@media(max-width:3110px){
+    .Other-Filters{
+        width: 96%;
+    }
+}
 @media(max-width:3100px){
     .of-info span{
         font-size: 32px;
@@ -49,10 +59,30 @@
         font-size: 28px;
     }
 }
+@media(max-width:2870px){
+    .Other-Filters{
+        width: 97%;
+    }
+}
+@media(max-width:2740px){
+    .Other-Filters{
+        width: 98%;
+    }
+}
+@media(max-width:2590px){
+    .Other-Filters{
+        width: 98%;
+    }
+}
 @media(max-width:2500px){
     .of-info span{
         font-size: 28px;
         
+    }
+}
+@media(max-width:2490px){
+    .Other-Filters{
+        width: 100%;
     }
 }
 @media(max-width:2200px){

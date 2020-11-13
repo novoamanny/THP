@@ -79,7 +79,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                         <span>- OR CALL -</span>
                     </div>
                     <div className='FRC-link-details-two'>
-                        <span>800-123-1234</span>
+                        <span>{rate.Phone}</span>
                     </div>
                 </div>
             </div>

@@ -9,11 +9,12 @@
 .top-filters{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     position: fixed;
-    z-index: 10;
+    z-index: 5;
     top: 10px;
-    width: 60%;
+    
+    width: 70%;
     background-color: #fff;
     padding-bottom: 10px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -184,16 +185,16 @@
         margin-right: 9%;
         
     }
-    .top-filters{
+    /* .top-filters{
         width: 65%;
-    }
+    } */
 }@media(max-width: 3110px){
     .Filter-Layout{
         margin-right: 7%;
         margin-left: 22%;
     }
     .top-filters{
-        width: 70%;
+        width: 72%;
     }
 }
 
@@ -205,7 +206,7 @@
     }
     .top-filters{
        
-       width: 73%;
+       width: 76%;
         
         
     }
@@ -222,7 +223,7 @@
     }
     .top-filters{
        
-        width: 77%;
+        width: 79%;
          
          
      }
@@ -234,7 +235,7 @@
     }
     .top-filters{
        
-        width: 80%;
+        width: 82%;
          
          
      }
@@ -251,7 +252,7 @@
         /* margin-top: 10%; */
     }
     .top-filters{
-        width: 83%;
+        width: 85%;
     }
     
 }
@@ -265,10 +266,10 @@
 }
 
 @media(max-width: 2000px){
-    .top-filters{
+    /* .top-filters{
        width: 85%;
         
-    }
+    } */
   
 }
 

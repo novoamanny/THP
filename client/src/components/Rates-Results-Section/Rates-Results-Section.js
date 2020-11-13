@@ -56,6 +56,7 @@ const RatesResultsSection = ({resultData, quickFilters, ZipCode}) =>{
                 provider: prov.provider,
                 rateData: prov.rateData,
                 PUCT: prov.PUCT,
+                Phone: prov.Phone,
                 image: image
             }
 

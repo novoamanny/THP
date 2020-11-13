@@ -57,6 +57,7 @@ const FeaturedRatesSection = ({resultData, ZipCode, watt}) =>{
             provider: prov.provider,
             rateData: prov.rateData,
             PUCT: prov.PUCT,
+            Phone: prov.Phone,
             image: image
         }
 

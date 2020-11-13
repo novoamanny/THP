@@ -112,7 +112,8 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
                 temp = {
                     provider: prov.name,
                     rateData: rate,
-                    PUCT: prov.PUCT
+                    PUCT: prov.PUCT,
+                    Phone: prov.Phone
                     
                 };
                 

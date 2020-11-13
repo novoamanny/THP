@@ -92,7 +92,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                             <span>- OR CALL -</span>
                         </div>
                         <div className='RSC-bot-num'>
-                            <span>888-123-1234</span>
+                            <span>{rate.Phone}</span>
                         </div>
                     </div>
                 
