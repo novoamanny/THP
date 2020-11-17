@@ -53,7 +53,7 @@ export const postRegister = (form) => async dispatch =>{
     try{
         
         const res = await axios.post(`/api/pulse/register/`, body, config);
-        //
+        
         
         let data = {
             form: form,

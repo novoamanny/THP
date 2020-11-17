@@ -7,8 +7,8 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
         <div className='PDP'>
             <div className='PDP-backdrop' onClick={() => setChangePDP(false)}></div>
             <div className='PDP-UI'>
-                <div className='PDP-label-one'>
-                    <span>Plan Details</span>
+                <div className='Modal-label'>
+                    <h2>Plan Details</h2>
                 </div>
                 <div className='PDP-sec-one'>
                 
@@ -28,7 +28,7 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                             </div>
                         </div>
                         <div className='PDP-ETF'>
-                            <span>{`Early Termination Fee:  `}</span>
+                            <span>{`Early Termination Fee: `}</span>
                         </div>
                         <div className='PDP-note'>
                             <span>{`(Note this fee will not be charged if you end your contract early because you are moving out.)`}</span>
