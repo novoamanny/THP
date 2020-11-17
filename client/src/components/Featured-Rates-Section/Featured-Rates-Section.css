@@ -48,7 +48,7 @@
 
 @media(max-width: 2900px){
    .FRS{
-       margin-top: 250px;
+       margin-top: 210px;
    }
    .FRS-title h2{
        font-size: 37px;
@@ -62,7 +62,7 @@
 }
 @media(max-width: 2200px){
     .FRS{
-        margin-top: 200px;
+        margin-top: 180px;
     }
     .FRS-title h2{
         font-size: 32px;
@@ -82,7 +82,7 @@
 }
 @media(max-width: 1800px){
     .FRS{
-        margin-top: 180px;
+        margin-top: 160px;
     }
 }
 
@@ -90,6 +90,9 @@
     .FRS-card-section{
        
         padding: 0px;
+    }
+    .FRS{
+        margin-top: 140px;
     }
     .FRS-title h2{
         
@@ -125,21 +128,34 @@
 
 @media(max-width: 1000px){
     .FRS{
-        margin-top: 120px;
+        margin-top: 50px;
     }
     .FRS-title h2{
-        
+        margin: 10px 30px;
         font-size: 22px;
         
     }
 }
 @media(max-width: 900px){
     .FRS{
-        margin-top: 120px;
+        margin-top: 50px;
     }
     .FRS-title h2{
         
         font-size: 21px;
-        
+        margin: 10px 30px;
     }
+}
+
+@media(max-width: 500px){
+    .FRS{
+        margin-top: 40px;
+    }
+    .FRS-title h2{
+        
+        font-size: 18px;
+        margin: 7px 30px;
+    }
+    
+
 }

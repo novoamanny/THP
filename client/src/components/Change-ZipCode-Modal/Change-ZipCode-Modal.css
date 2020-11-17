@@ -30,7 +30,7 @@
 }
 .Modal-label{
     background-color:#1333A6;
-    padding: 15px 50px;
+    padding: 10px 50px;
     color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -76,390 +76,791 @@
     margin: 10px 0;
     border-radius: 10px;
 }
-@media(max-width: 2500px){
+@media(max-width:3400px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 30%;
+        left: 42%;
+        top: 20%;
+       
+        border-radius: 20px;
+ 
+
+    }
     .Modal-label{
         
-        padding: 10px 50px;
+        padding: 8px 50px;
         
-        
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         font-size: 25px;
         
     }
-    .change-zip{
-        width: 100%;
-        margin: 20px 0;
+    .zip-text{
+        
+        font-size: 27px;
+        margin-top: 30px;
+        text-align: center;
     }
     .change-zip input{
-        width: 400px;
-        height: 50px;
+        width: 350px;
+        height: 45px;
         
-        font-size: 26px;
-      
+        font-size: 27px;
+        
     
+    }
+    .change-zip-link{
+        
+        margin-bottom: 40px;
     }
     .change-zip-link-l{
         font-size: 26px;
         
-        padding: 10px 20px;
+        padding: 8px 40px;
+        
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+}
+@media(max-width:3000px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 30%;
+        left: 42%;
+        top: 20%;
+       
+        border-radius: 20px;
+ 
+
+    }
+    .Modal-label{
+        
+        padding: 6px 50px;
+        
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-size: 23px;
         
     }
     .zip-text{
         
-        font-size: 26px;
+        font-size: 24px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 300px;
+        height: 40px;
         
+        font-size: 24px;
         
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 40px;
+    }
+    .change-zip-link-l{
+        font-size: 23px;
+        
+        padding: 7px 40px;
+        
+        margin: 10px 0;
+        border-radius: 10px;
     }
 }
-@media(max-width: 2100px){
+@media(max-width:2700px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 30%;
+        left: 41%;
+        top: 25%;
+       
+        border-radius: 15px;
+ 
+
+    }
     .Modal-label{
         
-        padding: 0px 50px;
+        padding: 5px 50px;
         
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-size: 20px;
+        
+    }
+    .zip-text{
+        
+        font-size: 21px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 300px;
+        height: 35px;
         
         font-size: 21px;
         
-    }
-    .change-zip{
-        width: 100%;
-        margin: 20px 0;
-    }
-    .change-zip input{
-        width: 400px;
-        height: 40px;
-        
-        font-size: 22px;
-      
     
     }
-    .change-zip-link-l{
-        font-size: 22px;
+    .change-zip-link{
         
-        padding: 10px 20px;
-        
+        margin-bottom: 40px;
     }
-    .zip-text{
+    .change-zip-link-l{
+        font-size: 20px;
         
-        font-size: 22px;
+        padding: 5px 35px;
         
-        
+        margin: 10px 0;
+        border-radius: 8px;
     }
 }
-@media(max-width: 1900px){
+
+@media(max-width:2500px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 28%;
+        left: 43%;
+        top: 27%;
+       
+        border-radius: 12px;
+ 
+
+    }
     .Modal-label{
         
-        padding: 0px 50px;
+        padding: 0px 40px;
         
-        
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
         font-size: 18px;
-        
-    }
-    .change-zip{
-        width: 100%;
-        margin: 20px 0;
-    }
-    .change-zip input{
-        width: 400px;
-        height: 30px;
-        
-        font-size: 18px;
-      
-    
-    }
-    .change-zip-link-l{
-        font-size: 18px;
-        
-        padding: 5px 20px;
         
     }
     .zip-text{
         
         font-size: 19px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 30px;
         
+        font-size: 21px;
         
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 40px;
+    }
+    .change-zip-link-l{
+        font-size: 18px;
+        
+        padding: 4px 35px;
+        
+        margin: 5px 0;
+        border-radius: 8px;
     }
 }
 
-@media(max-width: 1700px){
+
+@media(max-width:2200px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 28%;
+        left: 43%;
+        top: 25%;
+       
+        border-radius: 12px;
+ 
+
+    }
     .Modal-label{
         
-        padding: 0px 50px;
+        padding: 0px 30px;
         
-        
-        font-size: 15px;
-        
-    }
-    .change-zip{
-        width: 100%;
-        margin: 15px 0;
-    }
-    .change-zip input{
-        width: 300px;
-        height: 25px;
-        
-        font-size: 15px;
-      
-    
-    }
-    .change-zip-link-l{
-        font-size: 15px;
-        
-        padding: 5px 20px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        font-size: 16px;
         
     }
     .zip-text{
         
         font-size: 16px;
-        
-        
-    }
-}
-
-@media(max-width: 1500px){
-    .Modal-label{
-        
-        padding: 0px 50px;
-        
-        
-        font-size: 13px;
-        
-    }
-    .change-zip{
-        width: 100%;
-        margin: 13px 0;
+        margin-top: 20px;
+        text-align: center;
     }
     .change-zip input{
-        width: 250px;
-        height: 20px;
+        width: 260px;
+        height: 25px;
         
-        font-size: 13px;
-      
+        font-size: 16px;
+        
     
     }
     .change-zip-link{
-        margin-bottom: 40px;
         
-        
+        margin-bottom: 30px;
     }
     .change-zip-link-l{
-        font-size: 13px;
+        font-size: 16px;
         
-        padding: 5px 20px;
+        padding: 4px 35px;
         
+        margin: 3px 0;
+        border-radius: 6px;
+    }
+}
+
+@media(max-width:1800px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 30%;
+        left: 42%;
+        top: 25%;
+       
+        border-radius: 12px;
+ 
+
+    }
+    .Modal-label{
+        
+        padding: 0px 30px;
+        
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        font-size: 16px;
+        
+    }
+    .zip-text{
+        
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 25px;
+        
+        font-size: 16px;
+        
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 30px;
+    }
+    .change-zip-link-l{
+        font-size: 16px;
+        
+        padding: 4px 35px;
+        
+        margin: 3px 0;
+        border-radius: 6px;
+    }
+}
+
+@media(max-width:1700px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 30%;
+        left: 42%;
+        top: 25%;
+       
+        border-radius: 10px;
+ 
+
+    }
+    .Modal-label{
+        
+        padding: 0px 25px;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 14px;
         
     }
     .zip-text{
         
         font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 22px;
         
+        font-size: 14px;
         
-        margin-top: 40px;
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 30px;
+    }
+    .change-zip-link-l{
+        font-size: 14px;
+        
+        padding: 4px 35px;
+        
+        margin: 3px 0;
+        border-radius: 6px;
+    }
+}
+
+@media(max-width:1500px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 35%;
+        left: 39%;
+        top: 25%;
+       
+        border-radius: 10px;
+ 
+
+    }
+    .Modal-label{
+        
+        padding: 0px 25px;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 14px;
+        
+    }
+    .zip-text{
+        
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 22px;
+        
+        font-size: 14px;
+        
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 30px;
+    }
+    .change-zip-link-l{
+        font-size: 14px;
+        
+        padding: 4px 35px;
+        
+        margin: 3px 0;
+        border-radius: 6px;
     }
 }
 
 
-@media(max-width: 1300px){
+@media(max-width:1400px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 35%;
+        left: 36%;
+        top: 25%;
+       
+        border-radius: 10px;
+ 
+
+    }
     .Modal-label{
         
-        padding: 0px 50px;
+        padding: 0px 25px;
         
-        
-        font-size: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 13px;
         
     }
-    .change-zip{
-        width: 100%;
-        margin: 13px 0;
+    .zip-text{
+        
+        font-size: 13px;
+        margin-top: 20px;
+        text-align: center;
     }
     .change-zip input{
-        width: 250px;
-        height: 20px;
+        width: 260px;
+        height: 22px;
         
-        font-size: 10px;
-      
+        font-size: 13px;
+        
     
     }
     .change-zip-link{
+        
         margin-bottom: 30px;
-        
-        
     }
     .change-zip-link-l{
-        font-size: 10px;
+        font-size: 13px;
         
-        padding: 5px 20px;
+        padding: 4px 35px;
         
+        margin: 3px 0;
+        border-radius: 6px;
+    }
+}
+
+
+
+@media(max-width:1200px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 37%;
+        left: 35%;
+        top: 25%;
+       
+        border-radius: 10px;
+ 
+
+    }
+    .Modal-label{
+        
+        padding: 0px 25px;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 13px;
+        
+    }
+    .zip-text{
+        
+        font-size: 13px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 22px;
+        
+        font-size: 13px;
+        
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 30px;
+    }
+    .change-zip-link-l{
+        font-size: 13px;
+        
+        padding: 4px 35px;
+        
+        margin: 3px 0;
+        border-radius: 6px;
+    }
+}
+
+@media(max-width:1100px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 40%;
+        left: 32%;
+        top: 21%;
+       
+        border-radius: 10px;
+ 
+
+    }
+    .Modal-label{
+        
+        padding: 0px 25px;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 12px;
         
     }
     .zip-text{
         
         font-size: 12px;
         margin-top: 20px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 22px;
         
+        font-size: 12px;
+        
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 30px;
+    }
+    .change-zip-link-l{
+        font-size: 12px;
+        
+        padding: 4px 35px;
+        
+        margin: 3px 0;
+        border-radius: 6px;
     }
 }
 
 
-@media(max-width: 1100px){
+
+@media(max-width:900px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 50%;
+        left: 25%;
+        top: 15%;
+       
+        border-radius: 10px;
+ 
+
+    }
     .Modal-label{
         
-        padding: 0px 30px;
+        padding: 0px 25px;
         
-        
-        font-size: 8px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 12px;
         
     }
-    .change-zip{
-        width: 100%;
-        margin: 13px 0;
+    .zip-text{
+        
+        font-size: 12px;
+        margin-top: 20px;
+        text-align: center;
     }
     .change-zip input{
-        width: 180px;
-        height: 20px;
+        width: 260px;
+        height: 22px;
         
-        font-size: 8px;
-      
+        font-size: 12px;
+        
     
     }
     .change-zip-link{
-        margin-bottom: 20px;
         
-        
+        margin-bottom: 30px;
     }
     .change-zip-link-l{
-        font-size: 8px;
+        font-size: 12px;
         
-        padding: 5px 20px;
+        padding: 4px 35px;
         
+        margin: 3px 0;
+        border-radius: 6px;
+    }
+}
+
+@media(max-width:800px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 60%;
+        left: 20%;
+        top: 15%;
+       
+        border-radius: 10px;
+ 
+
+    }
+    .Modal-label{
+        
+        padding: 0px 25px;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 11px;
+        
+    }
+    .zip-text{
+        
+        font-size: 12px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 22px;
+        
+        font-size: 12px;
+        
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 30px;
+    }
+    .change-zip-link-l{
+        font-size: 12px;
+        
+        padding: 4px 35px;
+        
+        margin: 3px 0;
+        border-radius: 6px;
+    }
+}
+
+@media(max-width:700px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 60%;
+        left: 20%;
+        top: 13%;
+       
+        border-radius: 10px;
+ 
+
+    }
+    .Modal-label{
+        
+        padding: 0px 20px;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 10px;
         
     }
     .zip-text{
         
         font-size: 10px;
-        margin-top: 20px;
-        
-    }
-}
-
-
-@media(max-width: 900px){
-    .Modal-label{
-        
-        padding: 0px 20px;
-        
-        
-        font-size: 7px;
-        
-    }
-    .change-zip{
-        width: 100%;
-        margin: 13px 0;
+        margin-top: 15px;
+        text-align: center;
     }
     .change-zip input{
-        width: 150px;
+        width: 260px;
         height: 20px;
         
-        font-size: 8px;
-      
+        font-size: 10px;
+        
     
     }
     .change-zip-link{
-        margin-bottom: 10px;
         
-        
+        margin-bottom: 20px;
     }
     .change-zip-link-l{
-        font-size: 8px;
+        font-size: 10px;
         
-        padding: 5px 20px;
+        padding: 4px 35px;
         
-        
-    }
-    .zip-text{
-        
-        font-size: 8px;
-        margin-top: 10px;
-        
+        margin: 3px 0;
+        border-radius: 6px;
     }
 }
 
-@media(max-width: 700px){
+@media(max-width:600px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 70%;
+        left: 15%;
+        top: 13%;
+       
+        border-radius: 10px;
+ 
+
+    }
     .Modal-label{
         
         padding: 0px 20px;
         
-        
-        font-size: 5px;
-        
-    }
-    .change-zip{
-        width: 100%;
-        margin: 10px 0;
-    }
-    .change-zip input{
-        width: 120px;
-        height: 15px;
-        
-        font-size: 8px;
-      
-    
-    }
-    .change-zip-link{
-        margin-bottom: 5px;
-        
-        
-    }
-    .change-zip-link-l{
-        font-size: 7px;
-        
-        padding: 5px 20px;
-        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 10px;
         
     }
     .zip-text{
         
-        font-size: 6px;
-        margin-top: 5px;
+        font-size: 10px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 20px;
         
+        font-size: 10px;
+        
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 20px;
+    }
+    .change-zip-link-l{
+        font-size: 10px;
+        
+        padding: 4px 35px;
+        
+        margin: 3px 0;
+        border-radius: 6px;
     }
 }
 
-@media(max-width: 500px){
+@media(max-width:500px){
+    .zip-modal-UI{
+        position: fixed;
+        z-index: 400;
+        width: 80%;
+        left: 10%;
+        top: 13%;
+       
+        border-radius: 10px;
+ 
+
+    }
     .Modal-label{
         
         padding: 0px 20px;
         
-        
-        font-size: 3px;
-        
-    }
-    .change-zip{
-        
-        margin: 5px 0;
-    }
-    .change-zip input{
-        width: 90px;
-        height: 10px;
-        
-        font-size: 6px;
-      
-    
-    }
-    .change-zip-link{
-        margin-bottom: 5px;
-        
-        
-    }
-    .change-zip-link-l{
-        font-size: 5px;
-        
-        padding: 5px 20px;
-        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 9px;
         
     }
     .zip-text{
         
-        font-size: 4px;
-        margin-top: 5px;
+        font-size: 10px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .change-zip input{
+        width: 260px;
+        height: 20px;
         
+        font-size: 10px;
+        
+    
+    }
+    .change-zip-link{
+        
+        margin-bottom: 20px;
+    }
+    .change-zip-link-l{
+        font-size: 10px;
+        
+        padding: 4px 35px;
+        
+        margin: 3px 0;
+        border-radius: 6px;
     }
 }
+
