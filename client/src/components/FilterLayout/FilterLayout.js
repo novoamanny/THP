@@ -161,6 +161,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
                 
                     <div className={!mobileSlide ? 'filter-mobile-ui-not-active' : 'filter-mobile-ui-active'}>
                         {/* <QuickFilters setQuickFilters={setQuickFilters} quickFilters={quickFilters}/> */}
+                        <OtherFilters rates={rates} ZipCode={currentZipCode} resultCount={resultCount}/>
                         <div className='mobile-ui-options'>
                             
                             <div className='left-mobile-options'>

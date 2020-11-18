@@ -1119,7 +1119,7 @@
         padding: 12px 15px;
     }
     .tltt span{
-        font-size: 15px;
+        font-size: 16px;
         
     }
    
@@ -1196,7 +1196,7 @@
     }
     .RSC-Top-Left-Three span{
         
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 
@@ -1372,6 +1372,12 @@
     }
     .RSC-Top-Left-Three span{
         
-        font-size: 9px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 700px){
+    .RSC-Top-Left-Three{
+        margin-top: 5px;
     }
 }
