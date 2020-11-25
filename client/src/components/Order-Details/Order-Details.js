@@ -30,7 +30,7 @@ const images = [
     
 ]
 
-const OrderDetails = ({rate,PUCT, provider, setChangePDP, watt}) =>{
+const OrderDetails = ({orderPop,rate,PUCT, provider, setChangePDP, watt}) =>{
 
     
   
@@ -48,9 +48,11 @@ const OrderDetails = ({rate,PUCT, provider, setChangePDP, watt}) =>{
     })
 
     const image = temp;
+
+    // className={orderPop ? 'OD' : 'OD-close'}
    
     return(
-        <div className='OD'>
+        <div className='OD' className={'OD'}>
             <div className='OD-label'>
                 <h2>Your Current Plan</h2>
             </div>

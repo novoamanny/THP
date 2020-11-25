@@ -6,6 +6,11 @@
     height: 98vh;
     /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 }
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .top-filters{
     display: flex;
     flex-wrap: wrap;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Navbar.css'
 
-const Navbar = ({url,mobileSlide, setMobileSlide}) =>{
+const Navbar = ({url,mobileSlide, setMobileSlide, orderPop, setOrderPop}) =>{
     
     
     return(
@@ -22,8 +22,8 @@ const Navbar = ({url,mobileSlide, setMobileSlide}) =>{
                     : 
                     <div className='nav-b-order'>
                         
-                    <div className='nav-button '>
-                        <span>Order Details</span>
+                    <div className='nav-button ' onClick={() => setOrderPop(!orderPop)}>
+                        <span>{orderPop ? 'Close Details' :'Order Details'}</span>
                     </div>
                     </div>
                 }

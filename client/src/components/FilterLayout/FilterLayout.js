@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import LeftFilterOptions from '../Left-Filter-Options/Left-Filter-Options';
 import QuickFilters from '../Quick-Filters/Quick-FIlters';
 import OtherFilters from '../Other-Filters/Other-Filters';
-import RatesResultsCard from '../Rates-Results-Card/Rates-Results-Card';
+import Footer from '../Footer/Footer';
 
 
 import FeaturedRatesSection from '../Featured-Rates-Section/Featured-Rates-Section';
@@ -266,6 +266,10 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
             
              <RatesResultsSection resultData={result} quickFilters={quickFilters} ZipCode={currentZipCode}/>
            </div>
+           <div className='footer'>
+           <Footer/>
+           </div>
+           
            
         </div>
     );

@@ -71,6 +71,9 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                         <div className='RSC-Top-Right-Three-B'>
                             <span>Rate Per KWh</span>
                         </div>
+                        <div className='RSC-Top-Right-Three-B'>
+                            <span>Based on 1000kW usage</span>
+                        </div>
                     </div>
                </div>
             

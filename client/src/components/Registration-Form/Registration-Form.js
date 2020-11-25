@@ -18,6 +18,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
     const onChange = e => setFormData({...formData, [e.target.name]: e.target.value});
     const [SSNBox, setSSNBox] = useState(false);
     const [addressBox, setAddressBox] = useState(true);
+    const [lanBox, setLanBox] = useState(true);
     // const [addressSlide, setAddressSlide] = useState(false);
 
     // const buttonHandle = (e,value) => setFormData({...formData, [e.target.name]: value});
@@ -168,7 +169,13 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                         </div>
 
                     </div>
+
+                    
                     <div className='form-sec-two'>
+
+
+
+
                         <div className='form-sec-two-one' onClick={() => setAddressBox(!addressBox)}>
                             <div className={addressBox ? 'form-sec-two-square checked' : 'form-sec-two-square'} >
 
@@ -181,6 +188,8 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                             <li>{`${Address1} ${City}, ${State} ${ZipCode}`}</li>
                         </div>
                     </div>
+
+                    
                     <div className={ !addressBox ? 'form-sec-three form-sec-three-slide' : 'form-sec-three'}>
                         <div className='form-sec-three-one'>
                             <h2>Current Address</h2>
@@ -235,6 +244,36 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
 
                             </div>
                         </div>
+                    </div>
+
+
+
+                    <div className='form-sec-two'>
+                         <div className='form-sec-two-one'>
+                            
+                            <div className='form-sec-two-option'>
+                                <li>Would you prefer to communicate in English or Spanish?</li>
+                            </div>
+                        </div>
+
+                        <div className='form-sec-two-one' onClick={() => setLanBox(!lanBox)}>
+                            <div className={lanBox ? 'form-sec-two-square checked' : 'form-sec-two-square'} >
+
+                            </div>
+                            <div className='form-sec-two-option'>
+                                <li>English</li>
+                            </div>
+                        </div>
+
+                        <div className='form-sec-two-one' onClick={() => setLanBox(!lanBox)}>
+                            <div className={!lanBox ? 'form-sec-two-square checked' : 'form-sec-two-square'} >
+
+                            </div>
+                            <div className='form-sec-two-option'>
+                                <li>Spanish</li>
+                            </div>
+                        </div>
+
                     </div>
                     
                     

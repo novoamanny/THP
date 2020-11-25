@@ -4,6 +4,9 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
+.OD-close{
+    display: none;
+}
 .OD-label{
     background-color: #ccc;
     width: 100%;
@@ -29,6 +32,7 @@
 }
 .OD-Details-Top{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #fff;
 }
 .OD-Details-Top-T{
     width: 100%;

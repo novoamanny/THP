@@ -52,6 +52,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
     const [mainFormIndex, setMainFormIndex] = useState(0);
     const [changeZipModal, setChangeZipModal] = useState(false)
     const [changePDP, setChangePDP] = useState(false)
+    const [orderPop, setOrderPop] = useState(false);
       const RATE = {
           Provider: match.params.provider,
           rateData: rate && rate[0]
@@ -74,11 +75,12 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
 
     return rateLoading && rate === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div> : (
         <div className='Registration'>
-            <Navbar url={match.params}/>
+            <Navbar url={match.params} orderPop={orderPop} setOrderPop={setOrderPop}/>
             
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
             <RegistrationMidSection metersLoading={metersLoading} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
-            <RegistrationRightSection mainFormIndex={mainFormIndex} rate={rate} PUCT={match.params.PUCT} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
+            <RegistrationRightSection orderPop={orderPop} mainFormIndex={mainFormIndex} rate={rate} PUCT={match.params.PUCT} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
+            
             {
                 changeZipModal && <ChangeZipCodeModal setChangeZipModal={setChangeZipModal} ZipCode={match.params.zipcode}/>
             }
