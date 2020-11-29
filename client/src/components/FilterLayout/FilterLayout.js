@@ -264,7 +264,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
             </div>
            <div>
             
-             <RatesResultsSection resultData={result} quickFilters={quickFilters} ZipCode={currentZipCode}/>
+             <RatesResultsSection resultData={result} watt={quickFilters} ZipCode={currentZipCode}/>
            </div>
            <div className='footer'>
            <Footer/>

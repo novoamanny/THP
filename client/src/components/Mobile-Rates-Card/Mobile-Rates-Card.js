@@ -7,7 +7,7 @@ import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
 import './Mobile-Rates-Card.css';
 
 
-const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode}) =>{
+const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
     const tempPrice = rate.rateData.Rate * 500
     
     const price = Math.round(tempPrice);
@@ -74,7 +74,7 @@ const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode}) =>{
             </div>
             <div className='FRC-row-six'>
                 <div className='FRC-link'>
-                    <Link  to={`/${ZipCode}/${rate.provider}/register/00${rate.rateData.RateID}`} className='FRC-Link'>Check Availability</Link>
+                    <Link  to={`/${ZipCode}/${rate.provider}/enrollment/${rate.PUCT}/00${rate.rateData.RateID}/${watt}`} className='FRC-Link'>Check Availability</Link>
                 </div>
                 <div className='FRC-link-details'>
                     <div className='FRC-link-details-one'>
