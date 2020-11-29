@@ -2,7 +2,7 @@ import React from 'react';
 import './Plan-Details-Pop.css';
 
 const PlanDetailsPop = ({setChangePDP, rate}) =>{
-    
+    console.log(rate)
     return(
         <div className='PDP'>
             <div className='PDP-backdrop' onClick={() => setChangePDP(false)}></div>
@@ -42,12 +42,12 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                     </div>
                     
                 </div>
-                {/* <div className='PDP-label-one'>
-                    <span>Pricing Details</span>
+                <div className='Modal-label'>
+                    <h2>Pricing Details</h2>
                 </div>
-                <div className='PDP-sec-two'>
+                <div className='PDP-sec-two '>
                     <div className='PDP-row'>
-                        <div className='PDP-col'>
+                        <div className='PDP-col '>
                             <span>{`Monthly Usage`}</span>
                         </div>
                         <div className='PDP-col'>
@@ -62,7 +62,7 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                             </div>
                         </div>
                     </div>
-                    <div className='PDP-row'>
+                    {/* <div className='PDP-row'>
                         <div className='PDP-col'>
                             <span>{`Estimated Monthly Bill`}</span>
                         </div>
@@ -77,24 +77,24 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                                 <span>{`$${rate && rate.rateData.Rate * 2000}`}</span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='PDP-row'> 
-                        <div className='PDP-col'>
+                        <div className='PDP-col '>
                             <span>{`Average Price Per KWH (Total / Usage)`}</span>
                         </div>
                         <div className='PDP-col'>
                             <div className='PDP-col-col'>
-                                <span>{`${rate && rate.rateData.Rate}`}</span>
+                                <span>{`${rate && rate.rateData.Rate_500}`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`${rate && rate.rateData.Rate}`}</span>
+                                <span>{`${rate && rate.rateData.Rate_1000}`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`${rate && rate.rateData.Rate}`}</span>
+                                <span>{`${rate && rate.rateData.Rate_2000}`}</span>
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
 
             

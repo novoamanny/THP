@@ -15,7 +15,7 @@
     z-index: 400;
     width: 37%;
     left: 35%;
-    top: 25%;
+    top: 15%;
     background-color: #fff;
     border-radius: 20px;
    border-left: 1px solid rgba(0, 0, 0, 0.1);
@@ -114,7 +114,7 @@
         z-index: 400;
         width: 45%;
         left: 31%;
-        top: 25%;
+        top: 15%;
         
         border-radius: 20px;
 
@@ -127,7 +127,7 @@
         z-index: 400;
         width: 45%;
         left: 34%;
-        top: 20%;
+        top: 15%;
         
         border-radius: 20px;
 
@@ -177,7 +177,7 @@
         z-index: 400;
         width: 45%;
         left: 34%;
-        top: 20%;
+        top: 15%;
         
         border-radius: 20px;
 
@@ -209,8 +209,9 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 25px;
         
+        padding: 50px 100px;
         
     }
     .PDF-btn{
@@ -226,7 +227,7 @@
         z-index: 400;
         width: 45%;
         left: 34%;
-        top: 18%;
+        top: 14%;
         
         border-radius: 15px;
 
@@ -258,8 +259,8 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
-        
+        font-size: 23px;
+        padding: 40px 100px;
         
     }
     .PDF-btn{
@@ -277,7 +278,7 @@
         z-index: 400;
         width: 45%;
         left: 34%;
-        top: 18%;
+        top: 14%;
         
         border-radius: 12px;
 
@@ -309,8 +310,8 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
-        
+        font-size: 21px;
+        padding: 40px 100px;
         
     }
     .PDF-btn{
@@ -327,7 +328,7 @@
         z-index: 400;
         width: 45%;
         left: 34%;
-        top: 18%;
+        top: 14%;
         
         border-radius: 12px;
 
@@ -359,9 +360,9 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 19px;
         
-        
+        padding: 30px 100px;
     }
     .PDF-btn{
         
@@ -380,9 +381,9 @@
         z-index: 400;
         width: 45%;
         left: 34%;
-        top: 18%;
+        top: 14%;
         
-        border-radius: 120px;
+        border-radius: 12px;
 
     }
     .PDP-sec-one{
@@ -415,9 +416,9 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 17px;
         
-        
+        padding: 30px 80px;
     }
     .PDF-btn{
         
@@ -434,7 +435,7 @@
         z-index: 400;
         width: 45%;
         left: 34%;
-        top: 18%;
+        top: 12%;
         
         border-radius: 10px;
 
@@ -469,8 +470,8 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
-        
+        font-size: 15px;
+        padding: 30px 80px;
         
     }
     .PDF-btn{
@@ -488,7 +489,7 @@
         z-index: 400;
         width: 50%;
         left: 30%;
-        top: 18%;
+        top: 12%;
         
         border-radius: 10px;
 
@@ -523,8 +524,8 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
-        
+        font-size: 15px;
+        padding: 30px 80px;
         
     }
     .PDF-btn{
@@ -543,7 +544,7 @@
         z-index: 400;
         width: 55%;
         left: 23%;
-        top: 18%;
+        top: 12%;
         
         border-radius: 10px;
 
@@ -578,7 +579,8 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 15px;
+        padding: 30px 80px;
         
         
     }
@@ -597,7 +599,7 @@
         z-index: 400;
         width: 60%;
         left: 20%;
-        top: 18%;
+        top: 10%;
         
         border-radius: 10px;
 
@@ -632,8 +634,8 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
-        
+        font-size: 13px;
+        padding: 20px 60px;
         
     }
     .PDF-btn{
@@ -650,7 +652,7 @@
         z-index: 400;
         width: 60%;
         left: 20%;
-        top: 18%;
+        top: 10%;
         
         border-radius: 10px;
 
@@ -685,9 +687,13 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 12px;
+        padding: 20px 50px;
         
-        
+    }
+    .PDP-row{
+       
+        padding: 20px 0;
     }
     .PDF-btn{
         
@@ -703,7 +709,7 @@
         z-index: 400;
         width: 70%;
         left: 15%;
-        top: 18%;
+        top: 10%;
         
         border-radius: 10px;
 
@@ -738,9 +744,13 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 12px;
+        padding: 20px 50px;
         
-        
+    }
+    .PDP-row{
+       
+        padding: 20px 0;
     }
     .PDF-btn{
         
@@ -757,7 +767,7 @@
         z-index: 400;
         width: 75%;
         left: 13%;
-        top: 15%;
+        top: 10%;
         
         border-radius: 10px;
 
@@ -792,9 +802,13 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 11px;
+        padding: 20px 50px;
         
-        
+    }
+    .PDP-row{
+       
+        padding: 20px 0;
     }
     .PDF-btn{
         
@@ -811,7 +825,7 @@
         z-index: 400;
         width: 80%;
         left: 10%;
-        top: 15%;
+        top: 10%;
         
         border-radius: 10px;
 
@@ -846,9 +860,13 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 10px;
+        padding: 10px 50px;
         
-        
+    }
+    .PDP-row{
+       
+        padding: 20px 0;
     }
     .PDF-btn{
         
@@ -863,7 +881,7 @@
         z-index: 400;
         width: 85%;
         left: 7%;
-        top: 13%;
+        top: 10%;
         
         border-radius: 10px;
 
@@ -898,9 +916,13 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 10px;
+        padding: 10px 50px;
         
-        
+    }
+    .PDP-row{
+       
+        padding: 20px 0;
     }
     .PDF-btn{
         
@@ -915,7 +937,7 @@
         z-index: 400;
         width: 90%;
         left: 5%;
-        top: 13%;
+        top: 8%;
         
         border-radius: 10px;
 
@@ -950,9 +972,13 @@
     }
     .PDP-sec-two{
        
-        font-size: 27px;
+        font-size: 10px;
+        padding: 10px 50px;
         
-        
+    }
+    .PDP-row{
+       
+        padding: 15px 0;
     }
     .PDF-btn{
         

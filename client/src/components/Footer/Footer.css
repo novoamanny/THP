@@ -1,0 +1,12 @@
+.Footer{
+    border: none;
+    
+}
+.footer-links{
+    text-align: center;
+}
+.footer-links a{
+    margin: 0 10px;
+    color: black;
+}
+ 
