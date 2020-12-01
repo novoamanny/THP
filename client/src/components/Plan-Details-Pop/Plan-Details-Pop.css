@@ -935,8 +935,8 @@
     .PDP-UI{
         position: fixed;
         z-index: 400;
-        width: 90%;
-        left: 5%;
+        width: 95%;
+        left: 2.4%;
         top: 8%;
         
         border-radius: 10px;
@@ -987,8 +987,8 @@
         margin: 0 20px;
     }
 }
-@media(max-width: 400px){
+/* @media(max-width: 400px){
     .PDP-UI{
         width: 100%;
     }
-}
+} */
