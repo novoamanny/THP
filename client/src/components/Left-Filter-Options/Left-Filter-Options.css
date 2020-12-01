@@ -5,7 +5,7 @@
     z-index: 10;
     height: 100%;
     width: 15%;
-    padding-top: 152px;
+    padding-top: 142px;
     background-color: #fff;
     border-right: solid 2px rgba(0,0,0,0.2);;
     margin-left: 10%;
@@ -44,7 +44,7 @@
 }
 @media(max-width: 3200px){
     .Left-Filter-Options{
-        padding-top: 152px;
+        padding-top: 142px;
     }
 }
 @media(max-width: 3110px){
@@ -57,7 +57,7 @@
 }
 @media(max-width: 2900px){
     .Left-Filter-Options{
-        padding-top: 146px;
+        padding-top: 135px;
     }
     .LFOS-title span{
         font-size: 37px;
@@ -85,7 +85,7 @@
 }
 @media(max-width: 2500px){
     .Left-Filter-Options{
-        padding-top: 144px;
+        padding-top: 135px;
     }
 }
 @media(max-width: 2485px){
@@ -100,7 +100,7 @@
         font-size: 33px;
     }
     .Left-Filter-Options{
-        padding-top: 122px;
+        padding-top: 112px;
     }
 }
 @media(max-width: 2000px){
@@ -108,7 +108,7 @@
         font-size: 30px;
     }
     .Left-Filter-Options{
-        padding-top: 116px;
+        padding-top: 108px;
     }
 }
 @media(max-width: 1800px){
@@ -116,7 +116,7 @@
         font-size: 28px;
     }
     .Left-Filter-Options{
-        padding-top: 110px;
+        padding-top: 98px;
     }
 }
 @media(max-width: 1600px){
@@ -124,13 +124,13 @@
         font-size: 25px;
     }
     .Left-Filter-Options{
-        padding-top: 105px;
+        padding-top: 95px;
     }
 }
 @media(max-width: 1500px){
     .Left-Filter-Options{
        
-        padding-top: 95px;
+        padding-top: 85px;
         width: 12%;
     }
     
