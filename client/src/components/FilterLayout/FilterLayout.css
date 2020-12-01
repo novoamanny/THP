@@ -374,10 +374,14 @@
         height: 12px;
        
     }
-    .mobile-option{
+    .filter-mobile-ui-active{
+        position: fixed;
+        top: 40px;
+        z-index:300;
+    }
         
         
-    }.mobile-ui-options{
+    .mobile-ui-options{
        
         
         margin-top: 20px;
@@ -428,10 +432,6 @@
         width: 100%;
         margin: 2px;
         padding: 6px 0;
-    }.mobile-ui-options{
-       
-        
-    
     }
     .hide-filters-button{
         width: 280px;
@@ -519,10 +519,6 @@
        width: 100%;
        margin: 2px;
        padding: 3px 0;
-   }.mobile-ui-options{
-      
-       
-   
    }
    .hide-filters-button{
        width: 280px;
@@ -534,7 +530,20 @@
    .filter-mobile-ui-active{
        display: flex;
        flex-wrap: wrap;
+    
+        position: fixed;
+        top: 35px;
+        z-index:300;
+    
    }
+   
+}
+@media(max-width: 700px){
+    .filter-mobile-ui-active{
+        position: fixed;
+        top: 35px;
+        z-index:300;
+    }
 }
 @media(max-width: 600px){
     /* .filter-mobile-button{
