@@ -417,7 +417,7 @@
     }
     .mobile-ui-options{
         font-size: 13px;
-        width: 68%;
+        width: 100%;
         padding-top: 5px;
         margin: 0;
         border-top: none;
@@ -504,7 +504,7 @@
    }
    .mobile-ui-options{
        font-size: 11px;
-       width: 68%;
+       width: 100%;
        padding-top: 5px;
        margin: 0;
        border-top: none;
