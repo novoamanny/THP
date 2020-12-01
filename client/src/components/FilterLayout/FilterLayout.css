@@ -528,8 +528,8 @@
        
    }
    .filter-mobile-ui-active{
-       display: flex;
-       flex-wrap: wrap;
+       /* display: flex;
+       flex-wrap: wrap; */
     
         position: fixed;
         top: 35px;
