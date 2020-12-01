@@ -54,7 +54,7 @@
     font-style: normal;
 }
 .RSC-Top-Left-Three {
-   margin-top: 10px;
+   margin-top: 0px;
    cursor: pointer;
 }
 .RSC-Top-Left-Three span{
@@ -100,7 +100,7 @@
 .RSC-Top-Right-Two{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .RSC-Top-Right-Two-T{
     width: 100%;
@@ -126,7 +126,7 @@
 .RSC-Top-Right-Three{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .RSC-Top-Right-Three-T{
     width: 100%;
@@ -311,6 +311,7 @@
     }
     .RSC-Top-Left-Two{
         margin-left: 50px;
+        margin-top: 0px;
     }
     .RSC-Top-Left-Three span{
       
@@ -385,6 +386,9 @@
         font-size: 20px;
         
     }
+    .RSC-Top-Right{
+        width: 40%;
+    }
     .RSC-Top-Left-One img{
         height: 90px;
         width: 150px;
@@ -453,6 +457,9 @@
      
         font-size: 17px;
         
+    }
+    .RSC-Top{
+        padding: 20px 50px;
     }
    
     .RSC-Top-Left-One img{
@@ -693,12 +700,12 @@
 
 @media(max-width:1600px){
     .RSC-Top{
-        padding: 30px 30px;
+        padding: 20px 40px;
     }
 }
 @media(max-width: 1500px){
     .RSC-Top{
-        padding: 23px 20px;
+        padding: 20px 30px;
     }
 }
 @media(max-width: 1400px){
@@ -949,7 +956,7 @@
   
     .RSC-Top{
        
-        padding: 13px 30px;
+        padding: 15px 30px;
     }
     .tltt span{
         font-size: 17px;
@@ -1030,7 +1037,7 @@
 @media(max-width: 1000px){
     .RSC-Top{
        
-        padding: 12px 20px;
+        padding: 12px 30px;
     }
     .tltt span{
         font-size: 17px;
@@ -1045,7 +1052,7 @@
 
     .RSC-Top-Left-Two{
         margin-left: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
      
     }
     .RSC-Top-Left-One img{
@@ -1116,7 +1123,7 @@
 @media(max-width: 900px){
     .RSC-Top{
        
-        padding: 12px 15px;
+        padding: 12px 30px;
     }
     .tltt span{
         font-size: 16px;
@@ -1131,7 +1138,7 @@
 
     .RSC-Top-Left-Two{
         margin-left: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
      
     }
     .RSC-Top-Left-One img{
@@ -1204,7 +1211,7 @@
   
     .RSC-Top{
        
-        padding: 12px 10px;
+        padding: 12px 30px;
     }
     .tltt span{
         font-size: 15px;
@@ -1219,7 +1226,7 @@
 
     .RSC-Top-Left-Two{
         margin-left: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
      
     }
     .RSC-Top-Left-One img{
@@ -1291,7 +1298,7 @@
   
     .RSC-Top{
        
-        padding: 8px 8px;
+        /* padding: 8px 8px; */
     }
     .tltt span{
         font-size: 13px;
@@ -1306,7 +1313,7 @@
 
     .RSC-Top-Left-Two{
         margin-left: 10px;
-        margin-top: 5px;
+        margin-top: 0px;
      
     }
     .RSC-Top-Left-One img{
@@ -1378,6 +1385,6 @@
 
 @media(max-width: 700px){
     .RSC-Top-Left-Three{
-        margin-top: 5px;
+        margin-top: 0px;
     }
 }

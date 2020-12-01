@@ -440,10 +440,10 @@
 
         
     }
-    .filter-mobile-ui-active{
-        /* display: flex;
-        flex-wrap: wrap; */
-    }
+    /* .filter-mobile-ui-active{
+        display: flex;
+        flex-wrap: wrap;
+    } */
 }
 @media(max-width: 800px){
       /* .filter-mobile-button{
