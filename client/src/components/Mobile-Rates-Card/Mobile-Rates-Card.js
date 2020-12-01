@@ -33,9 +33,7 @@ const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     <div className='FRC-image'>
                         <img src={rate.image}/>
                     </div>
-                    <div className='FRC-id'>
-                        <span>{`PUCT #${rate.PUCT}`}</span>
-                    </div>
+                   
                     <div className='FRC-price'>
                         
                         <span>{price}</span>
@@ -43,6 +41,9 @@ const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     </div>
                 </div>
                 <div className='FRC-two-B'>
+                    <div className='FRC-id'>
+                        <span>{`PUCT #${rate.PUCT}`}</span>
+                    </div>
                     <div className='FRC-details-btn' onClick={() => setChangePDP(true)}>
                         <span>Plan Details</span>
                     </div>
