@@ -42,7 +42,11 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                         <span>Plan Details</span>
                     </div>
                     <div className='FRC-other-info'>
-                        <span>2000 KWH</span>
+                        <div>
+                        <span>{'Based on usage'}</span>
+                        </div>
+                        
+                        <span>{'2000 kWh'}</span>
                     </div>
                 </div>
                 

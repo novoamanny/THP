@@ -84,6 +84,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                                 <span>&#162;</span>
                             </div>
                             <div className='DTBR-three'>
+                                <p>{`Based on usage`}</p>
                                 <p>{`2000 kwh`}</p>
                             </div>
                         </div>
