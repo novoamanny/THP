@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .FRC-row-one, .FRC-row-two, .FRC-row-three, .FRC-row-four, .FRC-row-five, .FRC-row-six, .FRC-row-seven {
     width: 100%;
     display: flex;
@@ -20,7 +21,7 @@
     padding: 10px 0;
 }
 .FRC-id{
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -89,6 +90,9 @@
     justify-content: center;
     
 }
+.full-width{
+    width: 100%;
+}
 .FRC-price span{
     margin-top: 30px;
     font-family: "industry", sans-serif;
@@ -101,7 +105,7 @@
 
 
 .FRC-details-btn{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     
@@ -124,7 +128,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px 0;
+    padding: 0px 0;
 
     
 }

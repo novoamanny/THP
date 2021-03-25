@@ -12,7 +12,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                 changePDP && <PlanDetailsPop setChangePDP={setChangePDP} rate={rate}/>
             }
             <div className='FRC-row-one'>
-                <div className='FRC-id'>
+                <div className='FRC-id full-width'>
                     <span>{`${rate.provider} | #00${rate.rateData.RateID}`}</span>
                 </div>
                 <div className='FRC-name'>
@@ -38,9 +38,6 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     <div className='FRC-id'>
                         <span>{`PUCT #${rate.PUCT}`}</span>
                     </div>
-                    <div className='FRC-details-btn' onClick={() => setChangePDP(true)}>
-                        <span>Plan Details</span>
-                    </div>
                     <div className='FRC-other-info'>
                         <div>
                         <span>{'Based on usage'}</span>
@@ -48,6 +45,10 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                         
                         <span>{'2000 kWh'}</span>
                     </div>
+                    <div className='FRC-details-btn' onClick={() => setChangePDP(true)}>
+                        <span>Plan Details</span>
+                    </div>
+                   
                 </div>
                 
             </div>
