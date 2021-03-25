@@ -30,7 +30,7 @@ const images = [
     
 ]
 
-const OrderDetails = ({orderPop,rate,PUCT, provider, setChangePDP, watt}) =>{
+const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) =>{
 
     
   
@@ -80,11 +80,11 @@ const OrderDetails = ({orderPop,rate,PUCT, provider, setChangePDP, watt}) =>{
                                 <p>Rate Per KWh</p>
                             </div>
                             <div className='DTBR-two'>
-                                <span>{rate && rate[0].Rate * 100}</span>
+                                <span>{rate && rate[0].Rate * 200}</span>
                                 <span>&#162;</span>
                             </div>
                             <div className='DTBR-three'>
-                                <p>{`${watt} kwh`}</p>
+                                <p>{`2000 kwh`}</p>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ const OrderDetails = ({orderPop,rate,PUCT, provider, setChangePDP, watt}) =>{
                     </div> */}
                     <div className='OD-Details-Two'>
                         <div className='OD-Details-Two-1'>
-                            <p>Contract Length</p>
+                            <p>Term Length</p>
                         </div>
                         <div className='OD-Details-Two-2'>
                             <h2>{rate && rate[0].Term}</h2>
@@ -120,6 +120,38 @@ const OrderDetails = ({orderPop,rate,PUCT, provider, setChangePDP, watt}) =>{
                         </div>
                         <div className='OD-Details-Four-2'>
                             <h2>{`$${rate && rate[0].CancellationFeeAmount}/month remaining in contract`}</h2>
+                        </div>
+                    </div>
+                    <div className='OD-Details-Three'>
+                        <div className='OD-Details-Three-1'>
+                            <p>Company Name:</p>
+                        </div>
+                        <div className='OD-Details-Three-2'>
+                            <h2>{provider}</h2>
+                        </div>
+                    </div>
+                    <div className='OD-Details-Three'>
+                        <div className='OD-Details-Three-1'>
+                            <p>Hours of Operation</p>
+                        </div>
+                        <div className='OD-Details-Three-2'>
+                            <h2>{data.HOO}</h2>
+                        </div>
+                    </div>
+                    <div className='OD-Details-Three'>
+                        <div className='OD-Details-Three-1'>
+                            <p>Customer Support</p>
+                        </div>
+                        <div className='OD-Details-Three-2'>
+                            <h2>{data.Phone}</h2>
+                        </div>
+                    </div>
+                    <div className='OD-Details-Three'>
+                        <div className='OD-Details-Three-1'>
+                            <p>Customer Support</p>
+                        </div>
+                        <div className='OD-Details-Four-2'>
+                            <h2>{data.Email_Address}</h2>
                         </div>
                     </div>
                     <div className='OD-Details-Five'>

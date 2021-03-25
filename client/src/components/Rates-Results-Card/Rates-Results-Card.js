@@ -60,19 +60,19 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                             <span>{`${rate && rate.rateData.Term} Months`}</span>
                         </div>
                         <div className='RSC-Top-Right-Two-B'>
-                            <span>Contract Details</span>
+                            <span>Term Length</span>
                         </div>
                         </div>
                      <div className='RSC-Top-Right-Three'>
                         <div className='RSC-Top-Right-Three-T'>
-                            <span>{`${rate && rate.rateData.Rate * 100}`}</span>
+                            <span>{`${rate && rate.rateData.Rate * 200}`}</span>
                             <span>&#162;</span>
                         </div>
                         <div className='RSC-Top-Right-Three-B'>
                             <span>Rate Per KWh</span>
                         </div>
                         <div className='RSC-Top-Right-Three-B'>
-                            <span>Based on 1000kW usage</span>
+                            <span>Based on 2000kW usage</span>
                         </div>
                     </div>
                </div>

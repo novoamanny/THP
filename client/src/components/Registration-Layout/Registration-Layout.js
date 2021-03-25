@@ -26,7 +26,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         getRate( match.params.id, match.params.provider, match.params.zipcode);
         
       },[getRate])
-      console.log(match.params)
+      
       
       const [formData, setFormData] = useState({
         EmailAddress: null,
@@ -48,7 +48,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         DOBYear: '',
         route: ''
     })
-
+    
     const [mainFormIndex, setMainFormIndex] = useState(0);
     const [changeZipModal, setChangeZipModal] = useState(false)
     const [changePDP, setChangePDP] = useState(false)
@@ -65,21 +65,27 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
           })
       }
 
+    //   DATA
       const data = {
-          RateID: rate && rate[0].RateID,
-          ZipCode: match.params.zipcode,
-          Rate: rate && rate[0].Rate,
-          Provider: match.params.provider
+        RateID: rate && rate[0].RateID,
+        ZipCode: match.params.zipcode,
+        Rate: rate && rate[0].Rate,
+        Provider: match.params.provider,
+        PUCT: '10259',
+        Phone: '833-785-7797',
+        Email_Address: 'customercare@pulsepowertexas.com',
+        HOO: '8 AM - 5 PM'
+
       }
-      
+    console.log(RATE)
 
     return rateLoading && rate === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div> : (
         <div className='Registration'>
             <Navbar url={match.params} orderPop={orderPop} setOrderPop={setOrderPop}/>
-            
+          
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
             <RegistrationMidSection metersLoading={metersLoading} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={data} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
-            <RegistrationRightSection orderPop={orderPop} mainFormIndex={mainFormIndex} rate={rate} PUCT={match.params.PUCT} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
+            <RegistrationRightSection orderPop={orderPop} data={data} mainFormIndex={mainFormIndex} rate={rate} PUCT={match.params.PUCT} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
             
             {
                 changeZipModal && <ChangeZipCodeModal setChangeZipModal={setChangeZipModal} ZipCode={match.params.zipcode}/>

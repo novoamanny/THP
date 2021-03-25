@@ -83,7 +83,9 @@ router.post('/get/rates/',
                 name: 'Pulse',
                 data: pulseRates.data,
                 PUCT: '10259',
-                Phone: '833-785-7797'
+                Phone: '833-785-7797',
+                Email_Address: 'customercare@pulsepowertexas.com',
+                HOO: '8 AM - 5 PM'
             },
             // {
             //     name: 'etg',

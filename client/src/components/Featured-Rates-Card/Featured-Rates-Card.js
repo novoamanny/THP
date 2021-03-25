@@ -64,7 +64,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             </div> */}
             <div className='FRC-row-five'>
                 <div className='FRC-length-label'>
-                    <span>Contract Length</span>
+                    <span>Term Length</span>
                 </div>
                 <div className='FRC-length'>
                     <span>{`${rate.rateData.Term} Months`}</span>

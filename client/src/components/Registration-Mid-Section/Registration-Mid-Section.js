@@ -32,6 +32,7 @@ const RegistrationMidSection = ({data, getMeters, meters, metersLoading, postReg
   
     return(
         <div className='RMS'>
+          
             {
                 mainFormIndex === 0 && <QuestionFormSquare metersLoading={metersLoading} answers={answers} questionHandle={questionHandle} setChangeZipCodeModal={setChangeZipModal} setMainFormData={setFormData} mainFormData={formData} meters={meters} getMeters={getMeters} ZipCode={ZipCode} Provider={Provider} setMainFormIndex={setMainFormIndex}/>
             }
