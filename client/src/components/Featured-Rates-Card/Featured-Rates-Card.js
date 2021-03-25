@@ -30,7 +30,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     </div>
                     <div className='FRC-price'>
                         
-                        <span>{rate.rateData.Rate * 100}</span>
+                        <span>{Math.round(rate.rateData.Rate_2000 * 100)}</span>
                         <span>&#162;</span>
                     </div>
                 </div>
@@ -42,9 +42,10 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                         <span>Plan Details</span>
                     </div>
                     <div className='FRC-other-info'>
-                        {/* <span>2000 KWH</span> */}
+                        <span>2000 KWH</span>
                     </div>
                 </div>
+                
             </div>
             <div className='FRC-row-three'>
                 
@@ -52,7 +53,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                 
                
             </div>
-            <div className='FRC-row-four'>
+            {/* <div className='FRC-row-four'>
                 <div className='FRC-bill-desc'>
                     <span>{`Based on ${2000} KWH`}</span>
                 </div>
@@ -61,7 +62,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     <span>{`${rate.rateData.Rate * 200}`}&#162;</span>
                    
                 </div>
-            </div>
+            </div> */}
             <div className='FRC-row-five'>
                 <div className='FRC-length-label'>
                     <span>Term Length</span>

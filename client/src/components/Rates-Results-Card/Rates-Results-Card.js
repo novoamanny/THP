@@ -65,7 +65,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                         </div>
                      <div className='RSC-Top-Right-Three'>
                         <div className='RSC-Top-Right-Three-T'>
-                            <span>{`${rate && rate.rateData.Rate * 200}`}</span>
+                            <span>{`${Math.round(rate.rateData.Rate_2000 * 100)}`}</span>
                             <span>&#162;</span>
                         </div>
                         <div className='RSC-Top-Right-Three-B'>

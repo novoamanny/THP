@@ -80,7 +80,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                                 <p>Rate Per KWh</p>
                             </div>
                             <div className='DTBR-two'>
-                                <span>{rate && rate[0].Rate * 200}</span>
+                                <span>{rate && Math.round(rate[0].Rate_2000 * 100)}</span>
                                 <span>&#162;</span>
                             </div>
                             <div className='DTBR-three'>
