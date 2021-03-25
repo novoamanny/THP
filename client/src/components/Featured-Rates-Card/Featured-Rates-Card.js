@@ -52,16 +52,16 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                 
                
             </div>
-            {/* <div className='FRC-row-four'>
+            <div className='FRC-row-four'>
                 <div className='FRC-bill-desc'>
-                    <span>{`Estimated Montly Bill Based on ${watt} KWH`}</span>
+                    <span>{`Based on ${2000} KWH`}</span>
                 </div>
                 <div className='FRC-bill-price'>
                 
-                    <span>{`$${rate.rateData.Rate * 500}`}</span>
+                    <span>{`$${rate.rateData.Rate * 200}`}</span>
                    
                 </div>
-            </div> */}
+            </div>
             <div className='FRC-row-five'>
                 <div className='FRC-length-label'>
                     <span>Term Length</span>
