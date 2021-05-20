@@ -61,7 +61,29 @@
 .SFS-text{
     width: 90%;
     margin-left:20px;
+    font-weight: 700;
     font-size: 28px;
+}
+.SFS-text-two{
+    width: 90%;
+    margin-left:40px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.SFS-text-two:nth-child(3){
+    margin-top: 30px;
+}
+.SFS-text-details{
+    width: 90%;
+    margin-left:40px;
+    margin-top: 20px;
+    font-size: 25px;
+    list-style: disc;
+}
+
+.highlight{
+    background-color: #ccff00;
+    margin-left: 10px;
 }
 @media(max-width: 2800px){
     .SFS-title{
@@ -86,6 +108,16 @@
         
         
         font-size: 24px;
+    }
+    .SFS-text-two{
+        
+        
+        font-size: 22px;
+    }
+    .SFS-text-details{
+        
+        
+        font-size: 22px;
     }
 }
 @media(max-width: 2200px){
@@ -112,6 +144,16 @@
         
         font-size: 21px;
     }
+    .SFS-text-two{
+        
+        
+        font-size: 19px;
+    }
+    .SFS-text-details{
+        
+        
+        font-size: 19px;
+    }
 }
 @media(max-width: 1900px){
     .SFS-title{
@@ -136,6 +178,16 @@
         
         
         font-size: 17px;
+    }
+    .SFS-text-two{
+        
+        
+        font-size: 15px;
+    }
+    .SFS-text-details{
+        
+        
+        font-size: 15px;
     }
 }
 @media(max-width: 1600px){
@@ -162,6 +214,19 @@
         margin-left:15px;
         font-size: 14px;
     }
+    .SFS-text-two{
+        
+        
+        font-size: 12px;
+    }
+    .SFS-text-two:nth-child(3){
+        margin-top: 20px;
+    }
+    .SFS-text-details{
+        
+        
+        font-size: 12px;
+    }
 }
 @media(max-width: 1400px){
     .SFS-title{
@@ -187,6 +252,16 @@
         margin-left:12px;
         font-size: 12px;
     }
+    .SFS-text-two{
+        
+        
+        font-size: 10px;
+    }
+    .SFS-text-details{
+        
+        
+        font-size: 10px;
+    }
 }
 @media(max-width: 900px){
     .SFS-title{
@@ -211,6 +286,16 @@
         
         margin-left:12px;
         font-size: 10px;
+    }
+    .SFS-text-two{
+        
+        
+        font-size: 9px;
+    }
+    .SFS-text-details{
+        
+        
+        font-size: 9px;
     }
     .SFS-questions{
        
@@ -241,6 +326,16 @@
     .SFS-text{
         
         margin-left:12px;
+        font-size: 8px;
+    }
+    .SFS-text-two{
+        
+        
+        font-size: 8px;
+    }
+    .SFS-text-details{
+        
+        
         font-size: 8px;
     }
     .SFS-questions{
