@@ -117,13 +117,14 @@ router.post('/get/rates/',
 
 });
 
-router.post('/get/rate/:id',
+router.post('/get/rate/',
 [
     check('RateID', 'Need Rate ID...').not().isEmpty(),
     check('ZipCode', 'Need Zipcode...').not().isEmpty(),
     check('Provider', 'Need Provider...').not().isEmpty()
 ],
     async (req, res) =>{
+        
         const errors = validationResult(req);
 
         if(!errors.isEmpty()){

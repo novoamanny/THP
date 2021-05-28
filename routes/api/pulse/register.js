@@ -117,7 +117,7 @@ router.post('/',
             return res.status(400).json({errors: errors.array()});
         }         
 
-        const {FirstName, LastName, EmailAddress, Phone, ZipCode, Esiid, SwitchType, SSN, RateID, Rate, Provider, Date, ROUTE} = req.body;
+        const {FirstName, LastName, EmailAddress, Phone, ZipCode, Esiid, SwitchType, SSN, RateID, Rate, Provider, Date, MarketingEmails, MarketingPhoneCalls, Ebilling, PriorityMoveIn, AuthorizedRep, Language, ROUTE} = req.body;
         
        
 
@@ -136,7 +136,13 @@ router.post('/',
                     SSN,
                     RateID,
                     Rate,
-                    Date
+                    Date,
+                    MarketingEmails,
+                    MarketingPhoneCalls, 
+                    Ebilling,
+                    PriorityMoveIn,
+                    AuthorizedRep: AuthorizedRep && AuthorizedRep,
+                    Language: Language && Language
                 });
             }else{
                 body = JSON.stringify({
