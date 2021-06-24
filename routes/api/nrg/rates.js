@@ -83,7 +83,7 @@ router.post('/tdsp/',
 
             // Combine
             const response = NRG_BRAND_IDENTIFIERS.map((brand, index) =>{
-                return {...array[index], ...brand}
+                return {...array[index], ...brand, servZipCode: ZipCode, channelType: 'AFF', affiliateId}
             })
 
             // Respond
@@ -101,7 +101,34 @@ router.post('/tdsp/',
 
 // O F F E R  C A L L S
 
+router.post('/getOffers/',
+    [
+        check('affiliateId', 'Affiliate ID').not().isEmpty(),
+        check('companyCode', 'Company Code').not().isEmpty(),
+        check('tdspCodeCCS', 'TDSP CODE CCS').not().isEmpty(),
+        check('promoCode', 'Promo Code').not().isEmpty()
+    ],
+        async (req, res) =>{
+            const errors = validationResult(req);
+            if(!errors.isEmpty()){
+                return res.status(400).json({errors: errors.array()});
+            }
 
+
+            const {affiliateId, companyCode, tdspCodeCCS, promoCode} = req.body;
+
+            try{
+
+                const response = await axios(`https://stg-api.nrg.com/NRGREST/rest/sales/offers?channelType=AA&affiliateId=${affiliateId}&companyCode=${companyCode}&brandId=RE&languageCode=E&transactionType=MVI&tdspCodeCCS=${tdspCodeCCS}&promoCode=${promoCode}&esid`, config);
+
+                
+                res.json(response.data);
+            }catch(err){
+                console.error(err.message);
+            res.status(500).send('Server error');
+            }
+    }
+)
 
 
 
