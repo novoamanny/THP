@@ -52,7 +52,7 @@ export const postRegister = (form) => async dispatch =>{
         
     try{
         
-        const res = await axios.post(`/api/pulse/register/`, body, config);
+        const res = await axios.post(`http://localhost:8080/api/pulse/register/`, body, config);
         
         
         let data = {
@@ -86,7 +86,7 @@ export const getMeters = (form) => async dispatch =>{
 
     try{
 
-        const res = await axios.post(`/api/pulse/register/get/meters`, body, config);
+        const res = await axios.post(`http://localhost:8080/api/pulse/register/get/meters`, body, config);
         
         dispatch({
 

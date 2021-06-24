@@ -44,6 +44,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         Date: null,
         SwitchType: null,
         DOBMonth: '',
+        DriverLicense: null,
         DOBDay: '',
         DOBYear: '',
         route: ''
@@ -80,7 +81,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
     console.log(RATE)
 
     return rateLoading && rate === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div> : (
-        <div className='Registration'>
+        <div id='capture' className='Registration'>
             <Navbar url={match.params} orderPop={orderPop} setOrderPop={setOrderPop}/>
           
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>

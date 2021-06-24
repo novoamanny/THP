@@ -10,7 +10,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
     
         
 
-    const {EmailAddress, FirstName, LastName, Phone, Address1, City, State, SwitchType, SSN, Esiid, Date, DOBDay, DOBMonth, DOBYear} = formData;
+    const {EmailAddress, FirstName, LastName, Phone, Address1, City, State, SwitchType, SSN, Esiid, Date, DOBDay, DOBMonth, DriverLicense, DOBYear} = formData;
 
     const {RateID, Rate, ZipCode, Provider} = data && data;
 
@@ -146,6 +146,18 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                     <input name='EmailAddress' placeholder='Email Name' type='email' value={EmailAddress} onChange={(e) => onChange(e)}/>
                                 </div>
                             </div>
+                            
+                            <div className='form-email'>
+                                <div className='form-label'>
+                                    <span>Driver License #</span>
+                                </div>
+                                <div className='form-input'>
+                                    <input name='DriverLicense' placeholder='Diver License #' type='text' value={DriverLicense} onChange={(e) => onChange(e)}/>
+                                </div>
+                            </div>
+
+
+
                             <div className='form-DOB'>
                                 <div className='form-label'>
                                     <span>Date of Birth (MM/DD/YYYY)</span>

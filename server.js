@@ -10,6 +10,7 @@ app.use(cors())
 
 app.use('/api/pulse/rates', require('./routes/api//pulse/rates'));
 app.use('/api/pulse/register', require('./routes/api/pulse/register'));
+app.use('/api/nrg/rates', require('./routes/api/nrg/rates'));
 
 // const PORT = process.env.PORT || 5000;
 const PORT = 8080

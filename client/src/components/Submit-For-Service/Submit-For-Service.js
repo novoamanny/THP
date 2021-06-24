@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import RegisterFormButtons from '../Register-Form-Buttons/Register-Form-Buttons';
 
+import html2Canvas from 'html2canvas';
+
 import './Submit-For-Service.css';
 
 
@@ -48,7 +50,7 @@ const SubmitForService = ({mainFormIndex, setMainFormIndex, data}) =>{
     ];
 
     return(
-        <div className='SFS'>
+        <div   className='SFS'>
             <div className='qfs-question'>
                 <h2>Submit For Enrollment</h2>
             </div>
