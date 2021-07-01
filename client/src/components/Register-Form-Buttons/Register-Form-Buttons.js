@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import htmlCanvas from 'html2canvas';
+// import htmlCanvas from 'html2canvas';
 
 import './Register-Form-Buttons.css';
 
@@ -12,10 +12,10 @@ const RegisterFormButtons = ({disabledOn, setMainFormIndex, mainFormIndex, onSub
     const clickHandle = () =>{
         
         if(mainFormIndex === 3){
-             htmlCanvas(document.getElementById('capture')).then((canvas) => {
-                const image = canvas.toDataURL("image/jpg");
-                console.log(image);
-            })
+            //  htmlCanvas(document.getElementById('capture')).then((canvas) => {
+            //     const image = canvas.toDataURL("image/jpg");
+            //     console.log(image);
+            // })
             setMainFormIndex(add);
             
         }else{

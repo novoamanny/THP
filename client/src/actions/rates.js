@@ -18,8 +18,16 @@ export const getRates = (ZipCode, filterOptions) => async dispatch =>{
     
 
     try {
+
+      // PULSE
         const res = await axios.post(`http://localhost:8080/api/pulse/rates/get/rates/`, body, config);
 
+      // NRG
+        const res2 = await axios.post('http://localhost:8080/api/nrg/rates/tdsp', body, config);
+
+        const result = [...res.data, ...res2.data];
+
+        console.log(result);
           
         dispatch({
           type: GET_RATES_SUCCESS,
