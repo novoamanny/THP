@@ -10,27 +10,6 @@ const images = [
         img: require('../../images/pulse.png'),
         provider: 'Pulse'
     },
-    {
-        img: require('../../images/energy-to-go-rgb-logo.png'),
-        provider: 'etg'
-    },
-    {
-        img: require('../../images/lone-star-energy-rgb-logo.png'),
-        provider: 'lonestar'
-    },
-    {
-        img: require('../../images/new-power-texas-rgb-logo.png'),
-        provider: 'newpower'
-    },
-    {
-        img: require('../../images/power-next-rgb-logo.png'),
-        provider: 'powernext'
-    },
-    
-    
-    
-   
-    
 ]
 
 

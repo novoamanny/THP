@@ -110,7 +110,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
             prov.data && prov.data.forEach(rate => {
                 
                 temp = {
-                    provider: prov.name,
+                    provider: prov.brand,
                     rateData: rate,
                     PUCT: prov.PUCT,
                     Phone: prov.Phone

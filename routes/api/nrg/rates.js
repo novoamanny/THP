@@ -23,7 +23,7 @@ const username = 'Texashome'
 const password = 'Bhyqf!S56homesA'
 
 const token = Buffer.from(`${username}:${password}`).toString('base64');
-console.log(token)
+
 // const token ='VGV4YXNob21lOkJoeXFmIVM1NmhvbWVzQQ=='
 
 
@@ -32,21 +32,17 @@ const config = {
         'Content-Type': 'application/json',
         Authorization: `Basic ${token}`,
         'Cookie' : 'SMCHALLENGE=YES'
-        
-       
-        
+  
     },
-   
-   
-    
+  
 }
 
 
 
-// T D S P  C O D E
+// T D S P  C O D E  &&  O F F E R S
 
 
-router.post('/tdsp/',
+router.post('/getOffers/',
 [
     check('ZipCode', 'ZipCode is required...').not().isEmpty()
 ],
@@ -61,6 +57,7 @@ router.post('/tdsp/',
         try{
            
             let array = []
+            
 
             /*
                 Fetches Data from each companyCode in NRG_BRAND_IDENTIFIERS 
@@ -78,15 +75,40 @@ router.post('/tdsp/',
                 const response = await axios.post('https://stg-api.nrg.com/NRGREST/rest/sales/tdsp', body, config);
                 array = [...array, response.data.tdspData[0]];
                 
-            }
+            };
             
 
-            // Combine
-            const response = NRG_BRAND_IDENTIFIERS.map((brand, index) =>{
+            // Combine TDSP CODES
+            const TDSPCodes = NRG_BRAND_IDENTIFIERS.map((brand, index) =>{
                 return {...array[index], ...brand, servZipCode: ZipCode, channelType: 'AFF', affiliateId}
-            })
+            });
 
-            // Respond
+                
+  
+
+            let OffersArray = [];
+
+            for (code of TDSPCodes){
+                const response = await axios(`https://stg-api.nrg.com/NRGREST/rest/sales/offers?channelType=${code.channelType}&affiliateId=${code.affiliateId}&companyCode=${code.companyCode}&brandId=RE&languageCode=E&transactionType=MVI&tdspCodeCCS=${code.tdspCodeCCS}&promoCode=${code.promoCode}&esid`, config);
+
+                for(offer of response.data.affiliateOfferList){
+                    let temp = {
+                        brand: code.brand,
+                        data: offer,
+                        PUCT: '10259',
+                        Phone: '833-785-7797',
+                        Email_Address: 'customercare@pulsepowertexas.com',
+                        HOO: '8 AM - 5 PM',
+                        ...code
+                    }
+    
+                    OffersArray = [...OffersArray, temp];
+                }
+                
+            };
+
+            const response = OffersArray;
+
             res.json(response);
 
         }
@@ -97,38 +119,6 @@ router.post('/tdsp/',
     }
 )
 
-
-
-// O F F E R  C A L L S
-
-router.post('/getOffers/',
-    [
-        check('affiliateId', 'Affiliate ID').not().isEmpty(),
-        check('companyCode', 'Company Code').not().isEmpty(),
-        check('tdspCodeCCS', 'TDSP CODE CCS').not().isEmpty(),
-        check('promoCode', 'Promo Code').not().isEmpty()
-    ],
-        async (req, res) =>{
-            const errors = validationResult(req);
-            if(!errors.isEmpty()){
-                return res.status(400).json({errors: errors.array()});
-            }
-
-
-            const {affiliateId, companyCode, tdspCodeCCS, promoCode} = req.body;
-
-            try{
-
-                const response = await axios(`https://stg-api.nrg.com/NRGREST/rest/sales/offers?channelType=AA&affiliateId=${affiliateId}&companyCode=${companyCode}&brandId=RE&languageCode=E&transactionType=MVI&tdspCodeCCS=${tdspCodeCCS}&promoCode=${promoCode}&esid`, config);
-
-                
-                res.json(response.data);
-            }catch(err){
-                console.error(err.message);
-            res.status(500).send('Server error');
-            }
-    }
-)
 
 
 

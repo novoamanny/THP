@@ -23,36 +23,8 @@ const config = {
 }
 
 
-
-const routes = [
-    {
-        prov: 'Pulse',
-        route: 'https://api.pulsepowerpreview.com/api/pulse/GetRates'
-    },
-    // {
-    //     prov: 'etg',
-    //     route: 'https://api.pulsepowerpreview.com/api/energytogo/GetRates'
-    // },
-    // {
-    //     prov: 'lonestar',
-    //     route: 'https://api.pulsepowerpreview.com/api/lonestar/GetRates'
-    // },
-    // {
-    //     prov: 'newpower',
-    //     route: 'https://api.pulsepowerpreview.com/api/newpowertexas/GetRates'
-    // },
-    // {
-    //     prov: 'powernext',
-    //     route: 'https://api.pulsepowerpreview.com/api/powernext/GetRates'
-    // },
-
-    
-]
-
-
-
 // GET RATES
-router.post('/get/rates/',
+router.post('/getOffers/',
 [
     // Check if data fits the requirements...
     check('ZipCode', 'ZipCode is required...').not().isEmpty(),
@@ -71,40 +43,25 @@ router.post('/get/rates/',
         
         const body = JSON.stringify({ ZipCode: ZipCode, PromoCode: 'TXHP'});
 
-        const pulseRates = await axios.post(routes[0].route,body, config);
-        // const energyToGoRates = await axios.post('https://api.pulsepowerpreview.com/api/energytogo/GetRates',body, config);
-        // const loneStarRates = await axios.post('https://api.pulsepowerpreview.com/api/lonestar/GetRates',body, config);
-        // const newPowerRates = await axios.post('https://api.pulsepowerpreview.com/api/newpowertexas/GetRates',body, config);
-        // const powerNextRates = await axios.post('https://api.pulsepowerpreview.com/api/powernext/GetRates',body, config);
+        const pulseResponse = await axios.post('https://api.pulsepowerpreview.com/api/pulse/GetRates',body, config);
+       
 
-
-        const response = [
-            {
-                name: 'Pulse',
-                data: pulseRates.data,
-                PUCT: '10259',
-                Phone: '833-785-7797',
-                Email_Address: 'customercare@pulsepowertexas.com',
-                HOO: '8 AM - 5 PM'
-            },
-            // {
-            //     name: 'etg',
-            //     data: energyToGoRates.data
-            // },
-            // {
-            //     name: 'lonestar',
-            //     data: loneStarRates.data
-            // },
-            // {
-            //     name: 'newpower',
-            //     data: newPowerRates.data
-            // },
-            // {
-            //     name: 'powernext',
-            //     data: powerNextRates.data
-            // },
-        ]
+       
+        const response = pulseResponse.data.map(offer => {
+            return(
+                {
+                    brand: 'Pulse',
+                    data: offer,
+                    PUCT: '10259',
+                    Phone: '833-785-7797',
+                    Email_Address: 'customercare@pulsepowertexas.com',
+                    HOO: '8 AM - 5 PM'
+                }
+            )
+        })
+            
         
+
         res.json(response);
         
     }catch(err){
@@ -117,11 +74,13 @@ router.post('/get/rates/',
 
 });
 
-router.post('/get/rate/',
+
+
+
+router.post('/getOffer/',
 [
     check('RateID', 'Need Rate ID...').not().isEmpty(),
     check('ZipCode', 'Need Zipcode...').not().isEmpty(),
-    check('Provider', 'Need Provider...').not().isEmpty()
 ],
     async (req, res) =>{
         
@@ -131,56 +90,34 @@ router.post('/get/rate/',
             return res.status(400).json({errors: errors.array()});
         }         
 
-        const {RateID, ZipCode, Provider} = req.body;
+        const {RateID, ZipCode} = req.body;
 
-        // const routes = [
-        //     {
-        //         prov: 'pulse',
-        //         route: 'https://api.pulsepowerpreview.com/api/pulse/GetRates'
-        //     },
-        //     // {
-        //     //     prov: 'etg',
-        //     //     route: 'https://api.pulsepowerpreview.com/api/energytogo/GetRates'
-        //     // },
-        //     // {
-        //     //     prov: 'lonestar',
-        //     //     route: 'https://api.pulsepowerpreview.com/api/lonestar/GetRates'
-        //     // },
-        //     // {
-        //     //     prov: 'newpower',
-        //     //     route: 'https://api.pulsepowerpreview.com/api/newpowertexas/GetRates'
-        //     // },
-        //     // {
-        //     //     prov: 'powernext',
-        //     //     route: 'https://api.pulsepowerpreview.com/api/powernext/GetRates'
-        //     // },
-
-            
-        // ]
 
         try{
             const body = JSON.stringify({ ZipCode: ZipCode, PromoCode: 'TXHP'});
         
             let temp;
 
-            routes.forEach(provider =>{
-                if(provider.prov === Provider){
-                    temp = provider.route;
-                }
-            })
-            const rates = await axios.post(temp,body, config);
-            const rate = rates && rates.data.filter(item => {
+            const rates = await axios.post('https://api.pulsepowerpreview.com/api/pulse/GetRates',body, config);
+            const rate = rates && rates.data.filter(offer => {
                 
 
-                if(item.RateID == RateID){
+                if(offer.RateID == RateID){
                     
-                    return item;
+                    return {
+                        brand: 'Pulse',
+                        data: offer,
+                        PUCT: '10259',
+                        Phone: '833-785-7797',
+                        Email_Address: 'customercare@pulsepowertexas.com',
+                        HOO: '8 AM - 5 PM'
+                    };
                 }
                     
             })
               
            
-            res.json(rate);
+            res.json(rate[0]);
             
         }catch(err){
             console.error(err.message);
