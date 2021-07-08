@@ -1,7 +1,7 @@
 import {GET_RATES_FAIL, GET_RATES_SUCCESS, GET_RATE_SUCCESS, GET_RATE_FAIL, CONTRACT_LENGTH_FILTER_SUCCESS, CONTRACT_LENGTH_FILTER_FAIL, PROVIDER_FILTER_FAIL, PROVIDER_FILTER_SUCCESS} from '../actions/types';
 
 const initialState = {
-  rates: [],
+  rates: null,
   currentRates: [],
   rate: null,
   error: [],

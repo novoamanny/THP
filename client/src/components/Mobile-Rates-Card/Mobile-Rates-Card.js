@@ -8,7 +8,7 @@ import './Mobile-Rates-Card.css';
 
 
 const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
-    const tempPrice = rate.rateData.Rate * 500
+    const tempPrice = rate.offerRate_2000 * 100
     
     const price = Math.round(tempPrice);
     return(
@@ -18,11 +18,11 @@ const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             }
             <div className='FRC-row-one'>
                 <div className='FRC-id'>
-                    <span>{`${rate.provider} | #00${rate.rateData.RateID}`}</span>
+                    <span>{`${rate.brand} | #00${rate.offerID}`}</span>
                 </div>
                 <div className='FRC-name'>
                     <div>
-                    <span>{rate.rateData.Plan.PlanName}</span>
+                    <span>{rate.offerName}</span>
                     </div>
                     
                 </div>
@@ -42,7 +42,8 @@ const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                 </div>
                 <div className='FRC-two-B'>
                     <div className='FRC-id'>
-                        <span>{`PUCT #${rate.PUCT}`}</span>
+                       
+                        <span>{`PUCT #${rate.puct}`}</span>
                     </div>
                     <div className='FRC-details-btn' onClick={() => setChangePDP(true)}>
                         <span>Plan Details</span>
@@ -54,7 +55,7 @@ const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             </div>
             <div className='FRC-row-three'>
                 
-                    <span>{rate.rateData.Plan.PlanSubHeader}</span>
+                    <span>{rate.offerTagLine}</span>
                 
                
             </div>
@@ -73,12 +74,12 @@ const MobileRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     <span>Contract Length</span>
                 </div>
                 <div className='FRC-length'>
-                    <span>{`${rate.rateData.Term} Months`}</span>
+                    <span>{`${rate.offerLength} Months`}</span>
                 </div>
             </div>
             <div className='FRC-row-six'>
                 <div className='FRC-link'>
-                    <Link  to={`/${ZipCode}/${rate.provider}/enrollment/${rate.PUCT}/00${rate.rateData.RateID}/${watt}`} className='FRC-Link'>Check Availability</Link>
+                    <Link  to={`/${ZipCode}/${rate.brand}/enrollment/${rate.puct}/00${rate.offerID}/${watt}/${rate.campaignCode === '' ? 'Pulse Power' : rate.campaignCode}`} className='FRC-Link'>Check Availability</Link>
                 </div>
                 <div className='FRC-link-details'>
                     <div className='FRC-link-details-one'>

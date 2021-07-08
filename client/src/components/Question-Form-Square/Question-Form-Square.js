@@ -28,6 +28,7 @@ const QuestionFormSquare = ({ answers, questionHandle,getMeters,metersLoading, Z
 
         e.preventDefault();
         setActive(true);
+        console.log(formData)
         getMeters(formData);
         
         

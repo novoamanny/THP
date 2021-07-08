@@ -41,7 +41,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
     
     images.forEach(item =>{
         
-        if(item.provider === provider){
+        if(item.provider === data.brand){
             temp = item.img;
         }
         
@@ -60,10 +60,10 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                 <div className='OD-Details-Top'>
                     <div className='OD-Details-Top-T'>
                         <div className='OD-Details-p'>
-                            <span>{`${provider} | PUCT #${PUCT}`}</span>
+                            <span>{`${data.brand} | PUCT #${data.puct}`}</span>
                         </div>
                         <div className='OD-Details-p-two'>
-                            <span>{rate && rate[0].Plan.PlanName}</span>
+                            <span>{data && data.offerName}</span>
                         </div>
                     </div>
                     <div className='OD-Details-Top-B'>
@@ -80,7 +80,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                                 <p>Rate Per KWh</p>
                             </div>
                             <div className='DTBR-two'>
-                                <span>{rate && Math.round(rate[0].Rate_2000 * 100)}</span>
+                                <span>{data && Math.round(data.offerRate_2000 * 100)}</span>
                                 <span>&#162;</span>
                             </div>
                             <div className='DTBR-three'>
@@ -104,7 +104,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                             <p>Term Length</p>
                         </div>
                         <div className='OD-Details-Two-2'>
-                            <h2>{rate && rate[0].Term}</h2>
+                            <h2>{data && data.offerLength}</h2>
                         </div>
                     </div>
                     <div className='OD-Details-Three'>
@@ -112,7 +112,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                             <p>Rate Type</p>
                         </div>
                         <div className='OD-Details-Three-2'>
-                            <h2>{rate && rate[0].Plan.PlanType}</h2>
+                            <h2>{data && data.offerType}</h2>
                         </div>
                     </div>
                     <div className='OD-Details-Four'>
@@ -120,7 +120,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                             <p>Early Termination Fee</p>
                         </div>
                         <div className='OD-Details-Four-2'>
-                            <h2>{`$${rate && rate[0].CancellationFeeAmount}/month remaining in contract`}</h2>
+                            <h2>{`$${data && data.offerCancelFee}/month remaining in contract`}</h2>
                         </div>
                     </div>
                     <div className='OD-Details-Three'>
@@ -128,7 +128,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                             <p>Company Name:</p>
                         </div>
                         <div className='OD-Details-Three-2'>
-                            <h2>{provider}</h2>
+                            <h2>{data.brand}</h2>
                         </div>
                     </div>
                     <div className='OD-Details-Three'>
@@ -136,7 +136,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                             <p>Hours of Operation</p>
                         </div>
                         <div className='OD-Details-Three-2'>
-                            <h2>{data.HOO}</h2>
+                            <h2>{data.hoursOfOperation}</h2>
                         </div>
                     </div>
                     <div className='OD-Details-Three'>
@@ -144,7 +144,7 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                             <p>Customer Support</p>
                         </div>
                         <div className='OD-Details-Three-2'>
-                            <h2>{data.Phone}</h2>
+                            <h2>{data.phone}</h2>
                         </div>
                     </div>
                     <div className='OD-Details-Three'>
@@ -152,21 +152,21 @@ const OrderDetails = ({data, orderPop,rate,PUCT, provider, setChangePDP, watt}) 
                             <p>Customer Support</p>
                         </div>
                         <div className='OD-Details-Four-2'>
-                            <h2>{data.Email_Address}</h2>
+                            <h2>{data.emailAddress}</h2>
                         </div>
                     </div>
                     <div className='OD-Details-Five'>
                         <div className='PDF-btn-OD'>
                         <i className="far fa-file-alt"></i>
-                            <a target='_blank' href={rate && rate[0].EFLLink}>Facts Label</a>
+                            <a target='_blank' href={data.eflURL}>Facts Label</a>
                         </div>
                         <div className='PDF-btn-OD'>
                         <i className="far fa-file-alt"></i>
-                            <a target='_blank' href={rate && rate[0].TOSLink}>Terms of Service</a>
+                            <a target='_blank' href={data.tosURL}>Terms of Service</a>
                         </div>
                         <div className='PDF-btn-OD'>
                         <i className="far fa-file-alt"></i>
-                            <a target='_blank' href={rate && rate[0].YRACLink}>YRAC</a>
+                            <a target='_blank' href={data.yracURL}>YRAC</a>
                         </div>
                     </div>
 

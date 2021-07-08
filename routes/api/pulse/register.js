@@ -41,30 +41,30 @@ router.post('/get/meters',
 
         const {ZipCode, Provider, Address1} = req.body;
     
-        const routes = [
-            {
-                prov: 'Pulse',
-                route: 'https://api.pulsepowerpreview.com/api/pulse/GetMeters'
-            },
-            {
-                prov: 'etg',
-                route: 'https://api.pulsepowerpreview.com/api/energytogo/GetMeters'
-            },
-            {
-                prov: 'lonestar',
-                route: 'https://api.pulsepowerpreview.com/api/lonestar/GetMeters'
-            },
-            {
-                prov: 'newpower',
-                route: 'https://api.pulsepowerpreview.com/api/newpowertexas/GetMeters'
-            },
-            {
-                prov: 'powernext',
-                route: 'https://api.pulsepowerpreview.com/api/powernext/GetMeters'
-            },
+        // const routes = [
+        //     {
+        //         prov: 'Pulse',
+        //         route: 'https://api.pulsepowerpreview.com/api/pulse/GetMeters'
+        //     },
+        //     {
+        //         prov: 'etg',
+        //         route: 'https://api.pulsepowerpreview.com/api/energytogo/GetMeters'
+        //     },
+        //     {
+        //         prov: 'lonestar',
+        //         route: 'https://api.pulsepowerpreview.com/api/lonestar/GetMeters'
+        //     },
+        //     {
+        //         prov: 'newpower',
+        //         route: 'https://api.pulsepowerpreview.com/api/newpowertexas/GetMeters'
+        //     },
+        //     {
+        //         prov: 'powernext',
+        //         route: 'https://api.pulsepowerpreview.com/api/powernext/GetMeters'
+        //     },
         
             
-        ]
+        // ]
 
 
         try{
@@ -74,16 +74,16 @@ router.post('/get/meters',
                 ZipCode
             });
            
-            let temp;
+            // let temp;
 
-            routes.forEach((provider, index) =>{
-                if(provider.prov === Provider){
-                    temp = index;
-                }
-            })
-            const ROUTE = routes[temp].route;
+            // routes.forEach((provider, index) =>{
+            //     if(provider.prov === Provider){
+            //         temp = index;
+            //     }
+            // })
+            // const ROUTE = routes[temp].route;
            
-            const meter = await axios.post(ROUTE,body, config);
+            const meter = await axios.post('https://api.pulsepowerpreview.com/api/pulse/GetMeters',body, config);
             
             res.json(meter.data);
 

@@ -16,15 +16,15 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                         <div className='PDP-PDF'>
                             <div className='PDF-btn'>
                                 <i className="far fa-file-alt"></i>
-                                <a target='_blank' href={rate && rate.rateData.EFLLink}>Facts Label</a>
+                                <a target='_blank' href={rate && rate.eflURL}>Facts Label</a>
                             </div>
                             <div className='PDF-btn'>
                                 <i className="far fa-file-alt"></i>
-                                <a target='_blank' href={rate && rate.rateData.TOSLink}>Terms of Service</a>
+                                <a target='_blank' href={rate && rate.tosURL}>Terms of Service</a>
                             </div>
                             <div className='PDF-btn'>
                                 <i className="far fa-file-alt"></i>
-                                <a target='_blank' href={rate && rate.rateData.YRACLink}>YRAC</a>
+                                <a target='_blank' href={rate && rate.yracURL}>YRAC</a>
                             </div>
                         </div>
                         <div className='PDP-ETF'>
@@ -37,7 +37,7 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                             <span>{`Rate Description:`}</span>
                         </div>
                         <div className='PDP-desc'>
-                            <span>{rate.rateData.Plan.PlanSubHeader}</span>
+                            <span>{rate.offerTagLine}</span>
                         </div>
                     </div>
                     
@@ -84,13 +84,13 @@ const PlanDetailsPop = ({setChangePDP, rate}) =>{
                         </div>
                         <div className='PDP-col'>
                             <div className='PDP-col-col'>
-                                <span>{`${rate && rate.rateData.Rate_500}`}</span>
+                                <span>{`${rate && rate.offerRate_500}`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`${rate && rate.rateData.Rate_1000}`}</span>
+                                <span>{`${rate && rate.offerRate_1000}`}</span>
                             </div>
                             <div className='PDP-col-col'>
-                                <span>{`${rate && rate.rateData.Rate_2000}`}</span>
+                                <span>{`${rate && rate.offerRate_2000}`}</span>
                             </div>
                         </div>
                     </div>

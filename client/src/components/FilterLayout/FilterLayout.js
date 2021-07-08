@@ -95,48 +95,11 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
         // getRates(ZipCode, oldFilters, label,)
         
     }
+
    
-  
-  
-    let temp;
-    
-    let Data = [];
-   
-    if(!loading && rates){
-        rates.forEach(prov => {
-                
-        
-            
-            prov.data && prov.data.forEach(rate => {
-                
-                temp = {
-                    provider: prov.brand,
-                    rateData: rate,
-                    PUCT: prov.PUCT,
-                    Phone: prov.Phone
-                    
-                };
-                
-                Data = Data.concat(temp);
-                
-            })
-            
-        })
-}
-    
-
-  
-
-    
-
-    
-
-// Result Data
-
-   const result = Data;
    
 
-    const resultCount = result.length
+    const resultCount = rates.length
     
 
     
@@ -260,11 +223,11 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
            </div>
            
             <div>
-            <FeaturedRatesSection watt={quickFilters} ZipCode={currentZipCode} resultData={result}/>
+            <FeaturedRatesSection watt={quickFilters} ZipCode={currentZipCode} resultData={rates}/>
             </div>
            <div>
             
-             <RatesResultsSection resultData={result} watt={quickFilters} ZipCode={currentZipCode}/>
+             <RatesResultsSection resultData={rates} watt={quickFilters} ZipCode={currentZipCode}/>
            </div>
            <div className='footer'>
            <Footer/>

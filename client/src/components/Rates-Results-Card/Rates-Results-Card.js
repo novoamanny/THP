@@ -22,15 +22,15 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                     <div className='RSC-Top-Left-One'>
                         <img src={rate.image}/>
                         <div className='tlto tlto-PUCT'>
-                            <span>{`PUCT #${rate.PUCT}`}</span>
+                            <span>{`PUCT #${rate.puct}`}</span>
                         </div>
                     </div>
                     <div className='RSC-Top-Left-Two'>
                         <div className='tlto'>
-                            <span>{`${rate.provider} | #00${rate.rateData.RateID}`}</span>
+                            <span>{`${rate.brand} | #00${rate.offerID}`}</span>
                         </div>
                         <div className='tltt'>
-                            <span>{rate && rate.rateData.Plan.PlanName}</span>
+                            <span>{rate && rate.offerName}</span>
                         </div>
                         <div className='RSC-Top-Left-Three' onClick={() => setChangePDP(true)}>
                         <div>
@@ -57,7 +57,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                     </div> */}
                      <div className='RSC-Top-Right-Two'>
                         <div className='RSC-Top-Right-Two-T'>
-                            <span>{`${rate && rate.rateData.Term} Months`}</span>
+                            <span>{`${rate && rate.offerLength} Months`}</span>
                         </div>
                         <div className='RSC-Top-Right-Two-B'>
                             <span>Term Length</span>
@@ -65,7 +65,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                         </div>
                      <div className='RSC-Top-Right-Three'>
                         <div className='RSC-Top-Right-Three-T'>
-                            <span>{`${Math.round(rate.rateData.Rate_2000 * 100)}`}</span>
+                            <span>{`${Math.round(rate.offerRate_2000 * 100)}`}</span>
                             <span>&#162;</span>
                         </div>
                         <div className='RSC-Top-Right-Three-B'>
@@ -81,13 +81,13 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
            <div className='RSC-Bottom'>
                 <div className='RSC-Bot-Left'>
                     <div className='RSC-Bot-Left-One'>
-                        <span>{ rate && rate.rateData.Plan.PlanSubHeader}</span>
+                        <span>{ rate && rate.offerTagLine}</span>
                     </div>
 
                 </div>
                 <div className='RSC-Bot-Right'>
                     <div className='RSC-Bot-Right-T'>
-                            <Link to={`/${ZipCode}/${rate && rate.provider}/enrollment/${rate.PUCT}/00${rate && rate.rateData.RateID}/${quickFilters}`} className='RSC-Link'>Check Availability</Link>
+                            <Link to={`/${ZipCode}/${rate && rate.brand}/enrollment/${rate.puct}/00${rate && rate.offerID}/${quickFilters}/${rate.campaignCode === '' ? 'Pulse Power' : rate.campaignCode}`} className='RSC-Link'>Check Availability</Link>
                                 
                     </div>
                     <div className='RSC-Bot-Right-B'>
@@ -95,7 +95,7 @@ const RatesResultsCard = ({changePDP,setChangePDP,rate, quickFilters, ZipCode}) 
                             <span>- OR CALL -</span>
                         </div>
                         <div className='RSC-bot-num'>
-                            <span>{rate.Phone}</span>
+                            <span>{rate.phone}</span>
                         </div>
                     </div>
                 

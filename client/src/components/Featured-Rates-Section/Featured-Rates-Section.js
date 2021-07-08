@@ -27,16 +27,13 @@ const FeaturedRatesSection = ({resultData, ZipCode, watt}) =>{
     resultData && resultData.forEach(prov =>{
         
         images.forEach(item =>{
-            if(item.provider === prov.provider){
+            if(item.provider === prov.brand){
                 image = item.img;
             }
         })
         
         temp ={
-            provider: prov.provider,
-            rateData: prov.rateData,
-            PUCT: prov.PUCT,
-            Phone: prov.Phone,
+            ...prov,
             image: image
         }
 

@@ -87,7 +87,7 @@ export const getMeters = (form) => async dispatch =>{
     try{
 
         const res = await axios.post(`http://localhost:8080/api/pulse/register/get/meters`, body, config);
-        
+        console.log(res.data)
         dispatch({
 
             type: GET_METERS_SUCCESS,

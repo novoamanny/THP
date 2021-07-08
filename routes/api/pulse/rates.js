@@ -6,6 +6,8 @@ const jwt = require('jsonwebtoken');
 const axios = require('axios');
 const { response } = require('express');
 
+const Offers = require('../../../models/offers');
+
 const router = express.Router();
 
 
@@ -47,17 +49,45 @@ router.post('/getOffers/',
        
 
        
-        const response = pulseResponse.data.map(offer => {
-            return(
-                {
-                    brand: 'Pulse',
-                    data: offer,
-                    PUCT: '10259',
-                    Phone: '833-785-7797',
-                    Email_Address: 'customercare@pulsepowertexas.com',
-                    HOO: '8 AM - 5 PM'
-                }
+        const response = pulseResponse.data.map( offer => {
+
+            const temp = new Offers(
+                'Pulse',
+                offer.PromoCode,
+                '10259',
+                '833-785-7797',
+                'customercare@pulsepowertexas.com',
+                '8 am - 5 pm',
+                offer.RateID,
+                '',
+                offer.Plan.PlanName,
+                offer.Plan.PlanSubHeader,
+                offer.CancellationFeeType,
+                offer.CancellationFeeAmount,
+                offer.Term,
+                offer.Rate,
+                offer.Rate_500,
+                offer.Rate_1000,
+                offer.Rate_2000,
+                offer.EFLLink,
+                offer.TOSLink,
+                offer.YRACLink,
+                null,
+                offer
             )
+
+            return temp;
+
+            // return(
+            //     {
+            //         brand: 'Pulse',
+            //         data: offer,
+            //         PUCT: '10259',
+            //         Phone: '833-785-7797',
+            //         Email_Address: 'customercare@pulsepowertexas.com',
+            //         HOO: '8 AM - 5 PM'
+            //     }
+            // )
         })
             
         
@@ -97,27 +127,46 @@ router.post('/getOffer/',
             const body = JSON.stringify({ ZipCode: ZipCode, PromoCode: 'TXHP'});
         
             let temp;
+            let i;
 
             const rates = await axios.post('https://api.pulsepowerpreview.com/api/pulse/GetRates',body, config);
-            const rate = rates && rates.data.filter(offer => {
+            const rate = rates && rates.data.map((offer, index) => {
                 
 
                 if(offer.RateID == RateID){
-                    
-                    return {
-                        brand: 'Pulse',
-                        data: offer,
-                        PUCT: '10259',
-                        Phone: '833-785-7797',
-                        Email_Address: 'customercare@pulsepowertexas.com',
-                        HOO: '8 AM - 5 PM'
-                    };
+                
+                    temp = new Offers(
+                        'Pulse',
+                        offer.PromoCode,
+                        '10259',
+                        '833-785-7797',
+                        'customercare@pulsepowertexas.com',
+                        '8 am - 5 pm',
+                        offer.RateID,
+                        '',
+                        offer.Plan.PlanName,
+                        offer.Plan.PlanSubHeader,
+                        offer.CancellationFeeType,
+                        offer.CancellationFeeAmount,
+                        offer.Term,
+                        offer.Rate,
+                        offer.Rate_500,
+                        offer.Rate_1000,
+                        offer.Rate_2000,
+                        offer.EFLLink,
+                        offer.TOSLink,
+                        offer.YRACLink,
+                        null,
+                        offer
+                    )
+                    i = index;
+                    return temp
                 }
                     
             })
               
            
-            res.json(rate[0]);
+            res.json(rate[i]);
             
         }catch(err){
             console.error(err.message);

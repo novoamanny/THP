@@ -6,6 +6,7 @@ import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
 import './Featured-Rates-Card.css';
 
 const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
+   
     return(
         <div className='FRC'>
              {
@@ -13,11 +14,11 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             }
             <div className='FRC-row-one'>
                 <div className='FRC-id full-width'>
-                    <span>{`${rate.provider} | #00${rate.rateData.RateID}`}</span>
+                    <span>{`${rate.brand} | #00${rate.offerID}`}</span>
                 </div>
                 <div className='FRC-name'>
                     <div>
-                    <span className=''>{rate.rateData.Plan.PlanName}</span>
+                    <span className=''>{rate.offerName}</span>
                     </div>
                     
                 </div>
@@ -30,13 +31,13 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     </div>
                     <div className='FRC-price'>
                         
-                        <span>{Math.round(rate.rateData.Rate_2000 * 100)}</span>
+                        <span>{Math.round(rate.offerRate_2000 * 100)}</span>
                         <span>&#162;</span>
                     </div>
                 </div>
                 <div className='FRC-two-B'>
                     <div className='FRC-id'>
-                        <span>{`PUCT #${rate.PUCT}`}</span>
+                        <span>{`PUCT #${rate.puct}`}</span>
                     </div>
                     <div className='FRC-other-info'>
                         <div>
@@ -54,7 +55,7 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
             </div>
             <div className='FRC-row-three'>
                 
-                    <span>{rate.rateData.Plan.PlanSubHeader}</span>
+                    <span>{rate.offerTagLine}</span>
                 
                
             </div>
@@ -73,19 +74,19 @@ const FeaturedRatesCard = ({changePDP,setChangePDP, rate, ZipCode, watt}) =>{
                     <span>Term Length</span>
                 </div>
                 <div className='FRC-length'>
-                    <span>{`${rate.rateData.Term} Months`}</span>
+                    <span>{`${rate.offerLength} Months`}</span>
                 </div>
             </div>
             <div className='FRC-row-six'>
                 <div className='FRC-link'>
-                    <Link  to={`/${ZipCode}/${rate.provider}/enrollment/${rate.PUCT}/00${rate.rateData.RateID}/${watt}`} className='FRC-Link'>Check Availability</Link>
+                    <Link  to={`/${ZipCode}/${rate.brand}/enrollment/${rate.puct}/00${rate.offerID}/${watt}/${rate.campaignCode === '' ? 'Pulse Power' : rate.campaignCode}`} className='FRC-Link'>Check Availability</Link>
                 </div>
                 <div className='FRC-link-details'>
                     <div className='FRC-link-details-one'>
                         <span>- OR CALL -</span>
                     </div>
                     <div className='FRC-link-details-two'>
-                        <span>{rate.Phone}</span>
+                        <span>{rate.phone}</span>
                     </div>
                 </div>
             </div>
