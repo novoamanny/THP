@@ -5,7 +5,7 @@ import Spinner from '../Spinner/Spinner';
 
 import './Question-Form-Square.css';
 
-const QuestionFormSquare = ({ answers, questionHandle,getMeters,metersLoading, ZipCode, Provider, setMainFormIndex, meters, setMainFormData, mainFormData, setChangeZipCodeModal}) =>{
+const QuestionFormSquare = ({ getESID, ACU, answers, questionHandle,getMeters,metersLoading, ZipCode, Provider, setMainFormIndex, meters, setMainFormData, mainFormData, setChangeZipCodeModal}) =>{
 
     const [formData, setFormData] = useState({
         Address1: '',
@@ -147,7 +147,7 @@ const QuestionFormSquare = ({ answers, questionHandle,getMeters,metersLoading, Z
             {
                 !active ? null : <div style={{width: '100%'}}>
                 {
-                    metersLoading && meters === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}><Spinner/></div> : <AddressListLayout  meters={meters} setFormData={setMainFormData} form={formData} formData={mainFormData} setMainFormIndex={setMainFormIndex}/>
+                    metersLoading && meters === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}><Spinner/></div> : <AddressListLayout getESID={getESID} ACU={ACU} meters={meters} setFormData={setMainFormData} form={formData} formData={mainFormData} setMainFormIndex={setMainFormIndex}/>
                 }
                 </div>
             }

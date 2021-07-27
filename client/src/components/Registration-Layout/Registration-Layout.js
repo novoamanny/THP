@@ -11,7 +11,7 @@ import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
 import Spinner from '../Spinner/Spinner';
 
 import {getRate} from '../../actions/rates';
-import {getMeters, postRegister} from '../../actions/register';
+import {getMeters, postRegister, addressCleanUpNRG, getESID} from '../../actions/register';
 
 
 
@@ -19,7 +19,7 @@ import './Registration-Layout.css';
 import Navbar from '../Navbar/Navbar';
 
 
-const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters, confirmation, metersLoading}, getRate, getMeters, postRegister}) =>{
+const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters, confirmation, metersLoading}, getRate, getMeters, postRegister, addressCleanUpNRG, getESID}) =>{
     
     useEffect(() => {
         
@@ -27,7 +27,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         
       },[getRate])
       
-      console.log(match.params)
+    
       const [formData, setFormData] = useState({
         EmailAddress: null,
         FirstName: null,
@@ -54,10 +54,7 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
     const [changeZipModal, setChangeZipModal] = useState(false)
     const [changePDP, setChangePDP] = useState(false)
     const [orderPop, setOrderPop] = useState(false);
-      // const RATE = {
-      //     Provider: match.params.provider,
-      //     rateData: rate && rate
-      // }
+      
       
       if(rate && formData.Rate === null || rate && formData.RateID === null){
           setFormData({...formData,
@@ -66,26 +63,14 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
           })
       }
 
-    // //   DATA
-    //   const data = {
-    //     RateID: rate && rate[0].RateID,
-    //     ZipCode: match.params.zipcode,
-    //     Rate: rate && rate[0].Rate,
-    //     Provider: match.params.provider,
-    //     PUCT: '10259',
-    //     Phone: '833-785-7797',
-    //     Email_Address: 'customercare@pulsepowertexas.com',
-    //     HOO: '8 AM - 5 PM'
-
-    //   }
-    // console.log(RATE)
+console.log(formData)
 
     return rateLoading && rate === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div> : (
         <div id='capture' className='Registration'>
             <Navbar url={match.params} orderPop={orderPop} setOrderPop={setOrderPop}/>
           
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
-            <RegistrationMidSection metersLoading={metersLoading} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={rate} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
+            <RegistrationMidSection getESID={getESID} ACU={addressCleanUpNRG} metersLoading={metersLoading} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={rate} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
             <RegistrationRightSection orderPop={orderPop} data={rate} mainFormIndex={mainFormIndex} rate={rate} PUCT={match.params.PUCT} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
             
             {
@@ -103,6 +88,8 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
 RegistrationLayout.propTypes = {
     getRate: PropTypes.func.isRequired,
     getMeters: PropTypes.func.isRequired,
+    addressCleanUpNRG: PropTypes.func.isRequired,
+    getESID: PropTypes.func.isRequired,
     postRegister: PropTypes.func.isRequired,
     register: PropTypes.object.isRequired,
     rates: PropTypes.object.isRequired,
@@ -118,4 +105,4 @@ const mapStateToProps = state => ({
 });
 
 
-export default connect(mapStateToProps, {getRate, getMeters, postRegister})(RegistrationLayout);
+export default connect(mapStateToProps, {getRate, getMeters, postRegister, addressCleanUpNRG, getESID})(RegistrationLayout);

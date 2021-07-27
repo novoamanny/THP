@@ -5,7 +5,7 @@ import ImportantNoteBox from '../Important-Note-Box/Important-Note-Box';
 
 import './Address-List-Layout.css'
 
-const AddressListLayout = ({meters, setFormData, formData, setMainFormIndex, form}) =>{
+const AddressListLayout = ({getESID, ACU, meters, setFormData, formData, setMainFormIndex, form}) =>{
    
     const address = form.Address1 && form.Address1.split(' ')
     const upperAddress = address && address[1].toUpperCase();
@@ -26,13 +26,13 @@ const AddressListLayout = ({meters, setFormData, formData, setMainFormIndex, for
                 <div className='best-match-title'>
                     <span>Best Match</span>
                 </div>
-                {match && <AddressListItem meter={match[0]} setFormData={setFormData} formData={formData} setMainFormIndex={setMainFormIndex}/>}
+                {match && <AddressListItem getESID={getESID} ACU={ACU} meter={match[0]} setFormData={setFormData} formData={formData} setMainFormIndex={setMainFormIndex}/>}
             </div>
             <div className='ALL-list-layout'>
                 <div className='best-match-title'>
                     <span>Address List</span>
                 </div>
-                {meters && meters.map(meter => <AddressListItem meter={meter} setFormData={setFormData} formData={formData} setMainFormIndex={setMainFormIndex}/>)}
+                {meters && meters.map(meter => <AddressListItem getESID={getESID} ACU={ACU} meter={meter} setFormData={setFormData} formData={formData} setMainFormIndex={setMainFormIndex}/>)}
             </div>
         </div>
     )

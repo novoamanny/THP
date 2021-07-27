@@ -62,11 +62,13 @@ export const getRate = (RateID, Provider, ZipCode, campaignCode) => async dispat
         payload: res.data
       });
     } else{
-      const res = await axios.post(`http://localhost:8080/api/nrg/rates/getOffer/`, body, config);
-      console.log(res.data)
+      const res = await axios.post('http://localhost:8080/api/nrg/rates/getOffers', body, config);
+
+      const response = res.data.filter(offer => offer.offerID === RateID && offer)
+     
       dispatch({
         type: GET_RATE_SUCCESS,
-        payload: res.data
+        payload: response[0]
       });
     }
       
