@@ -117,7 +117,7 @@ router.post('/',
             return res.status(400).json({errors: errors.array()});
         }         
 
-        const {FirstName, LastName, EmailAddress, Phone, ZipCode, Esiid, SwitchType, SSN, RateID, Rate, Provider, Date, MarketingEmails, MarketingPhoneCalls, Ebilling, PriorityMoveIn, AuthorizedRep, Language, ROUTE} = req.body;
+        const {FirstName, LastName, EmailAddress, Phone, ZipCode, Esiid, SwitchType, SSN, RateID, Rate, Provider, Date, MarketingEmails, MarketingPhoneCalls, Ebilling, PriorityMoveIn, AuthorizedRep, Language} = req.body;
         
        
 
@@ -164,7 +164,7 @@ router.post('/',
             
             
             const response = await axios.post('https://api.pulsepowerpreview.com/api/pulse/CreateEnrollment',body, config);
-            console.log(response)
+            
             res.json(response.data);
             
         }catch(err){

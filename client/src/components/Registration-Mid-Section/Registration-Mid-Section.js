@@ -10,7 +10,7 @@ import ConfirmationForm from '../Confirmation-Form/Confirmation-Form';
 import './Registration-Mid-Section.css';
 
 
-const RegistrationMidSection = ({getESID, ACU, data, getMeters, meters, metersLoading, postRegister, ZipCode, Provider, formData, setFormData, setMainFormIndex, mainFormIndex, setChangeZipModal}) =>{
+const RegistrationMidSection = ({tokenize, getESID, ACU, data, getMeters, meters, metersLoading, postRegister, ZipCode, Provider, formData, setFormData, setMainFormIndex, mainFormIndex, setChangeZipModal}) =>{
     const [answers, setAnswers] = useState({
         One: null,
         Two: null,
@@ -41,7 +41,7 @@ const RegistrationMidSection = ({getESID, ACU, data, getMeters, meters, metersLo
                 mainFormIndex === 1 && <QuestionFormSquareTwo answers={answers} questionHandle={questionHandle} formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
             }
             {
-                mainFormIndex === 2 && <RegistrationForm data={data} postRegister={postRegister} formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+                mainFormIndex === 2 && <RegistrationForm tokenize={tokenize} data={data} postRegister={postRegister} formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
             }
             {
                 mainFormIndex === 3 && <SubmitForService data={data} postRegister={postRegister} formData={formData} setFormData={setFormData} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>

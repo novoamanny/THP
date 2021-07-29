@@ -11,7 +11,7 @@ import PlanDetailsPop from '../Plan-Details-Pop/Plan-Details-Pop';
 import Spinner from '../Spinner/Spinner';
 
 import {getRate} from '../../actions/rates';
-import {getMeters, postRegister, addressCleanUpNRG, getESID} from '../../actions/register';
+import {getMeters, postRegister, addressCleanUpNRG, getESID, tokenize} from '../../actions/register';
 
 
 
@@ -19,7 +19,7 @@ import './Registration-Layout.css';
 import Navbar from '../Navbar/Navbar';
 
 
-const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters, confirmation, metersLoading}, getRate, getMeters, postRegister, addressCleanUpNRG, getESID}) =>{
+const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters, confirmation, metersLoading}, getRate, getMeters, postRegister, addressCleanUpNRG, getESID, tokenize}) =>{
     
     useEffect(() => {
         
@@ -33,9 +33,9 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         FirstName: null,
         LastName: null,
         Phone: null,
-        Esiid: '',
+        Esiid: null,
         Address1: null,
-        City: '',
+        City: null,
         ZipCode: match.params.zipcode,
         Rate: null,
         RateID: null,
@@ -43,11 +43,10 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
         Provider: match.params.provider,
         Date: null,
         SwitchType: null,
-        DOBMonth: '',
-        DriverLicense: null,
-        DOBDay: '',
-        DOBYear: '',
-        route: ''
+        DOBMonth: null,
+        DL: null,
+        DOBDay: null,
+        DOBYear: null,
     })
    
     const [mainFormIndex, setMainFormIndex] = useState(0);
@@ -63,14 +62,14 @@ const RegistrationLayout = ({match, rates:{rate, rateLoading}, register:{meters,
           })
       }
 
-console.log(formData)
+
 
     return rateLoading && rate === null ? <div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div> : (
         <div id='capture' className='Registration'>
             <Navbar url={match.params} orderPop={orderPop} setOrderPop={setOrderPop}/>
           
             <RegistrationLeftSection mainFormIndex={mainFormIndex}/>
-            <RegistrationMidSection getESID={getESID} ACU={addressCleanUpNRG} metersLoading={metersLoading} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={rate} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
+            <RegistrationMidSection tokenize={tokenize} getESID={getESID} ACU={addressCleanUpNRG} metersLoading={metersLoading} mainFormIndex={mainFormIndex} setMainFormIndex={setMainFormIndex} data={rate} getMeters={getMeters} meters={meters} postRegister={postRegister} ZipCode={match.params.zipcode} Provider={match.params.provider} formData={formData} setFormData={setFormData} setChangeZipModal={setChangeZipModal}/>
             <RegistrationRightSection orderPop={orderPop} data={rate} mainFormIndex={mainFormIndex} rate={rate} PUCT={match.params.PUCT} provider={match.params.provider} formData={formData} setMainFormIndex={setMainFormIndex} setChangePDP={setChangePDP} watt={match.params.watt}/>
             
             {
@@ -89,6 +88,7 @@ RegistrationLayout.propTypes = {
     getRate: PropTypes.func.isRequired,
     getMeters: PropTypes.func.isRequired,
     addressCleanUpNRG: PropTypes.func.isRequired,
+    tokenize: PropTypes.func.isRequired,
     getESID: PropTypes.func.isRequired,
     postRegister: PropTypes.func.isRequired,
     register: PropTypes.object.isRequired,
@@ -105,4 +105,4 @@ const mapStateToProps = state => ({
 });
 
 
-export default connect(mapStateToProps, {getRate, getMeters, postRegister, addressCleanUpNRG, getESID})(RegistrationLayout);
+export default connect(mapStateToProps, {getRate, getMeters, postRegister, addressCleanUpNRG, getESID, tokenize})(RegistrationLayout);

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import {GET_RATES_SUCCESS, GET_RATES_FAIL, GET_RATE_FAIL, GET_RATE_SUCCESS} from './types';
+import {GET_CURRENT_RATES_SUCCESS,GET_RATES_SUCCESS, GET_RATES_FAIL, GET_RATE_FAIL, GET_RATE_SUCCESS} from './types';
 
 const config = {
     headers: {
@@ -90,3 +90,79 @@ export const getRate = (RateID, Provider, ZipCode, campaignCode) => async dispat
 }
 
 
+export const getFilteredRates = (filterOptions, defaultRates) => async dispatch =>{
+
+  try{
+
+    // console.log(defaultRates)
+  // console.log(filterOptions)
+
+  // let rates = defaultRates.find((rate) => {
+  //   return rate.offerLength === filterOptions.ContractLength[0] && rate
+  // });
+
+  // P R O V I D E R
+
+  let roundOne = [];
+  
+  if(filterOptions.Provider.length !== 0){
+    console.log('Provider...')
+    filterOptions.Provider.forEach(prov => {
+      let temp = defaultRates.filter(rate => rate.brand === prov && rate);
+      roundOne = [...roundOne, temp]
+    })
+  }
+
+  if(roundOne.length === 0){
+    roundOne = [...roundOne, defaultRates];
+  }
+
+  // console.log(defaultRates)
+  let roundTwo = [];
+
+  // Length
+  if(filterOptions.ContractLength.length !== 0){
+    console.log('Contract')
+    filterOptions.ContractLength.forEach(cl => {
+      roundOne.forEach(prov =>{
+        let temp = prov.filter(rate => rate.offerLength === cl || parseInt(rate.offerLength) === cl && rate)
+        roundTwo = [...roundTwo, temp]
+
+        // prov.forEach(item => console.log(item))
+        // console.log(prov)
+      });
+      // console.log(roundOne)
+    })
+  }
+
+  if(roundTwo.length === 0){
+    roundTwo = roundOne;
+  }
+
+  // console.log(roundTwo)
+
+  let result = []
+
+  roundTwo.forEach(res => result = result.concat(res))
+
+  console.log(result);
+
+  dispatch({
+    type: GET_CURRENT_RATES_SUCCESS,
+    payload: result
+  });
+
+  }catch (err) {
+
+      const errors = err.response.data.errors;
+      
+      if (errors) {
+        // errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+      }
+      dispatch({
+          type: GET_RATES_FAIL,
+          
+        });
+
+    }
+}

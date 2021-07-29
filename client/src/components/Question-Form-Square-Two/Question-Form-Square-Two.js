@@ -23,7 +23,12 @@ const QuestionFormSquareTwo = ({answers,questionHandle, formData, setFormData, s
 
     const onCalendarClickHandle = (e) =>{
         console.log(e)
-        setFormData({...formData, Date: e});
+        const day = e.getDate();
+        const month = e.getMonth() + 1;
+        const year = e.getFullYear();
+        const date = month + '/' + day + '/' + year;
+        console.log(date)
+        setFormData({...formData, Date: date, month, day, year});
        
     }
     

@@ -3,14 +3,23 @@ import React, { useState } from 'react';
 
 import './Register-Form-Buttons.css';
 
-const RegisterFormButtons = ({disabledOn, setMainFormIndex, mainFormIndex, onSubmitHandle, formData, nextForm}) =>{
+const RegisterFormButtons = ({tokenize, disabledOn, setMainFormIndex, mainFormIndex, onSubmitHandle, formData, nextForm, setFormData}) =>{
 
     const [fomrData, setFormDat] = useState(formData && formData)
     
     const add = mainFormIndex + 1;
     const sub = mainFormIndex - 1;
-    const clickHandle = () =>{
-        
+    const clickHandle = async () =>{
+        if(mainFormIndex === 2){
+            console.log('here')
+            if(formData.Provider !== 'Pulse'){
+                const a = await tokenize(fomrData.Provider, formData.SSN, formData.DL)
+                
+                
+                setFormData({...formData, SSN: a.SSN, DL: a.DL});
+            }
+            
+        }
         if(mainFormIndex === 3){
             //  htmlCanvas(document.getElementById('capture')).then((canvas) => {
             //     const image = canvas.toDataURL("image/jpg");

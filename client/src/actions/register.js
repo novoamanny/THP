@@ -10,9 +10,12 @@ const config = {
     },
 }
 
-export const postRegister = (form) => async dispatch =>{
+export const postRegister = (form, rate) => async dispatch =>{
     
-    // Need to clean up and separate model
+    let body;
+
+    if(form.Provider === 'Pulse'){
+        // Need to clean up and separate model
     const {
         EmailAddress,
         FirstName,
@@ -28,10 +31,9 @@ export const postRegister = (form) => async dispatch =>{
         ZipCode,
         Provider,
         Esiid,
-        ROUTE,
         Date
     } = form;
-    const body = JSON.stringify({
+    body = JSON.stringify({
         EmailAddress,
         FirstName,
         LastName,
@@ -46,25 +48,31 @@ export const postRegister = (form) => async dispatch =>{
         ZipCode,
         Provider,
         Esiid,
-        ROUTE,
         RequestedDate: Date
     });
+    }else{
+        body = JSON.stringify({...form, ...rate.data})
+    }
     
         
     try{
+        let res;
+        if(form.Provider === 'Pulse'){
+            res = await axios.post(`http://localhost:8080/api/pulse/register/`, body, config);
+        }else{
+            res = await axios.post(`http://localhost:8080/api/nrg/register/`, body, config);
+        }
         
-        const res = await axios.post(`http://localhost:8080/api/pulse/register/`, body, config);
         
-        
-        let data = {
-            form: form,
-            confirmation: res.data
-        };
-        dispatch({
+        // let data = {
+        //     form: form,
+        //     confirmation: res.data
+        // };
+        // dispatch({
 
-            type: REGISTER_SUCCESS,
-            payload: res.data
-        })
+        //     type: REGISTER_SUCCESS,
+        //     payload: res.data
+        // })
         
     }catch(err){
 
@@ -143,6 +151,31 @@ export const getESID = (Address, brand, zipCode) => async dispatch =>{
 
     try{
         const res = await axios.post('http://localhost:8080/api/nrg/register/getESID/', body, config);
+        const response = res.data;
+        return response;
+    }catch(err){
+
+        const errors = err.response.data.errors;
+      
+        if (err) {
+            // errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+        }
+
+        dispatch({
+        type: GET_METERS_FAIL,
+        
+        });
+    }
+}
+
+
+export const tokenize = (brand, SSN, DL) => async dispatch =>{
+    const body = JSON.stringify({brand, SSN, DL});
+
+    console.log(body);
+
+    try{
+        const res = await axios.post('http://localhost:8080/api/nrg/register/tokenize/', body, config);
         const response = res.data;
         return response;
     }catch(err){

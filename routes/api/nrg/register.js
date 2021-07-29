@@ -39,7 +39,42 @@ const config = {
   
 }
 
+//  R E G I S T E R
+router.post('/',
+[
+    
+],
+    async (req, res) =>{
+        const errors = validationResult(req);
+        if(!errors.isEmpty()){
+            return res.status(400).json({errors: errors.array()});
+        }
 
+        const {Provider, SSN, DL} = req.body;
+
+      
+
+        let companyCode;
+        const channelType = 'AFF';
+
+        for(item of NRG_BRAND_IDENTIFIERS){
+            if(item.brand === Provider){
+                companyCode = item.companyCode
+            }
+        }
+
+
+        try{
+            // I M  H E R E 
+        console.log(req.body)
+
+
+        }catch(err){
+
+            console.error(err.message);
+            res.status(500).send('Server error');
+    } 
+})
 
 
 // A D D R E S S  C L E A N  U P
@@ -120,11 +155,11 @@ router.post ('/getESID/',
                 affiliateId,
                 channelType: 'AFF'
             })
-            console.log(body)
+    
 
             const response = await axios.post('https://stg-api.nrg.com/NRGREST/rest/sales/esid/residential', body, config)
             
-            console.log(response.data.esidList)
+         
 
             res.json(response.data.esidList[0])
 
@@ -134,6 +169,68 @@ router.post ('/getESID/',
             console.error(err.message);
             res.status(500).send('Server error');
     }   
+})
+
+
+
+//  T O K E N I Z E
+router.post('/tokenize/',
+[
+
+],
+    async (req, res) =>{
+        const errors = validationResult(req);
+        if(!errors.isEmpty()){
+            return res.status(400).json({errors: errors.array()});
+        }
+
+        const {brand, SSN, DL} = req.body;
+
+      
+
+        let companyCode;
+        const channelType = 'AFF';
+
+        for(item of NRG_BRAND_IDENTIFIERS){
+            if(item.brand === brand){
+                companyCode = item.companyCode
+            }
+        }
+
+
+        try{
+            // const body = JSON.stringify({
+            //     actionCode: 'SE',
+            //     numToBeTokenized: SSN,
+            //     companyCode,
+            //     affiliateId,
+            //     channelType: 'AFF'
+            // })
+
+            
+
+
+        
+
+            const SSNResponse = await axios(`https://stg-api.nrg.com/NRGREST/rest/sales/token?channelType=${channelType}&affiliateId=${affiliateId}&companyCode=${companyCode}&languageCode=E&actionCode=${'SE'}&numToBeTokenized=${SSN}`,config)
+            
+
+
+            const DLResponse = await axios(`https://stg-api.nrg.com/NRGREST/rest/sales/token?channelType=${channelType}&affiliateId=${affiliateId}&companyCode=${companyCode}&languageCode=E&actionCode=${'PE'}&numToBeTokenized=${DL}`,config)
+
+
+            const response = {
+                SSN: SSNResponse.data.returnToken,
+                DL: DLResponse.data.returnToken
+            }
+            res.json(response)
+
+
+        }catch(err){
+
+            console.error(err.message);
+            res.status(500).send('Server error');
+    } 
 })
 
 

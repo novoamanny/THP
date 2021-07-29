@@ -14,13 +14,13 @@ import './FilterLayout.css';
 import Navbar from '../Navbar/Navbar';
 
 
-const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobileSlide, setMobileSlide}) =>{
+const FilterLayout = ({getFilteredRates, defaultRates, ZipCode, rates, getRates, filterByProvider, loading, mobileSlide, setMobileSlide}) =>{
 
     
     const [filterOptions, setFilterOptions] = useState({
         ContractType: [],
         ContractLength: [],
-        Prov: [],
+        Provider: [],
         Other: '',
     })
 
@@ -39,7 +39,7 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
                 document.getElementById(`${0}-filter`).classList.add('checked');
                 document.getElementById(`${0}-mobile`).classList.add('checked');
             }
-            while(i < 12){
+            while(i < 11){
                 
                 if(document.getElementById(`${i}-filter`).classList.contains('checked')){
                     document.getElementById(`${i}-filter`).classList.remove('checked');
@@ -67,32 +67,41 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
         }
 
 
-        // let oldFilters = {...filterOptions};
+        let oldFilters = {...filterOptions};
 
-        // let tempFilterList = oldFilters[label]
+        let tempFilterList = oldFilters[label]
 
-        // const check = tempFilterList.filter(filt => filt === value && filt)
+        // console.log(tempFilterList)
+
+        const check = tempFilterList.filter(filt => filt === value && filt)
         
-        // if(value === 'none'){
-        //     let newFilters = [];
-        //     oldFilters[label] = newFilters;
-        //     setFilterOptions({...oldFilters});
-        // }
-        // else{
-        //     if(check.length > 0){
-        //         let newFilters = tempFilterList.filter(filt => filt !== value && filt);
-        //         oldFilters[label] = newFilters;
-        //         setFilterOptions({...oldFilters})
-        //     }else{
+        if(value === 'none'){
+            // let newFilters = [];
+            let newFilters = {
+                ContractType: [],
+                ContractLength: [],
+                Provider: [],
+                Other: '',
+            };
+            oldFilters = newFilters;
+            // oldFilters[label] = newFilters;
+            setFilterOptions({...oldFilters});
+        }
+        else{
+            if(check.length > 0){
+                let newFilters = tempFilterList.filter(filt => filt !== value && filt);
+                oldFilters[label] = newFilters;
+                setFilterOptions({...oldFilters})
+            }else{
                
-        //         let newFilters = tempFilterList.concat(value);
-        //         oldFilters[label] = newFilters;
-        //         setFilterOptions({...oldFilters})
-        //     }
-        // }
+                let newFilters = tempFilterList.concat(value);
+                oldFilters[label] = newFilters;
+                setFilterOptions({...oldFilters})
+            }
+        }
 
         
-        // getRates(ZipCode, oldFilters, label,)
+        getFilteredRates(oldFilters, defaultRates);
         
     }
 
@@ -131,37 +140,37 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
                             <div className='mobile-ui-labels'>
                                 <span>Contract Length</span>
                             </div>
-                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 'All Length', 0)}>
+                                <div className='mobile-option' onClick={(e) => filterHandle('ContractLength', 'none', 0)}>
                                     <div id={`${0}-mobile`} className='mobile-option-checkbox checked'>
 
                                     </div>
                                     <li>Show All</li>
                                 </div>
-                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 'Monthly / No Contract', 1)}>
+                                <div className='mobile-option' onClick={(e) => filterHandle('ContractLength', 'Monthly / No Contract', 1)}>
                                     <div id={`${1}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Monthly / No Contract</li>
                                 </div>
-                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 12, 2)}>
+                                <div className='mobile-option' onClick={(e) => filterHandle('ContractLength', 12, 2)}>
                                     <div id={`${2}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>12 Months</li>
                                 </div>
-                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 18, 3)}>
+                                <div className='mobile-option' onClick={(e) => filterHandle('ContractLength', 18, 3)}>
                                     <div id={`${3}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>18 Months</li>
                                 </div>
-                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 24, 4)}>
+                                <div className='mobile-option' onClick={(e) => filterHandle('ContractLength', 24, 4)}>
                                     <div id={`${4}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>24 Months</li>
                                 </div>
-                                <div className='mobile-option' onClick={(e) => filterHandle('Contract Length', 36, 5)}>
+                                <div className='mobile-option' onClick={(e) => filterHandle('ContractLength', 36, 5)}>
                                     <div id={`${5}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
@@ -198,18 +207,18 @@ const FilterLayout = ({ZipCode, rates, getRates, filterByProvider, loading, mobi
                                     </div>
                                     <li>Cirro</li>
                                 </div>
-                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Pennywise', 10)}> 
+                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Discount Power', 10)}> 
                                     <div id={`${10}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
-                                    <li>Pennywise</li>
+                                    <li>Discount Power</li>
                                 </div>
-                                <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Everything Energy', 11)}>
+                                {/* <div className='mobile-option' onClick={(e) => filterHandle('Provider', 'Everything Energy', 11)}>
                                     <div id={`${11}-mobile`}  className='mobile-option-checkbox'>
 
                                     </div>
                                     <li>Everything Energy</li>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className='hide-filters'>

@@ -14,7 +14,7 @@ const LFOSData = [
     //     ]
     // },
     {
-        label: 'Contract Length',
+        label: 'ContractLength',
         options: [
             'Show All',
             'Monthly / No Contract',
@@ -24,7 +24,7 @@ const LFOSData = [
             '36 Months',
         ],
         value: [
-            'All Length',
+            'none',
             'No Contract',
             12,
             18,
@@ -48,17 +48,17 @@ const LFOSData = [
             'Reliant',
             'Green Mountain',
             'Cirro',
-            'Pennywise',
-            'Everything Energy',
+            'Discount Power',
+            // 'Everything Energy',
         ],
         value: [
-            // 'All Provider',
+            // 'none',
             'Pulse',
             'Reliant',
             'Green Mountain',
             'Cirro',
-            'Pennywise',
-            'Everything Energy'
+            'Discount Power',
+            // 'Everything Energy'
         ],
         indexFilter:[
             6,
@@ -66,7 +66,7 @@ const LFOSData = [
             8,
             9,
             10,
-            11
+            // 11
         ]
     },
 ]

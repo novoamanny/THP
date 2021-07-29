@@ -1,8 +1,8 @@
-import {GET_RATES_FAIL, GET_RATES_SUCCESS, GET_RATE_SUCCESS, GET_RATE_FAIL, CONTRACT_LENGTH_FILTER_SUCCESS, CONTRACT_LENGTH_FILTER_FAIL, PROVIDER_FILTER_FAIL, PROVIDER_FILTER_SUCCESS} from '../actions/types';
+import {GET_CURRENT_RATES_SUCCESS,GET_RATES_FAIL, GET_RATES_SUCCESS, GET_RATE_SUCCESS, GET_RATE_FAIL, CONTRACT_LENGTH_FILTER_SUCCESS, CONTRACT_LENGTH_FILTER_FAIL, PROVIDER_FILTER_FAIL, PROVIDER_FILTER_SUCCESS} from '../actions/types';
 
 const initialState = {
   rates: null,
-  currentRates: [],
+  currentRates: null,
   rate: null,
   error: [],
   loading: true,
@@ -14,7 +14,9 @@ export default function(state = initialState, action) {
 
   switch (type) {
     case GET_RATES_SUCCESS:
-      return {...state, rates: payload, loading: false};
+      return {...state, rates: payload, currentRates: payload, loading: false};
+    case GET_CURRENT_RATES_SUCCESS:
+      return {...state, currentRates: payload, loading: false};
     case GET_RATES_FAIL:
       return {...state, error: payload};
     case GET_RATE_SUCCESS:

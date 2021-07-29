@@ -5,7 +5,7 @@ import './Registration-Form.css'
 import RegisterFormButtons from '../Register-Form-Buttons/Register-Form-Buttons';
 
 
-const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFormIndex, mainFormIndex}) =>{
+const RegistrationForm = ({tokenize, data, postRegister, formData, setFormData, setMainFormIndex, mainFormIndex}) =>{
 
     
         
@@ -19,69 +19,37 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
     const [SSNBox, setSSNBox] = useState(false);
     const [addressBox, setAddressBox] = useState(true);
     const [lanBox, setLanBox] = useState(true);
-    // const [addressSlide, setAddressSlide] = useState(false);
+ 
 
-    // const buttonHandle = (e,value) => setFormData({...formData, [e.target.name]: value});
+    const nextForm = formData.FirstName === null || formData.LastName === null || formData.Email === null || formData.Phone === null || formData.Address1 === null || formData.SSN === null || formData.DOBDay === null || formData.DOBMonth === null || formData.DOBYear === null || formData.DL === null || !SSNBox ? null : '';
+   
+   
+    // // R E G I S T R A T I O N
+    // const postRegisterHandle = async (formData) =>{
+    //     if(Provider)
+    //     postRegister(formData)
+    // }
 
-    const nextForm = formData.FirstName === null || formData.LastName === null || formData.Email === null || formData.Phone === null || formData.Address1 === null || formData.SSN === null || !SSNBox ? null : '';
-    const postRegisterHandle = async (formData) =>{
-        postRegister(formData)
-    }
 
     const onSubmitHandle = async e =>{
 
-          
         
         e.preventDefault();
 
-        const routes = [
-            {
-                prov: 'Pulse',
-                route: 'https://api.pulsepowerpreview.com/api/pulse/CreateEnrollment'
-            },
-            {
-                prov: 'etg',
-                route: 'https://api.pulsepowerpreview.com/api/energytogo/CreateEnrollment'
-            },
-            {
-                prov: 'lonestar',
-                route: 'https://api.pulsepowerpreview.com/api/lonestar/CreateEnrollment'
-            },
-            {
-                prov: 'newpower',
-                route: 'https://api.pulsepowerpreview.com/api/newpowertexas/CreateEnrollment'
-            },
-            {
-                prov: 'powernext',
-                route: 'https://api.pulsepowerpreview.com/api/powernext/CreateEnrollment'
-            },
         
-        ]
+    //    if(Provider === 'Pulse'){
+    //     const form ={
 
-        let temp;
-
-            
-
-        routes.forEach((provider, index) =>{
-            if(provider.prov === Provider){
-                temp = index;
-            }
-        })
-
-        const ROUTE = routes[temp].route;
-        console.log(ROUTE)
-        
-        const form ={
-
-            EmailAddress, FirstName, LastName, Phone, Address1, City, State, SwitchType, SSN, Esiid, Date,RateID, Rate, ZipCode, Provider, ROUTE, DOBDay, DOBMonth, DOBYear
-        }
+    //         EmailAddress, FirstName, LastName, Phone, Address1, City, State, SwitchType, SSN, Esiid, Date,RateID, Rate, ZipCode, Provider, DOBDay, DOBMonth, DOBYear
+    //     }
        
-        postRegisterHandle(form)
+    //     postRegisterHandle(form)
+    //    }else{
+    //        postRegisterHandle(formData);
+    //    }
         
     }
-    if(window.outerWidth <= 600){
-        console.log('hello')
-    }
+   
 
     return(
         <div className='RF'>
@@ -105,7 +73,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                     <span>First Name</span>
                                 </div> 
                                 <div className='form-input'>
-                                    <input name='FirstName' placeholder='FIrst Name' type='text' value={FirstName} onChange={(e) => onChange(e)}/>
+                                    <input name='FirstName' placeholder='First Name' type='text' value={FirstName} onChange={(e) => onChange(e)}/>
                                 </div>
                                 
                             </div>
@@ -152,7 +120,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                                     <span>Driver License #</span>
                                 </div>
                                 <div className='form-input'>
-                                    <input name='DriverLicense' placeholder='Diver License #' type='text' value={DriverLicense} onChange={(e) => onChange(e)}/>
+                                    <input name='DL' placeholder='Diver License #' type='text' value={DriverLicense} onChange={(e) => onChange(e)}/>
                                 </div>
                             </div>
 
@@ -335,7 +303,7 @@ const RegistrationForm = ({data, postRegister, formData, setFormData, setMainFor
                 </div>
                 
             </form>
-            <RegisterFormButtons  nextForm={nextForm} formData={formData} onSubmitHandle={onSubmitHandle} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
+            <RegisterFormButtons setFormData={setFormData} tokenize={tokenize} nextForm={nextForm} formData={formData} onSubmitHandle={onSubmitHandle} setMainFormIndex={setMainFormIndex} mainFormIndex={mainFormIndex}/>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './Plan-Details-Pop.css';
 
 const PlanDetailsPop = ({setChangePDP, rate}) =>{
-    console.log(rate)
+    
     return(
         <div className='PDP'>
             <div className='PDP-backdrop' onClick={() => setChangePDP(false)}></div>

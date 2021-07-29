@@ -28,7 +28,7 @@ const QuestionFormSquare = ({ getESID, ACU, answers, questionHandle,getMeters,me
 
         e.preventDefault();
         setActive(true);
-        console.log(formData)
+        // console.log(formData)
         getMeters(formData);
         
         

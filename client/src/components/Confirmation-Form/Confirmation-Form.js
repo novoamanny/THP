@@ -7,11 +7,11 @@ import Spinner from '../Spinner/Spinner';
 
 import './Confirmation-Form.css';
 
-const ConfirmationForm  = ({formData, postRegister, register:{confirmation, confirmationLoading}}) =>{
+const ConfirmationForm  = ({formData, postRegister, rates:{rate}, register:{confirmation, confirmationLoading}}) =>{
     console.log(formData)
     useEffect(() => {
         
-        postRegister(formData);
+        postRegister(formData, rate);
         
       },[postRegister])
     return confirmationLoading && confirmation === null ? <div style={{width: '50%',display: 'flex', flexWrap: 'wrap', justifyContent: 'center',position: 'fixed', top: '35%'}}><Spinner/></div>  : (
@@ -51,7 +51,8 @@ ConfirmationForm.propTypes = {
 };
 
 const mapStateToProps = state => ({
-    register: state.register
+    register: state.register,
+    rates: state.rates
 });
 
 export default connect(mapStateToProps, {postRegister})(ConfirmationForm);
